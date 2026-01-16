@@ -3,681 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Recruitment & Engineering Nieuws</title>
+    <title>Recruitin | Technisch Recruitment Nieuws</title>
+    <meta name="description" content="203 Technisch recruitment nieuws artikelen met AI, HR Tech, IT Staffing en Notion integratie">
+    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(to bottom right, #f9fafb, #f1f5f9, #fef3c7);
-            color: #1f2937;
-            line-height: 1.6;
-        }
-        
-        header {
-            background: linear-gradient(to right, #1f2937, #374151, #1f2937);
-            color: white;
-            padding: 2rem;
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
-        }
-        
-        .header-content { max-width: 80rem; margin: 0 auto; }
-        .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
-        .logo-section { display: flex; align-items: center; gap: 1rem; }
-        .logo-divider { width: 1px; height: 3rem; background: #f59e0b; }
-        h1 { font-size: 1.5rem; font-weight: bold; display: flex; align-items: center; gap: 0.5rem; }
-        .subtext { color: #d1d5db; font-size: 0.875rem; font-style: italic; }
-        
-        .config-btn {
-            display: flex; align-items: center; gap: 0.5rem;
-            padding: 0.5rem 1rem; background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white; border-radius: 0.5rem;
-            cursor: pointer; transition: all 0.3s;
-            font-size: 0.875rem; font-weight: 500;
-        }
-        .config-btn:hover { background: rgba(255,255,255,0.2); }
-        
-        .focus-text { color: #e5e7eb; font-size: 1.125rem; margin: 0.5rem 0; }
-        .date-text { color: #d1d5db; font-size: 0.875rem; display: flex; align-items: center; gap: 0.5rem; }
-        
-        .stats { 
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem; margin-top: 1.5rem;
-        }
-        .stat-card {
-            background: rgba(255,255,255,0.1); padding: 1.5rem;
-            border-radius: 0.5rem; text-align: center; color: white;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .stat-number { font-size: 2rem; font-weight: bold; }
-        .stat-label { font-size: 0.875rem; color: #d1d5db; margin-top: 0.5rem; }
-        
-        main { max-width: 80rem; margin: 0 auto; padding: 2rem; }
-        
-        .controls {
-            display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;
-        }
-        
-        .search-row {
-            display: grid; grid-template-columns: 1fr auto;
-            gap: 1rem;
-        }
-        
-        select, input[type="text"] {
-            padding: 0.75rem 1rem;
-            border: 1px solid #d1d5db;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            font-family: inherit;
-        }
-        
-        select { cursor: pointer; }
-        select:focus, input:focus {
-            outline: none;
-            ring: 2px #f59e0b;
-            border-color: #f59e0b;
-            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
-        }
-        
-        .filter-btn {
-            padding: 0.75rem 1.5rem;
-            background: white;
-            border: 1px solid #d1d5db;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-        .filter-btn:hover {
-            background: #fef3c7;
-            border-color: #f59e0b;
-        }
-        
-        .active-filters {
-            display: flex; flex-wrap: wrap; gap: 0.5rem;
-        }
-        .filter-tag {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #fef3c7; border: 1px solid #fcd34d;
-            border-radius: 0.5rem; font-size: 0.875rem;
-        }
-        .filter-tag button {
-            background: none; border: none;
-            cursor: pointer; color: #b45309;
-            font-weight: bold;
-        }
-        
-        .content-grid {
-            display: grid; grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-        
-        .section-title {
-            font-size: 1.5rem; font-weight: bold;
-            color: #111827; display: flex; align-items: center; gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .title-bar { width: 3rem; height: 0.25rem; border-radius: 9999px; }
-        .title-bar-dark { background: linear-gradient(to right, #374151, #1f2937); }
-        .title-bar-orange { background: linear-gradient(to right, #f97316, #ea580c); }
-        
-        .article-card {
-            background: white; padding: 1.5rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.5rem;
-            transition: all 0.3s;
-        }
-        .article-card:hover {
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
-            border-color: #f59e0b;
-        }
-        
-        .article-title { font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem; }
-        .article-desc { color: #6b7280; font-size: 0.95rem; margin-bottom: 1rem; }
-        .article-meta {
-            display: flex; gap: 1rem; font-size: 0.875rem;
-            color: #9ca3af; flex-wrap: wrap;
-        }
-        .article-source { color: #f59e0b; font-weight: 600; }
-        
-        .top-articles {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem; margin: 1.5rem 0;
-        }
-        .top-article {
-            background: white; border: 2px solid #f59e0b;
-            border-radius: 0.5rem; padding: 1.5rem;
-            position: relative;
-        }
-        .top-article::before {
-            content: attr(data-rank);
-            position: absolute; top: -1rem; left: 1rem;
-            background: #f59e0b; color: white;
-            width: 2rem; height: 2rem;
-            border-radius: 50%; display: flex;
-            align-items: center; justify-content: center;
-            font-weight: bold; font-size: 1.125rem;
-        }
-        
-        .sources-table {
-            width: 100%; border-collapse: collapse;
-            background: white; border-radius: 0.5rem;
-            overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .sources-table th {
-            background: #1f2937; color: white;
-            padding: 1rem; text-align: left; font-weight: 600;
-        }
-        .sources-table td {
-            padding: 1rem; border-bottom: 1px solid #e5e7eb;
-        }
-        .sources-table tr:hover { background: #f9fafb; }
-        
-        footer {
-            text-align: center; padding: 2rem;
-            border-top: 1px solid #e5e7eb;
-            color: #6b7280; font-size: 0.875rem;
-        }
-        
-        .push-btn {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: linear-gradient(to right, #f97316, #ea580c);
-            color: white; border: none; border-radius: 0.5rem;
-            cursor: pointer; font-weight: 600;
-            transition: all 0.3s;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-        }
-        .push-btn:hover {
-            background: linear-gradient(to right, #ea580c, #c2410c);
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
-        }
-        
-        .status-msg {
-            padding: 1rem; margin-bottom: 1rem;
-            border-radius: 0.5rem; font-weight: 500;
-        }
-        .status-success { background: #d1fae5; border: 1px solid #6ee7b7; color: #047857; }
-        .status-warning { background: #fef3c7; border: 1px solid #fcd34d; color: #b45309; }
-        .status-error { background: #fee2e2; border: 1px solid #fca5a5; color: #991b1b; }
-        
-        .top-articles-section { margin: 2rem 0; }
-        .push-section { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-        
-        @media (max-width: 768px) {
-            h1 { font-size: 1.25rem; }
-            .search-row { grid-template-columns: 1fr; }
-            .logo-section { flex-wrap: wrap; }
-            .top-articles { grid-template-columns: 1fr; }
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+        * { font-family: 'Inter', sans-serif; }
+        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-4px) scale(1.01); box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15); }
+        .category-badge { transition: all 0.2s ease; cursor: pointer; }
+        .category-badge:hover { transform: scale(1.05); }
+        .fade-in { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .stat-card { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.2); }
+        .modal-overlay { backdrop-filter: blur(4px); }
     </style>
 </head>
-<body>
-    <header>
-        <div class="header-content">
-            <div class="header-top">
-                <div class="logo-section">
-                    <strong style="font-size: 1.25rem;">Recruitin</strong>
-                    <div class="logo-divider"></div>
-                    <div>
-                        <h1>📈 Technical Recruitment & Engineering Nieuws</h1>
-                        <p class="subtext">the right people, right now</p>
+<body class="bg-gradient-to-br from-gray-50 via-purple-50 to-pink-50 min-h-screen">
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-purple-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="gradient-bg px-6 py-3 rounded-xl shadow-lg">
+                        <h1 class="text-white text-2xl font-black tracking-tight">RECRUITIN</h1>
+                    </div>
+                    <div class="hidden md:block">
+                        <p class="text-gray-700 text-sm font-semibold">Technisch Recruitment Nieuws</p>
+                        <p class="text-gray-500 text-xs">203 Artikelen · 12 Categorieën</p>
                     </div>
                 </div>
-                <button class="config-btn">⚙️ Notion Setup</button>
-            </div>
-            
-            <p class="focus-text">Focus: Automation, Engineering, Technisch Personeel & Personeelskrapte</p>
-            <p class="date-text">📅 12 januari 2026, 01:14</p>
-            
-            <div class="stats">
-                <div class="stat-card">
-                    <div class="stat-number">156</div>
-                    <div class="stat-label">Recruitment Artikelen</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">24</div>
-                    <div class="stat-label">Bronnen Doorzocht</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">18</div>
-                    <div class="stat-label">Relevante Bronnen</div>
-                </div>
+                <button onclick="openNotionModal()" class="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-purple-700 hover:to-purple-800 transition-all shadow-md hover:shadow-lg flex items-center gap-2">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h6v6H4V4zm0 10h6v6H4v-6zM14 4h6v6h-6V4zm0 10h6v6h-6v-6z"/></svg>
+                    <span class="hidden md:inline">Push naar Notion</span>
+                    <span class="md:hidden">Notion</span>
+                </button>
             </div>
         </div>
     </header>
-    
-    <main>
-        <div class="controls">
-            <div class="search-row">
-                <select>
-                    <option>Alle onderwerpen</option>
-                    <optgroup label="Belangrijkste">
-                        <option>Personeelskrapte & Recruitment</option>
-                        <option>AI & Automation in HR</option>
-                        <option>Engineering Trends</option>
-                    </optgroup>
-                    <optgroup label="Meer">
-                        <option>Salary & Compensation</option>
-                        <option>Remote Work</option>
-                    </optgroup>
-                </select>
-                <button class="filter-btn">🔍 Toon Bronnen</button>
-            </div>
-            
-            <div class="search-row">
-                <input type="text" placeholder="Zoek in categorieën en artikelen..." />
-            </div>
-            
-            <div class="active-filters">
-                <div class="filter-tag">
-                    <span><strong>Onderwerp:</strong> Personeelskrapte</span>
-                    <button>×</button>
-                </div>
-            </div>
+    <div class="gradient-bg text-white py-16 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 right-10 w-96 h-96 bg-pink-300 rounded-full blur-3xl"></div>
         </div>
-        
-        <!-- TOP 3 ARTICLES -->
-        <div class="top-articles-section">
-            <div class="push-section">
-                <div class="section-title">
-                    <div class="title-bar title-bar-orange"></div>
-                    Top 3 van deze Week
-                </div>
-                <button class="push-btn">⚡ Push Top 3 naar Notion</button>
-            </div>
-            
-            <div class="top-articles">
-                <div class="top-article" data-rank="1">
-                    <div class="article-title">Personeelskrapte in Nederland bereikt kritiek punt</div>
-                    <div class="article-desc">Twee miljoen posten blijven onvervuld terwijl werkloosheid laag blijft. Technische rollen het hardst geraakt.</div>
-                    <div class="article-meta">
-                        <span class="article-source">FT.com</span>
-                        <span>11 jan 2026</span>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h2 class="text-4xl md:text-6xl font-black mb-4 tracking-tight">Technisch Recruitment Nieuws</h2>
+                <p class="text-xl md:text-2xl text-purple-100 mb-10 font-medium max-w-3xl mx-auto">De laatste ontwikkelingen in AI, HR Tech, IT Staffing en Recruitment Software</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <div class="stat-card px-8 py-5 rounded-2xl border border-white/30 shadow-xl">
+                        <div class="text-4xl md:text-5xl font-black">203</div>
+                        <div class="text-sm text-purple-100 font-semibold mt-1">Artikelen</div>
                     </div>
-                </div>
-                
-                <div class="top-article" data-rank="2">
-                    <div class="article-title">AI-gestuurde recruitment automation groeit 300% YoY</div>
-                    <div class="article-desc">Nederlandse startups investeren zwaar in intelligent matching. Recruitin leidt markt in Europa.</div>
-                    <div class="article-meta">
-                        <span class="article-source">TechCrunch</span>
-                        <span>10 jan 2026</span>
+                    <div class="stat-card px-8 py-5 rounded-2xl border border-white/30 shadow-xl">
+                        <div class="text-4xl md:text-5xl font-black">12</div>
+                        <div class="text-sm text-purple-100 font-semibold mt-1">Categorieën</div>
                     </div>
-                </div>
-                
-                <div class="top-article" data-rank="3">
-                    <div class="article-title">Engineering salaries stijgen gemiddeld 12% in 2025</div>
-                    <div class="article-desc">Tekort aan talent drijft lonen omhoog, vooral in automation & cloud engineering.</div>
-                    <div class="article-meta">
-                        <span class="article-source">Glassdoor</span>
-                        <span>9 jan 2026</span>
+                    <div class="stat-card px-8 py-5 rounded-2xl border border-white/30 shadow-xl">
+                        <div class="text-4xl md:text-5xl font-black">24/7</div>
+                        <div class="text-sm text-purple-100 font-semibold mt-1">Updates</div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <!-- WICHTIGSTE ONDERWERPEN -->
-        <div>
-            <div class="section-title">
-                <div class="title-bar title-bar-dark"></div>
-                Belangrijkste Onderwerpen
-            </div>
-            
-            <div style="space-y: 1rem;">
-                <div style="margin-bottom: 1.5rem;">
-                    <h3 style="font-weight: 600; margin-bottom: 1rem; font-size: 1.125rem;">📊 Personeelskrapte & Recruitment</h3>
-                    <div style="space-y: 1rem;">
-                        <div class="article-card">
-                            <div class="article-title">Werkgevers worstelen met recruitment in hoog-technische rollen</div>
-                            <div class="article-desc">Aanbod van engineers en automation specialists blijft ver achter bij vraag. Bedrijven kijken naar upskilling programma's.</div>
-                            <div class="article-meta">
-                                <span class="article-source">VNO-NCW</span>
-                                <span>11 jan</span>
-                            </div>
-                        </div>
-                        
-                        <div class="article-card">
-                            <div class="article-title">Remote recruitment strategies 2026: Global talent pools</div>
-                            <div class="article-desc">Nederlandse bedrijven breiden zoekgebied uit naar Europa en Amerika. Salarissen normaliseren tussen regio's.</div>
-                            <div class="article-meta">
-                                <span class="article-source">LinkedIn News</span>
-                                <span>10 jan</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                    <h3 style="font-weight: 600; margin-bottom: 1rem; font-size: 1.125rem;">🤖 AI & Automation in HR</h3>
-                    <div class="article-card">
-                        <div class="article-title">Recruitment AI tools transformeren hiring processes</div>
-                        <div class="article-desc">Applicant tracking, bias detection en candidate scoring nu automatisch. Recruiters richten zich op relationship-building.</div>
-                        <div class="article-meta">
-                            <span class="article-source">ERE Recruiting Intelligence</span>
-                            <span>8 jan</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                    <h3 style="font-weight: 600; margin-bottom: 1rem; font-size: 1.125rem;">⚙️ Engineering Trends</h3>
-                    <div class="article-card">
-                        <div class="article-title">Edge Computing & IoT engineering: Skills shortage</div>
-                        <div class="article-desc">Next-gen technologieën vereisen niche expertise. Bedrijven bieden premium salaries voor specialisten.</div>
-                        <div class="article-meta">
-                            <span class="article-source">IEEE Spectrum</span>
-                            <span>7 jan</span>
-                        </div>
-                    </div>
-                </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="mb-10 fade-in">
+            <div class="relative">
+                <svg class="absolute left-5 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+                <input type="text" id="searchInput" placeholder="Zoek in 203 artikelen..." class="w-full pl-14 pr-6 py-5 rounded-2xl border-2 border-gray-200 focus:border-purple-500 focus:outline-none text-lg shadow-md hover:shadow-lg transition-all bg-white">
             </div>
         </div>
-        
-        <!-- SOURCES TABLE -->
-        <div style="margin-top: 2rem; margin-bottom: 2rem;">
-            <h3 style="margin-bottom: 1rem; font-weight: 600;">Bronnen Overzicht</h3>
-            <table class="sources-table">
-                <thead>
-                    <tr>
-                        <th>Bron</th>
-                        <th>Artikelen</th>
-                        <th>Relevantie</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>LinkedIn Pulse</strong></td>
-                        <td>28</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>TechCrunch</strong></td>
-                        <td>24</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>FT.com</strong></td>
-                        <td>18</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Glassdoor Blog</strong></td>
-                        <td>15</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>VNO-NCW</strong></td>
-                        <td>12</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>ERE Recruiting</strong></td>
-                        <td>10</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>IEEE Spectrum</strong></td>
-                        <td>9</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                </tbody>
-            </table>
+        <div class="mb-12 fade-in">
+            <h3 class="text-3xl font-black text-gray-900 mb-6 flex items-center gap-3"><span class="text-3xl">📂</span> Categorieën</h3>
+            <div id="categoryFilter" class="flex flex-wrap gap-3"></div>
         </div>
-        
-        <footer>
-            <p style="margin-bottom: 0.5rem;">Report gegenereerd op: 12 januari 2026, 01:04:41</p>
-            <p>Powered by Brave Search API</p>
-        </footer>
-    </main>
-
-    <script>
-        // Notion Configuration Modal
-        const configModal = document.createElement('div');
-        configModal.id = 'notion-config-modal';
-        configModal.style.cssText = 'display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1000; align-items: center; justify-content: center;';
-        configModal.innerHTML = `
-            <div style="background: white; padding: 2rem; border-radius: 8px; max-width: 500px; width: 90%;">
-                <h3 style="margin-bottom: 1rem; color: #1f2937;">Notion API Configuratie</h3>
-                <div style="margin-bottom: 1rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #374151;">Notion Integration Token</label>
-                    <input type="password" id="notion-token" placeholder="secret_..." style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px; font-family: monospace;">
-                </div>
-                <div style="margin-bottom: 1.5rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #374151;">Database ID</label>
-                    <input type="text" id="notion-db-id" placeholder="abc123..." style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px; font-family: monospace;">
-                </div>
-                <div style="display: flex; gap: 1rem;">
-                    <button id="save-config" style="flex: 1; padding: 0.75rem; background: #f59e0b; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Opslaan</button>
-                    <button id="cancel-config" style="flex: 1; padding: 0.75rem; background: #6b7280; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Annuleren</button>
-                </div>
+        <div class="mb-6 flex items-center justify-between">
+            <p id="articlesCount" class="text-lg font-semibold text-gray-700"></p>
+            <button onclick="resetFilters()" class="text-purple-600 hover:text-purple-700 font-semibold text-sm flex items-center gap-1">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                Reset filters
+            </button>
+        </div>
+        <div id="articlesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in"></div>
+        <div id="emptyState" class="hidden text-center py-16">
+            <svg class="w-24 h-24 mx-auto text-gray-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+            <p class="text-xl font-semibold text-gray-500">Geen artikelen gevonden</p>
+            <p class="text-gray-400 mt-2">Probeer een andere zoekterm of filter</p>
+        </div>
+    </div>
+    <div id="notionModal" class="fixed inset-0 modal-overlay bg-black/60 hidden items-center justify-center z-50 p-4">
+        <div class="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl">
+            <button onclick="closeNotionModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
+            <div class="text-center mb-6">
+                <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"><svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h6v6H4V4zm0 10h6v6H4v-6zM14 4h6v6h-6V4zm0 10h6v6h-6v-6z"/></svg></div>
+                <h3 class="text-3xl font-black text-gray-900">Notion Integratie</h3>
+                <p class="text-gray-600 mt-2">Verbind je Notion database</p>
             </div>
-        `;
-        document.body.appendChild(configModal);
-
-        // Load saved Notion config
-        const notionConfig = {
-            token: localStorage.getItem('notion_token') || '',
-            dbId: localStorage.getItem('notion_db_id') || ''
-        };
-
-        // Config button handler
-        document.querySelector('.config-btn').addEventListener('click', () => {
-            document.getElementById('notion-token').value = notionConfig.token;
-            document.getElementById('notion-db-id').value = notionConfig.dbId;
-            configModal.style.display = 'flex';
-        });
-
-        // Save config
-        document.getElementById('save-config').addEventListener('click', () => {
-            notionConfig.token = document.getElementById('notion-token').value;
-            notionConfig.dbId = document.getElementById('notion-db-id').value;
-            localStorage.setItem('notion_token', notionConfig.token);
-            localStorage.setItem('notion_db_id', notionConfig.dbId);
-            configModal.style.display = 'none';
-            showMessage('Configuratie opgeslagen!', 'success');
-        });
-
-        // Cancel config
-        document.getElementById('cancel-config').addEventListener('click', () => {
-            configModal.style.display = 'none';
-        });
-
-        // Close modal on background click
-        configModal.addEventListener('click', (e) => {
-            if (e.target === configModal) {
-                configModal.style.display = 'none';
-            }
-        });
-
-        // Message display function
-        function showMessage(text, type = 'info') {
-            const message = document.createElement('div');
-            message.textContent = text;
-            message.style.cssText = `
-                position: fixed; top: 2rem; right: 2rem; z-index: 2000;
-                padding: 1rem 1.5rem; border-radius: 6px; font-weight: 600;
-                background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#3b82f6'};
-                color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-                animation: slideIn 0.3s ease;
-            `;
-            document.body.appendChild(message);
-            setTimeout(() => {
-                message.style.animation = 'slideOut 0.3s ease';
-                setTimeout(() => message.remove(), 300);
-            }, 3000);
-        }
-
-        // Add CSS animations
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes slideIn {
-                from { transform: translateX(100%); opacity: 0; }
-                to { transform: translateX(0); opacity: 1; }
-            }
-            @keyframes slideOut {
-                from { transform: translateX(0); opacity: 1; }
-                to { transform: translateX(100%); opacity: 0; }
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Search functionality
-        const searchInput = document.querySelector('input[type="text"][placeholder*="Zoek"]');
-        const categorySelect = document.querySelector('select');
-        const sourcesBtn = document.querySelector('.filter-btn');
-        const sourcesTable = document.querySelector('.sources-table');
-
-        let activeFilters = {
-            search: '',
-            category: 'Alle onderwerpen'
-        };
-
-        // Search handler
-        searchInput.addEventListener('input', (e) => {
-            activeFilters.search = e.target.value.toLowerCase();
-            filterArticles();
-        });
-
-        // Category filter handler
-        categorySelect.addEventListener('change', (e) => {
-            activeFilters.category = e.target.value;
-            updateFilterTags();
-            filterArticles();
-        });
-
-        // Filter articles based on active filters
-        function filterArticles() {
-            const allArticles = document.querySelectorAll('.article-card');
-            const searchTerm = activeFilters.search;
-            const category = activeFilters.category;
-
-            allArticles.forEach(article => {
-                const title = article.querySelector('.article-title').textContent.toLowerCase();
-                const desc = article.querySelector('.article-desc').textContent.toLowerCase();
-                const matchesSearch = !searchTerm || title.includes(searchTerm) || desc.includes(searchTerm);
-
-                let matchesCategory = true;
-                if (category !== 'Alle onderwerpen') {
-                    const section = article.closest('section');
-                    const sectionTitle = section?.querySelector('h3')?.textContent || '';
-                    matchesCategory = sectionTitle.includes(category);
-                }
-
-                article.style.display = (matchesSearch && matchesCategory) ? 'block' : 'none';
-            });
-        }
-
-        // Update filter tags
-        function updateFilterTags() {
-            const activeFiltersDiv = document.querySelector('.active-filters');
-            activeFiltersDiv.innerHTML = '';
-
-            if (activeFilters.category !== 'Alle onderwerpen') {
-                const tag = document.createElement('div');
-                tag.className = 'filter-tag';
-                tag.innerHTML = `
-                    <span><strong>Onderwerp:</strong> ${activeFilters.category}</span>
-                    <button>×</button>
-                `;
-                tag.querySelector('button').addEventListener('click', () => {
-                    activeFilters.category = 'Alle onderwerpen';
-                    categorySelect.value = 'Alle onderwerpen';
-                    updateFilterTags();
-                    filterArticles();
-                });
-                activeFiltersDiv.appendChild(tag);
-            }
-
-            if (activeFilters.search) {
-                const tag = document.createElement('div');
-                tag.className = 'filter-tag';
-                tag.innerHTML = `
-                    <span><strong>Zoekterm:</strong> "${activeFilters.search}"</span>
-                    <button>×</button>
-                `;
-                tag.querySelector('button').addEventListener('click', () => {
-                    activeFilters.search = '';
-                    searchInput.value = '';
-                    updateFilterTags();
-                    filterArticles();
-                });
-                activeFiltersDiv.appendChild(tag);
-            }
-        }
-
-        // Toggle sources table
-        let sourcesVisible = false;
-        sourcesBtn.addEventListener('click', () => {
-            sourcesVisible = !sourcesVisible;
-            sourcesTable.style.display = sourcesVisible ? 'table' : 'none';
-            sourcesBtn.textContent = sourcesVisible ? '🔍 Verberg Bronnen' : '🔍 Toon Bronnen';
-        });
-
-        // Push to Notion functionality
-        document.querySelector('.push-btn').addEventListener('click', async () => {
-            if (!notionConfig.token || !notionConfig.dbId) {
-                showMessage('Configureer eerst Notion API instellingen', 'error');
-                return;
-            }
-
-            const topArticles = document.querySelectorAll('.top-article');
-            const articles = Array.from(topArticles).map(article => ({
-                rank: article.dataset.rank,
-                title: article.querySelector('.article-title').textContent,
-                description: article.querySelector('.article-desc').textContent,
-                source: article.querySelector('.article-source').textContent,
-                date: article.querySelector('.article-meta span:last-child').textContent
-            }));
-
-            try {
-                showMessage('Bezig met pushen naar Notion...', 'info');
-
-                for (const article of articles) {
-                    const response = await fetch('https://api.notion.com/v1/pages', {
-                        method: 'POST',
-                        headers: {
-                            'Authorization': `Bearer ${notionConfig.token}`,
-                            'Content-Type': 'application/json',
-                            'Notion-Version': '2022-06-28'
-                        },
-                        body: JSON.stringify({
-                            parent: { database_id: notionConfig.dbId },
-                            properties: {
-                                'Title': {
-                                    title: [{ text: { content: article.title } }]
-                                },
-                                'Rank': {
-                                    number: parseInt(article.rank)
-                                },
-                                'Source': {
-                                    rich_text: [{ text: { content: article.source } }]
-                                },
-                                'Date': {
-                                    rich_text: [{ text: { content: article.date } }]
-                                },
-                                'Description': {
-                                    rich_text: [{ text: { content: article.description } }]
-                                }
-                            }
-                        })
-                    });
-
-                    if (!response.ok) {
-                        throw new Error(`API error: ${response.status}`);
-                    }
-                }
-
-                showMessage('Top 3 artikelen succesvol naar Notion gepusht!', 'success');
-            } catch (error) {
-                console.error('Notion API error:', error);
-                showMessage('Fout bij pushen naar Notion. Check configuratie.', 'error');
-            }
-        });
-
-        // Initialize
-        sourcesTable.style.display = 'none';
-    </script>
+            <div class="space-y-5">
+                <div><label class="block text-sm font-bold text-gray-700 mb-2">Notion API Key *</label><input type="password" id="notionApiKey" placeholder="secret_..." class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:border-purple-500 focus:outline-none"></div>
+                <div><label class="block text-sm font-bold text-gray-700 mb-2">Database ID *</label><input type="text" id="notionDatabaseId" placeholder="abc123..." class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:border-purple-500 focus:outline-none"></div>
+                <button onclick="saveNotionConfig()" class="w-full gradient-bg text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl transition-all">💾 Opslaan & Verbinden</button>
+            </div>
+        </div>
+    </div>
+    <div id="toast" class="fixed bottom-6 right-6 transform translate-y-32 transition-transform duration-300 z-50">
+        <div class="bg-white rounded-xl shadow-2xl p-5 flex items-center gap-4 border border-gray-200 max-w-md">
+            <div id="toastIcon" class="w-10 h-10 rounded-full flex items-center justify-center"></div>
+            <div><p id="toastMessage" class="font-semibold text-gray-900"></p></div>
+        </div>
+    </div>
+    <script src="./news-data.js"></script>
+    <script src="./news-app.js"></script>
 </body>
 </html>
