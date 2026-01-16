@@ -340,30 +340,6 @@ function showToast(message, type = 'info') {
     }
 }
 
-// Batch push top 3 articles
-function pushTopArticles() {
-    if (!notionConfig) {
-        showToast('⚠️ Configureer eerst je Notion integratie', 'warning');
-        openNotionModal();
-        return;
-    }
-    
-    const top3 = newsData.topArticles;
-    let count = 0;
-    
-    top3.forEach((article, index) => {
-        setTimeout(() => {
-            pushArticleToNotion(article, article.category);
-            count++;
-            if (count === top3.length) {
-                setTimeout(() => {
-                    showToast(`✅ Alle ${count} top artikelen gepusht!`, 'success');
-                }, 1000);
-            }
-        }, index * 500);
-    });
-}
-
 // Keyboard shortcuts
 document.addEventListener('keydown', (e) => {
     // Ctrl/Cmd + K to focus search
