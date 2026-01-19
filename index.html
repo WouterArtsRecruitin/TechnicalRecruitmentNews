@@ -3,117 +3,695 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recruitin | Technisch Recruitment Nieuws</title>
-    <meta name="description" content="Technisch recruitment nieuws artikelen met AI, HR Tech, IT Staffing en Notion integratie">
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Technical Recruitment & Engineering Nieuws | Recruitin</title>
+    <meta name="description" content="Technisch recruitment nieuws - Automation, Engineering, Technisch Personeel & Personeelskrapte">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-        * { font-family: 'Inter', sans-serif; }
-        .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
-        .card-hover { transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        .card-hover:hover { transform: translateY(-4px) scale(1.01); box-shadow: 0 20px 40px rgba(102, 126, 234, 0.15); }
-        .category-badge { transition: all 0.2s ease; cursor: pointer; }
-        .category-badge:hover { transform: scale(1.05); }
-        .fade-in { animation: fadeIn 0.5s ease-in; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
-        .stat-card { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.2); }
-        .modal-overlay { backdrop-filter: blur(4px); }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(to bottom right, #f9fafb, #f1f5f9, #fef3c7);
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(to right, #1f2937, #374151, #1f2937);
+            color: white;
+            padding: 2rem;
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+        }
+
+        .header-content { max-width: 80rem; margin: 0 auto; }
+        .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; flex-wrap: wrap; gap: 1rem; }
+        .logo-section { display: flex; align-items: center; gap: 1rem; }
+        .logo-divider { width: 1px; height: 3rem; background: #f59e0b; }
+        h1 { font-size: 1.5rem; font-weight: bold; display: flex; align-items: center; gap: 0.5rem; }
+        .subtext { color: #d1d5db; font-size: 0.875rem; font-style: italic; }
+
+        .config-btn {
+            display: flex; align-items: center; gap: 0.5rem;
+            padding: 0.5rem 1rem; background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.2);
+            color: white; border-radius: 0.5rem;
+            cursor: pointer; transition: all 0.3s;
+            font-size: 0.875rem; font-weight: 500;
+        }
+        .config-btn:hover { background: rgba(255,255,255,0.2); }
+
+        .focus-text { color: #e5e7eb; font-size: 1.125rem; margin: 0.5rem 0; }
+        .date-text { color: #d1d5db; font-size: 0.875rem; display: flex; align-items: center; gap: 0.5rem; }
+
+        .stats {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem; margin-top: 1.5rem;
+        }
+        .stat-card {
+            background: rgba(255,255,255,0.1); padding: 1.5rem;
+            border-radius: 0.5rem; text-align: center; color: white;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .stat-number { font-size: 2rem; font-weight: bold; }
+        .stat-label { font-size: 0.875rem; color: #d1d5db; margin-top: 0.5rem; }
+
+        main { max-width: 80rem; margin: 0 auto; padding: 2rem; }
+
+        .controls {
+            display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;
+        }
+
+        .search-row {
+            display: grid; grid-template-columns: 1fr auto;
+            gap: 1rem;
+        }
+
+        select, input[type="text"] {
+            padding: 0.75rem 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            font-size: 1rem;
+            font-family: inherit;
+            background: white;
+        }
+
+        select { cursor: pointer; }
+        select:focus, input:focus {
+            outline: none;
+            border-color: #f59e0b;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+        }
+
+        .filter-btn {
+            padding: 0.75rem 1.5rem;
+            background: white;
+            border: 1px solid #d1d5db;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+        .filter-btn:hover {
+            background: #fef3c7;
+            border-color: #f59e0b;
+        }
+
+        .active-filters {
+            display: flex; flex-wrap: wrap; gap: 0.5rem;
+        }
+        .filter-tag {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            background: #fef3c7; border: 1px solid #fcd34d;
+            border-radius: 0.5rem; font-size: 0.875rem;
+        }
+        .filter-tag button {
+            background: none; border: none;
+            cursor: pointer; color: #b45309;
+            font-weight: bold; font-size: 1rem;
+        }
+
+        .section-title {
+            font-size: 1.5rem; font-weight: bold;
+            color: #111827; display: flex; align-items: center; gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .title-bar { width: 3rem; height: 0.25rem; border-radius: 9999px; }
+        .title-bar-dark { background: linear-gradient(to right, #374151, #1f2937); }
+        .title-bar-orange { background: linear-gradient(to right, #f97316, #ea580c); }
+
+        .article-card {
+            background: white; padding: 1.5rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            transition: all 0.3s;
+            margin-bottom: 1rem;
+        }
+        .article-card:hover {
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
+            border-color: #f59e0b;
+        }
+
+        .article-title { font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem; }
+        .article-title a { color: inherit; text-decoration: none; }
+        .article-title a:hover { color: #f59e0b; }
+        .article-desc { color: #6b7280; font-size: 0.95rem; margin-bottom: 1rem; }
+        .article-meta {
+            display: flex; gap: 1rem; font-size: 0.875rem;
+            color: #9ca3af; flex-wrap: wrap;
+        }
+        .article-source { color: #f59e0b; font-weight: 600; }
+        .article-category {
+            background: #f3f4f6; padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem; font-size: 0.75rem;
+        }
+
+        .top-articles {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem; margin: 1.5rem 0;
+        }
+        .top-article {
+            background: white; border: 2px solid #f59e0b;
+            border-radius: 0.5rem; padding: 1.5rem;
+            position: relative;
+        }
+        .top-article::before {
+            content: attr(data-rank);
+            position: absolute; top: -1rem; left: 1rem;
+            background: #f59e0b; color: white;
+            width: 2rem; height: 2rem;
+            border-radius: 50%; display: flex;
+            align-items: center; justify-content: center;
+            font-weight: bold; font-size: 1.125rem;
+        }
+
+        .sources-table {
+            width: 100%; border-collapse: collapse;
+            background: white; border-radius: 0.5rem;
+            overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            display: none;
+        }
+        .sources-table.visible { display: table; }
+        .sources-table th {
+            background: #1f2937; color: white;
+            padding: 1rem; text-align: left; font-weight: 600;
+        }
+        .sources-table td {
+            padding: 1rem; border-bottom: 1px solid #e5e7eb;
+        }
+        .sources-table tr:hover { background: #f9fafb; }
+
+        footer {
+            text-align: center; padding: 2rem;
+            border-top: 1px solid #e5e7eb;
+            color: #6b7280; font-size: 0.875rem;
+            margin-top: 2rem;
+        }
+
+        .push-btn {
+            display: inline-flex; align-items: center; gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(to right, #f97316, #ea580c);
+            color: white; border: none; border-radius: 0.5rem;
+            cursor: pointer; font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+        }
+        .push-btn:hover {
+            background: linear-gradient(to right, #ea580c, #c2410c);
+            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
+        }
+
+        .top-articles-section { margin: 2rem 0; }
+        .push-section { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; flex-wrap: wrap; gap: 1rem; }
+
+        .category-section { margin-bottom: 2rem; }
+        .category-header {
+            font-weight: 600; margin-bottom: 1rem; font-size: 1.125rem;
+            display: flex; align-items: center; gap: 0.5rem;
+        }
+
+        .modal-overlay {
+            display: none; position: fixed; top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0,0,0,0.7); z-index: 1000;
+            align-items: center; justify-content: center;
+        }
+        .modal-overlay.visible { display: flex; }
+        .modal-content {
+            background: white; padding: 2rem; border-radius: 8px;
+            max-width: 500px; width: 90%;
+        }
+        .modal-content h3 { margin-bottom: 1rem; color: #1f2937; }
+        .modal-content label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: #374151; }
+        .modal-content input {
+            width: 100%; padding: 0.75rem;
+            border: 1px solid #d1d5db; border-radius: 6px;
+            font-family: monospace; margin-bottom: 1rem;
+        }
+        .modal-buttons { display: flex; gap: 1rem; }
+        .modal-buttons button {
+            flex: 1; padding: 0.75rem; border: none;
+            border-radius: 6px; font-weight: 600; cursor: pointer;
+        }
+        .btn-save { background: #f59e0b; color: white; }
+        .btn-cancel { background: #6b7280; color: white; }
+
+        .toast {
+            position: fixed; top: 2rem; right: 2rem; z-index: 2000;
+            padding: 1rem 1.5rem; border-radius: 6px; font-weight: 600;
+            color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transform: translateX(150%); transition: transform 0.3s ease;
+        }
+        .toast.visible { transform: translateX(0); }
+        .toast.success { background: #10b981; }
+        .toast.error { background: #ef4444; }
+        .toast.info { background: #3b82f6; }
+
+        .hidden { display: none !important; }
+
+        @media (max-width: 768px) {
+            h1 { font-size: 1.25rem; }
+            .search-row { grid-template-columns: 1fr; }
+            .logo-section { flex-wrap: wrap; }
+            .top-articles { grid-template-columns: 1fr; }
+            .push-section { flex-direction: column; align-items: stretch; }
+        }
     </style>
 </head>
-<body class="bg-gradient-to-br from-gray-50 via-purple-50 to-pink-50 min-h-screen">
-    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-purple-100">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
-            <div class="flex items-center justify-between">
-                <div class="flex items-center space-x-4">
-                    <div class="gradient-bg px-6 py-3 rounded-xl shadow-lg">
-                        <h1 class="text-white text-2xl font-black tracking-tight">RECRUITIN</h1>
-                    </div>
-                    <div class="hidden md:block">
-                        <p class="text-gray-700 text-sm font-semibold">Technisch Recruitment Nieuws</p>
-                        <p class="text-gray-500 text-xs"><span id="headerArticleCount">0</span> Artikelen · <span id="headerCategoryCount">0</span> Categorieën</p>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-top">
+                <div class="logo-section">
+                    <strong style="font-size: 1.25rem;">Recruitin</strong>
+                    <div class="logo-divider"></div>
+                    <div>
+                        <h1>📈 Technical Recruitment & Engineering Nieuws</h1>
+                        <p class="subtext">the right people, right now</p>
                     </div>
                 </div>
-                <button onclick="openNotionModal()" class="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-purple-700 hover:to-purple-800 transition-all shadow-md hover:shadow-lg flex items-center gap-2">
-                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h6v6H4V4zm0 10h6v6H4v-6zM14 4h6v6h-6V4zm0 10h6v6h-6v-6z"/></svg>
-                    <span class="hidden md:inline">Push naar Notion</span>
-                    <span class="md:hidden">Notion</span>
-                </button>
+                <button class="config-btn" onclick="openNotionModal()">⚙️ Notion Setup</button>
+            </div>
+
+            <p class="focus-text">Focus: Automation, Engineering, Technisch Personeel & Personeelskrapte</p>
+            <p class="date-text" id="currentDate">📅 Laden...</p>
+
+            <div class="stats">
+                <div class="stat-card">
+                    <div class="stat-number" id="statArticles">0</div>
+                    <div class="stat-label">Recruitment Artikelen</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="statSources">0</div>
+                    <div class="stat-label">Unieke Bronnen</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="statCategories">0</div>
+                    <div class="stat-label">Categorieën</div>
+                </div>
             </div>
         </div>
     </header>
-    <div class="gradient-bg text-white py-16 relative overflow-hidden">
-        <div class="absolute inset-0 opacity-10">
-            <div class="absolute top-10 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
-            <div class="absolute bottom-10 right-10 w-96 h-96 bg-pink-300 rounded-full blur-3xl"></div>
+
+    <main>
+        <div class="controls">
+            <div class="search-row">
+                <select id="categorySelect">
+                    <option value="">Alle onderwerpen</option>
+                </select>
+                <button class="filter-btn" id="toggleSourcesBtn">🔍 Toon Bronnen</button>
+            </div>
+
+            <div class="search-row">
+                <input type="text" id="searchInput" placeholder="Zoek in artikelen..." />
+            </div>
+
+            <div class="active-filters" id="activeFilters"></div>
         </div>
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="text-center">
-                <h2 class="text-4xl md:text-6xl font-black mb-4 tracking-tight">Technisch Recruitment Nieuws</h2>
-                <p class="text-xl md:text-2xl text-purple-100 mb-10 font-medium max-w-3xl mx-auto">De laatste ontwikkelingen in AI, HR Tech, IT Staffing en Recruitment Software</p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <div class="stat-card px-8 py-5 rounded-2xl border border-white/30 shadow-xl">
-                        <div id="heroArticleCount" class="text-4xl md:text-5xl font-black">0</div>
-                        <div class="text-sm text-purple-100 font-semibold mt-1">Artikelen</div>
+
+        <!-- TOP 3 ARTICLES -->
+        <div class="top-articles-section">
+            <div class="push-section">
+                <div class="section-title">
+                    <div class="title-bar title-bar-orange"></div>
+                    Top 3 van deze Week
+                </div>
+                <button class="push-btn" onclick="pushTopToNotion()">⚡ Push Top 3 naar Notion</button>
+            </div>
+
+            <div class="top-articles" id="topArticlesContainer"></div>
+        </div>
+
+        <!-- SOURCES TABLE -->
+        <div style="margin: 2rem 0;">
+            <table class="sources-table" id="sourcesTable">
+                <thead>
+                    <tr>
+                        <th>Bron</th>
+                        <th>Artikelen</th>
+                    </tr>
+                </thead>
+                <tbody id="sourcesTableBody"></tbody>
+            </table>
+        </div>
+
+        <!-- ARTICLES BY CATEGORY -->
+        <div>
+            <div class="section-title">
+                <div class="title-bar title-bar-dark"></div>
+                Artikelen per Categorie
+            </div>
+
+            <div id="categoriesContainer"></div>
+        </div>
+    </main>
+
+    <footer>
+        <p id="footerText">Automatisch bijgewerkt</p>
+        <p style="margin-top: 0.5rem;">Powered by Recruitin News Scraper</p>
+    </footer>
+
+    <!-- Notion Modal -->
+    <div class="modal-overlay" id="notionModal">
+        <div class="modal-content">
+            <h3>⚙️ Notion API Configuratie</h3>
+            <div>
+                <label>Notion Integration Token</label>
+                <input type="password" id="notionToken" placeholder="secret_...">
+            </div>
+            <div>
+                <label>Database ID</label>
+                <input type="text" id="notionDbId" placeholder="abc123...">
+            </div>
+            <div class="modal-buttons">
+                <button class="btn-save" onclick="saveNotionConfig()">Opslaan</button>
+                <button class="btn-cancel" onclick="closeNotionModal()">Annuleren</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast -->
+    <div class="toast" id="toast"></div>
+
+    <script src="./news-data.js"></script>
+    <script>
+        // State
+        let selectedCategory = '';
+        let searchTerm = '';
+        let notionConfig = JSON.parse(localStorage.getItem('recruitin_notion_config') || 'null');
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            updateStats();
+            renderTopArticles();
+            renderCategories();
+            renderSourcesTable();
+            setupEventListeners();
+            updateDate();
+        });
+
+        // Update statistics
+        function updateStats() {
+            const articles = getAllArticles();
+            const categories = getUniqueCategories();
+            const sources = new Set(articles.map(a => a.source));
+
+            document.getElementById('statArticles').textContent = articles.length;
+            document.getElementById('statSources').textContent = sources.size;
+            document.getElementById('statCategories').textContent = categories.length;
+            document.getElementById('searchInput').placeholder = `Zoek in ${articles.length} artikelen...`;
+        }
+
+        // Update date
+        function updateDate() {
+            const now = new Date();
+            const options = { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+            document.getElementById('currentDate').textContent = '📅 ' + now.toLocaleDateString('nl-NL', options);
+            document.getElementById('footerText').textContent = `Laatst bijgewerkt: ${now.toLocaleDateString('nl-NL', options)}`;
+        }
+
+        // Render top 3 articles
+        function renderTopArticles() {
+            const container = document.getElementById('topArticlesContainer');
+            const topArticles = newsData.topArticles.slice(0, 3);
+
+            container.innerHTML = topArticles.map(article => `
+                <div class="top-article" data-rank="${article.rank}">
+                    <div class="article-title">
+                        <a href="${article.url}" target="_blank" rel="noopener">${article.title}</a>
                     </div>
-                    <div class="stat-card px-8 py-5 rounded-2xl border border-white/30 shadow-xl">
-                        <div id="heroCategoryCount" class="text-4xl md:text-5xl font-black">0</div>
-                        <div class="text-sm text-purple-100 font-semibold mt-1">Categorieën</div>
-                    </div>
-                    <div class="stat-card px-8 py-5 rounded-2xl border border-white/30 shadow-xl">
-                        <div class="text-4xl md:text-5xl font-black">24/7</div>
-                        <div class="text-sm text-purple-100 font-semibold mt-1">Updates</div>
+                    <div class="article-desc">${stripHtml(article.description).substring(0, 150)}...</div>
+                    <div class="article-meta">
+                        <span class="article-source">${article.source}</span>
+                        <span>${article.date}</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="mb-10 fade-in">
-            <div class="relative">
-                <svg class="absolute left-5 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                <input type="text" id="searchInput" placeholder="Zoek in artikelen..." class="w-full pl-14 pr-6 py-5 rounded-2xl border-2 border-gray-200 focus:border-purple-500 focus:outline-none text-lg shadow-md hover:shadow-lg transition-all bg-white">
-            </div>
-        </div>
-        <div class="mb-12 fade-in">
-            <h3 class="text-3xl font-black text-gray-900 mb-6 flex items-center gap-3"><span class="text-3xl">📂</span> Categorieën</h3>
-            <div id="categoryFilter" class="flex flex-wrap gap-3"></div>
-        </div>
-        <div class="mb-6 flex items-center justify-between">
-            <p id="articlesCount" class="text-lg font-semibold text-gray-700"></p>
-            <button onclick="resetFilters()" class="text-purple-600 hover:text-purple-700 font-semibold text-sm flex items-center gap-1">
-                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
-                Reset filters
-            </button>
-        </div>
-        <div id="articlesContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 fade-in"></div>
-        <div id="emptyState" class="hidden text-center py-16">
-            <svg class="w-24 h-24 mx-auto text-gray-300 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-            <p class="text-xl font-semibold text-gray-500">Geen artikelen gevonden</p>
-            <p class="text-gray-400 mt-2">Probeer een andere zoekterm of filter</p>
-        </div>
-    </div>
-    <div id="notionModal" class="fixed inset-0 modal-overlay bg-black/60 hidden items-center justify-center z-50 p-4">
-        <div class="bg-white rounded-3xl max-w-lg w-full p-8 relative shadow-2xl">
-            <button onclick="closeNotionModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600"><svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg></button>
-            <div class="text-center mb-6">
-                <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg"><svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M4 4h6v6H4V4zm0 10h6v6H4v-6zM14 4h6v6h-6V4zm0 10h6v6h-6v-6z"/></svg></div>
-                <h3 class="text-3xl font-black text-gray-900">Notion Integratie</h3>
-                <p class="text-gray-600 mt-2">Verbind je Notion database</p>
-            </div>
-            <div class="space-y-5">
-                <div><label class="block text-sm font-bold text-gray-700 mb-2">Notion API Key *</label><input type="password" id="notionApiKey" placeholder="secret_..." class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:border-purple-500 focus:outline-none"></div>
-                <div><label class="block text-sm font-bold text-gray-700 mb-2">Database ID *</label><input type="text" id="notionDatabaseId" placeholder="abc123..." class="w-full px-4 py-3.5 border-2 border-gray-200 rounded-xl focus:border-purple-500 focus:outline-none"></div>
-                <button onclick="saveNotionConfig()" class="w-full gradient-bg text-white py-4 rounded-xl font-bold text-lg hover:shadow-xl transition-all">💾 Opslaan & Verbinden</button>
-            </div>
-        </div>
-    </div>
-    <div id="toast" class="fixed bottom-6 right-6 transform translate-y-32 transition-transform duration-300 z-50">
-        <div class="bg-white rounded-xl shadow-2xl p-5 flex items-center gap-4 border border-gray-200 max-w-md">
-            <div id="toastIcon" class="w-10 h-10 rounded-full flex items-center justify-center"></div>
-            <div><p id="toastMessage" class="font-semibold text-gray-900"></p></div>
-        </div>
-    </div>
-    <script src="./news-data.js"></script>
-    <script src="./news-app.js"></script>
+            `).join('');
+        }
+
+        // Render categories dropdown and articles
+        function renderCategories() {
+            const categories = getUniqueCategories();
+            const select = document.getElementById('categorySelect');
+
+            // Populate dropdown
+            select.innerHTML = '<option value="">Alle onderwerpen</option>' +
+                categories.map(cat => `<option value="${cat.title}">${cat.title} (${cat.count})</option>`).join('');
+
+            // Render articles by category
+            renderArticlesByCategory();
+        }
+
+        // Render articles grouped by category
+        function renderArticlesByCategory() {
+            const container = document.getElementById('categoriesContainer');
+            const categories = newsData.categories;
+
+            let html = '';
+
+            categories.forEach(category => {
+                // Filter by selected category
+                if (selectedCategory && category.title !== selectedCategory) return;
+
+                // Filter articles by search
+                let articles = category.articles;
+                if (searchTerm) {
+                    articles = articles.filter(a =>
+                        a.title.toLowerCase().includes(searchTerm) ||
+                        a.description.toLowerCase().includes(searchTerm) ||
+                        a.source.toLowerCase().includes(searchTerm)
+                    );
+                }
+
+                if (articles.length === 0) return;
+
+                const emoji = getCategoryEmoji(category.title);
+
+                html += `
+                    <div class="category-section">
+                        <h3 class="category-header">${emoji} ${category.title}</h3>
+                        ${articles.slice(0, 5).map(article => `
+                            <div class="article-card">
+                                <div class="article-title">
+                                    <a href="${article.url}" target="_blank" rel="noopener">${article.title}</a>
+                                </div>
+                                <div class="article-desc">${stripHtml(article.description).substring(0, 200)}...</div>
+                                <div class="article-meta">
+                                    <span class="article-source">${article.source}</span>
+                                    <span>${article.date}</span>
+                                    <button class="push-btn" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;"
+                                            onclick="pushSingleToNotion('${escapeQuotes(article.title)}', '${article.url}', '${article.source}', '${category.title}')">
+                                        Push
+                                    </button>
+                                </div>
+                            </div>
+                        `).join('')}
+                    </div>
+                `;
+            });
+
+            container.innerHTML = html || '<p style="text-align: center; color: #6b7280;">Geen artikelen gevonden</p>';
+        }
+
+        // Render sources table
+        function renderSourcesTable() {
+            const articles = getAllArticles();
+            const sourceCount = {};
+
+            articles.forEach(a => {
+                sourceCount[a.source] = (sourceCount[a.source] || 0) + 1;
+            });
+
+            const sorted = Object.entries(sourceCount).sort((a, b) => b[1] - a[1]);
+
+            document.getElementById('sourcesTableBody').innerHTML = sorted.map(([source, count]) => `
+                <tr>
+                    <td><strong>${source}</strong></td>
+                    <td>${count}</td>
+                </tr>
+            `).join('');
+        }
+
+        // Setup event listeners
+        function setupEventListeners() {
+            document.getElementById('searchInput').addEventListener('input', (e) => {
+                searchTerm = e.target.value.toLowerCase();
+                updateFilterTags();
+                renderArticlesByCategory();
+            });
+
+            document.getElementById('categorySelect').addEventListener('change', (e) => {
+                selectedCategory = e.target.value;
+                updateFilterTags();
+                renderArticlesByCategory();
+            });
+
+            document.getElementById('toggleSourcesBtn').addEventListener('click', () => {
+                const table = document.getElementById('sourcesTable');
+                const btn = document.getElementById('toggleSourcesBtn');
+                table.classList.toggle('visible');
+                btn.textContent = table.classList.contains('visible') ? '🔍 Verberg Bronnen' : '🔍 Toon Bronnen';
+            });
+
+            document.getElementById('notionModal').addEventListener('click', (e) => {
+                if (e.target.id === 'notionModal') closeNotionModal();
+            });
+        }
+
+        // Update filter tags
+        function updateFilterTags() {
+            const container = document.getElementById('activeFilters');
+            let html = '';
+
+            if (selectedCategory) {
+                html += `
+                    <div class="filter-tag">
+                        <span><strong>Categorie:</strong> ${selectedCategory}</span>
+                        <button onclick="clearCategoryFilter()">×</button>
+                    </div>
+                `;
+            }
+
+            if (searchTerm) {
+                html += `
+                    <div class="filter-tag">
+                        <span><strong>Zoekterm:</strong> "${searchTerm}"</span>
+                        <button onclick="clearSearchFilter()">×</button>
+                    </div>
+                `;
+            }
+
+            container.innerHTML = html;
+        }
+
+        function clearCategoryFilter() {
+            selectedCategory = '';
+            document.getElementById('categorySelect').value = '';
+            updateFilterTags();
+            renderArticlesByCategory();
+        }
+
+        function clearSearchFilter() {
+            searchTerm = '';
+            document.getElementById('searchInput').value = '';
+            updateFilterTags();
+            renderArticlesByCategory();
+        }
+
+        // Notion functions
+        function openNotionModal() {
+            if (notionConfig) {
+                document.getElementById('notionToken').value = notionConfig.apiKey || '';
+                document.getElementById('notionDbId').value = notionConfig.databaseId || '';
+            }
+            document.getElementById('notionModal').classList.add('visible');
+        }
+
+        function closeNotionModal() {
+            document.getElementById('notionModal').classList.remove('visible');
+        }
+
+        function saveNotionConfig() {
+            const token = document.getElementById('notionToken').value.trim();
+            const dbId = document.getElementById('notionDbId').value.trim();
+
+            if (!token || !dbId) {
+                showToast('Vul beide velden in', 'error');
+                return;
+            }
+
+            notionConfig = { apiKey: token, databaseId: dbId };
+            localStorage.setItem('recruitin_notion_config', JSON.stringify(notionConfig));
+            closeNotionModal();
+            showToast('Configuratie opgeslagen!', 'success');
+        }
+
+        async function pushTopToNotion() {
+            if (!notionConfig) {
+                showToast('Configureer eerst Notion', 'error');
+                openNotionModal();
+                return;
+            }
+
+            showToast('Bezig met pushen...', 'info');
+
+            const topArticles = newsData.topArticles.slice(0, 3);
+
+            for (const article of topArticles) {
+                await pushToNotion(article.title, article.url, article.source, article.category, article.date);
+            }
+
+            showToast('Top 3 naar Notion gepusht!', 'success');
+        }
+
+        async function pushSingleToNotion(title, url, source, category) {
+            if (!notionConfig) {
+                showToast('Configureer eerst Notion', 'error');
+                openNotionModal();
+                return;
+            }
+
+            await pushToNotion(title, url, source, category);
+            showToast('Artikel gepusht!', 'success');
+        }
+
+        async function pushToNotion(title, url, source, category, date) {
+            try {
+                await fetch('https://api.notion.com/v1/pages', {
+                    method: 'POST',
+                    headers: {
+                        'Authorization': `Bearer ${notionConfig.apiKey}`,
+                        'Content-Type': 'application/json',
+                        'Notion-Version': '2022-06-28'
+                    },
+                    body: JSON.stringify({
+                        parent: { database_id: notionConfig.databaseId },
+                        properties: {
+                            'Titel': { title: [{ text: { content: title } }] },
+                            'URL': { url: url },
+                            'Bron': { rich_text: [{ text: { content: source } }] },
+                            'Categorie': { select: { name: category } }
+                        }
+                    })
+                });
+            } catch (error) {
+                console.error('Notion error:', error);
+            }
+        }
+
+        // Toast
+        function showToast(message, type = 'info') {
+            const toast = document.getElementById('toast');
+            toast.textContent = message;
+            toast.className = `toast visible ${type}`;
+            setTimeout(() => toast.classList.remove('visible'), 3000);
+        }
+
+        // Helpers
+        function stripHtml(html) {
+            return html.replace(/<[^>]*>/g, '');
+        }
+
+        function escapeQuotes(str) {
+            return str.replace(/'/g, "\\'").replace(/"/g, '\\"');
+        }
+
+        function getCategoryEmoji(category) {
+            const map = {
+                'Technisch Personeel Tekort & Personeelskrapte': '⚠️',
+                'Automation & Engineering Recruitment': '🤖',
+                'Salarissen & Arbeidsvoorwaarden Techniek 2026': '💰',
+                'AI & Recruitment Tech Trends 2026': '🚀',
+                'HR Trends & Arbeidsmarkt 2026': '📊',
+                'Elektrotechniek & Installatietechniek': '⚡',
+                'Werktuigbouwkunde & Mechanical Engineering': '⚙️',
+                'Manufacturing & Industrial Recruitment': '🏭',
+                'Regionale Arbeidsmarkten': '🗺️',
+                'Duurzame Energie & Toekomst': '🌱',
+                'IT & Software Development': '💻',
+                'Cybersecurity & Data Science': '🔐'
+            };
+            return map[category] || '📌';
+        }
+    </script>
 </body>
 </html>
