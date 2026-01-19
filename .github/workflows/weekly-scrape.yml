@@ -1,0 +1,82 @@
+name: Weekly News Scraper
+
+on:
+  # Draait elke maandag om 07:00 UTC (08:00 CET)
+  schedule:
+    - cron: '0 7 * * 1'
+
+  # Handmatig triggeren mogelijk
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (geen wijzigingen opslaan)'
+        required: false
+        default: 'false'
+        type: boolean
+
+jobs:
+  scrape-news:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run scraper
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
+            npm run test
+          else
+            npm run scrape
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet news-data.js; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "Geen nieuwe artikelen gevonden"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Nieuwe artikelen gevonden!"
+          fi
+
+      - name: Commit and push changes
+        if: steps.changes.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add news-data.js
+          git commit -m "$(cat <<'EOF'
+          Automatische update: Nieuwe recruitment nieuws artikelen
+
+          Gescraped op: $(date -u +"%Y-%m-%d %H:%M UTC")
+          EOF
+          )"
+          git push
+
+      - name: Summary
+        run: |
+          echo "## Scraper Resultaat" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.changes.outputs.changed }}" == "true" ]; then
+            echo "Nieuwe artikelen zijn toegevoegd aan news-data.js" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "Geen nieuwe artikelen gevonden deze week" >> $GITHUB_STEP_SUMMARY
+          fi
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Laatste run: $(date -u +"%Y-%m-%d %H:%M UTC")" >> $GITHUB_STEP_SUMMARY
