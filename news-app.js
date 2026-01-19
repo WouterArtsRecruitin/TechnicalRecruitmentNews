@@ -9,10 +9,33 @@ const NOTION_CONFIG_KEY = 'recruitin_notion_config';
 // Initialize app
 document.addEventListener('DOMContentLoaded', () => {
     loadNotionConfig();
+    updateStats();
     renderCategories();
     renderArticles();
     setupSearchListener();
 });
+
+// Update statistics in header and hero
+function updateStats() {
+    const totalArticles = getAllArticles().length;
+    const totalCategories = getUniqueCategories().length;
+
+    // Update header stats
+    const headerArticleCount = document.getElementById('headerArticleCount');
+    const headerCategoryCount = document.getElementById('headerCategoryCount');
+    if (headerArticleCount) headerArticleCount.textContent = totalArticles;
+    if (headerCategoryCount) headerCategoryCount.textContent = totalCategories;
+
+    // Update hero stats
+    const heroArticleCount = document.getElementById('heroArticleCount');
+    const heroCategoryCount = document.getElementById('heroCategoryCount');
+    if (heroArticleCount) heroArticleCount.textContent = totalArticles;
+    if (heroCategoryCount) heroCategoryCount.textContent = totalCategories;
+
+    // Update search placeholder
+    const searchInput = document.getElementById('searchInput');
+    if (searchInput) searchInput.placeholder = `Zoek in ${totalArticles} artikelen...`;
+}
 
 // Load Notion config from localStorage
 function loadNotionConfig() {

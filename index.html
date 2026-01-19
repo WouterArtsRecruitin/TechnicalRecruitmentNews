@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recruitin | Technisch Recruitment Nieuws</title>
-    <meta name="description" content="203 Technisch recruitment nieuws artikelen met AI, HR Tech, IT Staffing en Notion integratie">
+    <meta name="description" content="Technisch recruitment nieuws artikelen met AI, HR Tech, IT Staffing en Notion integratie">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
@@ -30,7 +30,7 @@
                     </div>
                     <div class="hidden md:block">
                         <p class="text-gray-700 text-sm font-semibold">Technisch Recruitment Nieuws</p>
-                        <p class="text-gray-500 text-xs">203 Artikelen · 12 Categorieën</p>
+                        <p class="text-gray-500 text-xs"><span id="headerArticleCount">0</span> Artikelen · <span id="headerCategoryCount">0</span> Categorieën</p>
                     </div>
                 </div>
                 <button onclick="openNotionModal()" class="bg-gradient-to-r from-purple-600 to-purple-700 text-white px-6 py-2.5 rounded-lg font-semibold hover:from-purple-700 hover:to-purple-800 transition-all shadow-md hover:shadow-lg flex items-center gap-2">
@@ -52,11 +52,11 @@
                 <p class="text-xl md:text-2xl text-purple-100 mb-10 font-medium max-w-3xl mx-auto">De laatste ontwikkelingen in AI, HR Tech, IT Staffing en Recruitment Software</p>
                 <div class="flex flex-wrap justify-center gap-4">
                     <div class="stat-card px-8 py-5 rounded-2xl border border-white/30 shadow-xl">
-                        <div class="text-4xl md:text-5xl font-black">203</div>
+                        <div id="heroArticleCount" class="text-4xl md:text-5xl font-black">0</div>
                         <div class="text-sm text-purple-100 font-semibold mt-1">Artikelen</div>
                     </div>
                     <div class="stat-card px-8 py-5 rounded-2xl border border-white/30 shadow-xl">
-                        <div class="text-4xl md:text-5xl font-black">12</div>
+                        <div id="heroCategoryCount" class="text-4xl md:text-5xl font-black">0</div>
                         <div class="text-sm text-purple-100 font-semibold mt-1">Categorieën</div>
                     </div>
                     <div class="stat-card px-8 py-5 rounded-2xl border border-white/30 shadow-xl">
@@ -71,7 +71,7 @@
         <div class="mb-10 fade-in">
             <div class="relative">
                 <svg class="absolute left-5 top-1/2 transform -translate-y-1/2 w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
-                <input type="text" id="searchInput" placeholder="Zoek in 203 artikelen..." class="w-full pl-14 pr-6 py-5 rounded-2xl border-2 border-gray-200 focus:border-purple-500 focus:outline-none text-lg shadow-md hover:shadow-lg transition-all bg-white">
+                <input type="text" id="searchInput" placeholder="Zoek in artikelen..." class="w-full pl-14 pr-6 py-5 rounded-2xl border-2 border-gray-200 focus:border-purple-500 focus:outline-none text-lg shadow-md hover:shadow-lg transition-all bg-white">
             </div>
         </div>
         <div class="mb-12 fade-in">
