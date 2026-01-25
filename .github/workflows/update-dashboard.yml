@@ -1,0 +1,160 @@
+name: Update News Dashboard
+
+on:
+  # Handmatig triggeren
+  workflow_dispatch:
+    inputs:
+      source:
+        description: 'Source of HTML'
+        required: true
+        default: 'intelligence-hub'
+        type: choice
+        options:
+          - intelligence-hub
+          - local-upload
+
+  # Automatisch elke maandag na intelligence-hub scrape
+  schedule:
+    - cron: '30 7 * * 1'  # Monday 08:30 CET (30 min na intelligence-hub)
+
+permissions:
+  contents: write
+
+jobs:
+  update-dashboard:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout TechnicalRecruitmentNews
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Checkout intelligence-hub
+        uses: actions/checkout@v4
+        with:
+          repository: WouterArtsRecruitin/intelligence-hub
+          path: intelligence-hub
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: intelligence-hub/recruitin-mcp-servers
+        run: npm install
+
+      - name: Run news scraper
+        working-directory: intelligence-hub/recruitin-mcp-servers
+        run: node generate-news-report-now.js
+        env:
+          BRAVE_API_KEY: ${{ secrets.BRAVE_API_KEY }}
+
+      - name: Select top articles
+        working-directory: intelligence-hub/recruitin-mcp-servers
+        run: node select-top-articles.js
+
+      - name: Upload to Notion
+        working-directory: intelligence-hub/recruitin-mcp-servers
+        run: node upload-to-correct-notion.js
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+        continue-on-error: true
+
+      - name: Copy HTML to dashboard
+        run: |
+          DATE=$(date +%Y-%m-%d)
+          HTML_FILE="intelligence-hub/recruitin-mcp-servers/reports/recruitment-news-${DATE}.html"
+
+          if [ -f "$HTML_FILE" ]; then
+            cp "$HTML_FILE" index.html
+            echo "✅ HTML copied: $HTML_FILE"
+          else
+            # Fallback: gebruik meest recente HTML
+            LATEST=$(ls -t intelligence-hub/recruitin-mcp-servers/reports/recruitment-news-*.html | head -1)
+            cp "$LATEST" index.html
+            echo "✅ Copied latest HTML: $LATEST"
+          fi
+
+      - name: Check for changes
+        id: changes
+        run: |
+          if git diff --quiet index.html; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "⚠️ Geen wijzigingen in dashboard"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+
+            # Count articles in new HTML
+            ARTICLE_COUNT=$(grep -o 'class="article-card"' index.html | wc -l | tr -d ' ')
+            echo "article_count=$ARTICLE_COUNT" >> $GITHUB_OUTPUT
+            echo "✅ Dashboard updated met $ARTICLE_COUNT artikelen"
+          fi
+
+      - name: Commit and push
+        if: steps.changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add index.html
+
+          DATE=$(date +"%d %B %Y")
+          ARTICLES="${{ steps.changes.outputs.article_count }}"
+
+          git commit -m "🤖 Auto-update: Weekly recruitment news - $DATE
+
+- $ARTICLES technical recruitment artikelen
+- Top 10 geselecteerd met AI scoring
+- Data uploaded naar Notion database
+- Automated by GitHub Actions
+
+[skip ci]"
+
+          git push
+
+      - name: Create deployment summary
+        if: always()
+        run: |
+          echo "## 📊 News Dashboard Update" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Date:** $(date '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "**Articles:** ${{ steps.changes.outputs.article_count || 'N/A' }}" >> $GITHUB_STEP_SUMMARY
+          echo "**Changed:** ${{ steps.changes.outputs.changed }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ "${{ steps.changes.outputs.changed }}" == "true" ]; then
+            echo "### ✅ Dashboard Updated" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "- HTML copied from intelligence-hub" >> $GITHUB_STEP_SUMMARY
+            echo "- Top 10 uploaded to Notion" >> $GITHUB_STEP_SUMMARY
+            echo "- Changes committed to GitHub" >> $GITHUB_STEP_SUMMARY
+            echo "- Netlify will auto-deploy" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "🌐 **Live Site:** [TechnicalRecruitmentNews](https://technicalrecruitmentnews.netlify.app)" >> $GITHUB_STEP_SUMMARY
+            echo "📊 **Notion:** [Articles Database](https://www.notion.so/2421f7a1ca0141b0994d3fafab3e6eb7)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "### ℹ️ No Changes" >> $GITHUB_STEP_SUMMARY
+            echo "Dashboard is already up to date" >> $GITHUB_STEP_SUMMARY
+          fi
+
+      - name: Send Slack notification
+        if: steps.changes.outputs.changed == 'true' && secrets.SLACK_WEBHOOK_URL != ''
+        run: |
+          curl -X POST ${{ secrets.SLACK_WEBHOOK_URL }} \
+            -H 'Content-Type: application/json' \
+            -d '{
+              "text": "📰 News Dashboard Updated",
+              "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "*Technical Recruitment News* 🟢\n✅ Dashboard updated with ${{ steps.changes.outputs.article_count }} articles\n📊 Top 10 uploaded to Notion\n\n🌐 Live: https://technicalrecruitmentnews.netlify.app"
+                  }
+                }
+              ]
+            }'
+        continue-on-error: true
