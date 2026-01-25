@@ -1,683 +1,881 @@
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Technical Recruitment & Engineering Nieuws</title>
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { 
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: linear-gradient(to bottom right, #f9fafb, #f1f5f9, #fef3c7);
-            color: #1f2937;
-            line-height: 1.6;
-        }
-        
-        header {
-            background: linear-gradient(to right, #1f2937, #374151, #1f2937);
-            color: white;
-            padding: 2rem;
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
-        }
-        
-        .header-content { max-width: 80rem; margin: 0 auto; }
-        .header-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
-        .logo-section { display: flex; align-items: center; gap: 1rem; }
-        .logo-divider { width: 1px; height: 3rem; background: #f59e0b; }
-        h1 { font-size: 1.5rem; font-weight: bold; display: flex; align-items: center; gap: 0.5rem; }
-        .subtext { color: #d1d5db; font-size: 0.875rem; font-style: italic; }
-        
-        .config-btn {
-            display: flex; align-items: center; gap: 0.5rem;
-            padding: 0.5rem 1rem; background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white; border-radius: 0.5rem;
-            cursor: pointer; transition: all 0.3s;
-            font-size: 0.875rem; font-weight: 500;
-        }
-        .config-btn:hover { background: rgba(255,255,255,0.2); }
-        
-        .focus-text { color: #e5e7eb; font-size: 1.125rem; margin: 0.5rem 0; }
-        .date-text { color: #d1d5db; font-size: 0.875rem; display: flex; align-items: center; gap: 0.5rem; }
-        
-        .stats { 
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem; margin-top: 1.5rem;
-        }
-        .stat-card {
-            background: rgba(255,255,255,0.1); padding: 1.5rem;
-            border-radius: 0.5rem; text-align: center; color: white;
-            border: 1px solid rgba(255,255,255,0.1);
-        }
-        .stat-number { font-size: 2rem; font-weight: bold; }
-        .stat-label { font-size: 0.875rem; color: #d1d5db; margin-top: 0.5rem; }
-        
-        main { max-width: 80rem; margin: 0 auto; padding: 2rem; }
-        
-        .controls {
-            display: flex; flex-direction: column; gap: 1rem; margin-bottom: 2rem;
-        }
-        
-        .search-row {
-            display: grid; grid-template-columns: 1fr auto;
-            gap: 1rem;
-        }
-        
-        select, input[type="text"] {
-            padding: 0.75rem 1rem;
-            border: 1px solid #d1d5db;
-            border-radius: 0.5rem;
-            font-size: 1rem;
-            font-family: inherit;
-        }
-        
-        select { cursor: pointer; }
-        select:focus, input:focus {
-            outline: none;
-            ring: 2px #f59e0b;
-            border-color: #f59e0b;
-            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
-        }
-        
-        .filter-btn {
-            padding: 0.75rem 1.5rem;
-            background: white;
-            border: 1px solid #d1d5db;
-            border-radius: 0.5rem;
-            cursor: pointer;
-            font-weight: 500;
-            transition: all 0.3s;
-        }
-        .filter-btn:hover {
-            background: #fef3c7;
-            border-color: #f59e0b;
-        }
-        
-        .active-filters {
-            display: flex; flex-wrap: wrap; gap: 0.5rem;
-        }
-        .filter-tag {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            padding: 0.5rem 1rem;
-            background: #fef3c7; border: 1px solid #fcd34d;
-            border-radius: 0.5rem; font-size: 0.875rem;
-        }
-        .filter-tag button {
-            background: none; border: none;
-            cursor: pointer; color: #b45309;
-            font-weight: bold;
-        }
-        
-        .content-grid {
-            display: grid; grid-template-columns: 1fr;
-            gap: 2rem;
-        }
-        
-        .section-title {
-            font-size: 1.5rem; font-weight: bold;
-            color: #111827; display: flex; align-items: center; gap: 0.5rem;
-            margin-bottom: 1.5rem;
-        }
-        .title-bar { width: 3rem; height: 0.25rem; border-radius: 9999px; }
-        .title-bar-dark { background: linear-gradient(to right, #374151, #1f2937); }
-        .title-bar-orange { background: linear-gradient(to right, #f97316, #ea580c); }
-        
-        .article-card {
-            background: white; padding: 1.5rem;
-            border: 1px solid #e5e7eb;
-            border-radius: 0.5rem;
-            transition: all 0.3s;
-        }
-        .article-card:hover {
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1);
-            border-color: #f59e0b;
-        }
-        
-        .article-title { font-size: 1.125rem; font-weight: 600; color: #111827; margin-bottom: 0.5rem; }
-        .article-desc { color: #6b7280; font-size: 0.95rem; margin-bottom: 1rem; }
-        .article-meta {
-            display: flex; gap: 1rem; font-size: 0.875rem;
-            color: #9ca3af; flex-wrap: wrap;
-        }
-        .article-source { color: #f59e0b; font-weight: 600; }
-        
-        .top-articles {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1.5rem; margin: 1.5rem 0;
-        }
-        .top-article {
-            background: white; border: 2px solid #f59e0b;
-            border-radius: 0.5rem; padding: 1.5rem;
-            position: relative;
-        }
-        .top-article::before {
-            content: attr(data-rank);
-            position: absolute; top: -1rem; left: 1rem;
-            background: #f59e0b; color: white;
-            width: 2rem; height: 2rem;
-            border-radius: 50%; display: flex;
-            align-items: center; justify-content: center;
-            font-weight: bold; font-size: 1.125rem;
-        }
-        
-        .sources-table {
-            width: 100%; border-collapse: collapse;
-            background: white; border-radius: 0.5rem;
-            overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-        }
-        .sources-table th {
-            background: #1f2937; color: white;
-            padding: 1rem; text-align: left; font-weight: 600;
-        }
-        .sources-table td {
-            padding: 1rem; border-bottom: 1px solid #e5e7eb;
-        }
-        .sources-table tr:hover { background: #f9fafb; }
-        
-        footer {
-            text-align: center; padding: 2rem;
-            border-top: 1px solid #e5e7eb;
-            color: #6b7280; font-size: 0.875rem;
-        }
-        
-        .push-btn {
-            display: inline-flex; align-items: center; gap: 0.5rem;
-            padding: 0.75rem 1.5rem;
-            background: linear-gradient(to right, #f97316, #ea580c);
-            color: white; border: none; border-radius: 0.5rem;
-            cursor: pointer; font-weight: 600;
-            transition: all 0.3s;
-            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
-        }
-        .push-btn:hover {
-            background: linear-gradient(to right, #ea580c, #c2410c);
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.2);
-        }
-        
-        .status-msg {
-            padding: 1rem; margin-bottom: 1rem;
-            border-radius: 0.5rem; font-weight: 500;
-        }
-        .status-success { background: #d1fae5; border: 1px solid #6ee7b7; color: #047857; }
-        .status-warning { background: #fef3c7; border: 1px solid #fcd34d; color: #b45309; }
-        .status-error { background: #fee2e2; border: 1px solid #fca5a5; color: #991b1b; }
-        
-        .top-articles-section { margin: 2rem 0; }
-        .push-section { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
-        
-        @media (max-width: 768px) {
-            h1 { font-size: 1.25rem; }
-            .search-row { grid-template-columns: 1fr; }
-            .logo-section { flex-wrap: wrap; }
-            .top-articles { grid-template-columns: 1fr; }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Recruitment News Report - 2026-01-25</title>
+  <style>
+    body { font-family: Arial; max-width: 1200px; margin: 0 auto; padding: 20px; background: #f5f7fa; }
+    .header { background: linear-gradient(135deg, #003366, #0066cc); color: white; padding: 30px; border-radius: 12px; margin-bottom: 30px; }
+    h1 { margin: 0; font-size: 28px; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin: 20px 0; }
+    .stat-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .stat-number { font-size: 32px; font-weight: bold; color: #003366; }
+    .stat-label { color: #666; margin-top: 5px; }
+    .category { background: white; padding: 20px; margin: 20px 0; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    .category h2 { color: #003366; border-bottom: 2px solid #e1e4e8; padding-bottom: 10px; }
+    .article { padding: 15px 0; border-bottom: 1px solid #e1e4e8; }
+    .article:last-child { border-bottom: none; }
+    .article-title { font-weight: 600; color: #0066cc; text-decoration: none; display: block; margin-bottom: 5px; }
+    .article-title:hover { text-decoration: underline; }
+    .article-description { color: #555; font-size: 14px; line-height: 1.5; }
+    .article-source { color: #888; font-size: 12px; margin-top: 5px; }
+    .timestamp { color: #666; margin-top: 10px; }
+  </style>
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <div class="header-top">
-                <div class="logo-section">
-                    <strong style="font-size: 1.25rem;">Recruitin</strong>
-                    <div class="logo-divider"></div>
-                    <div>
-                        <h1>📈 Technical Recruitment & Engineering Nieuws</h1>
-                        <p class="subtext">the right people, right now</p>
-                    </div>
-                </div>
-                <button class="config-btn">⚙️ Notion Setup</button>
-            </div>
-            
-            <p class="focus-text">Focus: Automation, Engineering, Technisch Personeel & Personeelskrapte</p>
-            <p class="date-text">📅 12 januari 2026, 01:14</p>
-            
-            <div class="stats">
-                <div class="stat-card">
-                    <div class="stat-number">156</div>
-                    <div class="stat-label">Recruitment Artikelen</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">24</div>
-                    <div class="stat-label">Bronnen Doorzocht</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">18</div>
-                    <div class="stat-label">Relevante Bronnen</div>
-                </div>
-            </div>
-        </div>
-    </header>
-    
-    <main>
-        <div class="controls">
-            <div class="search-row">
-                <select>
-                    <option>Alle onderwerpen</option>
-                    <optgroup label="Belangrijkste">
-                        <option>Personeelskrapte & Recruitment</option>
-                        <option>AI & Automation in HR</option>
-                        <option>Engineering Trends</option>
-                    </optgroup>
-                    <optgroup label="Meer">
-                        <option>Salary & Compensation</option>
-                        <option>Remote Work</option>
-                    </optgroup>
-                </select>
-                <button class="filter-btn">🔍 Toon Bronnen</button>
-            </div>
-            
-            <div class="search-row">
-                <input type="text" placeholder="Zoek in categorieën en artikelen..." />
-            </div>
-            
-            <div class="active-filters">
-                <div class="filter-tag">
-                    <span><strong>Onderwerp:</strong> Personeelskrapte</span>
-                    <button>×</button>
-                </div>
-            </div>
-        </div>
-        
-        <!-- TOP 3 ARTICLES -->
-        <div class="top-articles-section">
-            <div class="push-section">
-                <div class="section-title">
-                    <div class="title-bar title-bar-orange"></div>
-                    Top 3 van deze Week
-                </div>
-                <button class="push-btn">⚡ Push Top 3 naar Notion</button>
-            </div>
-            
-            <div class="top-articles">
-                <div class="top-article" data-rank="1">
-                    <div class="article-title">Personeelskrapte in Nederland bereikt kritiek punt</div>
-                    <div class="article-desc">Twee miljoen posten blijven onvervuld terwijl werkloosheid laag blijft. Technische rollen het hardst geraakt.</div>
-                    <div class="article-meta">
-                        <span class="article-source">FT.com</span>
-                        <span>11 jan 2026</span>
-                    </div>
-                </div>
-                
-                <div class="top-article" data-rank="2">
-                    <div class="article-title">AI-gestuurde recruitment automation groeit 300% YoY</div>
-                    <div class="article-desc">Nederlandse startups investeren zwaar in intelligent matching. Recruitin leidt markt in Europa.</div>
-                    <div class="article-meta">
-                        <span class="article-source">TechCrunch</span>
-                        <span>10 jan 2026</span>
-                    </div>
-                </div>
-                
-                <div class="top-article" data-rank="3">
-                    <div class="article-title">Engineering salaries stijgen gemiddeld 12% in 2025</div>
-                    <div class="article-desc">Tekort aan talent drijft lonen omhoog, vooral in automation & cloud engineering.</div>
-                    <div class="article-meta">
-                        <span class="article-source">Glassdoor</span>
-                        <span>9 jan 2026</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- WICHTIGSTE ONDERWERPEN -->
-        <div>
-            <div class="section-title">
-                <div class="title-bar title-bar-dark"></div>
-                Belangrijkste Onderwerpen
-            </div>
-            
-            <div style="space-y: 1rem;">
-                <div style="margin-bottom: 1.5rem;">
-                    <h3 style="font-weight: 600; margin-bottom: 1rem; font-size: 1.125rem;">📊 Personeelskrapte & Recruitment</h3>
-                    <div style="space-y: 1rem;">
-                        <div class="article-card">
-                            <div class="article-title">Werkgevers worstelen met recruitment in hoog-technische rollen</div>
-                            <div class="article-desc">Aanbod van engineers en automation specialists blijft ver achter bij vraag. Bedrijven kijken naar upskilling programma's.</div>
-                            <div class="article-meta">
-                                <span class="article-source">VNO-NCW</span>
-                                <span>11 jan</span>
-                            </div>
-                        </div>
-                        
-                        <div class="article-card">
-                            <div class="article-title">Remote recruitment strategies 2026: Global talent pools</div>
-                            <div class="article-desc">Nederlandse bedrijven breiden zoekgebied uit naar Europa en Amerika. Salarissen normaliseren tussen regio's.</div>
-                            <div class="article-meta">
-                                <span class="article-source">LinkedIn News</span>
-                                <span>10 jan</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                    <h3 style="font-weight: 600; margin-bottom: 1rem; font-size: 1.125rem;">🤖 AI & Automation in HR</h3>
-                    <div class="article-card">
-                        <div class="article-title">Recruitment AI tools transformeren hiring processes</div>
-                        <div class="article-desc">Applicant tracking, bias detection en candidate scoring nu automatisch. Recruiters richten zich op relationship-building.</div>
-                        <div class="article-meta">
-                            <span class="article-source">ERE Recruiting Intelligence</span>
-                            <span>8 jan</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div style="margin-bottom: 1.5rem;">
-                    <h3 style="font-weight: 600; margin-bottom: 1rem; font-size: 1.125rem;">⚙️ Engineering Trends</h3>
-                    <div class="article-card">
-                        <div class="article-title">Edge Computing & IoT engineering: Skills shortage</div>
-                        <div class="article-desc">Next-gen technologieën vereisen niche expertise. Bedrijven bieden premium salaries voor specialisten.</div>
-                        <div class="article-meta">
-                            <span class="article-source">IEEE Spectrum</span>
-                            <span>7 jan</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- SOURCES TABLE -->
-        <div style="margin-top: 2rem; margin-bottom: 2rem;">
-            <h3 style="margin-bottom: 1rem; font-weight: 600;">Bronnen Overzicht</h3>
-            <table class="sources-table">
-                <thead>
-                    <tr>
-                        <th>Bron</th>
-                        <th>Artikelen</th>
-                        <th>Relevantie</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>LinkedIn Pulse</strong></td>
-                        <td>28</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>TechCrunch</strong></td>
-                        <td>24</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>FT.com</strong></td>
-                        <td>18</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Glassdoor Blog</strong></td>
-                        <td>15</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>VNO-NCW</strong></td>
-                        <td>12</td>
-                        <td>⭐⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>ERE Recruiting</strong></td>
-                        <td>10</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                    <tr>
-                        <td><strong>IEEE Spectrum</strong></td>
-                        <td>9</td>
-                        <td>⭐⭐⭐⭐</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        
-        <footer>
-            <p style="margin-bottom: 0.5rem;">Report gegenereerd op: 12 januari 2026, 01:04:41</p>
-            <p>Powered by Brave Search API</p>
-        </footer>
-    </main>
+  <div class="header">
+    <h1>📊 Recruitment & Werkgelegenheid Nieuws</h1>
+    <p>Focus: Uitzendbranche, Vacatures & Arbeidsmarkt</p>
+    <p>25-1-2026, 23:58:03</p>
+  </div>
 
-    <script>
-        // Notion Configuration Modal
-        const configModal = document.createElement('div');
-        configModal.id = 'notion-config-modal';
-        configModal.style.cssText = 'display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); z-index: 1000; align-items: center; justify-content: center;';
-        configModal.innerHTML = `
-            <div style="background: white; padding: 2rem; border-radius: 8px; max-width: 500px; width: 90%;">
-                <h3 style="margin-bottom: 1rem; color: #1f2937;">Notion API Configuratie</h3>
-                <div style="margin-bottom: 1rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #374151;">Notion Integration Token</label>
-                    <input type="password" id="notion-token" placeholder="secret_..." style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px; font-family: monospace;">
-                </div>
-                <div style="margin-bottom: 1.5rem;">
-                    <label style="display: block; margin-bottom: 0.5rem; font-weight: 600; color: #374151;">Database ID</label>
-                    <input type="text" id="notion-db-id" placeholder="abc123..." style="width: 100%; padding: 0.75rem; border: 1px solid #d1d5db; border-radius: 6px; font-family: monospace;">
-                </div>
-                <div style="display: flex; gap: 1rem;">
-                    <button id="save-config" style="flex: 1; padding: 0.75rem; background: #f59e0b; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Opslaan</button>
-                    <button id="cancel-config" style="flex: 1; padding: 0.75rem; background: #6b7280; color: white; border: none; border-radius: 6px; font-weight: 600; cursor: pointer;">Annuleren</button>
-                </div>
-            </div>
-        `;
-        document.body.appendChild(configModal);
+  <div class="stats">
+    <div class="stat-card">
+      <div class="stat-number">108</div>
+      <div class="stat-label">Recruitment Artikelen</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">33</div>
+      <div class="stat-label">Bronnen Doorzocht</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">22</div>
+      <div class="stat-label">Relevante Bronnen</div>
+    </div>
+  </div>
 
-        // Load saved Notion config
-        const notionConfig = {
-            token: localStorage.getItem('notion_token') || '',
-            dbId: localStorage.getItem('notion_db_id') || ''
-        };
+  <div class="category">
+    <h2>📊 Bronnen Overzicht</h2>
+    <table style="width: 100%; border-collapse: collapse;">
+      <thead>
+        <tr style="background: #f0f0f0;">
+          <th style="text-align: left; padding: 10px; border: 1px solid #ddd;">Bron / Zoekterm</th>
+          <th style="text-align: center; padding: 10px; border: 1px solid #ddd; width: 120px;">Aantal Artikelen</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">technisch personeel tekort Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">13</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">arbeidsmarkt Gelderland techniek site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">11</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">industrial recruitment trends Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">9</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">personeelstekort Overijssel industrie site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">9</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">automation engineer salaris 2026 site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">8</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">automation techniek personeelstekort site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">6</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">elektrotechniek personeelstekort Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">6</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">engineering salaris benchmark Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">6</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">technical recruitment salaris trends site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">6</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">technical recruitment Nederland trends site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">5</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">werktuigbouwkundig engineer markt site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">5</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">manufacturing hiring trends Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">5</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">SCADA specialist tekort Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">3</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">manufacturing recruitment Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">2</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">recruitment automation Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">2</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">"intelligence group" technische arbeidsmarkt site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">2</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">renewable energy recruitment Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">2</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">technical recruitment Brabant site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">2</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">engineering recruitment Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">1</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">PLC programmeur arbeidsmarkt Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">1</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">site:werf-en.nl technical recruitment</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">1</td>
+        </tr>
+        <tr>
+          <td style="padding: 8px; border: 1px solid #ddd;">oil gas recruitment Nederland site:nl</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd; font-weight: bold;">1</td>
+        </tr>
+        <tr style="background: #f9f9f9; font-weight: bold;">
+          <td style="padding: 8px; border: 1px solid #ddd;">TOTAAL</td>
+          <td style="text-align: center; padding: 8px; border: 1px solid #ddd;">108</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-        // Config button handler
-        document.querySelector('.config-btn').addEventListener('click', () => {
-            document.getElementById('notion-token').value = notionConfig.token;
-            document.getElementById('notion-db-id').value = notionConfig.dbId;
-            configModal.style.display = 'flex';
-        });
+  <div class="category">
+    <h2>technical recruitment Nederland trends site:nl</h2>
 
-        // Save config
-        document.getElementById('save-config').addEventListener('click', () => {
-            notionConfig.token = document.getElementById('notion-token').value;
-            notionConfig.dbId = document.getElementById('notion-db-id').value;
-            localStorage.setItem('notion_token', notionConfig.token);
-            localStorage.setItem('notion_db_id', notionConfig.dbId);
-            configModal.style.display = 'none';
-            showMessage('Configuratie opgeslagen!', 'success');
-        });
+    <div class="article">
+      <a href="https://www.werf-en.nl/5-experts-over-recruitment-als-natuurkundige-exercitie/" target="_blank" class="article-title">5 experts over 2026: 'De juiste data hebben is belangrijker dan A.I.' (2/3) - Werf&</a>
+      <div class="article-description">Beune: ‘Voor mij betekent dit dat <strong>recruitment steeds meer datagedreven wordt, en ook steeds meer intern gericht, in plaats van alleen extern</strong>.</div>
+      <div class="article-source">https://www.werf-en.nl/5-experts-over-recruitment-als-natuurkundige-exercitie/</div>
+    </div>
 
-        // Cancel config
-        document.getElementById('cancel-config').addEventListener('click', () => {
-            configModal.style.display = 'none';
-        });
+    <div class="article">
+      <a href="https://nltimes.nl/2026/01/24/female-freelancers-netherlands-outearned-men-first-time-2024" target="_blank" class="article-title">Female freelancers in the Netherlands outearned men for first time in 2024 | NL Times</a>
+      <div class="article-description">Radboud University business professor Yvonne Benschop, who was not involved in the study, called the results “surprising.” She cautioned that trends must be confirmed over time but said the data suggests female freelancers may more easily command higher rates due to strong demand for their services.</div>
+      <div class="article-source">https://nltimes.nl/2026/01/24/female-freelancers-netherlands-outearned-men-first-time-2024</div>
+    </div>
 
-        // Close modal on background click
-        configModal.addEventListener('click', (e) => {
-            if (e.target === configModal) {
-                configModal.style.display = 'none';
-            }
-        });
+    <div class="article">
+      <a href="https://www.utwente.nl/onderwijs/bachelor/opleidingen/technische-geneeskunde/" target="_blank" class="article-title">Technische Geneeskunde / Klinische Technologie | Medische wo opleiding - Bachelor</a>
+      <div class="article-description">In deze medische studie combineer je technologie met medische zorg. Word klinisch technoloog en voer zelfstandig medische handelingen uit. √ BSc √ NL √ 3 jaar</div>
+      <div class="article-source">https://www.utwente.nl/onderwijs/bachelor/opleidingen/technische-geneeskunde/</div>
+    </div>
 
-        // Message display function
-        function showMessage(text, type = 'info') {
-            const message = document.createElement('div');
-            message.textContent = text;
-            message.style.cssText = `
-                position: fixed; top: 2rem; right: 2rem; z-index: 2000;
-                padding: 1rem 1.5rem; border-radius: 6px; font-weight: 600;
-                background: ${type === 'success' ? '#10b981' : type === 'error' ? '#ef4444' : '#3b82f6'};
-                color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-                animation: slideIn 0.3s ease;
-            `;
-            document.body.appendChild(message);
-            setTimeout(() => {
-                message.style.animation = 'slideOut 0.3s ease';
-                setTimeout(() => message.remove(), 300);
-            }, 3000);
-        }
+    <div class="article">
+      <a href="https://persportaal.anp.nl/artikel/afa035a9-414b-47bf-a520-3b7adbca2c9c/de-evolutie-van-de-logistieke-sector-trends-en-uitdagingen" target="_blank" class="article-title">De evolutie van de logistieke sector: trends en uitdagingen</a>
+      <div class="article-description">De logistieke sector, de onzichtbare motor achter de wereldeconomie, ondergaat een fundamentele transformatie. Technologische vooruitgang, een toenemende focus</div>
+      <div class="article-source">https://persportaal.anp.nl/artikel/afa035a9-414b-47bf-a520-3b7adbca2c9c/de-evolutie-van-de-logistieke-sector-trends-en-uitdagingen</div>
+    </div>
 
-        // Add CSS animations
-        const style = document.createElement('style');
-        style.textContent = `
-            @keyframes slideIn {
-                from { transform: translateX(100%); opacity: 0; }
-                to { transform: translateX(0); opacity: 1; }
-            }
-            @keyframes slideOut {
-                from { transform: translateX(0); opacity: 1; }
-                to { transform: translateX(100%); opacity: 0; }
-            }
-        `;
-        document.head.appendChild(style);
+    <div class="article">
+      <a href="https://www.refugeehelp.nl/en/status-holder/news/100594-the-dutch-government-has-new-rules-for-income-and-work-from-january-2026" target="_blank" class="article-title">Government changes on income, benefits and work as of 1 January 2026 explained. - RefugeeHelp</a>
+      <div class="article-description">From 1 January 2026, government rules on benefits, wages and work will change. In this article, you can read about what is changing and for whom this is important.</div>
+      <div class="article-source">https://www.refugeehelp.nl/en/status-holder/news/100594-the-dutch-government-has-new-rules-for-income-and-work-from-january-2026</div>
+    </div>
 
-        // Search functionality
-        const searchInput = document.querySelector('input[type="text"][placeholder*="Zoek"]');
-        const categorySelect = document.querySelector('select');
-        const sourcesBtn = document.querySelector('.filter-btn');
-        const sourcesTable = document.querySelector('.sources-table');
+  </div>
 
-        let activeFilters = {
-            search: '',
-            category: 'Alle onderwerpen'
-        };
+  <div class="category">
+    <h2>engineering recruitment Nederland site:nl</h2>
 
-        // Search handler
-        searchInput.addEventListener('input', (e) => {
-            activeFilters.search = e.target.value.toLowerCase();
-            filterArticles();
-        });
+    <div class="article">
+      <a href="https://noorderlink.nl/vacatures" target="_blank" class="article-title">Vind je droombaan in Noord-Nederland | Noorderlink</a>
+      <div class="article-description"><strong>Noorderlink</strong> maakt en houdt de arbeidsmarkt in het Noorden aantrekkelijk. We geloven in verbinden. We stimuleren samenwerkingen tussen professionals en organisaties en helpen ze te ontwikkelen.</div>
+      <div class="article-source">https://noorderlink.nl/vacatures</div>
+    </div>
 
-        // Category filter handler
-        categorySelect.addEventListener('change', (e) => {
-            activeFilters.category = e.target.value;
-            updateFilterTags();
-            filterArticles();
-        });
+  </div>
 
-        // Filter articles based on active filters
-        function filterArticles() {
-            const allArticles = document.querySelectorAll('.article-card');
-            const searchTerm = activeFilters.search;
-            const category = activeFilters.category;
+  <div class="category">
+    <h2>technisch personeel tekort Nederland site:nl</h2>
 
-            allArticles.forEach(article => {
-                const title = article.querySelector('.article-title').textContent.toLowerCase();
-                const desc = article.querySelector('.article-desc').textContent.toLowerCase();
-                const matchesSearch = !searchTerm || title.includes(searchTerm) || desc.includes(searchTerm);
+    <div class="article">
+      <a href="https://www.omropfryslan.nl/nl/nieuws/18148412/nederlandse-gemeenten-worstelen-met-personeelstekort-hoe-zit-dat-in-fryslan" target="_blank" class="article-title">Nederlandse gemeenten worstelen met personeelstekort: hoe zit dat in Fryslân? - Omrop Fryslân</a>
+      <div class="article-description">Gemeenten in Nederland zitten met de handen in het haar. Ze kampen met een zorgelijk personeelstekort, en dan wacht er ook nog een flinke uitstroom van pensioengerechtigden.</div>
+      <div class="article-source">https://www.omropfryslan.nl/nl/nieuws/18148412/nederlandse-gemeenten-worstelen-met-personeelstekort-hoe-zit-dat-in-fryslan</div>
+    </div>
 
-                let matchesCategory = true;
-                if (category !== 'Alle onderwerpen') {
-                    const section = article.closest('section');
-                    const sectionTitle = section?.querySelector('h3')?.textContent || '';
-                    matchesCategory = sectionTitle.includes(category);
-                }
+    <div class="article">
+      <a href="https://nos.nl/artikel/2598908-gemeenten-komen-handen-tekort-en-zoeken-naar-creatieve-oplossingen" target="_blank" class="article-title">Gemeenten komen handen tekort en zoeken naar creatieve oplossingen</a>
+      <div class="article-description">Om de dreigende tekorten tegen te gaan, komen gemeenten met creatieve oplossingen.</div>
+      <div class="article-source">https://nos.nl/artikel/2598908-gemeenten-komen-handen-tekort-en-zoeken-naar-creatieve-oplossingen</div>
+    </div>
 
-                article.style.display = (matchesSearch && matchesCategory) ? 'block' : 'none';
-            });
-        }
+    <div class="article">
+      <a href="https://www.binnenlandsbestuur.nl/carriere/gemeenten-ietsie-pietsie-minder-grijs" target="_blank" class="article-title">Gemeenten ietsie pietsie minder grijs</a>
+      <div class="article-description">Het dreigend gebrek aan personeel blijft groot, maar vergeleken met een jaar geleden lijkt het tekort aan ambtenaren waarmee gemeenten de komende tien jaar te maken gaan krijgen een heel klein beetje minder. De prognose van medewerkers die binnen dat tijdsbestek de pensioenleeftijd bereiken, ...</div>
+      <div class="article-source">https://www.binnenlandsbestuur.nl/carriere/gemeenten-ietsie-pietsie-minder-grijs</div>
+    </div>
 
-        // Update filter tags
-        function updateFilterTags() {
-            const activeFiltersDiv = document.querySelector('.active-filters');
-            activeFiltersDiv.innerHTML = '';
+    <div class="article">
+      <a href="https://www.rd.nl/artikel/1136015-koningin-maxima-sleutelt-aan-een-warmtepomp-bij-werkbezoek" target="_blank" class="article-title">Koningin Máxima sleutelt aan een warmtepomp bij werkbezoek</a>
+      <div class="article-description">„We hebben nog wel een plekje over”, grapt de docent als de koningin binnenstapt. „Er is een groot tekort aan installateurs.” Máxima en haar gevolg schaterlachen.</div>
+      <div class="article-source">https://www.rd.nl/artikel/1136015-koningin-maxima-sleutelt-aan-een-warmtepomp-bij-werkbezoek</div>
+    </div>
 
-            if (activeFilters.category !== 'Alle onderwerpen') {
-                const tag = document.createElement('div');
-                tag.className = 'filter-tag';
-                tag.innerHTML = `
-                    <span><strong>Onderwerp:</strong> ${activeFilters.category}</span>
-                    <button>×</button>
-                `;
-                tag.querySelector('button').addEventListener('click', () => {
-                    activeFilters.category = 'Alle onderwerpen';
-                    categorySelect.value = 'Alle onderwerpen';
-                    updateFilterTags();
-                    filterArticles();
-                });
-                activeFiltersDiv.appendChild(tag);
-            }
+    <div class="article">
+      <a href="https://www.nu.nl/economie/6383221/personeelstekort-gemeenten-steeds-groter-terwijl-werkdruk-toeneemt.html" target="_blank" class="article-title">Personeelstekort gemeenten steeds groter terwijl werkdruk toeneemt | Economie | NU.nl</a>
+      <div class="article-description">Het tekort aan gemeenteambtenaren groeit en gemeenten kunnen moeilijk personeel vinden. De vergrijzing slaat bij gemeenten harder toe dan bij de rest van Nederland. Dat zorgt ervoor dat projecten worden vertraagd of uitgesteld.</div>
+      <div class="article-source">https://www.nu.nl/economie/6383221/personeelstekort-gemeenten-steeds-groter-terwijl-werkdruk-toeneemt.html</div>
+    </div>
 
-            if (activeFilters.search) {
-                const tag = document.createElement('div');
-                tag.className = 'filter-tag';
-                tag.innerHTML = `
-                    <span><strong>Zoekterm:</strong> "${activeFilters.search}"</span>
-                    <button>×</button>
-                `;
-                tag.querySelector('button').addEventListener('click', () => {
-                    activeFilters.search = '';
-                    searchInput.value = '';
-                    updateFilterTags();
-                    filterArticles();
-                });
-                activeFiltersDiv.appendChild(tag);
-            }
-        }
+    <div class="article">
+      <a href="https://www.metronieuws.nl/geld-carriere/2026/01/op-zoek-naar-een-goed-salaris-dit-zijn-de-beste-banen-van-2026/" target="_blank" class="article-title">Op zoek naar een goed salaris? Dit zijn de beste banen van 2026</a>
+      <div class="article-description">Wat zijn nu de beste banen om te hebben? Nou, dat schijnen bedrijfsarts, klinisch psycholoog óf psychiater te zijn, zo blijkt uit een jaarlijkse analyse van vacaturesite Indeed. In het onderzoek zijn duizenden vacatures beoordeeld op salaris, vraag naar personeel, groeipotentieel en flexibiliteit.</div>
+      <div class="article-source">https://www.metronieuws.nl/geld-carriere/2026/01/op-zoek-naar-een-goed-salaris-dit-zijn-de-beste-banen-van-2026/</div>
+    </div>
 
-        // Toggle sources table
-        let sourcesVisible = false;
-        sourcesBtn.addEventListener('click', () => {
-            sourcesVisible = !sourcesVisible;
-            sourcesTable.style.display = sourcesVisible ? 'table' : 'none';
-            sourcesBtn.textContent = sourcesVisible ? '🔍 Verberg Bronnen' : '🔍 Toon Bronnen';
-        });
+    <div class="article">
+      <a href="https://www.l1nieuws.nl/nieuws/3075684/lerarentekort-in-limburgs-basisonderwijs-nu-nog-beheersbaar-maar-zorgen-nemen-toe" target="_blank" class="article-title">Lerarentekort in Limburgs basisonderwijs: nu nog beheersbaar, maar zorgen nemen toe - L1 Nieuws</a>
+      <div class="article-description">Elke stichting en elk schoolbestuur heeft zo een eigen aanpak. Vooralsnog uit het tekort zich vooral in vervangingsopdrachten, maar structurele vacatures kunnen in de toekomst ook moeilijker ingevuld worden.</div>
+      <div class="article-source">https://www.l1nieuws.nl/nieuws/3075684/lerarentekort-in-limburgs-basisonderwijs-nu-nog-beheersbaar-maar-zorgen-nemen-toe</div>
+    </div>
 
-        // Push to Notion functionality
-        document.querySelector('.push-btn').addEventListener('click', async () => {
-            if (!notionConfig.token || !notionConfig.dbId) {
-                showMessage('Configureer eerst Notion API instellingen', 'error');
-                return;
-            }
+    <div class="article">
+      <a href="https://nos.nl/artikel/2599066-cpb-verzekering-bij-arbeidsongeschiktheid-helpt-zzp-er-maar-beperkt" target="_blank" class="article-title">CPB: verzekering bij arbeidsongeschiktheid helpt zzp'er maar beperkt</a>
+      <div class="article-description">Volgens het CPB hebben ook jongeren, huurders en alleenverdieners beperkt spaargeld. Dat is bij hen gecombineerd met een vaak lager inkomen. Tegelijkertijd zijn zij vaak een relatief groot deel van het inkomen kwijt aan vaste lasten. Als hun inkomen plots wegvalt, komen deze groepen dus sneller geld tekort.</div>
+      <div class="article-source">https://nos.nl/artikel/2599066-cpb-verzekering-bij-arbeidsongeschiktheid-helpt-zzp-er-maar-beperkt</div>
+    </div>
 
-            const topArticles = document.querySelectorAll('.top-article');
-            const articles = Array.from(topArticles).map(article => ({
-                rank: article.dataset.rank,
-                title: article.querySelector('.article-title').textContent,
-                description: article.querySelector('.article-desc').textContent,
-                source: article.querySelector('.article-source').textContent,
-                date: article.querySelector('.article-meta span:last-child').textContent
-            }));
+    <div class="article">
+      <a href="https://www.rijnmond.nl/nieuws/2140951/politie-kampt-landelijk-met-miljoenentekort-en-eenheid-rotterdam-moet-fors-bijdragen" target="_blank" class="article-title">Politie kampt landelijk met miljoenentekort en eenheid Rotterdam moet fors bijdragen - Rijnmond</a>
+      <div class="article-description">Om het tekort goed te maken moeten er in meerdere eenheden, waaronder Rotterdam, worden bezuinigd op de inzet van personeel, laat Van Oosten weten in een brief aan de Tweede Kamer. Naast Rotterdam moeten ook de eenheden Oost-Nederland (10 miljoen euro) en Noord-Nederland (4 miljoen euro) hun personeelskosten flink omlaag brengen.</div>
+      <div class="article-source">https://www.rijnmond.nl/nieuws/2140951/politie-kampt-landelijk-met-miljoenentekort-en-eenheid-rotterdam-moet-fors-bijdragen</div>
+    </div>
 
-            try {
-                showMessage('Bezig met pushen naar Notion...', 'info');
+    <div class="article">
+      <a href="https://nos.nl/artikel/2599174-kamer-wil-dat-om-vaker-hogere-straffen-voor-geweld-tegen-hulpverleners-eist" target="_blank" class="article-title">Kamer wil dat OM vaker hogere straffen voor geweld tegen hulpverleners eist</a>
+      <div class="article-description">Maandag spreekt de Kamer over een voorstel van GroenLinks-PvdA om die tekorten aan te vullen.</div>
+      <div class="article-source">https://nos.nl/artikel/2599174-kamer-wil-dat-om-vaker-hogere-straffen-voor-geweld-tegen-hulpverleners-eist</div>
+    </div>
 
-                for (const article of articles) {
-                    const response = await fetch('https://api.notion.com/v1/pages', {
-                        method: 'POST',
-                        headers: {
-                            'Authorization': `Bearer ${notionConfig.token}`,
-                            'Content-Type': 'application/json',
-                            'Notion-Version': '2022-06-28'
-                        },
-                        body: JSON.stringify({
-                            parent: { database_id: notionConfig.dbId },
-                            properties: {
-                                'Title': {
-                                    title: [{ text: { content: article.title } }]
-                                },
-                                'Rank': {
-                                    number: parseInt(article.rank)
-                                },
-                                'Source': {
-                                    rich_text: [{ text: { content: article.source } }]
-                                },
-                                'Date': {
-                                    rich_text: [{ text: { content: article.date } }]
-                                },
-                                'Description': {
-                                    rich_text: [{ text: { content: article.description } }]
-                                }
-                            }
-                        })
-                    });
+  </div>
 
-                    if (!response.ok) {
-                        throw new Error(`API error: ${response.status}`);
-                    }
-                }
+  <div class="category">
+    <h2>manufacturing recruitment Nederland site:nl</h2>
 
-                showMessage('Top 3 artikelen succesvol naar Notion gepusht!', 'success');
-            } catch (error) {
-                console.error('Notion API error:', error);
-                showMessage('Fout bij pushen naar Notion. Check configuratie.', 'error');
-            }
-        });
+    <div class="article">
+      <a href="https://noorderlink.nl/vacatures" target="_blank" class="article-title">Vind je droombaan in Noord-Nederland | Noorderlink</a>
+      <div class="article-description"><strong>Noorderlink maakt en houdt de arbeidsmarkt in het Noorden aantrekkelijk</strong>. We geloven in verbinden. We stimuleren samenwerkingen tussen professionals en organisaties en helpen ze te ontwikkelen.</div>
+      <div class="article-source">https://noorderlink.nl/vacatures</div>
+    </div>
 
-        // Initialize
-        sourcesTable.style.display = 'none';
-    </script>
+    <div class="article">
+      <a href="https://www.bnr.nl/podcast/duurzaam/10592278/nederlands-bedrijf-lanceert-primeur-met-vis-uit-het-lab" target="_blank" class="article-title">Nederlands bedrijf lanceert primeur met plantaardige vis | BNR Nieuwsradio</a>
+      <div class="article-description">Kunnen we de oceanen redden door vis te eten die nooit heeft gezwommen? Het Nederlandse bedrijf Monkeys uit de Sea presenteert een primeur met ‘s werelds eerste naakte visfilet, op basis van plantaardige ingrediënten. Deze aflevering in het kort: ☑️ De eerste imitatie-visfilet zonder paneermeel.</div>
+      <div class="article-source">https://www.bnr.nl/podcast/duurzaam/10592278/nederlands-bedrijf-lanceert-primeur-met-vis-uit-het-lab</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>industrial recruitment trends Nederland site:nl</h2>
+
+    <div class="article">
+      <a href="https://www.werf-en.nl/5-experts-over-recruitment-als-natuurkundige-exercitie/" target="_blank" class="article-title">5 experts over 2026: 'De juiste data hebben is belangrijker dan A.I.' (2/3) - Werf&</a>
+      <div class="article-description">Beune: ‘Voor mij betekent dit dat <strong>recruitment steeds meer datagedreven wordt, en ook steeds meer intern gericht, in plaats van alleen extern</strong>.</div>
+      <div class="article-source">https://www.werf-en.nl/5-experts-over-recruitment-als-natuurkundige-exercitie/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://persportaal.anp.nl/artikel/afa035a9-414b-47bf-a520-3b7adbca2c9c/de-evolutie-van-de-logistieke-sector-trends-en-uitdagingen" target="_blank" class="article-title">De evolutie van de logistieke sector: trends en uitdagingen</a>
+      <div class="article-description">De logistieke sector, de onzichtbare motor achter de wereldeconomie, ondergaat een fundamentele transformatie. Technologische vooruitgang, een toenemende focus</div>
+      <div class="article-source">https://persportaal.anp.nl/artikel/afa035a9-414b-47bf-a520-3b7adbca2c9c/de-evolutie-van-de-logistieke-sector-trends-en-uitdagingen</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.consultancy.nl/nieuws/65236/ma-in-data-en-ai-consultingmarkt-neemt-verder-toe-in-2026" target="_blank" class="article-title">M&A in data en AI-consultingmarkt neemt verder toe in 2026</a>
+      <div class="article-description">Een manier om wel in korte tijd de juiste expertise en capaciteit op te bouwen, is <strong>het doen van overnames</strong>. Dit gebeurt dan ook volop: het rapport van Hogenhouck m&amp;a laat zien dat in de afgelopen 18 maanden 31 deals zijn gesloten in de Nederlandse ...</div>
+      <div class="article-source">https://www.consultancy.nl/nieuws/65236/ma-in-data-en-ai-consultingmarkt-neemt-verder-toe-in-2026</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.vastgoedmarkt.nl/205947/wordt-deglobalisering-het-nieuwe-e-commerce-in-vraag-naar-logistiek-vastgoed" target="_blank" class="article-title">Wordt deglobalisering het nieuwe succesverhaal voor logistiek vastgoed?</a>
+      <div class="article-description">Afgelopen jaren zorgde de groei van e-commerce voor enorme vraag naar logistiek vastgoed. Die groei vlakte in 2025 af, maar er staat alweer een nieuwe aanjager voor de deur: deglobalisering. &#x27;Als we de interne markt verbeteren, kunnen we nog veel groei realiseren.&#x27;</div>
+      <div class="article-source">https://www.vastgoedmarkt.nl/205947/wordt-deglobalisering-het-nieuwe-e-commerce-in-vraag-naar-logistiek-vastgoed</div>
+    </div>
+
+    <div class="article">
+      <a href="https://nltimes.nl/2026/01/21/dutch-trade-union-urges-eu-intervene-netherlands-minimum-wage-law" target="_blank" class="article-title">Dutch trade union urges EU to intervene over Netherlands' minimum wage law | NL Times</a>
+      <div class="article-description">FNV, the Dutch trade union, plans to ask the European Commission to intervene regarding the Netherlands’ implementation of the EU minimum wage directive. Although the Senate approved a bill on Tuesday to incorporate the directive into national law, FNV argues that the proposal falls short ...</div>
+      <div class="article-source">https://nltimes.nl/2026/01/21/dutch-trade-union-urges-eu-intervene-netherlands-minimum-wage-law</div>
+    </div>
+
+    <div class="article">
+      <a href="https://stadszaken.nl/artikel/8698/nieuw-fonds-van-het-rijk-moet-groei-wooncooeperaties-versnellen" target="_blank" class="article-title">Nieuw fonds van het Rijk moet groei wooncoöperaties versnellen - Stadszaken.nl</a>
+      <div class="article-description">Het nieuwe Fonds Coöperatief Wonen van het SVn moet het voor coöperatieve wooninitiatieven makkelijker maken om financiering te krijgen.</div>
+      <div class="article-source">https://stadszaken.nl/artikel/8698/nieuw-fonds-van-het-rijk-moet-groei-wooncooeperaties-versnellen</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.refugeehelp.nl/en/status-holder/news/100594-the-dutch-government-has-new-rules-for-income-and-work-from-january-2026" target="_blank" class="article-title">Government changes on income, benefits and work as of 1 January 2026 explained. - RefugeeHelp</a>
+      <div class="article-description">From 1 January 2026, government rules on benefits, wages and work will change. In this article, you can read about what is changing and for whom this is important.</div>
+      <div class="article-source">https://www.refugeehelp.nl/en/status-holder/news/100594-the-dutch-government-has-new-rules-for-income-and-work-from-january-2026</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.eib.nl/nieuws/sterke-groei-van-de-woningnieuwbouw-2/" target="_blank" class="article-title">Sterke groei van de woningnieuwbouw - EIB</a>
+      <div class="article-description"><strong>Na jaren van moeizame productiecijfers bij de nieuwbouw van woningen kunnen in de komende twee jaar hoge groeicijfers worden gerealiseerd</strong>. Het aantal opgeleverde woningen dat in het afgelopen jaar maar 68.000 bedroeg, stijgt dit jaar naar ...</div>
+      <div class="article-source">https://www.eib.nl/nieuws/sterke-groei-van-de-woningnieuwbouw-2/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://scientias.nl/wetenschappers-waarschuwen-voor-regimeshift-wereldwijd-explosieve-groei-van-zeewier/" target="_blank" class="article-title">Wetenschappers waarschuwen voor regimeshift: wereldwijd explosieve groei van zeewier</a>
+      <div class="article-description">De trends zijn waarschijnlijk het gevolg van veranderingen in oceaantemperatuur, zeestromingen en voedingsstoffen. Ze kunnen aanzienlijke gevolgen hebben voor het mariene leven, het toerisme en kusteconomieën. “Hoewel er eerder regionale studies zijn gepubliceerd, biedt ons artikel voor het eerst een mondiaal overzicht van drijvende algen, waaronder macroalgenmatten en microalgenslijm”, zegt Hu.</div>
+      <div class="article-source">https://scientias.nl/wetenschappers-waarschuwen-voor-regimeshift-wereldwijd-explosieve-groei-van-zeewier/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>PLC programmeur arbeidsmarkt Nederland site:nl</h2>
+
+    <div class="article">
+      <a href="https://www.karakterbv.nl/professionele-traprenovatie-in-maastricht/" target="_blank" class="article-title">Traprenovatie in Maastricht | 15 jaar professionele ervaring</a>
+      <div class="article-description">De traprenovatie specialist in de regio Tilburg. ✓15 jaar garantie ✓Hoogwaardige producten ✓Lokale expertise</div>
+      <div class="article-source">https://www.karakterbv.nl/professionele-traprenovatie-in-maastricht/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>SCADA specialist tekort Nederland site:nl</h2>
+
+    <div class="article">
+      <a href="https://www.nrc.nl/nieuws/2026/01/22/nederland-moet-zich-beter-voorbereiden-op-extreme-regen-stelt-onderzoeksraad-voor-veiligheid-a4918351" target="_blank" class="article-title">Nederland moet zich beter voorbereiden op extreme regen, stelt Onderzoeksraad voor Veiligheid - NRC</a>
+      <div class="article-description">Klimaatverandering: „Nederland heeft al eeuwenlang ervaring met het bouwen van dijken tegen water uit zee en rivieren. Maar tegen water van boven moeten we andere oplossingen bedenken”, schrijft de onderzoeksraad.</div>
+      <div class="article-source">https://www.nrc.nl/nieuws/2026/01/22/nederland-moet-zich-beter-voorbereiden-op-extreme-regen-stelt-onderzoeksraad-voor-veiligheid-a4918351</div>
+    </div>
+
+    <div class="article">
+      <a href="https://eenvandaag.avrotros.nl/doe-mee/waarom-is-het-voor-mensen-erg-dat-gletsjers-smelten-jullie-vragen-beantwoord-162506" target="_blank" class="article-title">Waarom is het voor mensen erg dat gletsjers smelten? Jullie vragen beantwoord | EenVandaag</a>
+      <div class="article-description">&quot;Het is ook een van de zaken die wij glaciologen aanhalen als reden om ook vanuit Nederland en België gletsjers te bestuderen, want wij worden rechtstreeks getroffen door de zeespiegelstijging&quot;, gaat Van Tricht verder.</div>
+      <div class="article-source">https://eenvandaag.avrotros.nl/doe-mee/waarom-is-het-voor-mensen-erg-dat-gletsjers-smelten-jullie-vragen-beantwoord-162506</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.gld.nl/nieuws/8421053/kay-12-doet-indrukwekkende-uitvinding-hij-mag-over-10-jaar-bij-me-werken" target="_blank" class="article-title">Kay (12) doet indrukwekkende uitvinding: 'Hij mag over 10 jaar bij me werken' - Omroep Gelderland</a>
+      <div class="article-description">&#x27;Chapeau voor deze groep‑8‑uitvinder!&#x27; en &#x27;mag ik met deze man een bak koffie drinken?&quot;. Zomaar wat reacties die schooldirecteur Sander van Limbeek afgelopen week kreeg. Zijn leerling Kay bedacht een nieuw systeem waarmee leerlingen kunnen aangeven dat het toilet bezet is, en die uitvinding ...</div>
+      <div class="article-source">https://www.gld.nl/nieuws/8421053/kay-12-doet-indrukwekkende-uitvinding-hij-mag-over-10-jaar-bij-me-werken</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>automation techniek personeelstekort site:nl</h2>
+
+    <div class="article">
+      <a href="https://www.omropfryslan.nl/nl/nieuws/18148412/nederlandse-gemeenten-worstelen-met-personeelstekort-hoe-zit-dat-in-fryslan" target="_blank" class="article-title">Nederlandse gemeenten worstelen met personeelstekort: hoe zit dat in Fryslân? - Omrop Fryslân</a>
+      <div class="article-description">Als voorbeelden noemt Faber: civiele techniek, en ervaren technische- en juridische profielen.</div>
+      <div class="article-source">https://www.omropfryslan.nl/nl/nieuws/18148412/nederlandse-gemeenten-worstelen-met-personeelstekort-hoe-zit-dat-in-fryslan</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.oost.nl/nieuws/3609157/ai-zelfscankassa-uit-hengelo-herkent-je-dienblad-automatisch" target="_blank" class="article-title">AI-zelfscankassa uit Hengelo herkent je dienblad automatisch - Oost</a>
+      <div class="article-description">&quot;Het personeelstekort is echt een van de grootste uitdagingen in de horeca.&quot; Ook is volgens Snellink de beschikbare tijd in de horeca vaak beperkt, waardoor het lastig is om binnen die tijd winst te maken. Dat was de reden voor Eijsink om zich verder te verdiepen in de techniek van AI.</div>
+      <div class="article-source">https://www.oost.nl/nieuws/3609157/ai-zelfscankassa-uit-hengelo-herkent-je-dienblad-automatisch</div>
+    </div>
+
+    <div class="article">
+      <a href="https://nos.nl/artikel/2598908-gemeenten-komen-handen-tekort-en-zoeken-naar-creatieve-oplossingen" target="_blank" class="article-title">Gemeenten komen handen tekort en zoeken naar creatieve oplossingen</a>
+      <div class="article-description">Op dit moment doen vier gemeenten mee aan de tweejarige pilot, maar de belangstelling groeit. &quot;Ik verwacht dat er dit jaar tientallen gemeenten zullen aansluiten&quot;, zegt Schuitema. &quot;Het is een nieuwe optie op de menukaart tegen het personeelstekort. Je kunt nieuwe mensen aannemen, maar vind ze maar.</div>
+      <div class="article-source">https://nos.nl/artikel/2598908-gemeenten-komen-handen-tekort-en-zoeken-naar-creatieve-oplossingen</div>
+    </div>
+
+    <div class="article">
+      <a href="https://nos.nl/regio/gelderland/artikel/716962-personeelstekort-bij-gemeenten-legt-projecten-stil" target="_blank" class="article-title">Personeelstekort bij gemeenten legt projecten stil</a>
+      <div class="article-description">“Gemeenten willen verjongen, maar iemand moet nieuwe mensen inwerken”, zegt businessmanager Wybe Schuitema. De gepensioneerden blijven actief in hun oude vakgebied of helpen als mentor. &quot;Het is een nieuwe optie op de menukaart tegen het personeelstekort. Je kunt nieuwe mensen aannemen, maar vind ze maar.</div>
+      <div class="article-source">https://nos.nl/regio/gelderland/artikel/716962-personeelstekort-bij-gemeenten-legt-projecten-stil</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.nu.nl/economie/6383221/personeelstekort-gemeenten-steeds-groter-terwijl-werkdruk-toeneemt.html" target="_blank" class="article-title">Personeelstekort gemeenten steeds groter terwijl werkdruk toeneemt | Economie | NU.nl</a>
+      <div class="article-description"><strong>Het tekort aan gemeenteambtenaren groeit en gemeenten kunnen moeilijk personeel vinden</strong>. De vergrijzing slaat bij gemeenten harder toe dan bij de rest van Nederland. Dat zorgt ervoor dat projecten worden vertraagd of uitgesteld.</div>
+      <div class="article-source">https://www.nu.nl/economie/6383221/personeelstekort-gemeenten-steeds-groter-terwijl-werkdruk-toeneemt.html</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.engineersonline.nl/robotkok-frezer-en-magazijnmedewerker-genomineerd-voor-robotics-award-2026/" target="_blank" class="article-title">Robotkok, -frezer, en -magazijnmedewerker genomineerd voor Robotics Award 2026 - Engineers Online</a>
+      <div class="article-description">Fraunhofer IFAM, GoodBytz en Robust AI zijn genomineerd voor de Robotics Award 2026. Deze prijs beloont bedrijven die baanbrekende vooruitgang boeken in de industriële ontwikkeling met hun innovatieve, robotondersteunde oplossingen op het gebied van automatisering en logistiek.</div>
+      <div class="article-source">https://www.engineersonline.nl/robotkok-frezer-en-magazijnmedewerker-genomineerd-voor-robotics-award-2026/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>werktuigbouwkundig engineer markt site:nl</h2>
+
+    <div class="article">
+      <a href="https://www.utwente.nl/onderwijs/master/opleidingen/mechanical-engineering/" target="_blank" class="article-title">Mechanical Engineering / Werktuigbouwkunde | Master - wo opleiding</a>
+      <div class="article-description">Energiesystemen, productiemachines, vliegtuigen, auto’s, schepen, medische apparatuur: veel essentiële systemen en producten in onze moderne maatschappij zijn op de een of andere manier een resultaat van werktuigbouwkundig ingenieurschap.</div>
+      <div class="article-source">https://www.utwente.nl/onderwijs/master/opleidingen/mechanical-engineering/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.utwente.nl/onderwijs/bachelor/opleidingen/mechanical-engineering/" target="_blank" class="article-title">Werktuigbouwkunde | Bachelor - wo opleiding</a>
+      <div class="article-description">De vraag naar werktuigbouwkundigen die wetenschappelijke kennis met praktische vaardigheden combineren neemt zowel in Nederland als daarbuiten toe. Zeker als je na de bachelor een masteropleiding voltooit – in Mechanical Engineering of een aanverwant vakgebied – vind je na je afstuderen vrijwel zeker snel een goede baan.</div>
+      <div class="article-source">https://www.utwente.nl/onderwijs/bachelor/opleidingen/mechanical-engineering/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.utwente.nl/onderwijs/bachelor/opleidingen/industrial-design-engineering/" target="_blank" class="article-title">Industrieel Ontwerpen | Bachelor - wo opleiding</a>
+      <div class="article-description">Tijdens deze bacheloropleiding leer je niet alleen hoe je een product, dienst of systeem ontwerpt; je krijgt grip op het hele ontwerpproces, van ideevorming tot <strong>markt</strong>introductie – met alle kennis van techniek, design en marketing die daarvoor ...</div>
+      <div class="article-source">https://www.utwente.nl/onderwijs/bachelor/opleidingen/industrial-design-engineering/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.utwente.nl/onderwijs/bachelor/opleidingen/electrical-engineering/" target="_blank" class="article-title">Elektrotechniek | Bachelor - wo opleiding</a>
+      <div class="article-description">Studie waar je leert hightech oplossingen voor o.a. robotarmen, supersnelle chips en cyberbeveiliging te ontwikkelen. √ BSc √ EN √ 3 jaar</div>
+      <div class="article-source">https://www.utwente.nl/onderwijs/bachelor/opleidingen/electrical-engineering/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.bright-professionals.nl/jobs/lead-engineer-elektrotechniek-4rr34495/" target="_blank" class="article-title">Lead Engineer Elektrotechniek - Bright Professionals</a>
+      <div class="article-description">Voor Brabant Water zoeken wij een Lead Engineer Elektrotechniek. Als Lead Engineer Elektrotechniek speel je een belangrijke rol in het ontwikkelen, ontwerpen en realiseren van multidisciplinaire projecten binnen de drinkwaterproductie...</div>
+      <div class="article-source">https://www.bright-professionals.nl/jobs/lead-engineer-elektrotechniek-4rr34495/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>elektrotechniek personeelstekort Nederland site:nl</h2>
+
+    <div class="article">
+      <a href="https://nos.nl/regio/gelderland/artikel/716962-personeelstekort-bij-gemeenten-legt-projecten-stil" target="_blank" class="article-title">Personeelstekort bij gemeenten legt projecten stil</a>
+      <div class="article-description">Tegelijkertijd krijgen gemeenten er taken bij. Denk aan migratie, jeugdzorg en de energietransitie. Daarvoor is niet alleen geld nodig, maar vooral menskracht. Volgens Honcoop is het daarom positief dat meer gemeenten actief nadenken over oplossingen voor het aanhoudende personeelstekort.</div>
+      <div class="article-source">https://nos.nl/regio/gelderland/artikel/716962-personeelstekort-bij-gemeenten-legt-projecten-stil</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.omropfryslan.nl/nl/nieuws/18148412/nederlandse-gemeenten-worstelen-met-personeelstekort-hoe-zit-dat-in-fryslan" target="_blank" class="article-title">Nederlandse gemeenten worstelen met personeelstekort: hoe zit dat in Fryslân? - Omrop Fryslân</a>
+      <div class="article-description">Gemeenten in Nederland zitten met de handen in het haar. Ze kampen met een zorgelijk personeelstekort, en dan wacht er ook nog een flinke uitstroom van pensioengerechtigden.</div>
+      <div class="article-source">https://www.omropfryslan.nl/nl/nieuws/18148412/nederlandse-gemeenten-worstelen-met-personeelstekort-hoe-zit-dat-in-fryslan</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.nu.nl/economie/6383221/personeelstekort-gemeenten-steeds-groter-terwijl-werkdruk-toeneemt.html" target="_blank" class="article-title">Personeelstekort gemeenten steeds groter terwijl werkdruk toeneemt | Economie | NU.nl</a>
+      <div class="article-description">Mensen die voor hun opleiding een stageperiode bij een gemeente doorbrengen, zijn bijna zonder uitzondering buitengewoon verrast over het brede takenpakket. Later dit jaar ga ik mijn bijdrage leveren aan het personeelstekort waar dit artikel over gaat ;-) Ja, de arbeidsmarkt bij gemeenten is nog wat gesloten.</div>
+      <div class="article-source">https://www.nu.nl/economie/6383221/personeelstekort-gemeenten-steeds-groter-terwijl-werkdruk-toeneemt.html</div>
+    </div>
+
+    <div class="article">
+      <a href="https://nos.nl/artikel/2598908-gemeenten-komen-handen-tekort-en-zoeken-naar-creatieve-oplossingen" target="_blank" class="article-title">Gemeenten komen handen tekort en zoeken naar creatieve oplossingen</a>
+      <div class="article-description">Op dit moment doen vier gemeenten mee aan de tweejarige pilot, maar de belangstelling groeit. &quot;Ik verwacht dat er dit jaar tientallen gemeenten zullen aansluiten&quot;, zegt Schuitema. &quot;Het is een nieuwe optie op de menukaart tegen het personeelstekort. Je kunt nieuwe mensen aannemen, maar vind ze maar.</div>
+      <div class="article-source">https://nos.nl/artikel/2598908-gemeenten-komen-handen-tekort-en-zoeken-naar-creatieve-oplossingen</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.utwente.nl/onderwijs/bachelor/opleidingen/electrical-engineering/" target="_blank" class="article-title">Elektrotechniek | Bachelor - wo opleiding</a>
+      <div class="article-description">Elektrotechniek legt de basis voor technologie.</div>
+      <div class="article-source">https://www.utwente.nl/onderwijs/bachelor/opleidingen/electrical-engineering/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.oost.nl/nieuws/3609157/ai-zelfscankassa-uit-hengelo-herkent-je-dienblad-automatisch" target="_blank" class="article-title">AI-zelfscankassa uit Hengelo herkent je dienblad automatisch - Oost</a>
+      <div class="article-description">Algemeen directeur Joost Snellink zegt dat het systeem inspeelt op het personeelstekort en de steeds kleinere marges in de horeca.</div>
+      <div class="article-source">https://www.oost.nl/nieuws/3609157/ai-zelfscankassa-uit-hengelo-herkent-je-dienblad-automatisch</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>recruitment automation Nederland site:nl</h2>
+
+    <div class="article">
+      <a href="https://swedishchamber.nl/news/application-for-the-2026-2027-international-management-trainee-program-now-open/" target="_blank" class="article-title">Applications for the 2026 - 2027 International Management Trainee Program are now open! - Swedish Chamber of Commerce</a>
+      <div class="article-description"><strong>The Swedish Chamber of Commerce for the Netherlands is now accepting applications for the 2026 – 2027 International Management Trainee Program in Amsterdam</strong>. Gain hands-on experience in international business and join the vibrant Swedish-Dutch ...</div>
+      <div class="article-source">https://swedishchamber.nl/news/application-for-the-2026-2027-international-management-trainee-program-now-open/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.dero-groep.nl/nl/producten/bakkerij-inpakcel/" target="_blank" class="article-title">Automatiseren van inpakwerk bakkerijen - DERO GROEP</a>
+      <div class="article-description">Ontdek onze robotoplossingen voor het inpakken van Grootbrood, Kleinbrood, Banket / Gebak en Deegwaren. Ga voor efficiëntere bakkerijprocessen.</div>
+      <div class="article-source">https://www.dero-groep.nl/nl/producten/bakkerij-inpakcel/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>site:werf-en.nl technical recruitment</h2>
+
+    <div class="article">
+      <a href="https://www.werf-en.nl/5-experts-over-recruitment-als-natuurkundige-exercitie/" target="_blank" class="article-title">5 experts over 2026: 'De juiste data hebben is belangrijker dan A.I.' (2/3) - Werf&</a>
+      <div class="article-description">Beune: ‘Voor mij betekent dit dat recruitment steeds meer datagedreven wordt, en ook steeds meer intern gericht, in plaats van alleen extern.</div>
+      <div class="article-source">https://www.werf-en.nl/5-experts-over-recruitment-als-natuurkundige-exercitie/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>"intelligence group" technische arbeidsmarkt site:nl</h2>
+
+    <div class="article">
+      <a href="https://nltimes.nl/2026/01/24/female-freelancers-netherlands-outearned-men-first-time-2024" target="_blank" class="article-title">Female freelancers in the Netherlands outearned men for first time in 2024 | NL Times</a>
+      <div class="article-description">For the first time, <strong>female freelancers in the Netherlands earned more per hour than male freelancers in 2024</strong>, according to data analyzed by HR service providers HeadFirst Group and Intelligence Group.</div>
+      <div class="article-source">https://nltimes.nl/2026/01/24/female-freelancers-netherlands-outearned-men-first-time-2024</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.nd.nl/nieuws/nederland/1302970/van-een-loonkloof-is-bij-zzpers-geen-sprake-sterker-nog-vrouw" target="_blank" class="article-title">Van een loonkloof is bij zzp’ers geen sprake, sterker nog: vrouwen verdienen méér - Nederlands Dagblad. De kwaliteitskrant van christelijk Nederland</a>
+      <div class="article-description">Volgens een analyse van hr-dienstverlener HeadFirst en <strong>Intelligence Group</strong> zijn vrouwelijke zzp’ers al langer bezig met een inhaalslag. Hun inkomen nam sinds 2007 jaarlijks met gemiddeld 4,1 procent toe, terwijl dat van mannen met 2 procent groeide.</div>
+      <div class="article-source">https://www.nd.nl/nieuws/nederland/1302970/van-een-loonkloof-is-bij-zzpers-geen-sprake-sterker-nog-vrouw</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>engineering salaris benchmark Nederland site:nl</h2>
+
+    <div class="article">
+      <a href="https://www.metronieuws.nl/geld-carriere/2026/01/op-zoek-naar-een-goed-salaris-dit-zijn-de-beste-banen-van-2026/" target="_blank" class="article-title">Op zoek naar een goed salaris? Dit zijn de beste banen van 2026</a>
+      <div class="article-description">Volgens Indeed is de vraag structureel. Dat komt door vergrijzing, personeelstekorten en blijvende aandacht voor mentale gezondheid. Deze banen bieden niet alleen veel zekerheid, maar ook bovengemiddelde salarissen.</div>
+      <div class="article-source">https://www.metronieuws.nl/geld-carriere/2026/01/op-zoek-naar-een-goed-salaris-dit-zijn-de-beste-banen-van-2026/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://rekenbuddy.nl/rekentools/bruto-netto-berekenen/" target="_blank" class="article-title">Bruto-netto salaris berekenen (2026) - RekenBuddy</a>
+      <div class="article-description">Bereken eenvoudig je bruto naar netto salaris door je salaris per week, 4 weken, maand of jaar in te voeren. Vul ook je persoonlijke situatie en gegevens in, zoals parttime werk, loonheffingskorting, vergoedingen en premies, en zie direct hoeveel jij netto overhoudt van je bruto loon.</div>
+      <div class="article-source">https://rekenbuddy.nl/rekentools/bruto-netto-berekenen/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.upwijs.nl/actueel/salaris-docent-vo-2025-2027/" target="_blank" class="article-title">Salaris docent voortgezet onderwijs 2025–2027 - Samen aan de slag in het onderwijs.</a>
+      <div class="article-description">Wat verdient een docent in 2025–2026? Bekijk alle salarissen in schaal LB, LC en LD volgens de nieuwe cao VO 2025–2027. Inclusief salaristabellen en inschaling.</div>
+      <div class="article-source">https://www.upwijs.nl/actueel/salaris-docent-vo-2025-2027/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.meesterbaan.nl/blog/185/salaris-basisonderwijs-in-2025" target="_blank" class="article-title">Salaris basisonderwijs in 2026</a>
+      <div class="article-description">Je netto salaris hangt af van je bruto inkomen, je belastingpositie en persoonlijke heffingskortingen.</div>
+      <div class="article-source">https://www.meesterbaan.nl/blog/185/salaris-basisonderwijs-in-2025</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.nationalezorggids.nl/zorgpersoneel/dit-zijn-volgens-indeed-de-beste-banen-van-2026/" target="_blank" class="article-title">Dit zijn volgens Indeed de beste banen van 2026 - Nationale Zorggids</a>
+      <div class="article-description">Ieder jaar analyseert vacaturewebsite Indeed wat de beste banen van het jaar zijn. Die banen worden geselecteerd op basis van salaris, arbeidsmarkt, groei en flexibiliteit....</div>
+      <div class="article-source">https://www.nationalezorggids.nl/zorgpersoneel/dit-zijn-volgens-indeed-de-beste-banen-van-2026/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.fcupdate.nl/voetbalnieuws/2026/01/opvallend-netto-salaris-noa-lang-bij-galatasaray-ligt-direct-op-straat" target="_blank" class="article-title">Opvallend: netto salaris Noa Lang bij Galatasaray ligt direct op straat</a>
+      <div class="article-description">Noa Lang speelt in ieder geval het komende halfjaar op huurbasis bij Galatasaray, waar de aanvaller op zoek gaat naar meer speelminuten dan hij bij Napoli kreeg. Cim Bom Bom presenteerde de Nederlander vrijdagavond via de officiële kanalen en deelde daarbij de nodige details van de deal, waaronder het salaris van Lang.</div>
+      <div class="article-source">https://www.fcupdate.nl/voetbalnieuws/2026/01/opvallend-netto-salaris-noa-lang-bij-galatasaray-ligt-direct-op-straat</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>technical recruitment salaris trends site:nl</h2>
+
+    <div class="article">
+      <a href="https://www.werf-en.nl/5-experts-over-recruitment-als-natuurkundige-exercitie/" target="_blank" class="article-title">5 experts over 2026: 'De juiste data hebben is belangrijker dan A.I.' (2/3) - Werf&</a>
+      <div class="article-description">Wat valt in 2026 te verwachten qua recruitment? Eind vorig jaar kwam een groep experts samen om daarover van gedachten te wisselen.</div>
+      <div class="article-source">https://www.werf-en.nl/5-experts-over-recruitment-als-natuurkundige-exercitie/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://nltimes.nl/2026/01/24/female-freelancers-netherlands-outearned-men-first-time-2024" target="_blank" class="article-title">Female freelancers in the Netherlands outearned men for first time in 2024 | NL Times</a>
+      <div class="article-description">For the first time, <strong>female freelancers in the Netherlands earned more per hour than male freelancers in 2024</strong>, according to data analyzed by HR service providers HeadFirst Group and Intelligence Group.</div>
+      <div class="article-source">https://nltimes.nl/2026/01/24/female-freelancers-netherlands-outearned-men-first-time-2024</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.refugeehelp.nl/en/status-holder/news/100594-the-dutch-government-has-new-rules-for-income-and-work-from-january-2026" target="_blank" class="article-title">Government changes on income, benefits and work as of 1 January 2026 explained. - RefugeeHelp</a>
+      <div class="article-description">From 1 January 2026, government rules on benefits, wages and work will change. In this article, you can read about what is changing and for whom this is important.</div>
+      <div class="article-source">https://www.refugeehelp.nl/en/status-holder/news/100594-the-dutch-government-has-new-rules-for-income-and-work-from-january-2026</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.foodlog.nl/artikel/waarom-ah-in-nederland-wint-en-in-belgie-de-markt-op-zn-kop-zet" target="_blank" class="article-title">Waarom AH in Nederland wint en in België de markt op z'n… - Foodlog</a>
+      <div class="article-description">Het nieuws van de afgelopen week over de marktaandelen van supermarkten in Nederland en de prijzenoolog in België wijzen op één onderliggend mechanisme:…</div>
+      <div class="article-source">https://www.foodlog.nl/artikel/waarom-ah-in-nederland-wint-en-in-belgie-de-markt-op-zn-kop-zet</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.consumentenbond.nl/energie-vergelijken/consumentenbond-waarschuwt-ga-niet-in-zee-met-green-consultancy" target="_blank" class="article-title">Consumentenbond waarschuwt: ga niet in zee met Green Consultancy</a>
+      <div class="article-description">Consumenten melden dat dit telemarketingbureau op een misleidende en agressieve manier energieadvies aan huis verkoopt. Eerder beloofde het bedrijf beterschap, maar daar is nog weinig van te merken.</div>
+      <div class="article-source">https://www.consumentenbond.nl/energie-vergelijken/consumentenbond-waarschuwt-ga-niet-in-zee-met-green-consultancy</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.foodpersonality.nl/nieuws/nieuws/19772/jumbo-omzetgroei-in-2025-daling-marktaandeel-winstcijfer-late" target="_blank" class="article-title">Jumbo: ‘omzetgroei in 2025’, daling marktaandeel, winstcijfer later bekend - platform voor managers in de levensmiddelenhandel en -industrie</a>
+      <div class="article-description">De totaalomzet van Koninklijke Jumbo Food Groep over 2025 bedraagt € 10,64 miljard. In 2024 bedroeg de totaalomzet nog € 10,72 miljard. Gecorrigeerd met de tabaksomzet en de omzet van La Place, groeide de omzet in 2025 juist met € 300 miljoen, ofwel circa 3%, aldus Jumbo in een persbericht.</div>
+      <div class="article-source">https://www.foodpersonality.nl/nieuws/nieuws/19772/jumbo-omzetgroei-in-2025-daling-marktaandeel-winstcijfer-late</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>automation engineer salaris 2026 site:nl</h2>
+
+    <div class="article">
+      <a href="https://www.metronieuws.nl/geld-carriere/2026/01/op-zoek-naar-een-goed-salaris-dit-zijn-de-beste-banen-van-2026/" target="_blank" class="article-title">Op zoek naar een goed salaris? Dit zijn de beste banen van 2026</a>
+      <div class="article-description">Volgens Indeed is de vraag structureel. Dat komt door vergrijzing, personeelstekorten en blijvende aandacht voor mentale gezondheid. Deze banen bieden niet alleen veel zekerheid, maar ook bovengemiddelde salarissen.</div>
+      <div class="article-source">https://www.metronieuws.nl/geld-carriere/2026/01/op-zoek-naar-een-goed-salaris-dit-zijn-de-beste-banen-van-2026/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.salaris-informatie.nl/loonbelastingtabellen/loonbelastingtabellen-2026" target="_blank" class="article-title">Loonheffing tabellen 2026 - Salaris informatie</a>
+      <div class="article-description">Compleet overzicht met alle loonbelastingtabellen voor 2026. Inclusief witte en groene tabellen loonheffing.</div>
+      <div class="article-source">https://www.salaris-informatie.nl/loonbelastingtabellen/loonbelastingtabellen-2026</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.refugeehelp.nl/en/status-holder/news/100594-the-dutch-government-has-new-rules-for-income-and-work-from-january-2026" target="_blank" class="article-title">Government changes on income, benefits and work as of 1 January 2026 explained. - RefugeeHelp</a>
+      <div class="article-description">From 1 January 2026, government rules on benefits, wages and work will change. In this article, you can read about what is changing and for whom this is important.</div>
+      <div class="article-source">https://www.refugeehelp.nl/en/status-holder/news/100594-the-dutch-government-has-new-rules-for-income-and-work-from-january-2026</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.ondernemenmetpersoneel.nl/administreren/personeelsadministratie/personeelsplan-2026-maak-je-voornemens-waar" target="_blank" class="article-title">Personeelsplan 2026, ondernemers maak je voornemens waar</a>
+      <div class="article-description">Wat zijn jouw doelen rond personeel voor dit nieuwe jaar? Dit artikel helpt je om een personeelsplan te maken voor een succesvol 2026.</div>
+      <div class="article-source">https://www.ondernemenmetpersoneel.nl/administreren/personeelsadministratie/personeelsplan-2026-maak-je-voornemens-waar</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.upwijs.nl/actueel/cao-voortgezet-onderwijs-2025-2027/" target="_blank" class="article-title">Nieuwe cao voortgezet onderwijs 2025 – 2027 - Samen aan de slag in het onderwijs.</a>
+      <div class="article-description">Meer weten over wat je als docent verdient in 2026 en 2027? Lees dan ons uitgebreide overzicht met alle salaristabellen per schaal.</div>
+      <div class="article-source">https://www.upwijs.nl/actueel/cao-voortgezet-onderwijs-2025-2027/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.samenbouwenaanparticipatie.nl/cao-supermarkt-2025/" target="_blank" class="article-title">Cao Supermarkt 2025: salarissen, loonschalen & verhogingen</a>
+      <div class="article-description">Lees wat de cao supermarkt 2025 betekent voor jouw loon. Vergelijk VGL en LMB, ontdek de nieuwe loonschalen en zie hoe het minimumloon jouw salaris verhoogt.</div>
+      <div class="article-source">https://www.samenbouwenaanparticipatie.nl/cao-supermarkt-2025/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.salarisvanmorgen.nl/2026/01/19/vergoeding-verblijfkosten-binnen-en-buitenlandse-dienstreizen-per-2026/" target="_blank" class="article-title">Vergoeding verblijfkosten binnen- en buitenlandse dienstreizen per 2026 · Salaris Vanmorgen</a>
+      <div class="article-description">In onderstaande tabel vind je de bedragen die gelden vanaf 1 januari 2026.</div>
+      <div class="article-source">https://www.salarisvanmorgen.nl/2026/01/19/vergoeding-verblijfkosten-binnen-en-buitenlandse-dienstreizen-per-2026/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://eminentgroep.nl/vacatures/werkvoorbereider-groot-onderhoud-eindhoven-2189193-2/" target="_blank" class="article-title">Werkvoorbereider Groot Onderhoud - Eminent</a>
+      <div class="article-description">Een prima salaris in overeenstemming met het niveau van de functie, ervaring en kwaliteiten</div>
+      <div class="article-source">https://eminentgroep.nl/vacatures/werkvoorbereider-groot-onderhoud-eindhoven-2189193-2/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>oil gas recruitment Nederland site:nl</h2>
+
+    <div class="article">
+      <a href="https://tamoil.nl/" target="_blank" class="article-title">Voordelig tanken bij u in de buurt: Welkom bij Tamoil!</a>
+      <div class="article-description">Voordelig tanken en een uitmuntende service bij u in de buurt is wat wij willen. Tamoil heeft 236 tankstations en een ambitieuze groeistrategie.</div>
+      <div class="article-source">https://tamoil.nl/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>renewable energy recruitment Nederland site:nl</h2>
+
+    <div class="article">
+      <a href="https://www.blikopnoordwijkerhout.nl/item/40689-oproep-aan-colleges-duin-en-bollenstreek-neem-regie-op-twee-smart-energy-hubs" target="_blank" class="article-title">Oproep aan colleges Duin- en Bollenstreek: Neem regie op twee Smart Energy Hubs.</a>
+      <div class="article-description">Volgens de initiatiefnemers is daarom een strategische en collectieve benadering noodzakelijk. Zij vragen de vijf colleges om opdracht te geven tot een integraal, gebiedsdekkend onderzoek naar de realisatie van twee professionele, bedrijfsmatige Smart Energy Hubs:</div>
+      <div class="article-source">https://www.blikopnoordwijkerhout.nl/item/40689-oproep-aan-colleges-duin-en-bollenstreek-neem-regie-op-twee-smart-energy-hubs</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.bollenstreekomroep.nl/oproep-aan-colleges-voor-twee-smart-energy-hubs-in-de-bollenstreek/" target="_blank" class="article-title">Oproep aan colleges voor twee Smart Energy Hubs in de Bollenstreek - Bollenstreek Omroep</a>
+      <div class="article-description">Deze zijn volgens de partijen nodig om de lokale economie te laten ontwikkelen, de energietransitie voort te zetten en bestaande bedrijven en maatschappelijke instellingen te kunnen laten opereren.</div>
+      <div class="article-source">https://www.bollenstreekomroep.nl/oproep-aan-colleges-voor-twee-smart-energy-hubs-in-de-bollenstreek/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>manufacturing hiring trends Nederland site:nl</h2>
+
+    <div class="article">
+      <a href="https://nltimes.nl/2026/01/24/female-freelancers-netherlands-outearned-men-first-time-2024" target="_blank" class="article-title">Female freelancers in the Netherlands outearned men for first time in 2024 | NL Times</a>
+      <div class="article-description">Radboud University business professor Yvonne Benschop, who was not involved in the study, called the results “surprising.” She cautioned that trends must be confirmed over time but said the data suggests female freelancers may more easily command higher rates due to strong demand for their services.</div>
+      <div class="article-source">https://nltimes.nl/2026/01/24/female-freelancers-netherlands-outearned-men-first-time-2024</div>
+    </div>
+
+    <div class="article">
+      <a href="https://nltimes.nl/2026/01/24/dutch-business-growth-hits-historic-low-new-business-registrations-fall-10" target="_blank" class="article-title">Dutch business growth hits historic low; New business registrations fall 10% | NL Times</a>
+      <div class="article-description"><strong>Growth in the number of business establishments in the Netherlands slowed to a historic low in 2025</strong>, with fewer startups and more closures reported across all sectors. The number of new businesses fell 10 percent compared with 2024, while the ...</div>
+      <div class="article-source">https://nltimes.nl/2026/01/24/dutch-business-growth-hits-historic-low-new-business-registrations-fall-10</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.refugeehelp.nl/en/status-holder/news/100594-the-dutch-government-has-new-rules-for-income-and-work-from-january-2026" target="_blank" class="article-title">Government changes on income, benefits and work as of 1 January 2026 explained. - RefugeeHelp</a>
+      <div class="article-description"><strong>It will actually become easier for employers with more than 25 employees to hire people with occupational limitations</strong>. The wage cost benefit will apply from 2026 for as long as the employee is employed.</div>
+      <div class="article-source">https://www.refugeehelp.nl/en/status-holder/news/100594-the-dutch-government-has-new-rules-for-income-and-work-from-january-2026</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.eventplanner.nl/nieuws/11094_waarom-de-duitse-beursindustrie-belangrijk-is-30-miljard-en-280000-banen.html" target="_blank" class="article-title">Waarom de Duitse beursindustrie belangrijk is: €30 miljard en 280.000 banen</a>
+      <div class="article-description">Vakbeurzen worden soms afgedaan als traditioneel of ouderwets. De meest recente cijfers uit Duitsland bewijzen het tegendeel. Volgens een recent economisch impactonderzoek ...</div>
+      <div class="article-source">https://www.eventplanner.nl/nieuws/11094_waarom-de-duitse-beursindustrie-belangrijk-is-30-miljard-en-280000-banen.html</div>
+    </div>
+
+    <div class="article">
+      <a href="https://nltimes.nl/2026/01/21/dutch-trade-union-urges-eu-intervene-netherlands-minimum-wage-law" target="_blank" class="article-title">Dutch trade union urges EU to intervene over Netherlands' minimum wage law | NL Times</a>
+      <div class="article-description">FNV, the Dutch trade union, plans to ask the European Commission to intervene regarding the Netherlands’ implementation of the EU minimum wage directive. Although the Senate approved a bill on Tuesday to incorporate the directive into national law, FNV argues that the proposal falls short ...</div>
+      <div class="article-source">https://nltimes.nl/2026/01/21/dutch-trade-union-urges-eu-intervene-netherlands-minimum-wage-law</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>arbeidsmarkt Gelderland techniek site:nl</h2>
+
+    <div class="article">
+      <a href="https://www.internetbode.nl/roosendaal/economie/467725/uwv-beroepen-in-zorg-en-techniek-grootste-knelpunten-op-west-" target="_blank" class="article-title">UWV: ‘Beroepen in zorg en techniek grootste knelpunten op West-Brabantse arbeidsmarkt’ - Al het nieuws uit Roosendaal</a>
+      <div class="article-description">De tekorten aan personeel in de zorg en techniek lopen in onze regio de komende jaren verder op.</div>
+      <div class="article-source">https://www.internetbode.nl/roosendaal/economie/467725/uwv-beroepen-in-zorg-en-techniek-grootste-knelpunten-op-west-</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.vraagenaanbod.nl/ook-na-vierde-onderhandelingsronde-nieuw-cao-nog-geen-akkoord/" target="_blank" class="article-title">Nog geen akkoord na eerste loonbod nieuw cao: 'onacceptabele versoberingen' - Vraag & Aanbod</a>
+      <div class="article-description">Het gaat om een cao-voorstel dat onder andere voorziet in een <strong>loonstijging van 2,6 procent op jaarbasis</strong>. De vakbonden zijn teleurgesteld. Zo wil CNV wil pas verder praten als er meer in het vat zit.</div>
+      <div class="article-source">https://www.vraagenaanbod.nl/ook-na-vierde-onderhandelingsronde-nieuw-cao-nog-geen-akkoord/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.hetgelekrantje.nl/nieuws/algemeen/168158/uwv-beroepen-in-zorg-en-techniek-grootste-knelpunten-op-zeeuw" target="_blank" class="article-title">UWV: Beroepen in zorg en techniek grootste knelpunten op Zeeuwse arbeidsmarkt richting 2030 - Adverteren Noord-Beveland | Het Gele Krantje | Krant en Online</a>
+      <div class="article-description">UWV: Beroepen in zorg en techniek grootste knelpunten op Zeeuwse arbeidsmarkt richting 2030 19 jan, 09:21</div>
+      <div class="article-source">https://www.hetgelekrantje.nl/nieuws/algemeen/168158/uwv-beroepen-in-zorg-en-techniek-grootste-knelpunten-op-zeeuw</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.omroepzeeland.nl/nieuws/18115661/op-zoek-naar-een-nieuwe-studie-of-carriere-dit-zijn-de-banen-van-de-toekomst" target="_blank" class="article-title">Op zoek naar een nieuwe studie of carrière? Dit zijn de banen van de toekomst - Omroep Zeeland</a>
+      <div class="article-description">Zo ziet de arbeidsmarkt van de komende jaren in Zeeland eruit: En dan is er nog Artificial Intelligence (AI). Een bedreiging voor veel banen, maar lang niet voor allemaal, volgens Audenaerd: &quot;AI is ontzettend goed in het omzetten van data naar informatie. Daar kan het ons ook goed bij helpen. Maar er zijn nog talloze vaardigheden die AI juist niet kan overnemen, zeker in de zorg en in de techniek: de sectoren die nu zo onder druk staan.&quot;</div>
+      <div class="article-source">https://www.omroepzeeland.nl/nieuws/18115661/op-zoek-naar-een-nieuwe-studie-of-carriere-dit-zijn-de-banen-van-de-toekomst</div>
+    </div>
+
+    <div class="article">
+      <a href="https://noorderlink.nl/vacatures" target="_blank" class="article-title">Vind je droombaan in Noord-Nederland | Noorderlink</a>
+      <div class="article-description">Noorderlink is het arbeidsmarktportaal van het Noorden. Hier vind je het overzicht van actuele vacatures in Noord-Nederland.</div>
+      <div class="article-source">https://noorderlink.nl/vacatures</div>
+    </div>
+
+    <div class="article">
+      <a href="https://weetjewijzer.nl/naar-een-verbouwing-kijken-was-nog-nooit-zo-vermakelijk-om-te-kijken/2/" target="_blank" class="article-title">Naar een verbouwing kijken was nog nooit zo vermakelijk om te kijken - WeetjeWijzer</a>
+      <div class="article-description">In de moderne arbeidsmarkt zien we een duidelijke verschuiving. Genderrollen worden steeds minder rigide, en traditionele beroepen worden opnieuw bekeken door een meer inclusieve bril. Ook in de bouwsector, waar jarenlang een haast exclusieve mannelijke cultuur heerste, breken vrouwen nu door barrières die decennialang ondoordringbaar leken.</div>
+      <div class="article-source">https://weetjewijzer.nl/naar-een-verbouwing-kijken-was-nog-nooit-zo-vermakelijk-om-te-kijken/2/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.stigas.nl/nieuws/colland-arbeidsmarktonderzoek-2026-van-start/" target="_blank" class="article-title">Colland Arbeidsmarktonderzoek 2026 van start | Stigas</a>
+      <div class="article-description">Samen werken aan een toekomstbestendige sector agrarisch en groen <strong>In februari 2026 start het tweejaarlijkse Colland Arbeidsmarktonderzoek</strong>. Dit onderzoek, uitgevoerd in opdracht van het bestuur van Colland Arbeidsmarkt, brengt de actuele trends ...</div>
+      <div class="article-source">https://www.stigas.nl/nieuws/colland-arbeidsmarktonderzoek-2026-van-start/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.vee-en-gewas.nl/artikel/1445205-gelderland-wil-240-boeren-strenge-stikstofregels-opleggen-zij-zitten-in-de-stikstofstrook-van-500-meter" target="_blank" class="article-title">Gelderland wil 240 boeren strenge stikstofregels opleggen: zij zitten in de stikstofstrook van 500 meter | Vee-en-Gewas.nl - Landbouwnieuws voor Oost-Nederland</a>
+      <div class="article-description">Deze boeren moeten het bedrijf om gaan vormen, als het aan de provincie Gelderland ligt. &#x27;Het agrarische verdienmodel in het gebied verschuift voor een deel van productielandbouw naar het leveren van groene en blauwe diensten, zoals agrarisch natuur- en landschapsbeheer.</div>
+      <div class="article-source">https://www.vee-en-gewas.nl/artikel/1445205-gelderland-wil-240-boeren-strenge-stikstofregels-opleggen-zij-zitten-in-de-stikstofstrook-van-500-meter</div>
+    </div>
+
+    <div class="article">
+      <a href="https://ondernemendleeuwarden.nl/agenda/banenmarkt/" target="_blank" class="article-title">Banenmarkt</a>
+      <div class="article-description">Een ‘ouderwetse’ banenmarkt waar werkgevers en werkzoekenden elkaar ontmoeten in hun zoektocht naar werk en personeel. De banenmarkt biedt een kans om direct in contact te komen met getalenteerde werkzoekenden. Het is dé plek om je bedrijf te presenteren, te laten zien wat het werken in ...</div>
+      <div class="article-source">https://ondernemendleeuwarden.nl/agenda/banenmarkt/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://vrmg.nl/provincie-gelderland-stimuleert-toekomstbestendige-bedrijventerreinen/" target="_blank" class="article-title">VRMG, de omroep voor de Noord-West Veluwe - Provincie Gelderland stimuleert toekomstbestendige bedrijventerreinen</a>
+      <div class="article-description">Meer informatie en aanvragen zijn te vinden op de subsidiepagina Toekomstbestendige Bedrijventerreinen – Procesondersteuning van de provincie Gelderland.</div>
+      <div class="article-source">https://vrmg.nl/provincie-gelderland-stimuleert-toekomstbestendige-bedrijventerreinen/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>personeelstekort Overijssel industrie site:nl</h2>
+
+    <div class="article">
+      <a href="https://nos.nl/artikel/2598908-gemeenten-komen-handen-tekort-en-zoeken-naar-creatieve-oplossingen" target="_blank" class="article-title">Gemeenten komen handen tekort en zoeken naar creatieve oplossingen</a>
+      <div class="article-description">Tegelijkertijd krijgen gemeenten steeds meer taken toebedeeld. &quot;Bijvoorbeeld migratievraagstukken of de energietransitie. Daar is geld voor nodig, maar vooral menskracht.&quot; Volgens Honcoop is het daarom positief dat meer gemeenten actief nadenken over oplossingen voor het aanhoudende personeelstekort.</div>
+      <div class="article-source">https://nos.nl/artikel/2598908-gemeenten-komen-handen-tekort-en-zoeken-naar-creatieve-oplossingen</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.oost.nl/nieuws/3609157/ai-zelfscankassa-uit-hengelo-herkent-je-dienblad-automatisch" target="_blank" class="article-title">AI-zelfscankassa uit Hengelo herkent je dienblad automatisch - Oost</a>
+      <div class="article-description">Algemeen directeur Joost Snellink zegt dat het systeem inspeelt op het personeelstekort en de steeds kleinere marges in de horeca.</div>
+      <div class="article-source">https://www.oost.nl/nieuws/3609157/ai-zelfscankassa-uit-hengelo-herkent-je-dienblad-automatisch</div>
+    </div>
+
+    <div class="article">
+      <a href="https://nos.nl/regio/gelderland/artikel/716962-personeelstekort-bij-gemeenten-legt-projecten-stil" target="_blank" class="article-title">Personeelstekort bij gemeenten legt projecten stil</a>
+      <div class="article-description">Tegelijkertijd krijgen gemeenten er taken bij. Denk aan migratie, jeugdzorg en de energietransitie. Daarvoor is niet alleen geld nodig, maar vooral menskracht. Volgens Honcoop is het daarom positief dat meer gemeenten actief nadenken over oplossingen voor het aanhoudende personeelstekort.</div>
+      <div class="article-source">https://nos.nl/regio/gelderland/artikel/716962-personeelstekort-bij-gemeenten-legt-projecten-stil</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.omropfryslan.nl/nl/nieuws/18148412/nederlandse-gemeenten-worstelen-met-personeelstekort-hoe-zit-dat-in-fryslan" target="_blank" class="article-title">Nederlandse gemeenten worstelen met personeelstekort: hoe zit dat in Fryslân? - Omrop Fryslân</a>
+      <div class="article-description">Gemeenten in Nederland zitten met de handen in het haar. Ze kampen met een zorgelijk personeelstekort, en dan wacht er ook nog een flinke uitstroom van pensioengerechtigden.</div>
+      <div class="article-source">https://www.omropfryslan.nl/nl/nieuws/18148412/nederlandse-gemeenten-worstelen-met-personeelstekort-hoe-zit-dat-in-fryslan</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.nu.nl/economie/6383221/personeelstekort-gemeenten-steeds-groter-terwijl-werkdruk-toeneemt.html" target="_blank" class="article-title">Personeelstekort gemeenten steeds groter terwijl werkdruk toeneemt | Economie | NU.nl</a>
+      <div class="article-description">Het tekort aan gemeenteambtenaren groeit en gemeenten kunnen moeilijk personeel vinden. De vergrijzing slaat bij gemeenten harder toe dan bij de rest van Nederland. Dat zorgt ervoor dat projecten worden vertraagd of uitgesteld.</div>
+      <div class="article-source">https://www.nu.nl/economie/6383221/personeelstekort-gemeenten-steeds-groter-terwijl-werkdruk-toeneemt.html</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.oost.nl/nieuws/3610739/code-oranje-ijzel-maakt-wegen-in-overijssel-verraderlijk-glad" target="_blank" class="article-title">Code oranje: ijzel maakt wegen in Overijssel verraderlijk glad - Oost</a>
+      <div class="article-description">Het kan behoorlijk glad worden in Overijssel vannacht en morgenochtend.</div>
+      <div class="article-source">https://www.oost.nl/nieuws/3610739/code-oranje-ijzel-maakt-wegen-in-overijssel-verraderlijk-glad</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.destentor.nl/zwolle/code-oranje-in-overijssel-en-flevoland-kans-op-gladheid-door-ijzel~a2c16348/" target="_blank" class="article-title">Code oranje in Overijssel en Flevoland: kans op gladheid door ijzel | Zwolle | De Stentor.nl</a>
+      <div class="article-description">In de loop van de nacht verandert de code geel in de noordelijker provincies in code oranje. Vanaf 02.00 uur geldt code oranje in Overijssel, Flevoland, Groningen, Drenthe, Friesland en de Waddeneilanden.</div>
+      <div class="article-source">https://www.destentor.nl/zwolle/code-oranje-in-overijssel-en-flevoland-kans-op-gladheid-door-ijzel~a2c16348/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://medeondernemers.nl/wat-is-arbeidskorting/" target="_blank" class="article-title">Wat is arbeidskorting precies in 2026?</a>
+      <div class="article-description">Arbeidskorting is een korting op je inkomstenbelasting en Zvw-premie. Leer hoe je deze in 2026 berekent en wat de maximale korting is.</div>
+      <div class="article-source">https://medeondernemers.nl/wat-is-arbeidskorting/</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.zwollenu.nl/code-oranje-overijssel-ijzel-gladheid/" target="_blank" class="article-title">Code oranje in Overijssel: grote kans op ijzel en verraderlijke gladheid</a>
+      <div class="article-description">Voor de provincie Overijssel is code oranje afgegeven vanwege gevaarlijke gladheid.</div>
+      <div class="article-source">https://www.zwollenu.nl/code-oranje-overijssel-ijzel-gladheid/</div>
+    </div>
+
+  </div>
+
+  <div class="category">
+    <h2>technical recruitment Brabant site:nl</h2>
+
+    <div class="article">
+      <a href="https://noorderlink.nl/vacatures" target="_blank" class="article-title">Vind je droombaan in Noord-Nederland | Noorderlink</a>
+      <div class="article-description">Noorderlink is het arbeidsmarktportaal van het Noorden. Hier vind je het overzicht van actuele vacatures in Noord-Nederland.</div>
+      <div class="article-source">https://noorderlink.nl/vacatures</div>
+    </div>
+
+    <div class="article">
+      <a href="https://www.bom.nl/actueel/brabant-versnelt-ai-innovatie-voor-bedrijven-met-toegang-tot-supercomputers" target="_blank" class="article-title">Brabant versnelt… | De Brabantse Ontwikkelings Maatschappij</a>
+      <div class="article-description"><strong>Het AI Supercomputing initiatief Brabant gaat naar verwachting in het voorjaar van 2026 echt van start</strong>. Vanaf dat moment kunnen organisaties gebruikmaken van praktische begeleiding, zoals hulp bij code-optimalisatie, datamanagement en vragen over wet- en regelgeving en ethiek rond AI.</div>
+      <div class="article-source">https://www.bom.nl/actueel/brabant-versnelt-ai-innovatie-voor-bedrijven-met-toegang-tot-supercomputers</div>
+    </div>
+
+  </div>
+
+  <div class="timestamp">
+    <p>Report generated at: 25-1-2026, 23:58:03</p>
+    <p>Powered by Brave Search API</p>
+  </div>
 </body>
 </html>
