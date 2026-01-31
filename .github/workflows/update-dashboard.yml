@@ -104,14 +104,18 @@ jobs:
           DATE=$(date +"%d %B %Y")
           ARTICLES="${{ steps.changes.outputs.article_count }}"
 
-          git commit -m "🤖 Auto-update: Weekly recruitment news - $DATE
+          COMMIT_MSG=$(cat <<'EOF'
+🤖 Auto-update: Weekly recruitment news - $DATE
 
 - $ARTICLES technical recruitment artikelen
 - Top 10 geselecteerd met AI scoring
 - Data uploaded naar Notion database
 - Automated by GitHub Actions
 
-[skip ci]"
+[skip ci]
+EOF
+          )
+          git commit -m "$COMMIT_MSG"
 
           git push
 
