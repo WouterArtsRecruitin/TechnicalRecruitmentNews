@@ -1,5 +1,4 @@
-ncache:aSetup Node.js
-me: Weekly News Scraper
+name: Weekly News Scraper
 
 on:
   # Draait elke maandag om 07:00 UTC (08:00 CET)
@@ -38,7 +37,7 @@ jobs:
 
       - name: Run scraper
         run: |
-          if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ] && [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
             npm run test
           else
             npm run scrape
@@ -56,17 +55,14 @@ jobs:
           fi
 
       - name: Commit and push changes
-        if: steps.changes.outputs.changed == 'true' && github.event.inputs.dry_run != 'true'
+        if: steps.changes.outputs.changed == 'true' && (github.event_name != 'workflow_dispatch' || github.event.inputs.dry_run != 'true')
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add news-data.js
-          git commit -m "$(cat <<'EOF'
-          Automatische update: Nieuwe recruitment nieuws artikelen
+          git commit -m "Automatische update: Nieuwe recruitment nieuws artikelen
 
-          Gescraped op: $(date -u +"%Y-%m-%d %H:%M UTC")
-          EOF
-          )"
+Gescraped op: $(date -u +"%Y-%m-%d %H:%M UTC")"
           git push
 
       - name: Summary
