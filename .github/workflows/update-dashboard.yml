@@ -141,7 +141,7 @@ jobs:
           fi
 
       - name: Send Slack notification
-        if: steps.changes.outputs.changed == 'true' && secrets.SLACK_WEBHOOK_URL != ''
+        if: steps.changes.outputs.changed == 'true' && secrets.SLACK_WEBHOOK_URL
         run: |
           curl -X POST ${{ secrets.SLACK_WEBHOOK_URL }} \
             -H 'Content-Type: application/json' \
