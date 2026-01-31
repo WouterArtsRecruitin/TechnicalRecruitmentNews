@@ -34,7 +34,7 @@ jobs:
       - name: Checkout intelligence-hub
         uses: actions/checkout@v4
         with:
-          repository: WouterArtsRecruitin/intelligence-hub
+          repository: WouterArtsRecruiting/intelligence-hub
           path: intelligence-hub
           token: ${{ secrets.GITHUB_TOKEN }}
 
