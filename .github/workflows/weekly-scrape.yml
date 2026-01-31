@@ -60,9 +60,8 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add news-data.js
-          git commit -m "Automatische update: Nieuwe recruitment nieuws artikelen
-
-Gescraped op: $(date -u +"%Y-%m-%d %H:%M UTC")"
+          COMMIT_MSG="Automatische update: Nieuwe recruitment nieuws artikelen"$'\n\n'"Gescraped op: $(date -u +"%Y-%m-%d %H:%M UTC")"
+          git commit -m "$COMMIT_MSG"
           git push
 
       - name: Summary
