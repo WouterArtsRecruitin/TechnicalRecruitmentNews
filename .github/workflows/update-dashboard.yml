@@ -14,8 +14,9 @@ on:
           - local-upload
 
   # Automatisch elke maandag na intelligence-hub scrape
-  schedule:
-    - cron: '30 7 * * 1'  # Monday 08:30 CET (30 min na intelligence-hub)
+  # DISABLED - scripts don't exist in intelligence-hub repo
+  # schedule:
+  #   - cron: '30 7 * * 1'  # Monday 08:30 CET (30 min na intelligence-hub)
 
 permissions:
   contents: write
