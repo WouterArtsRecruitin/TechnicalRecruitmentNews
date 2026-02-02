@@ -1,8 +1,35 @@
-// Alle 100 recruitment nieuws artikelen - Automatisch bijgewerkt op 2026-02-01T09:14:22.874Z
+// Alle 103 recruitment nieuws artikelen - Automatisch bijgewerkt op 2026-02-02T07:45:01.507Z
 const newsData = {
   "topArticles": [
     {
       "rank": 1,
+      "title": "Woningcorporaties lopen 19,4 miljard euro achter op investeringsdoelen",
+      "description": "<strong>Woningcorporaties komen € 19,4 miljard tekort om de afgesproken investeringen in nieuwbouw, onderhou</strong> d en verduurzaming van sociale huurwoningen tot en met 2034 te kunnen realiseren.",
+      "url": "https://www.accountancyvanmorgen.nl/2026/01/30/woningcorporaties-lopen-194-miljard-euro-achter-op-investeringsdoelen/",
+      "source": "Accountancy Vanmorgen",
+      "category": "Technisch Personeel Tekort & Personeelskrapte",
+      "date": "30 jan 2026"
+    },
+    {
+      "rank": 2,
+      "title": "Is het straks over en uit met het gratis kandidaten zoeken op LinkedIn?",
+      "description": "<strong>Lekker scrollen op LinkedIn, op zoek naar kandidaten? Het wordt de ‘gewone’ gebruiker steeds moeilij</strong> ker gemaakt. Gebruik je de gratis LinkedIn-versie, dan kun je in sommige landen al niet meer zoeken op trefwoorden voor een functietitel, bedrijf, school, voornaam of achternaam. Je kunt bijvoorbeeld nog steeds ‘huidige bedrijven’ en ‘voormalige bedr",
+      "url": "https://www.werf-en.nl/is-het-over-en-uit-met-het-gratis-kandidaten-zoeken-op-linkedin/",
+      "source": "Werf&",
+      "category": "IT & Software Development",
+      "date": "2 feb 2026"
+    },
+    {
+      "rank": 3,
+      "title": "Termijn beslissingen WIA gewijzigd: meer tijd UWV voor (her)beoordelen WIA-uitkeringen",
+      "description": "<strong>UWV heeft de beslistermijn voor WIA-beoordelingen en herbeoordelingen per 1 januari 2026 gewijzigd. </strong> UWV heeft hiervoor nu geen 8 weken, maar 16 weken de tijd. Het bericht Termijn beslissingen WIA gewijzigd: meer tijd UWV voor (her)beoordelen WIA-uitkeringen verscheen eerst op Salaris Vanmorgen.",
+      "url": "https://www.salarisvanmorgen.nl/2026/02/02/partner-sazas-termijn-beslissingen-wia-gewijzigd-meer-tijd-uwv-voor-herbeoordelen-wia-uitkeringen/",
+      "source": "Salaris Vanmorgen",
+      "category": "Salarissen & Arbeidsvoorwaarden Techniek 2026",
+      "date": "2 feb 2026"
+    },
+    {
+      "rank": 4,
       "title": "Flexibel werken: wat Gen Z echt nodig heeft",
       "description": "<strong>De jongste generatie op de arbeidsmarkt werkt volgens een ander ritme. Voor Gen Z is werk geen verpl</strong> ichting van negen tot vijf, maar een verlengstuk van hun identiteit. Ze vragen om autonomie, zingeving en flexibiliteit, en dat op hun voorwaarden. Werkgevers die daarin meegaan, bouwen niet alleen aan aantrekkelijk werkgeverschap, maar versterken hu",
       "url": "https://www.baaz.nl/flexibel-werken-wat-gen-z-echt-nodig-heeft",
@@ -11,7 +38,7 @@ const newsData = {
       "date": "31 jan 2026"
     },
     {
-      "rank": 2,
+      "rank": 5,
       "title": "Nieuwe baan of collega? Plaats deze career move op Recruitmenttech.nl",
       "description": "<strong>De recruitmenttech-markt is continu in beweging. Professionals wisselen van rol, maken de stap naar </strong> een nieuwe organisatie of starten juist bij een leverancier, bureau of corporate recruitmentteam. Toch bleef één vraag vaak onbeantwoord: waar deel je die carrièrestap met de juiste doelgroep? Daar brengt Recruitmenttech.nl verandering in met de nieu",
       "url": "https://www.recruitmenttech.nl/2026/01/29/nieuwe-baan-of-collega-plaats-deze-career-move-op-recruitmenttech-nl/",
@@ -20,7 +47,7 @@ const newsData = {
       "date": "29 jan 2026"
     },
     {
-      "rank": 3,
+      "rank": 6,
       "title": "Lonneke Schagen (DHL Express) ‘AI is geen doel, maar middel om de juiste mensen te vinden’",
       "description": "<strong>Tijdens het Recruitment Tech Event 2025 ging Femke Marijne in gesprek met Lonneke Schagen van DHL. G</strong> een slides, geen demo’s, maar een open gesprek over hoe technologie, data en AI een steeds grotere rol spelen binnen recruitment, zonder dat de menselijke maat verloren gaat. DHL geldt al jaren als een organisatie die vooroploopt in recruitmenttechno",
       "url": "https://www.recruitmenttech.nl/2026/01/28/lonneke-schagen-dhl-express-ai-is-geen-doel-maar-middel-om-de-juiste-mensen-te-vinden/",
@@ -29,7 +56,7 @@ const newsData = {
       "date": "28 jan 2026"
     },
     {
-      "rank": 4,
+      "rank": 7,
       "title": "Eightfold aangeklaagd in VS: sollicitanten eisen transparantie over AI-scores",
       "description": "<strong>BREAKING: Een nieuwe AI-aanklacht in de Verenigde Staten. Leverancier Eightfold AI wordt in Californ</strong> ië door twee sollicitanten aangeklaagd voor het ‘heimelijk beoordelen’ met kunstmatige intelligentie, zónder hen daarover te informeren. Succes voorspellen… Het Amerikaanse Eightfold AI levert haar AI-heavy recruitmentplatform aan grote namen als Mic",
       "url": "https://www.recruitmenttech.nl/2026/01/23/eightfold-aangeklaagd-in-vs-sollicitanten-eisen-transparantie-over-ai-scores/",
@@ -38,7 +65,7 @@ const newsData = {
       "date": "23 jan 2026"
     },
     {
-      "rank": 5,
+      "rank": 8,
       "title": "Recruitment Tech Outlook 2026: ‘Eerst strategie, dan tools’ (2/2)",
       "description": "<strong>In het tweede deel van de Recruitment Tech Outlook 2026 schoven Marije Kromkamp van EmployConnect en</strong>  René Zwijnenburg van In2Dialog aan bij Jasper Spanjaart en Martijn Hemminga. Waar het eerste gesprek draaide om consolidatie en AI-paradoxen, ging dit deel over de praktische kant: hoe kies je eigenlijk een tool? En kan dat überhaupt zonder een […]",
       "url": "https://www.recruitmenttech.nl/2026/01/21/recruitment-tech-outlook-2026-eerst-strategie-dan-tools-2-2/",
@@ -47,7 +74,7 @@ const newsData = {
       "date": "21 jan 2026"
     },
     {
-      "rank": 6,
+      "rank": 9,
       "title": "Slechts 12 procent van organisaties zet AI-agents al grootschalig in binnen recruitment",
       "description": "<strong>De opkomst van Agentic AI valt samen met een periode waarin recruitmentteams onder druk staan. Organ</strong> isaties verwachten snellere doorlooptijden, hogere kwaliteit van aannames en een betere kandidaatervaring, terwijl teams kleiner zijn geworden en processen complexer. Volgens onderzoek van Aptitude Research gebruikt 44 procent van de organisaties AI ",
       "url": "https://www.recruitmenttech.nl/2026/01/20/slechts-12-procent-van-organisaties-zet-ai-agents-al-grootschalig-in-binnen-recruitment/",
@@ -56,31 +83,13 @@ const newsData = {
       "date": "20 jan 2026"
     },
     {
-      "rank": 7,
+      "rank": 10,
       "title": "Deze beroepen gaan het hardst groeien in 2026 (en nummer 1 verrast niet)",
       "description": "Thomas de Man, carrière-expert bij LinkedIn: \"De snelstgroeiende banen in Nederland vertellen een groter verhaal: technologie versnelt, maar zekerheid en veiligheid worden net zo cruciaal. Dat juist <strong>AI Engineers en militairen bovenaan staan</strong> laat zien hoe fundamenteel de arbeidsmarkt verandert.\"",
       "url": "https://www.metronieuws.nl/in-het-nieuws/binnenland/2026/01/deze-beroepen-gaan-het-hardst-groeien-in-2026-en-nummer-1-verrast-niet/",
       "source": "Metro Nieuws",
       "category": "Automation & Engineering Recruitment",
       "date": "9 jan 2026"
-    },
-    {
-      "rank": 8,
-      "title": "Recruitment Tech Outlook 2026: hyperpersonalisatie én einde van motivatiebrief?",
-      "description": "Uiteindelijk zal <strong>automatisering een sleutelbegrip blijven</strong> voor alles wat met recruitment, HR én de arbeidsmarkt te maken heeft. Maar automatiseren we uiteindelijk banen, of zijn het taken binnen een baan?",
-      "url": "https://www.recruitmenttech.nl/2026/01/07/recruitment-tech-outlook-2026-toekomst-van-ai-hyperpersonalisatie-en-einde-van-motivatiebrief-1-2/",
-      "source": "Recruitmenttech.nl",
-      "category": "AI & Recruitment Tech Trends 2026",
-      "date": "7 jan 2026"
-    },
-    {
-      "rank": 9,
-      "title": "Technicus wil behalve beter salaris óók gewaardeerd worden",
-      "description": "Door te focussen op het diploma worden potentiële werknemers buitenspel gezet. <strong>Volgens 29% van de ondervraagden draagt dit zelfs bij aan het tekort aan technici</strong>. Waardering en erkenning blijken net zo belangrijk als een competitief salaris.",
-      "url": "https://www.metaalmagazine.nl/nieuws/technicus-wil-behalve-beter-salaris-ook-gewaardeerd-worden/107734/",
-      "source": "Metaal Magazine",
-      "category": "Technisch Personeel Tekort & Personeelskrapte",
-      "date": "8 jan 2026"
     }
   ],
   "categories": [
@@ -88,6 +97,13 @@ const newsData = {
       "title": "Technisch Personeel Tekort & Personeelskrapte",
       "priority": true,
       "articles": [
+        {
+          "title": "Woningcorporaties lopen 19,4 miljard euro achter op investeringsdoelen",
+          "description": "Woningcorporaties komen € 19,4 miljard tekort om de afgesproken investeringen in nieuwbouw, onderhoud en verduurzaming van sociale huurwoningen tot en met 2034 te kunnen realiseren.",
+          "url": "https://www.accountancyvanmorgen.nl/2026/01/30/woningcorporaties-lopen-194-miljard-euro-achter-op-investeringsdoelen/",
+          "source": "Accountancy Vanmorgen",
+          "date": "30 jan 2026"
+        },
         {
           "title": "Defensie biedt €12.000 bonus per jaar om deze vacatures te vullen",
           "description": "Defensie kampt met personeelstekort en biedt bonussen tot €12.000 per jaar. Dit kun je verdienen als je reageert op deze vacatures.",
@@ -247,6 +263,13 @@ const newsData = {
       "title": "Salarissen & Arbeidsvoorwaarden Techniek 2026",
       "priority": true,
       "articles": [
+        {
+          "title": "Termijn beslissingen WIA gewijzigd: meer tijd UWV voor (her)beoordelen WIA-uitkeringen",
+          "description": "UWV heeft de beslistermijn voor WIA-beoordelingen en herbeoordelingen per 1 januari 2026 gewijzigd. UWV heeft hiervoor nu geen 8 weken, maar 16 weken de tijd. Het bericht Termijn beslissingen WIA gewijzigd: meer tijd UWV voor (her)beoordelen WIA-uitkeringen verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/02/02/partner-sazas-termijn-beslissingen-wia-gewijzigd-meer-tijd-uwv-voor-herbeoordelen-wia-uitkeringen/",
+          "source": "Salaris Vanmorgen",
+          "date": "2 feb 2026"
+        },
         {
           "title": "Het nieuwe salaris als brandweerman in zwaarbevochten cao",
           "description": "Geen baan heeft zowel sex appeal als brandweerman, maar welk salaris zit erbij? We zetten de lonen op een rij en bekijken de kersverse cao.",
@@ -764,6 +787,13 @@ const newsData = {
       "title": "IT & Software Development",
       "priority": false,
       "articles": [
+        {
+          "title": "Is het straks over en uit met het gratis kandidaten zoeken op LinkedIn?",
+          "description": "Lekker scrollen op LinkedIn, op zoek naar kandidaten? Het wordt de ‘gewone’ gebruiker steeds moeilijker gemaakt. Gebruik je de gratis LinkedIn-versie, dan kun je in sommige landen al niet meer zoeken op trefwoorden voor een functietitel, bedrijf, school, voornaam of achternaam. Je kunt bijvoorbeeld nog steeds ‘huidige bedrijven’ en ‘voormalige bedr",
+          "url": "https://www.werf-en.nl/is-het-over-en-uit-met-het-gratis-kandidaten-zoeken-op-linkedin/",
+          "source": "Werf&",
+          "date": "2 feb 2026"
+        },
         {
           "title": "De ‘januari-reset’ is big business voor natuurhuisjes",
           "description": "Na de feestdagen willen veel Nederlanders vooral ontprikkelen: de helft heeft behoefte om de natuur in te gaan en 56% verlangt naar rust, blijkt uit onderzoek in opdracht van Natuurhuisje. En dat blijft niet bij goede voornemens: in de eerste week van januari stegen boekingen voor een verblijf in natuurhuisjes binnen twee weken met 9% (ultra-lastmi",
