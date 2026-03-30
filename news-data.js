@@ -1,8 +1,53 @@
-// Alle 277 recruitment nieuws artikelen - Automatisch bijgewerkt op 2026-03-09T07:44:32.787Z
+// Alle 306 recruitment nieuws artikelen - Automatisch bijgewerkt op 2026-03-30T08:17:19.231Z
 const newsData = {
   "topArticles": [
     {
       "rank": 1,
+      "title": "Floyd & Hamilton, Byner, Recrout en Recbi te zien op Demo_Day in Utrecht",
+      "description": "<strong>Op donderdag 21 mei 2026 komt de wereld van recruitmenttechnologie samen in Utrecht tijdens Recruitm</strong> ent Tech Demo_Day. Dit event biedt recruiters en HR-professionals de kans om kennis te maken met innovatieve oplossingen van meer dan 40 aanbieders uit binnen- en buitenland. Onder andere Floyd & Hamilton, Byner, Recrout en Recbi verzorgen een demo o",
+      "url": "https://www.recruitmenttech.nl/2026/03/27/floyd-hamilton-byner-recrout-en-recbi-te-zien-op-demo_day-in-utrecht/",
+      "source": "Recruitmenttech.nl",
+      "category": "AI & Recruitment Tech Trends 2026",
+      "date": "27 mrt 2026"
+    },
+    {
+      "rank": 2,
+      "title": "Van gebruiker naar spil: de rol van super users bij recruitmentsoftware",
+      "description": "<strong>Recruitmentsoftware zoals recruitmentssystemen (ATS), CRM-oplossingen en sourcingtools is de afgelop</strong> en jaren complexer en krachtiger geworden. Organisaties investeren fors in deze technologieën, maar lopen in de praktijk vaak tegen hetzelfde probleem aan: de software wordt niet optimaal gebruikt. De uitdaging zit zelden in de implementatie zelf, ma",
+      "url": "https://www.recruitmenttech.nl/2026/03/26/van-gebruiker-naar-spil-de-rol-van-super-users-bij-recruitmentsoftware/",
+      "source": "Recruitmenttech.nl",
+      "category": "AI & Recruitment Tech Trends 2026",
+      "date": "26 mrt 2026"
+    },
+    {
+      "rank": 3,
+      "title": "Talkshow over recruitmenttools: ‘Mijn moeder kan ook een ATS kiezen, dat maakt je nog geen winnaar’",
+      "description": "<strong>Meer tools kopen levert geen concurrentievoordeel op. Dát was de rode draad in het talkshowgesprek o</strong> p het Recruitment Tech Event 2025 (RTE25), waar Luuk van Neerven (Booston.io) en Mees van ’t Hoff (Teamtailor) aan tafel zaten met host Janine Nieboer. Het gesprek ging over outperformen — en waarom technologie daar maar een klein deel van […]",
+      "url": "https://www.recruitmenttech.nl/2026/03/25/talkshow-over-recruitmenttools-mijn-moeder-kan-ook-een-ats-kiezen-dat-maakt-je-nog-geen-winnaar/",
+      "source": "Recruitmenttech.nl",
+      "category": "AI & Recruitment Tech Trends 2026",
+      "date": "25 mrt 2026"
+    },
+    {
+      "rank": 4,
+      "title": "Dít zijn de meest gebruikte ATS-systemen wereldwijd in 2026",
+      "description": "<strong>Welk ATS gebruiken bedrijven wereldwijd het meest? Die vraag stelde Michael Blakley, CEO van Screenl</strong> oop, twee weken geleden op LinkedIn. Hij deelde grafieken op basis van live vacaturedata — en de reacties stroomden binnen. Dit is wat de data laat zien én hoe de ATS-data tot stand kwam. Welk ATS scoort het best? Een LinkedIn-post […]",
+      "url": "https://www.recruitmenttech.nl/2026/03/23/dit-zijn-de-meest-gebruikte-ats-systemen-wereldwijd-in-2026/",
+      "source": "Recruitmenttech.nl",
+      "category": "Technisch Personeel Tekort & Personeelskrapte",
+      "date": "23 mrt 2026"
+    },
+    {
+      "rank": 5,
+      "title": "Recruitee, DataChecker, Cruit, Talentech en WBNRS op Demo_Day in Utrecht",
+      "description": "<strong>Op donderdag 21 mei 2026 staat Utrecht volledig in het teken van Recruitment Tech Demo_Day. Tijdens </strong> dit event krijgen recruiters en HR-professionals de kans om recruitmentsoftware van meer dan 40 nationale en internationale aanbieders van dichtbij te ervaren. Onder andere Recruitee, DataChecker, Cruit, Talentech en WBNRS verzorgen een demo op hun e",
+      "url": "https://www.recruitmenttech.nl/2026/03/19/recruitee-datachecker-cruit-talentech-en-wbnrs-op-demo_day-in-utrecht/",
+      "source": "Recruitmenttech.nl",
+      "category": "AI & Recruitment Tech Trends 2026",
+      "date": "19 mrt 2026"
+    },
+    {
+      "rank": 6,
       "title": "Jobilla, Intelligence Group, Jobylon en Virtual Sales Recruiter op Demo_Day 2026",
       "description": "<strong>Op donderdag 21 mei 2026 kun je op Recruitment Tech Demo_Day in Utrecht als recruiter of HR-professi</strong> onal kennismaken met recruitmentsoftware van meer dan 40 leveranciers uit binnen- en buitenland. Jobilla, Intelligence Group, Jobylon en Virtual Sales Recruiter zijn vier van de leveranciers die je op hun demo spot hun oplossingen laten zien. Ontdek ",
       "url": "https://www.recruitmenttech.nl/2026/03/06/jobilla-intelligence-group-jobylon-en-virtual-sales-recruiter-op-demo_day-2026/",
@@ -11,7 +56,7 @@ const newsData = {
       "date": "6 mrt 2026"
     },
     {
-      "rank": 2,
+      "rank": 7,
       "title": "Ben van der Burg sluit tiende editie Recruitment Tech Demo Day af",
       "description": "<strong>De tiende editie van Recruitment Tech Demo Day krijgt een opvallende afsluiting. Ben van der Burg ve</strong> rzorgt de closing keynote van het jaarlijkse event voor recruitmentsoftware. Zijn komst markeert niet alleen het jubileum van het event, maar ook een terugkeer. In 2017 stond Van der Burg al eens op het podium als keynotespreker tijdens het […]",
       "url": "https://www.recruitmenttech.nl/2026/03/04/ben-van-der-burg-sluit-tiende-editie-recruitment-tech-demo-day-af/",
@@ -20,7 +65,7 @@ const newsData = {
       "date": "4 mrt 2026"
     },
     {
-      "rank": 3,
+      "rank": 8,
       "title": "Recruitment Tech Monthly maart 2026: investeringen, AI-bureaus groeien sneller en strijd om Startup_Pitch",
       "description": "<strong>Investeringen, een overname, onderzoekscijfers die er niet om liegen en vijf startups die strijden o</strong> m een plek op Demo_Day: een greep uit de Recruitment Tech Monthly van maart 2026. Bekijk de uitzending, met Martijn Hemminga en Jasper Spanjaart vanuit de RT-studio in Utrecht, op YouTube óf luister naar de aflevering via jouw favoriete podcastkanaal",
       "url": "https://www.recruitmenttech.nl/2026/03/03/recruitment-tech-monthly-maart-2026-investeringen-ai-bureaus-groeien-sneller-en-strijd-om-startup_pitch/",
@@ -29,7 +74,7 @@ const newsData = {
       "date": "3 mrt 2026"
     },
     {
-      "rank": 4,
+      "rank": 9,
       "title": "ObjectivEye haalt nieuwe investering op: ‘Talent eerlijk, transparant en toekomstgericht inzetten’",
       "description": "<strong>ObjectivEye heeft een investering ontvangen van UNIIQ, met steun van TNO. Het bedrijf ontwikkelt een</strong>  AI-platform dat organisaties helpt kandidaten te beoordelen op vaardigheden en ontwikkelpotentieel. Het is de eerste gezamenlijke investering van UNIIQ en TNO onder hun nieuwe samenwerking. “We bouwen beslissingsinfrastructuur waarmee organisaties t",
       "url": "https://www.recruitmenttech.nl/2026/03/02/objectiveye-haalt-nieuwe-investering-op-talent-eerlijk-transparant-en-toekomstgericht-inzetten/",
@@ -38,58 +83,13 @@ const newsData = {
       "date": "2 mrt 2026"
     },
     {
-      "rank": 5,
+      "rank": 10,
       "title": "7 Feiten die je nu echt moet kennen over vrouwen op de arbeidsmarkt",
       "description": "<strong>Het was dit jaar alweer de 115de keer dat op 8 maart Internationale Vrouwendag plaatsvond. Maar hela</strong> as is deze dag nog steeds hard nodig, en misschien zelfs wel harder dan ooit. Want de voortgang van vrouwenrechten ligt internationaal op best veel fronten onder vuur, en het wordt er vaak dus eerder moeilijker dan makkelijker op […] Het bericht 7 Fe",
       "url": "https://www.werf-en.nl/7-feiten-die-je-nu-echt-moet-kennen-over-vrouwen-op-de-arbeidsmarkt/",
       "source": "Werf&",
       "category": "AI & Recruitment Tech Trends 2026",
       "date": "9 mrt 2026"
-    },
-    {
-      "rank": 6,
-      "title": "Jeroen Klerkx (Picnic): ‘Menselijke maat zit niet in minder tech, maar in betere processen’",
-      "description": "<strong>Picnic groeide in tien jaar van een relatief kleine uitdager naar een internationale speler met tien</strong> duizenden medewerkers, en moest daarbij voortdurend het recruitment- en operatieproces opnieuw uitvinden. Tijdens het Werf& Trends 2026-2030 event afgelopen december in Utrecht schetste Jeroen Klerkx van Picnic (en tevens lid van de vakjury Recruitme",
-      "url": "https://www.recruitmenttech.nl/2026/02/26/jeroen-klerkx-picnic-menselijke-maat-zit-niet-in-minder-tech-maar-in-betere-processen/",
-      "source": "Recruitmenttech.nl",
-      "category": "AI & Recruitment Tech Trends 2026",
-      "date": "26 feb 2026"
-    },
-    {
-      "rank": 7,
-      "title": "UP in Business zet AI in voor hyperpersoonlijke content: ‘40% sneller converteren’",
-      "description": "<strong>Organisaties die talent willen aantrekken, richten zich nog altijd vooral op actief werkzoekenden. M</strong> aar high performers? Die zijn niet actief op zoek naar een nieuwe baan. UP in Business helpt werkgevers om júist de latent beschikbare doelgroep te bereiken. En doet dat sinds kort met een eigen AI-platform dat content hyperpersoonlijk maakt. Carolin",
-      "url": "https://www.recruitmenttech.nl/2026/02/24/up-in-business-zet-ai-in-voor-hyperpersoonlijke-content-40-sneller-converteren/",
-      "source": "Recruitmenttech.nl",
-      "category": "AI & Recruitment Tech Trends 2026",
-      "date": "24 feb 2026"
-    },
-    {
-      "rank": 8,
-      "title": "Stem op jouw favoriete startup in de Startup Pitch 2026",
-      "description": "<strong>Vijf innovatieve startups dingen mee naar een gratis demo spot tijdens Recruitment Tech Demo_Day 202</strong> 6 op 21 mei in Utrecht. AI-CV, daidalo, Matcher.jobs, RecruitmentAds.com en Talio zijn genomineerd voor de Startup Pitch 2026. Nu is het woord aan het publiek: zij bepalen welke startup straks op het podium staat. Dit zijn de genomineerden Bekijk hie",
-      "url": "https://www.recruitmenttech.nl/2026/02/17/stem-op-jouw-favoriete-startup-in-de-startup-pitch-2026/",
-      "source": "Recruitmenttech.nl",
-      "category": "AI & Recruitment Tech Trends 2026",
-      "date": "17 feb 2026"
-    },
-    {
-      "rank": 9,
-      "title": "Deze events over recruitmenttech & AI wil je niet missen in 2026",
-      "description": "<strong>In 2026 staan tal van bijeenkomsten gepland waar professionals uit recruitment, HR en technologie el</strong> kaar ontmoeten, leren en netwerken. Hieronder vind je een overzicht van de belangrijkste events, geordend per maand met een korte omschrijving van elk event, inclusief links voor meer informatie. Maart Webinar week (9 – 12 maart) Tijdens de 17e editi",
-      "url": "https://www.recruitmenttech.nl/2026/02/16/deze-events-over-recruitmenttech-ai-wil-je-niet-missen-in-2026/",
-      "source": "Recruitmenttech.nl",
-      "category": "AI & Recruitment Tech Trends 2026",
-      "date": "16 feb 2026"
-    },
-    {
-      "rank": 10,
-      "title": "De maand in werving: 7 dingen die ons opvielen in februari 2026",
-      "description": "<strong>Februari 2026 was natuurlijk in de eerste plaats de maand van de meest gouden Olympische Spelen voor</strong>  Nederland ooit, en het aantreden van het eerste kabinet-Jetten. Verder was het spannend tussen de VS en Iran, en werd voormalig prins Andrew gearresteerd, als een van de eersten uit de Epstein-files. President Trump bleef (vooralsnog) buiten schot, ",
-      "url": "https://www.werf-en.nl/de-maand-in-werving-7-dingen-die-ons-opvielen-in-februari-2026/",
-      "source": "Werf&",
-      "category": "AI & Recruitment Tech Trends 2026",
-      "date": "2 mrt 2026"
     }
   ],
   "categories": [
@@ -97,6 +97,48 @@ const newsData = {
       "title": "Technisch Personeel Tekort & Personeelskrapte",
       "priority": true,
       "articles": [
+        {
+          "title": "Firewall audits: risico’s voor ondernemers",
+          "description": "Veel ondernemers vertrouwen op firewalls als eerste verdedigingslinie. Logisch — ze vormen al jaren de basis van netwerkbeveiliging. Toch laten firewall audits iets anders zien: die bescherming schiet in de praktijk vaak tekort, zonder dat dit direct zichtbaar is. Systemen draaien stabiel, incidenten blijven uit en alles lijkt onder controle. Maar ",
+          "url": "https://www.baaz.nl/firewall-audits-risicos-voor-ondernemers",
+          "source": "Baaz",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Latam start in tijden van brandstofkrapte op Schiphol: ’Vijf weken geleden zag de wereld er anders uit’",
+          "description": "De Zuid-Amerikaanse luchtvaartmaatschappij Latam start in een energiecrisis met vluchten vanaf Sao Paulo naar Schiphol, waarmee KLM er een concurrent op de route bij krijgt. „Schiphol was een blinde vlek in ons netwerk.”",
+          "url": "https://www.telegraaf.nl/financieel/latam-start-in-tijden-van-brandstofkrapte-op-schiphol-vijf-weken-geleden-zag-de-wereld-er-anders-uit/144640921.html",
+          "source": "Telegraaf Financieel",
+          "date": "30 mrt 2026"
+        },
+        {
+          "title": "Nieuwe cleanroom in Delft moet chiptekort aanpakken met duizenden technici",
+          "description": "In Delft is een nieuwe onderwijs-cleanroom geopend die direct moet bijdragen aan het oplossen van het tekort aan technici in de chipsector. De faciliteit richt zich op het versneld opleiden van studenten voor bedrijven als ASML, ASM en Besi. De faciliteit is onderdeel van het nationale Beethoven-programma en richt zich specifiek op Zuid-Holland. Da",
+          "url": "https://tw.nl/nieuwe-cleanroom-in-delft-moet-chiptekort-aanpakken-met-duizenden-technici/",
+          "source": "Technisch Weekblad",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Kabinet presenteert eerste Voorjaarsnota",
+          "description": "In de jaren erna neemt het tekort af en koerst het kabinet op een lager saldo van -2,1% in 2030. De economische impact van het conflict in het Midden-Oosten is in de Voorjaarsnota nog niet meegenomen. Minister Heinen (Financiën): “Deze Voorjaarsnota is een vertaling van de financiële afspraken uit het coalitieakkoord. Nederland staat voor grote […]",
+          "url": "https://www.accountancyvanmorgen.nl/2026/03/27/kabinet-presenteert-eerste-voorjaarsnota/",
+          "source": "Accountancy Vanmorgen",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Vacatureteksten schrijven met A.I.: sneller, scherper én succesvoller [ADV]",
+          "description": "Voor veel organisaties is de vacaturetekst traditiegetrouw het startpunt van het recruitmentproces voor nieuw talent. Ouderwets? Mag je vinden. Feit blijft dat het de perfecte vingeroefening is om jezelf aan het denken te zetten over wie – welke skills – je nou écht zoekt voor het team. En die vingeroefening, die kun je dankzij A.I.-tools […] Het b",
+          "url": "https://www.werf-en.nl/vacatureteksten-schrijven-met-a-i-sneller-scherper-en-succesvoller-adv/",
+          "source": "Werf&",
+          "date": "26 mrt 2026"
+        },
+        {
+          "title": "Dít zijn de meest gebruikte ATS-systemen wereldwijd in 2026",
+          "description": "Welk ATS gebruiken bedrijven wereldwijd het meest? Die vraag stelde Michael Blakley, CEO van Screenloop, twee weken geleden op LinkedIn. Hij deelde grafieken op basis van live vacaturedata — en de reacties stroomden binnen. Dit is wat de data laat zien én hoe de ATS-data tot stand kwam. Welk ATS scoort het best? Een LinkedIn-post […]",
+          "url": "https://www.recruitmenttech.nl/2026/03/23/dit-zijn-de-meest-gebruikte-ats-systemen-wereldwijd-in-2026/",
+          "source": "Recruitmenttech.nl",
+          "date": "23 mrt 2026"
+        },
         {
           "title": "De 11 gemeenten waar een doorsnee huishouden een huis kan kopen",
           "description": "De huizenprijzen zijn zo hard gestegen dat een doorsnee huishouden een ton tekortkomt. In deze gemeenten kan je nog een gemiddeld huis kopen.",
@@ -335,6 +377,27 @@ const newsData = {
       "priority": true,
       "articles": [
         {
+          "title": "De toekomst van industrieel vastgoed met modulaire bouw",
+          "description": "De vraag naar bedrijfsruimten in Nederland bereikt recordhoogtes, aangejaagd door de groei van e-commerce, de energietransitie en de behoefte aan lokale productiefaciliteiten. Traditionele bouwmethoden kunnen deze vraag echter nauwelijks bijbenen. Ze worden gekenmerkt door lange doorlooptijden, stijgende kosten en een aanzienlijke ecologische voeta",
+          "url": "https://tw.nl/de-toekomst-van-industrieel-vastgoed-met-modulaire-bouw/",
+          "source": "Technisch Weekblad",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "De accountant als automonteur",
+          "description": "Begrijpen doe ik het nog steeds niet, maar één ding is me wel duidelijk geworden: mensen vertrouwen hem. Omdat hij weet wat hij doet én omdat hij eerlijk is over wat er moet gebeuren. Hoe anders mijn werk als (toekomstig) accountant ook lijkt, in de kern draait het om precies hetzelfde: deskundigheid en betrouwbaarheid. Voor […]",
+          "url": "https://www.accountancyvanmorgen.nl/2026/03/27/partner-weadeltaland-de-accountant-als-automonteur/",
+          "source": "Accountancy Vanmorgen",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "ICT-zzp’er profiteert van explosieve vraag naar A.I.-skills; uurtarief hoger dan ooit",
+          "description": "De vraag naar ICT’ers in vaste functies mag dan wat opdrogen, als je zzp’er bent, valt er nog altijd een goede boterham in te verdienen. En met name als je kundig bent in A.I.-vaardigheden als vibe-coding en prompt engineering, zo blijkt uit de nieuwste editie van de Talent Monitor, een gezamenlijke uitgave van HR-tech dienstverlener HeadFirst Grou",
+          "url": "https://www.werf-en.nl/ict-zzper-profiteert-van-explosieve-vraag-naar-ai-skills-uurtarief-stijgt-boven-100-euro/",
+          "source": "Werf&",
+          "date": "26 mrt 2026"
+        },
+        {
           "title": "De Makers Top 100 Flevoland, Utrecht: €10 miljard omzet en 28.653 FTE.",
           "description": "Met een gezamenlijke omzet van €10,075 en 28.653 FTE levert Flevoland, Utrecht een stevige bijdrage aan de Nederlandse maakindustrie. De bedrijven uit de Makers Top 100 die gevestigd zijn in de provincies Flevoland, Utrecht: ASM, Verder Group, Royal Terberg Group, Hydratec Industries, Van Halteren Group, Alfen, BluePrint Automation, Modiform, Bosal",
           "url": "https://linkmagazine.nl/de-makers-top-100-flevoland-utrecht-e10-miljard-omzet-en-28-653-fte/?utm_source=rss&utm_medium=rss&utm_campaign=de-makers-top-100-flevoland-utrecht-e10-miljard-omzet-en-28-653-fte",
@@ -431,6 +494,83 @@ const newsData = {
       "title": "Salarissen & Arbeidsvoorwaarden Techniek 2026",
       "priority": true,
       "articles": [
+        {
+          "title": "Het uurloon van zzp-vertalers in 2026, die stilaan wanhopig worden",
+          "description": "Er is één zzp-groep die het minst gelooft in eigen toekomst. Niet de schrijver, maar de tolk en vertaler. Dit is hun dikke uurloon in 2026.",
+          "url": "https://www.manners.nl/uurtarief-zzp-vertaler-tolk-2026/",
+          "source": "Manners",
+          "date": "28 mrt 2026"
+        },
+        {
+          "title": "Cao Metaal en Techniek nu definitief",
+          "description": "Leden van de vakbonden en werkgevers hebben ingestemd met de cao Metaal en Techniek. Dat betekent dat de nieuwe cao...",
+          "url": "https://www.metaalmagazine.nl/nieuws/cao-metaal-en-techniek-nu-definitief/108712/",
+          "source": "Metaal Magazine",
+          "date": "13 mrt 2026"
+        },
+        {
+          "title": "“AVG‑bewustzijn zakt weg”",
+          "description": "In de AVG staat hoe organisaties om moeten gaan met persoonsgegevens. Maar hoe vind je de balans tussen het gebruik van persoonsgegevens en het beschermen van privacy? Het bericht “AVG‑bewustzijn zakt weg” verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/03/26/avg-bewustzijn-zakt-weg/",
+          "source": "Salaris Vanmorgen",
+          "date": "26 mrt 2026"
+        },
+        {
+          "title": "Evaluatie Wet arbeidsmarkt in balans: geen grote effecten, eerste stap in goede richting",
+          "description": "Uit de evaluatie van de Wet arbeidsmarkt in balans (Wab) blijkt dat de meetbare effecten van de Wab relatief beperkt zijn, maar dat het een eerste stap in de goede richting is. Het bericht Evaluatie Wet arbeidsmarkt in balans: geen grote effecten, eerste stap in goede richting verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/03/26/evaluatie-wet-arbeidsmarkt-in-balans-geen-grote-effecten-eerste-stap-in-goede-richting/",
+          "source": "Salaris Vanmorgen",
+          "date": "26 mrt 2026"
+        },
+        {
+          "title": "In welke kolom loonstaat WIA-uitkering bij werkgeversbetaling?",
+          "description": "In welke kolom van de loonstaat moet de WIA-uitkering die via de werkgever aan de werknemer wordt betaald worden opgenomen? Het bericht In welke kolom loonstaat WIA-uitkering bij werkgeversbetaling? verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/03/27/in-welke-kolom-loonstaat-wia-uitkering-bij-werkgeversbetaling/",
+          "source": "Salaris Vanmorgen",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Bedingen in arbeidsovereenkomsten kunnen grote gevolgen hebben",
+          "description": "Arbeidsovereenkomsten kunnen verschillende bedingen bevatten. Maar welk beding neem je op, wat zijn aandachtspunten en hoe pas je ze toe? Het bericht Bedingen in arbeidsovereenkomsten kunnen grote gevolgen hebben verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/03/27/bedingen-in-arbeidsovereenkomsten-kunnen-grote-gevolgen-hebben/",
+          "source": "Salaris Vanmorgen",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Laadpaal bij woning werknemer en loonaangifte: auto van de zaak of eigen auto?",
+          "description": "Als de werkgever een laadpaal bij de woning van de werknemer laat plaatsen, hangt het af van de situatie (eigen auto of leaseauto) hoe je deze kosten in de loonaangifte moet verwerken. Het bericht Laadpaal bij woning werknemer en loonaangifte: auto van de zaak of eigen auto? verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/03/27/laadpaal-bij-woning-werknemer-en-loonaangifte-auto-van-de-zaak-of-eigen-auto/",
+          "source": "Salaris Vanmorgen",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Ontslag onterecht vanwege onder meer zoekopdrachten op ChatGPT op bedrijfslaptop",
+          "description": "De werkgever heeft de werknemer op staande voet ontslagen, onder meer omdat hij met de bedrijfslaptop op ChatGPT heeft gezocht hoe hij een ontslagvergoeding kon vorderen. Het bericht Ontslag onterecht vanwege onder meer zoekopdrachten op ChatGPT op bedrijfslaptop verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/03/27/ontslag-onterecht-vanwege-onder-meer-zoekopdrachten-op-chatgpt-op-bedrijfslaptop/",
+          "source": "Salaris Vanmorgen",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Advies bedrijfsarts leidend bij RIV-toets zieke werknemer – wetsvoorstel naar RvS",
+          "description": "Het advies van de bedrijfsarts over wat een zieke werknemer na 2 jaar ziekte nog kan doen, wordt leidend bij de RIV-toets. Dat staat in een nieuw wetsvoorstel. Het bericht Advies bedrijfsarts leidend bij RIV-toets zieke werknemer – wetsvoorstel naar RvS verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/03/29/advies-bedrijfsarts-leidend-bij-riv-toets-zieke-werknemer-wetsvoorstel-naar-rvs/",
+          "source": "Salaris Vanmorgen",
+          "date": "29 mrt 2026"
+        },
+        {
+          "title": "Wet verbetering poortwachter: zo begeleid je de werkgever door het verzuimtraject",
+          "description": "Wat houdt de Wet verbetering poortwachter precies in, welke stappen moet de werkgever doorlopen en waar gaat het in de praktijk het vaakst mis? Het bericht Wet verbetering poortwachter: zo begeleid je de werkgever door het verzuimtraject verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/03/30/partner-pascal-ai-wet-verbetering-poortwachter-zo-begeleid-je-de-werkgever-door-het-verzuimtraject/",
+          "source": "Salaris Vanmorgen",
+          "date": "30 mrt 2026"
+        },
+        {
+          "title": "Opnieuw uitstel voor bedrag ineens – niet 1 juli 2026 maar 1 januari 2029",
+          "description": "De invoering van de Wet herziening bedrag ineens wordt uitgesteld van 1 juli 2026 naar 1 januari 2029. Dat staat in de Voorjaarsnota 2026. Het bericht Opnieuw uitstel voor bedrag ineens – niet 1 juli 2026 maar 1 januari 2029 verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/03/30/opnieuw-uitstel-voor-bedrag-ineens-1-juli-2026-niet-haalbaar/",
+          "source": "Salaris Vanmorgen",
+          "date": "30 mrt 2026"
+        },
         {
           "title": "Hoogte gebruikelijk loon dga administratiekantoor terecht gecorrigeerd",
           "description": "De inspecteur heeft het gebruikelijk loon van de dga van een administratiekantoor voor drie jaar terecht vastgesteld op een hoger loon, door dat loon te vergelijken met het loon van de meest verdienende werknemer van een gelieerde vennootschap. Daarbij is naar het oordeel van de rechtbank Den Haag het jaarloon inclusief looncomponenten relevant, en",
@@ -703,83 +843,6 @@ const newsData = {
           "url": "https://www.manners.nl/salaris-hypotheek-dilan-yesilgoz/",
           "source": "Manners",
           "date": "15 feb 2026"
-        },
-        {
-          "title": "Overzicht bijtellingspercentages auto 2011-2026",
-          "description": "Een handig overzicht van de bijtellingspercentages voor privégebruik auto 2011-2026 die je per jaar moet toepassen na afloop van de 60-maandenperiode. Het bericht Overzicht bijtellingspercentages auto 2011-2026 verscheen eerst op Salaris Vanmorgen.",
-          "url": "https://www.salarisvanmorgen.nl/2026/02/12/overzicht-bijtellingspercentages-auto-2011-2026/",
-          "source": "Salaris Vanmorgen",
-          "date": "12 feb 2026"
-        },
-        {
-          "title": "Werkgever moet achterstallig loon betalen – werknemer heeft spoedeisend belang",
-          "description": "De werkgever is op grond van de vaststellingsovereenkomst bedragen verschuldigd aan de werknemer die hij maar niet betaalt. De werknemer heeft een spoedeisend belang. Het bericht Werkgever moet achterstallig loon betalen – werknemer heeft spoedeisend belang verscheen eerst op Salaris Vanmorgen.",
-          "url": "https://www.salarisvanmorgen.nl/2026/02/13/werkgever-moet-achterstallig-loon-betalen-werknemer-heeft-spoedeisend-belang/",
-          "source": "Salaris Vanmorgen",
-          "date": "13 feb 2026"
-        },
-        {
-          "title": "Bevallingsuitkering verlengen via Verzuimmelder van UWV",
-          "description": "De werkgever kan via de Verzuimmelder in het werkgeversportaal van UWV verlenging van de bevallingsuitkering van de werknemer aanvragen. Het bericht Bevallingsuitkering verlengen via Verzuimmelder van UWV verscheen eerst op Salaris Vanmorgen.",
-          "url": "https://www.salarisvanmorgen.nl/2026/02/13/bevallingsuitkering-verlengen-via-verzuimmelder-van-uwv/",
-          "source": "Salaris Vanmorgen",
-          "date": "13 feb 2026"
-        },
-        {
-          "title": "Vraag subsidie inclusieve technologie voor mkb nu aan",
-          "description": "Werkgevers in het mkb kunnen tot en met 29 mei 2026 subsidie aanvragen voor inclusieve technologie bij het Subsidieportaal van Uitvoering Van Beleid. Het bericht Vraag subsidie inclusieve technologie voor mkb nu aan verscheen eerst op Salaris Vanmorgen.",
-          "url": "https://www.salarisvanmorgen.nl/2026/02/13/vraag-subsidie-inclusieve-technologie-voor-mkb-nu-aan/",
-          "source": "Salaris Vanmorgen",
-          "date": "13 feb 2026"
-        },
-        {
-          "title": "‘WW-plannen nieuw kabinet desastreus voor werklozen’",
-          "description": "Wie 2 jaar werkloos is, levert tot 66.000 euro in door de plannen van het nieuwe kabinet. Vakbond CNV roept op deze maatregelen uit het coalitieakkoord te schrappen. Het bericht ‘WW-plannen nieuw kabinet desastreus voor werklozen’ verscheen eerst op Salaris Vanmorgen.",
-          "url": "https://www.salarisvanmorgen.nl/2026/02/15/ww-plannen-nieuw-kabinet-desastreus-voor-werklozen/",
-          "source": "Salaris Vanmorgen",
-          "date": "15 feb 2026"
-        },
-        {
-          "title": "Wet loonkostenvoordeel nieuwe werkgever in Staatsblad gepubliceerd",
-          "description": "De wet wijziging Wtl om voor een nieuwe werkgever een recht te regelen op een LKV voor de resterende duur daarvan is in het Staatsblad gepubliceerd. Het bericht Wet loonkostenvoordeel nieuwe werkgever in Staatsblad gepubliceerd verscheen eerst op Salaris Vanmorgen.",
-          "url": "https://www.salarisvanmorgen.nl/2026/02/16/wet-loonkostenvoordeel-nieuwe-werkgever-in-staatsblad-gepubliceerd/",
-          "source": "Salaris Vanmorgen",
-          "date": "16 feb 2026"
-        },
-        {
-          "title": "Loonvordering onterecht, variabel loon afgesproken en arbeidsduur gewijzigd",
-          "description": "Loonvordering van een fysiotherapeut. Vast of variabel loon? Urenomvang gewijzigd? 70% loon na ziekmelding. Heeft werkgever te weinig loon betaald? Het bericht Loonvordering onterecht, variabel loon afgesproken en arbeidsduur gewijzigd verscheen eerst op Salaris Vanmorgen.",
-          "url": "https://www.salarisvanmorgen.nl/2026/02/16/loonvordering-onterecht-variabel-loon-afgesproken-en-arbeidsduur-gewijzigd/",
-          "source": "Salaris Vanmorgen",
-          "date": "16 feb 2026"
-        },
-        {
-          "title": "Nieuwe kabinet aan zet wat betreft wetsvoorstel Vbar en vervolgstappen",
-          "description": "Het huidige kabinet wil gezien het coalitieakkoord van D66, VVD en CDA niet vooruitlopen op de te nemen vervolgstappen binnen het wetgevingstraject Vbar. Het bericht Nieuwe kabinet aan zet wat betreft wetsvoorstel Vbar en vervolgstappen verscheen eerst op Salaris Vanmorgen.",
-          "url": "https://www.salarisvanmorgen.nl/2026/02/16/nieuwe-kabinet-aan-zet-wat-betreft-wetsvoorstel-vbar-en-vervolgstappen/",
-          "source": "Salaris Vanmorgen",
-          "date": "16 feb 2026"
-        },
-        {
-          "title": "De kracht van complimenten op de werkvloer",
-          "description": "Complimenten kunnen zorgen voor betere prestaties, betere samenwerking en meer werkplezier. Hoe geef je een sterk werkcompliment? Het bericht De kracht van complimenten op de werkvloer verscheen eerst op Salaris Vanmorgen.",
-          "url": "https://www.salarisvanmorgen.nl/2026/02/16/partner-sazas-de-kracht-van-complimenten-op-de-werkvloer/",
-          "source": "Salaris Vanmorgen",
-          "date": "16 feb 2026"
-        },
-        {
-          "title": "Voortgang invoering toelatingsstelsel Wtta",
-          "description": "Minister Paul van SZW informeert over de voortgang van de invoering van de Wet toelating terbeschikkingstelling van arbeidskrachten (Wtta). Het bericht Voortgang invoering toelatingsstelsel Wtta verscheen eerst op Salaris Vanmorgen.",
-          "url": "https://www.salarisvanmorgen.nl/2026/02/16/voortgang-invoering-toelatingsstelsel-wtta/",
-          "source": "Salaris Vanmorgen",
-          "date": "16 feb 2026"
-        },
-        {
-          "title": "Met dit salaris krijg je €1.092 zorgtoeslag in 2026, veel vergeten het",
-          "description": "1 op de 10 Nederlanders vergeet zorgtoeslag aan te vragen. Met dit salaris krijg je €1.092 zorgtoeslag in 2026. Check ook de inkomensgrens.",
-          "url": "https://www.manners.nl/1092-euro-zorgtoeslag-2026-minimumloon-inkomensgren/",
-          "source": "Manners",
-          "date": "9 feb 2026"
         }
       ]
     },
@@ -787,6 +850,111 @@ const newsData = {
       "title": "AI & Recruitment Tech Trends 2026",
       "priority": true,
       "articles": [
+        {
+          "title": "Jonge duurzaamheidstalenten genomineerd: Marc Cornelissen Brightlands Young Talent Award",
+          "description": "Vandaag zijn de genomineerden voor de Marc Cornelissen Brightlands Young Talent Award bekend gemaakt. Deze Award is een aanmoedigingsprijs voor jonge duurzaamheidspioniers van Technasium-scholen. Het is een oproep om mee te denken over vernieuwende oplossingen die bijdragen aan een circulaire wereld, op het gebied van klimaat, gezondheid en digital",
+          "url": "https://www.duurzaam-ondernemen.nl/jonge-duurzaamheidstalenten-genomineerd-marc-cornelissen-brightlands-young-talent-award/",
+          "source": "Duurzaam Ondernemen",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Geactualiseerde roadmaps Klimaatneutrale en Circulaire Infrastructuur (KCI) beschikbaar",
+          "description": "Op vrijdag 27 maart presenteerden publieke opdrachtgevers de geactualiseerde roadmaps Klimaatneutrale en Circulaire Infrastructuur (KCI). De hierin beschreven maatregelen en acties zijn nu afgestemd op de praktijk van álle overheidslagen en vormen samen een concreet handelingsperspectief voor verdere verduurzaming van de GWW-sector. Ook zijn de gea",
+          "url": "https://www.duurzaam-ondernemen.nl/geactualiseerde-roadmaps-klimaatneutrale-en-circulaire-infrastructuur-kci-beschikbaar/",
+          "source": "Duurzaam Ondernemen",
+          "date": "28 mrt 2026"
+        },
+        {
+          "title": "RTL Tonight stopt, na de zomer andere talkshow met Renze Klamer",
+          "description": "RTL Tonight stopt met uitzenden, laatste show op 12 juni. Renze Klamer presenteert vanaf najaar nieuwe talkshowopzet.",
+          "url": "https://www.metronieuws.nl/televisie/2026/03/rtl-tonight-stopt-laatste-uitzending-juni-br/",
+          "source": "Metro Nieuws",
+          "date": "29 mrt 2026"
+        },
+        {
+          "title": "Kunsthars steeds vaker gebruikt binnen de metaalbranche",
+          "description": "In de metaalindustrie draait het dagelijks om verspanen, lassen en bouwen. Staal, RVS en aluminium zijn de hoofdrolspelers. Toch is...",
+          "url": "https://www.metaalmagazine.nl/partners/kunsthars-steeds-vaker-gebruikt-binnen-de-metaalbranche/108705/",
+          "source": "Metaal Magazine",
+          "date": "13 mrt 2026"
+        },
+        {
+          "title": "Bewuste roekeloosheid werknemer niet bewezen: geen schadevergoeding voor werkgever",
+          "description": "Een marketingmedewerker liet de posts op social media door AI opstellen. Klanten waren niet tevreden. Een schadevergoeding is daarom op zijn plaats vindt de werkgever. De kantonrechter gaat daar niet in mee. Het bericht Bewuste roekeloosheid werknemer niet bewezen: geen schadevergoeding voor werkgever verscheen eerst op Salaris Vanmorgen.",
+          "url": "https://www.salarisvanmorgen.nl/2026/03/27/bewuste-roekeloosheid-werknemer-niet-bewezen-geen-schadevergoeding-voor-werkgever/",
+          "source": "Salaris Vanmorgen",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Terugslag in diversiteit nu ook al terug te zien in Hollywood-films",
+          "description": "De link met het beleid van president Trump is natuurlijk niet 1-op-1 te trekken. Er zijn geen decreten voor de filmwereld uitgevaardigd. Maar opvallend is het wel: ook bij de werving van personeel voor de 100 populairste films van 2025 blijkt diversiteit flink te zijn gedaald, en met name de genderbalans uit het lood geslagen. […] Het bericht Terug",
+          "url": "https://www.werf-en.nl/terugslag-in-diversiteit-nu-ook-al-terug-te-zien-in-hollywood-films/",
+          "source": "Werf&",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Van doelgroepinzicht naar documentaire: studententeam gevolgd in hun missie (inzending TNO)",
+          "description": "De arbeidsmarkt voor technisch talent is structureel krap. Onder studenten was TNO wel bekend, maar het beeld van wat je er concreet kunt doen en welke impact je maakt bleef vaag. Tegelijk bleek uit focusgroepen dat technische studenten sterk betrokken zijn bij student teams/student challenges. De kans lag in een inhoudelijke samenwerking met een s",
+          "url": "https://www.werf-en.nl/van-doelgroepinzicht-naar-documentaire-studententeam-gevolgd-in-hun-missie-inzending-tno/",
+          "source": "Werf&",
+          "date": "28 mrt 2026"
+        },
+        {
+          "title": "TMA neemt BrainsFirst over: ‘Meest complete en toekomstbestendige talentinzicht op de markt’",
+          "description": "TMA, de Nederlandse aanbieder van talentmanagementsoftware neemt BrainsFirst over, een softwarebedrijf dat organisaties helpt met cognitieve assessments op basis van neurowetenschappelijk onderzoek. Het is de vierde overname van TMA sinds het bedrijf in december 2024 een partnerschap aanging met investeerder Main Capital Partners. “Samen bieden we ",
+          "url": "https://www.recruitmenttech.nl/2026/03/12/tma-neemt-brainsfirst-over-meest-complete-en-toekomstbestendige-talentinzicht-op-de-markt/",
+          "source": "Recruitmenttech.nl",
+          "date": "12 mrt 2026"
+        },
+        {
+          "title": "Selection Lab, Serena, Ubeeo, Wiggli en In2Dialog op Demo_Day 2026 in Utrecht",
+          "description": "Op donderdag 21 mei 2026 staat Utrecht in het teken van Recruitment Tech Demo_Day. Tijdens dit event krijgen recruiters en HR-professionals de kans om recruitmentsoftware van meer dan 40 aanbieders uit binnen- en buitenland van dichtbij te bekijken. Onder meer Selection Lab, Serena, Ubeeo, Wiggli en In2Dialog verzorgen een demo op hun eigen spot en",
+          "url": "https://www.recruitmenttech.nl/2026/03/13/selection-lab-serena-ubeeo-wiggli-en-in2dialog-op-demo_day-2026-in-utrecht/",
+          "source": "Recruitmenttech.nl",
+          "date": "13 mrt 2026"
+        },
+        {
+          "title": "15 boeken om in 2026 te lezen over recruitment(technologie)",
+          "description": "Terwijl de boeken over recruitmenttechnologie een aantal jaar geleden behoorlijk schaars waren, is er nu volop keuze. We hebben 15 boeken over recruitment én technologie, in willekeurige volgorde, op een rij gezet om te lezen in 2026. 1. HR Tech Strategy – Marlene de Koning HR Tech Strategy laat zien waarom technologie pas écht waarde […]",
+          "url": "https://www.recruitmenttech.nl/2026/03/16/15-boeken-om-in-2026-te-lezen-over-recruitmenttechnologie/",
+          "source": "Recruitmenttech.nl",
+          "date": "16 mrt 2026"
+        },
+        {
+          "title": "Arco Westbroek (Carerix): ‘Alles wordt met AI een conversatie’",
+          "description": "Na dertien jaar verantwoordelijk te zijn geweest voor het product bij Carerix, heeft Arco Westbroek een nieuwe rol. Hij is Chief AI Officer, een functie die hij niet zag aankomen, maar ook niet kon laten liggen. In dit video-interview vertelt Westbroek over zijn nieuwe rol én de AI-koers van Carerix voor de toekomst. “Met AI […]",
+          "url": "https://www.recruitmenttech.nl/2026/03/18/arco-westbroek-carerix-alles-wordt-met-ai-een-conversatie-ook-recruitment/",
+          "source": "Recruitmenttech.nl",
+          "date": "18 mrt 2026"
+        },
+        {
+          "title": "Recruitee, DataChecker, Cruit, Talentech en WBNRS op Demo_Day in Utrecht",
+          "description": "Op donderdag 21 mei 2026 staat Utrecht volledig in het teken van Recruitment Tech Demo_Day. Tijdens dit event krijgen recruiters en HR-professionals de kans om recruitmentsoftware van meer dan 40 nationale en internationale aanbieders van dichtbij te ervaren. Onder andere Recruitee, DataChecker, Cruit, Talentech en WBNRS verzorgen een demo op hun e",
+          "url": "https://www.recruitmenttech.nl/2026/03/19/recruitee-datachecker-cruit-talentech-en-wbnrs-op-demo_day-in-utrecht/",
+          "source": "Recruitmenttech.nl",
+          "date": "19 mrt 2026"
+        },
+        {
+          "title": "Talkshow over recruitmenttools: ‘Mijn moeder kan ook een ATS kiezen, dat maakt je nog geen winnaar’",
+          "description": "Meer tools kopen levert geen concurrentievoordeel op. Dát was de rode draad in het talkshowgesprek op het Recruitment Tech Event 2025 (RTE25), waar Luuk van Neerven (Booston.io) en Mees van ’t Hoff (Teamtailor) aan tafel zaten met host Janine Nieboer. Het gesprek ging over outperformen — en waarom technologie daar maar een klein deel van […]",
+          "url": "https://www.recruitmenttech.nl/2026/03/25/talkshow-over-recruitmenttools-mijn-moeder-kan-ook-een-ats-kiezen-dat-maakt-je-nog-geen-winnaar/",
+          "source": "Recruitmenttech.nl",
+          "date": "25 mrt 2026"
+        },
+        {
+          "title": "Van gebruiker naar spil: de rol van super users bij recruitmentsoftware",
+          "description": "Recruitmentsoftware zoals recruitmentssystemen (ATS), CRM-oplossingen en sourcingtools is de afgelopen jaren complexer en krachtiger geworden. Organisaties investeren fors in deze technologieën, maar lopen in de praktijk vaak tegen hetzelfde probleem aan: de software wordt niet optimaal gebruikt. De uitdaging zit zelden in de implementatie zelf, ma",
+          "url": "https://www.recruitmenttech.nl/2026/03/26/van-gebruiker-naar-spil-de-rol-van-super-users-bij-recruitmentsoftware/",
+          "source": "Recruitmenttech.nl",
+          "date": "26 mrt 2026"
+        },
+        {
+          "title": "Floyd & Hamilton, Byner, Recrout en Recbi te zien op Demo_Day in Utrecht",
+          "description": "Op donderdag 21 mei 2026 komt de wereld van recruitmenttechnologie samen in Utrecht tijdens Recruitment Tech Demo_Day. Dit event biedt recruiters en HR-professionals de kans om kennis te maken met innovatieve oplossingen van meer dan 40 aanbieders uit binnen- en buitenland. Onder andere Floyd & Hamilton, Byner, Recrout en Recbi verzorgen een demo o",
+          "url": "https://www.recruitmenttech.nl/2026/03/27/floyd-hamilton-byner-recrout-en-recbi-te-zien-op-demo_day-in-utrecht/",
+          "source": "Recruitmenttech.nl",
+          "date": "27 mrt 2026"
+        },
         {
           "title": "Noorse schaatser Eitrem verovert wereldtitel allround",
           "description": "\"Sander Eitrem wordt wereldkampioen allround schaatsen, houdt Jordan Stolz af en Chris Huizinga eindigt als beste Nederlander op zevende plaats.\"",
@@ -1031,111 +1199,6 @@ const newsData = {
           "url": "https://www.manners.nl/jetten-1-hoeveel-vrijheidsbijdrage-oneerlijk-kost-per-jaar/",
           "source": "Manners",
           "date": "6 feb 2026"
-        },
-        {
-          "title": "Dit is het nieuwe salaris van Rob Jetten en zijn maximale hypotheek",
-          "description": "Rob Jetten is op weg naar het Catshuis als beoogd minister-president van het nieuwe kabinet. Een flinke stap voor de D66-fractievoorzitter, en ook financieel valt er wat te halen. We rekenen voor: wat gaat Jetten verdienen en welk huis kan hij daarmee kopen?",
-          "url": "https://www.manners.nl/rob-jetten-salaris-huis-maximale-hypotheek/",
-          "source": "Manners",
-          "date": "8 feb 2026"
-        },
-        {
-          "title": "Waar vrouwelijke pasvorm en technische performance samenkomen",
-          "description": "Skiën betekent genieten van de bergen, frisse lucht en het natuurlijke ritme van de dag op de piste. Daar hoort een jas bij die niet alleen bescherming biedt tegen wisselende weersomstandigheden, maar ook stijl en comfort uitstraalt. Het Grace Ski Jacket Women van Tenson is ontworpen met oog voor detail en fashion.",
-          "url": "https://www.baaz.nl/waar-vrouwelijke-pasvorm-en-technische-performance-samenkomen",
-          "source": "Baaz",
-          "date": "6 feb 2026"
-        },
-        {
-          "title": "Waarom online marketing in het mkb vastloopt",
-          "description": "Het klinkt logisch: even iemand inhuren voor de socials, een bureau inschakelen voor advertenties, of een stagiair laten meekijken. In veel mkb-bedrijven leeft de wens om online marketing structureel aan te pakken, maar in de praktijk blijft het vaak bij losse acties, die uiteindelijk niet genoeg opleveren. Volgens Jules Sohier, oprichter van Angle",
-          "url": "https://www.baaz.nl/waarom-online-marketing-in-het-mkb-vastloopt",
-          "source": "Baaz",
-          "date": "6 feb 2026"
-        },
-        {
-          "title": "Air: de marketing die geschiedenis schreef",
-          "description": "Als ik je nu vraag welke schoenen het best zijn om in te basketballen, waar denk je dan aan? Zie je de krokodil van LaCrosse voor je, de puma van Puma of toch het silhouet van één van de beste basketballers ooit en eenswish. Voor ons geldt dat laatste. Het verhaal achter Nike's iconische Air Jordanmarketingis nu verfilmd.",
-          "url": "https://www.baaz.nl/air-de-marketing-die-geschiedenis-schreef",
-          "source": "Baaz",
-          "date": "8 feb 2026"
-        },
-        {
-          "title": "Efteling wint internationale award voor Best Sustainability Program",
-          "description": "Op donderdagmiddag 5 februari maakte de IAAPA bekend dat de Efteling een ‘Brass Ring Excellence Award’ krijgt toegekend voor Best Sustainability Program. De jury, bestaande uit ervaren professionals uit de wereldwijde attractie-industrie, is onder de indruk van de wijze waarop duurzaamheid volledig is verweven in alle activiteiten van de Efteling: ",
-          "url": "https://www.duurzaam-ondernemen.nl/efteling-wint-internationale-award-voor-best-sustainability-program/",
-          "source": "Duurzaam Ondernemen",
-          "date": "6 feb 2026"
-        },
-        {
-          "title": "Dit is het nieuwe salaris van Rob Jetten en zijn maximale hypotheek",
-          "description": "Rob Jetten is op weg naar het Catshuis als beoogd minister-president van het nieuwe kabinet. Een flinke stap voor de D66-fractievoorzitter, en ook financieel valt er wat te halen. We rekenen voor: wat gaat Jetten verdienen en welk huis kan hij daarmee kopen?",
-          "url": "https://www.metronieuws.nl/geld-carriere/2026/02/nieuwe-salaris-rob-jetten-maximale-hypotheek/",
-          "source": "Metro Nieuws",
-          "date": "9 feb 2026"
-        },
-        {
-          "title": "Nieuwe spin-off Thoriant schaalt emissievrije plasma-chemie op",
-          "description": "Met plasmatechnologie als emissievrije motor voor de chemie van de toekomst zetten TNO, Universiteit Maastricht en Ebert HERA een nieuwe stap richting een circulaire industrie. Vandaag maken de partners de lancering bekend van hun gezamenlijke spin-off Thoriant, een startup die zich richt op de opschaling van plasma-chemie als duurzaam alternatief ",
-          "url": "https://linkmagazine.nl/nieuwe-spin-off-thoriant-schaalt-emissievrije-plasma-chemie-op/?utm_source=rss&utm_medium=rss&utm_campaign=nieuwe-spin-off-thoriant-schaalt-emissievrije-plasma-chemie-op",
-          "source": "Link Magazine",
-          "date": "4 feb 2026"
-        },
-        {
-          "title": "Neways start levering van Saab’s UTAAS richt- en vuurleidingssystemen voor CV90-voertuigen",
-          "description": "Neways, leverancier van mission-critical elektronica voor onder meer de semiconductor- en defensiesector, is gestart met de productie en levering van belangrijke subsystemen voor Saab’s UTAAS (Universal Tank and Anti-Aircraft System). Deze geïntegreerde richt- en vuurleidingssystemen worden toegepast op de CV90 infanteriegevechtsvoertuigen van BAE ",
-          "url": "https://linkmagazine.nl/neways-start-levering-van-saabs-utaas-richt-en-vuurleidingssystemen-voor-cv90-voertuigen/?utm_source=rss&utm_medium=rss&utm_campaign=neways-start-levering-van-saabs-utaas-richt-en-vuurleidingssystemen-voor-cv90-voertuigen",
-          "source": "Link Magazine",
-          "date": "4 feb 2026"
-        },
-        {
-          "title": "Bies Venray (voorheen MMI) failliet",
-          "description": "Bies Venray (tot 2022 bekend onder de naam Machine Metaal Industrie MMI uit Venray) is bij de rechtbank in Groningen...",
-          "url": "https://www.metaalmagazine.nl/nieuws/bies-venray-voorheen-mmi-failliet/108060/",
-          "source": "Metaal Magazine",
-          "date": "2 feb 2026"
-        },
-        {
-          "title": "‘Trends voor 2026: AI wordt integraal onderdeel bedrijfsvoering’",
-          "description": "Vier ontwikkelingen gaan in 2026 impact hebben op de maakindustrie, stelt IFS. AI staat daarbij centraal: niet langer als experiment,...",
-          "url": "https://www.metaalmagazine.nl/nieuws/trends-voor-2026-ai-wordt-integraal-onderdeel/108132/",
-          "source": "Metaal Magazine",
-          "date": "5 feb 2026"
-        },
-        {
-          "title": "Het executieprobleem van AI is een HR-vraagstuk",
-          "description": "Stel je voor: één op de acht medewerkers in je organisatie doet werk dat AI vandaag al kan overnemen. Niet... Het bericht Het executieprobleem van AI is een HR-vraagstuk verscheen eerst op Trends in HR.",
-          "url": "https://www.trendsinhr.nl/het-executieprobleem-van-ai-is-een-hr-vraagstuk/",
-          "source": "Trends in HR",
-          "date": "6 feb 2026"
-        },
-        {
-          "title": "Undutchables wordt 30: mooi inkijkje in hoe internationaal werven gemeengoed werd",
-          "description": "Foto’s van 30 jaar geleden: ze tonen een wereld van weleer. Archiefkasten, computers zonder flatscreen, een fax, veel papier en vaste telefoonlijnen. Toen recruitment nog een kwestie was van weten wie je kent, en veel, heel veel bellen, met zowel kandidaten als mogelijke opdrachtgevers. In 1996 begonnen Ilse Visser en Judith van Der Klundert op […]",
-          "url": "https://www.werf-en.nl/undutchables-wordt-30-mooi-inkijkje-in-hoe-internationaal-werven-gemeengoed-werd/",
-          "source": "Werf&",
-          "date": "5 feb 2026"
-        },
-        {
-          "title": "Hoe Delhaize met de FlexLions een stap wist te zetten naar Total Talent Acquisition",
-          "description": "Vóór 2019 beschouwde de Belgische supermarktketen Delhaize het proces van flexibele staffing nog vooral als een inkoopproces. ‘Je bestelde een consultant net zoals je kantoorapparatuur zou bestellen via ons Indirect Procurement-departement’, legt Clio Simons uit. Maar 2 zich snel ontwikkelende trends deden het bedrijf besluiten een andere kant op t",
-          "url": "https://www.werf-en.nl/hoe-delhaize-met-de-flexlions-een-stap-wist-te-zetten-naar-total-talent-acquisition/",
-          "source": "Werf&",
-          "date": "5 feb 2026"
-        },
-        {
-          "title": "Na 7 jaar pauze is het meest gewilde recruitmenttraject van Europa weer gestart",
-          "description": "De naam zal niet bij iedereen meteen een belletje doen rinkelen. Toch is het AD5-concours ongetwijfeld een van de meest gewilde recruitmenttrajecten van heel Europa. En het is maar liefst 7 jaar geleden dat de laatste keer deze selectieprocedure voor Europese topfunctionarissen plaatsvond, dus dat belooft wat. Iedereen met een HBO- of WO-bachelordi",
-          "url": "https://www.werf-en.nl/na-7-jaar-pauze-is-het-meest-gewilde-recruitmenttraject-van-europa-weer-gestart/",
-          "source": "Werf&",
-          "date": "6 feb 2026"
-        },
-        {
-          "title": "Recruitment Tech Monthly februari: aanklacht Eightfold AI, fusie in Nordics en Agentic AI nog in kinderschoenen",
-          "description": "Een aanklacht tegen AI-recruitmentreus Eightfold, de eerste grote fusie van het jaar én onderzoek dat laat zien dat Agentic AI nog nauwelijks wordt ingezet: een greep uit de Recruitment Tech Monthly van februari 2026. Bekijk de uitzending, met Martijn Hemminga en Jasper Spanjaart vanuit de RT-studio in Utrecht, op YouTube óf luister naar de aflever",
-          "url": "https://www.recruitmenttech.nl/2026/02/02/recruitment-tech-monthly-februari-aanklacht-eightfold-ai-fusie-in-nordics-en-agentic-ai-nog-in-kinderschoenen/",
-          "source": "Recruitmenttech.nl",
-          "date": "2 feb 2026"
         }
       ]
     },
@@ -1143,6 +1206,76 @@ const newsData = {
       "title": "HR Trends & Arbeidsmarkt 2026",
       "priority": false,
       "articles": [
+        {
+          "title": "Omgeving optimaliseren voor meer groei",
+          "description": "Succes wordt vaak toegeschreven aan discipline, doorzettingsvermogen en talent. Maar in de praktijk speelt iets anders een veel grotere rol: je omgeving. Niet omdat motivatie onbelangrijk is, maar omdat gedrag zelden op zichzelf staat en continu wordt beïnvloed door wat er om je heen gebeurt.",
+          "url": "https://www.baaz.nl/omgeving-optimaliseren-voor-meer-groei",
+          "source": "Baaz",
+          "date": "28 mrt 2026"
+        },
+        {
+          "title": "Ondernemers willen werknemers te hulp schieten: ’Onbelaste kilometervergoeding moet naar 29 cent’",
+          "description": "Ondernemers willen de kilometervergoeding van hun personeel verhogen naar 28 of 29 cent. Daarvoor moet het kabinet dat belastingvrij mogelijk maken.",
+          "url": "https://www.telegraaf.nl/financieel/ondernemers-willen-werknemers-te-hulp-schieten-onbelaste-kilometervergoeding-moet-naar-29-cent/144748383.html",
+          "source": "Telegraaf Financieel",
+          "date": "29 mrt 2026"
+        },
+        {
+          "title": "Gühring Nederland wint TechniShow Innovatie Award met Tool Circle",
+          "description": "Gühring Nederland heeft de TechniShow Innovatie Award 2026 gewonnen met Tool Circle. De jury koos voor deze innovatie “vanwege de...",
+          "url": "https://www.metaalmagazine.nl/nieuws/guhring-nederland-wint-technishow-innovatie-award-met-tool-circle/108748/",
+          "source": "Metaal Magazine",
+          "date": "16 mrt 2026"
+        },
+        {
+          "title": "Heudra Groep neemt FTD over",
+          "description": "De Heudra Groep gaat een partnership aan met Fijnmechanische Techniek Drachten (FTD). Door deze specialist in hoogwaardige fijnmechanische componenten over...",
+          "url": "https://www.metaalmagazine.nl/nieuws/heudra-group-neemt-ftd-over/108731/",
+          "source": "Metaal Magazine",
+          "date": "16 mrt 2026"
+        },
+        {
+          "title": "Verzuim. Een cijfer met een boodschap",
+          "description": "Verzuim staat niet op de agenda omdat het zo’n leuk onderwerp is. Het staat erop omdat het moet, omdat de... Het bericht Verzuim. Een cijfer met een boodschap verscheen eerst op Trends in HR.",
+          "url": "https://www.trendsinhr.nl/verzuim-een-cijfer-met-een-boodschap/",
+          "source": "Trends in HR",
+          "date": "12 mrt 2026"
+        },
+        {
+          "title": "Duurzame inzetbaarheid begint bij aandacht",
+          "description": "Mentale gezondheid krijgt steeds meer aandacht binnen organisaties. Niet alleen omdat psychisch verzuim toeneemt, maar ook omdat werkgevers zien dat... Het bericht Duurzame inzetbaarheid begint bij aandacht verscheen eerst op Trends in HR.",
+          "url": "https://www.trendsinhr.nl/duurzame-inzetbaarheid-begint-bij-aandacht/",
+          "source": "Trends in HR",
+          "date": "16 mrt 2026"
+        },
+        {
+          "title": "We denken progressiever, maar niet eerlijker",
+          "description": "We vertellen onszelf graag een geruststellend verhaal. Dat elke generatie vanzelf progressiever is dan de vorige. Dat ongelijkheid langzaam verdwijnt,... Het bericht We denken progressiever, maar niet eerlijker verscheen eerst op Trends in HR.",
+          "url": "https://www.trendsinhr.nl/we-denken-progressiever-maar-niet-eerlijker/",
+          "source": "Trends in HR",
+          "date": "26 mrt 2026"
+        },
+        {
+          "title": "Voorkomen van verzuim? Let op deze 10 signalen!",
+          "description": "In veel organisaties wordt verzuim nog vooral gezien als iets medisch. Iemand meldt zich ziek, de arbo wordt betrokken en... Het bericht Voorkomen van verzuim? Let op deze 10 signalen! verscheen eerst op Trends in HR.",
+          "url": "https://www.trendsinhr.nl/voorkomen-van-verzuim-let-op-deze-10-signalen/",
+          "source": "Trends in HR",
+          "date": "26 mrt 2026"
+        },
+        {
+          "title": "Vroegsignalering 2.0: herken verzuimrisico’s vóór klachten",
+          "description": "In veel organisaties staat verzuim nog steeds vooral op de agenda wanneer een medewerker zich daadwerkelijk ziekmeldt. Toch laten recente... Het bericht Vroegsignalering 2.0: herken verzuimrisico’s vóór klachten verscheen eerst op Trends in HR.",
+          "url": "https://www.trendsinhr.nl/vroegsignalering-2-0-herken-verzuimrisicos-voor-klachten/",
+          "source": "Trends in HR",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Randstad-CEO mag blijven, beurskoers direct onderuit",
+          "description": "De uitslag was ‘bijna Noord-Koreaans’, grapte de voorzitter van de Raad van Commissarissen, Cees ’t Hart. Met maar liefst 99,96% van alle stemmen werd Sander van ’t Noordende afgelopen vrijdag herbenoemd tot ceo van Randstad, tot voor kort het grootste uitzendbureau ter wereld, maar inmiddels ingehaald door Adecco, en ook – na 19 jaar – […] Het ber",
+          "url": "https://www.werf-en.nl/randstad-ceo-mag-blijven-beurskoers-direct-onderuit/",
+          "source": "Werf&",
+          "date": "30 mrt 2026"
+        },
         {
           "title": "Kabinet wil meer rust en duidelijkheid rond zzp’ers creëren met schrappen deel Vbar",
           "description": "Het kabinet schrapt een deel van (nieuwe) zzp-wetgeving die al in de Tweede Kamer lag. Het gaat om het verduidelijkingsdeel van het wetsvoorstel Verduidelijking beoordeling arbeidsrelaties en rechtsvermoeden (Vbar). Dat deel van de wetgeving zorgde voor teveel onrust.",
@@ -1484,6 +1617,20 @@ const newsData = {
       "priority": false,
       "articles": [
         {
+          "title": "Vakbonden metaal: stop ‘verdere afbraak sociale zekerheid’",
+          "description": "Vakbonden in de metaal- en technologische industrie slaan alarm over kabinetsplannen om ingrijpende wijzigingen door te voeren in de sociale...",
+          "url": "https://www.metaalmagazine.nl/nieuws/vakbonden-metaal-stop-verdere-afbraak-sociale-zekerheid/108841/",
+          "source": "Metaal Magazine",
+          "date": "19 mrt 2026"
+        },
+        {
+          "title": "TechniShow 2026: ‘Een stevige basis voor verdere verdieping richting 2028-editie’",
+          "description": "TechniShow en Esef Maakindustrie hebben in totaal 24.664 professionals getrokken. Dat meldt Koninklijke Jaarbeurs. “Belangrijker dan het aantal bezoekers was...",
+          "url": "https://www.metaalmagazine.nl/nieuws/technishow-2026-stevige-basis-voor-verdere-verdieping-richting-2028/108859/",
+          "source": "Metaal Magazine",
+          "date": "20 mrt 2026"
+        },
+        {
           "title": "UITNODIGING link Magazine Platform Energietransitie bij HYSTER-YALE BV",
           "description": "We kunnen er inmiddels niet meer omheen: bedrijven moeten een grote omwenteling doormaken om de energietransitie mogelijk te maken. Dat biedt kansen, maar brengt ook uitdagingen met zich mee voor de Nederlandse maakindustrie. Batterij-aangedreven voertuigen in de transportsector lijken momenteel de meest voor de hand liggende oplossing om deze tran",
           "url": "https://linkmagazine.nl/uitnodiging-link-magazine-platform-energietransitie-bij-hyster-yale-bvncepten/?utm_source=rss&utm_medium=rss&utm_campaign=uitnodiging-link-magazine-platform-energietransitie-bij-hyster-yale-bvncepten",
@@ -1713,6 +1860,13 @@ const newsData = {
       "priority": false,
       "articles": [
         {
+          "title": "100% PGGM: jouw persoonlijkheid maakt je bijzonder (inzending PGGM)",
+          "description": "PGGM is sterk in beweging. Het ambitieuze beleggingsbeleid met focus op rendement, risico én duurzaamheid (3D), de nieuwe pensioenwet en de internationale beleggingsportefeuille zorgen voor nieuwe functies en rollen. Ook is de internationaal georiënteerde afdeling Investment Management volledig overgegaan op de Engelse taal. Extern moest het beeld ",
+          "url": "https://www.werf-en.nl/100-pggm-jouw-persoonlijkheid-maakt-je-bijzonder-inzending-pggm/",
+          "source": "Werf&",
+          "date": "29 mrt 2026"
+        },
+        {
           "title": "Wim op woensdag: Einstein had gelijk – ook in recruitment geldt: E = mc²",
           "description": "Einstein had het over E = m · c². Ik heb die formule vandaag even geleend voor recruitment, want daar geldt-ie ook. Maar dan staat de formule voor: E (Engagement) = m (motivatie) × c² (coaching²). 1. Motivatie is de massa Zonder massa geen beweging. Zonder motivatie geen energie. Je kunt iemands talent bewonderen, maar […] Het bericht Wim op woensd",
           "url": "https://www.werf-en.nl/wim-op-woensdag-dus-over-einstein/",
@@ -1781,6 +1935,55 @@ const newsData = {
       "title": "IT & Software Development",
       "priority": false,
       "articles": [
+        {
+          "title": "'Repareerbaarheid moet de norm worden voor laptops in alle prijsklassen'",
+          "description": "De verbeterde repareerbaarheid van de nieuwe MacBook is een positieve stap, maar laten we eerlijk zijn: dit is geen vrijwillige verandering. Fabrikanten konden dit technisch al jaren, maar kozen er bewust voor om producten moeilijk te repareren. Dat dit nu verandert, komt door de nieuwe EU-batterijregels, die vanaf halverwege 2027 verplichten dat b",
+          "url": "https://www.baaz.nl/repareerbaarheid-moet-de-norm-worden-voor-laptops-in-alle-prijsklassen",
+          "source": "Baaz",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Verzuim: mentale weerbaarheid als preventie instrument",
+          "description": "Steeds meer organisaties herkennen de signalen: medewerkers die vaker uitvallen, teams waar de rek uit lijkt en leidinggevenden die worstelen... Het bericht Verzuim: mentale weerbaarheid als preventie instrument verscheen eerst op Trends in HR.",
+          "url": "https://www.trendsinhr.nl/verzuim-mentale-weerbaarheid-als-preventie-instrument/",
+          "source": "Trends in HR",
+          "date": "13 mrt 2026"
+        },
+        {
+          "title": "Roze verzuim: het stille signaal dat organisaties niet horen",
+          "description": "Iedere HR professional kent de verzuimcijfers van de organisatie bijna uit het hoofd. Ze worden gepresenteerd in grafieken, dashboards en... Het bericht Roze verzuim: het stille signaal dat organisaties niet horen verscheen eerst op Trends in HR.",
+          "url": "https://www.trendsinhr.nl/roze-verzuim-het-stille-signaal-dat-organisaties-niet-horen/",
+          "source": "Trends in HR",
+          "date": "16 mrt 2026"
+        },
+        {
+          "title": "Nieuw onderzoek: ‘werkgevers bewegen te langzaam mee met verwachtingen van jongeren’",
+          "description": "Nee, bang dat A.I. hun banen gaat overnemen, dat is de jonge generatie niet. Wel dat hun werkgever te weinig inspeelt op de mogelijkheden die er zijn of hier te krampachtig mee omgaat. En nee, voor de meeste young professionals is hun baan ook géén eindbestemming, maar wél een leerschool. Als groei of uitdaging uitblijft, […] Het bericht Nieuw onde",
+          "url": "https://www.werf-en.nl/onderzoek-werkgevers-bewegen-te-langzaam-mee-met-verwachtingen-van-the-next-gen/",
+          "source": "Werf&",
+          "date": "26 mrt 2026"
+        },
+        {
+          "title": "Hoe je ook in tijden van A.I. je selectieproces nog zinvol kunt laten zijn",
+          "description": "Selectie was jarenlang vooral een gestapelde activiteit. Recruiters vertrouwden bijvoorbeeld op het cv om ervaring te screenen, gestandaardiseerde assessments om cognitieve vaardigheden en persoonlijkheid te meten, en gestructureerde interviews om zowel technische competentie als geschiktheid voor de functie en en fit met de organisatie te verifiër",
+          "url": "https://www.werf-en.nl/hoe-je-ook-in-tijden-van-a-i-je-selectieproces-nog-zinvol-kunt-laten-zijn/",
+          "source": "Werf&",
+          "date": "26 mrt 2026"
+        },
+        {
+          "title": "Hoe Royal FloraHolland met z’n recruitment aan de bak is gegaan",
+          "description": "Het is een imposant gezicht. Van een afstandje heeft het ook iets chaotisch, hoe hier alle karretjes door elkaar heen krioelen. Maar al snel ontdek je dat het hele proces strak georganiseerd is, de talrijke bloemenkarren die hier van links naar rechts bewegen, over deze gigantische vloer, dat ook wel als het grootste handelsgebouw ter […] Het beric",
+          "url": "https://www.werf-en.nl/hoe-royal-floraholland-met-zn-recruitment-aan-de-bak-is-gegaan/",
+          "source": "Werf&",
+          "date": "27 mrt 2026"
+        },
+        {
+          "title": "Brandmannen wint RT25 (2026): ‘Na tien jaar zijn we klaar voor de volgende fase’ (interview)",
+          "description": "Van plek drie naar de eerste plek in 2026. BRANDMANNEN, het recruitmentmarketing- en employer branding-bureau met eigen technologie, won dit jaar de RT25. Bijzonder is dat de prijs wordt bepaald door gebruikers zelf. Na een jaar vol investeren in nieuw platform en nieuwe technologie, voelt de erkenning dan ook als bevestiging”, zo stelt Rutger Groo",
+          "url": "https://www.recruitmenttech.nl/2026/03/11/brandmannen-wint-rt25-2026-na-tien-jaar-zijn-we-klaar-voor-de-volgende-fase-interview/",
+          "source": "Recruitmenttech.nl",
+          "date": "11 mrt 2026"
+        },
         {
           "title": "Bij deze voedingstrend gaat het om hoe laat je eet, niet wát je eet",
           "description": "Eten volgens je biologische klok zou gezondheidsvoordelen met zich mee kunnen brengen. Manners legt uit hoe chrono-nutrition werkt.",
