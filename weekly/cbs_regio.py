@@ -5,7 +5,8 @@ Waarom (06-10-2026): Wouter wil prospects gerichter informeren met regionale arb
 83599NED "Openstaande vacatures; SBI 2008, regio" geeft per kwartaal de openstaande vacatures per provincie en sector.
 UWV en CBS hebben geen RSS meer; de OData-API van CBS werkt wel.
 
-Uitvoer: arbeidsmarkt/regio-latest.json + arbeidsmarkt/regio-latest.md (tabel + kant-en-klare zinnen met bron).
+Uitvoer: arbeidsmarkt/regio-latest.json + arbeidsmarkt/regio-latest.md (tabel + kant-en-klare zinnen met bron)
++ regio-data.js voor de site.
 Elk getal is letterlijk wat CBS levert (eenheid x 1.000); voorlopige cijfers (CBS-markering *) staan als voorlopig.
 
 Gebruik: python3 weekly/cbs_regio.py · --zelftest
@@ -108,6 +109,8 @@ def main():
            "zinnen": [zin(r, peildatum) for r in rijen if r["regio"] != "Nederland"]}
     (ROOT / "arbeidsmarkt").mkdir(exist_ok=True)
     (ROOT / "arbeidsmarkt" / "regio-latest.json").write_text(json.dumps(uit, ensure_ascii=False, indent=1), encoding="utf-8")
+    (ROOT / "regio-data.js").write_text(f"// CBS-regiocijfers — automatisch bijgewerkt door weekly/cbs_regio.py\nconst regioData = "
+                                        + json.dumps(uit, ensure_ascii=False, indent=1) + ";\n", encoding="utf-8")
     md = [f"# Arbeidsmarkt per provincie — openstaande vacatures", "",
           f"_Bron: [CBS {TABEL}]({BRON_URL}) · peildatum {peildatum} · eenheid x 1.000 · automatisch opgehaald door weekly/cbs_regio.py._", "",
           "| Regio | Sector | Kwartaal | Vacatures (x1.000) | t.o.v. vorig kwartaal | t.o.v. jaar eerder |", "|---|---|---|---:|---:|---:|"]
