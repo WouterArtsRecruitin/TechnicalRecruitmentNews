@@ -12,7 +12,7 @@ Gelderland, Overijssel, Noord-Brabant, Utrecht, Flevoland, Drenthe en Zuid-Holla
 | `arbeidsmarkt/regio-latest.md` · `.json` | de regiocijfers |
 | `news-data.js` · `regio-data.js` | artikelen (+ weeknummer, bronnenstatus) en CBS-regiocijfers voor de site |
 
-Site: [recruitmentnews.netlify.app](https://recruitmentnews.netlify.app) (ook `recruitmentnewsdaily`) — Netlify deployt automatisch vanaf `main`, dus de maandag-commit van de workflow zet de nieuwe week live.
+Site: [recruitmentnews.netlify.app](https://recruitmentnews.netlify.app) — Netlify deployt automatisch vanaf `main`, dus de maandag-commit van de workflow zet de nieuwe week live.
 
 Lokaal: `python3 weekly/nieuws.py --droog` · `python3 weekly/cbs_regio.py` · zelftests met `--zelftest`.
 De oude `scraper.js` (nu in `archief/v1/`) draait niet meer: 12 van 31 bronnen dood, filter op woorddelen, één bron domineerde de top.
