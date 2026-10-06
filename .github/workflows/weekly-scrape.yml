@@ -1,15 +1,15 @@
 name: Weekly News Scraper
 
+# v2 (06-10-2026): weekly/nieuws.py (gemeten feeds + Google News, per bron begrensd, drie uitkomsten per bron)
+# en weekly/cbs_regio.py (CBS-vacatures per provincie en sector). De oude scraper.js draait niet meer.
 on:
-  # Draait elke maandag om 07:00 UTC (08:00 CET)
+  # Elke maandag om 05:00 UTC (07:00 NL zomertijd), vóór Wouters /week
   schedule:
-    - cron: '0 7 * * 1'
-
-  # Handmatig triggeren mogelijk
+    - cron: '0 5 * * 1'
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Dry run (geen wijzigingen opslaan)'
+        description: 'Dry run (alleen tonen, niets opslaan)'
         required: false
         default: 'false'
         type: boolean
@@ -17,61 +17,51 @@ on:
 jobs:
   scrape-news:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
         with:
-          fetch-depth: 0
+          python-version: '3.12'
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: npm ci
-
-      - name: Run scraper
+      - name: Zelftests
         run: |
-          if [ "${{ github.event_name }}" == "workflow_dispatch" ] && [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
-            npm run test
+          python3 weekly/nieuws.py --zelftest
+          python3 weekly/cbs_regio.py --zelftest
+
+      - name: Nieuws ophalen
+        run: |
+          if [ "${{ github.event.inputs.dry_run }}" == "true" ]; then
+            python3 weekly/nieuws.py --droog
           else
-            npm run scrape
+            python3 weekly/nieuws.py
           fi
 
-      - name: Check for changes
-        id: changes
-        run: |
-          if git diff --quiet news-data.js; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-            echo "Geen nieuwe artikelen gevonden"
-          else
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo "Nieuwe artikelen gevonden!"
-          fi
+      - name: CBS-regiocijfers ophalen
+        if: github.event.inputs.dry_run != 'true'
+        # CBS onbereikbaar mag de nieuwsrun niet blokkeren: de vorige cijfers blijven dan staan
+        continue-on-error: true
+        run: python3 weekly/cbs_regio.py
 
-      - name: Commit and push changes
-        if: steps.changes.outputs.changed == 'true' && (github.event_name != 'workflow_dispatch' || github.event.inputs.dry_run != 'true')
+      - name: Commit en push
+        if: github.event.inputs.dry_run != 'true'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add news-data.js
-          COMMIT_MSG="Automatische update: Nieuwe recruitment nieuws artikelen"$'\n\n'"Gescraped op: $(date -u +"%Y-%m-%d %H:%M UTC")"
-          git commit -m "$COMMIT_MSG"
+          git add digest/ arbeidsmarkt/ news-data.js
+          if git diff --cached --quiet; then
+            echo "Niets nieuws deze week"; exit 0
+          fi
+          git commit -m "Weekly news $(date -u +%G-W%V): digest + regiocijfers"
           git push
 
-      - name: Summary
+      - name: Samenvatting
+        if: always()
         run: |
-          echo "## Scraper Resultaat" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-          if [ "${{ steps.changes.outputs.changed }}" == "true" ]; then
-            echo "Nieuwe artikelen zijn toegevoegd aan news-data.js" >> $GITHUB_STEP_SUMMARY
-          else
-            echo "Geen nieuwe artikelen gevonden deze week" >> $GITHUB_STEP_SUMMARY
-          fi
-          echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Laatste run: $(date -u +"%Y-%m-%d %H:%M UTC")" >> $GITHUB_STEP_SUMMARY
+          echo "## Weekly news" >> $GITHUB_STEP_SUMMARY
+          if [ -f digest/latest.md ]; then sed -n '1,200p' digest/latest.md >> $GITHUB_STEP_SUMMARY; fi
