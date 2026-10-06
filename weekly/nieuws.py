@@ -70,7 +70,8 @@ RUIS = W(r"zzp'?ers?", r"uitzendbranche", r"horeca", r"supermarkt\w*", r"voetbal
 def strip(t):
     t = re.sub(r"<!\[CDATA\[|\]\]>", "", t or "")
     # eerst ontsnappen ongedaan maken: Google News levert de omschrijving als &lt;a href…&gt;, anders blijft de tag staan
-    t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", html.unescape(t)))).strip()
+    # alleen echte tags (<a …>, </p>) weghalen: een losse '< inflatie' in de tekst blijft staan
+    t = re.sub(r"\s+", " ", html.unescape(re.sub(r"</?[A-Za-z][^>]*>", " ", html.unescape(t)))).strip()
     # standaardregel van WordPress-feeds ("Het bericht X verscheen eerst op Salaris Vanmorgen.") telt niet als inhoud
     return re.sub(r"(The post|Het bericht) .{0,300}? (appeared first on|verscheen eerst op) [^.]*\.?$", "", t).strip()
 
@@ -96,7 +97,7 @@ def parse_feed(xml):
                 if m:
                     return m.group(1)
             return ""
-        link = strip(g("link")) or (re.search(r'<link[^>]+href="([^"]+)"', blok) or [None, ""])[1]
+        link = html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", g("link"))).strip() or (re.search(r'<link[^>]+href="([^"]+)"', blok) or [None, ""])[1]
         bron = strip(g("source"))
         titel = strip(g("title"))
         if bron and titel.endswith(" - " + bron):                  # Google News plakt de bron achter de titel
@@ -274,7 +275,7 @@ def nl_datum(d):
 def omschrijving(a):
     """Omschrijving voor de site; bij Google News is die alleen titel + bron, dan liever niets."""
     t = a["tekst"]
-    return "" if t.lower().startswith(a["titel"][:40].lower()) else t[:300]
+    return "" if a["titel"] and t.lower().startswith(a["titel"][:40].lower()) else t[:300]
 
 
 def schrijf_site(gekozen, cfg, nu, status=None):
@@ -290,7 +291,7 @@ def schrijf_site(gekozen, cfg, nu, status=None):
                                                            "source": a["bron"], "category": cfg["secties"][a["sectie"]],
                                                            "date": nl_datum(a["datum"]),
                                                            "why": [w for w in a.get("waarom", []) if w != "gerichte zoekvraag"],
-                                                           "alsoAt": sorted(set(a.get("ook_bij") or []))}
+                                                           "alsoAt": sorted(set(a.get("ook_bij") or []) - {a["bron"]})}
     jaar, week, _ = nu.isocalendar()
     meta = {"week": week, "jaar": jaar, "opgehaald": nu.isoformat(), "vensterDagen": cfg["venster_dagen"],
             "bronnen": [{"naam": n, "uitkomst": s["uitkomst"], "status": s["status"], "vers": s["vers"]}
@@ -304,6 +305,8 @@ def schrijf_site(gekozen, cfg, nu, status=None):
 
 def zelftest():
     fouten = []
+    if strip("Lonen &lt; inflatie, cao&apos;s &gt; 4% hoger") != "Lonen < inflatie, cao's > 4% hoger":
+        fouten.append("strip haalt platte tekst met < en > weg")
     if nl_datum(dt.datetime(2026, 10, 1)) != "1 okt 2026":
         fouten.append("nl_datum moet '1 okt 2026' geven")
     if "<" in strip("&lt;a href=\"x\"&gt;Titel&lt;/a&gt;&amp;nbsp;&lt;font&gt;Bron&lt;/font&gt;"):

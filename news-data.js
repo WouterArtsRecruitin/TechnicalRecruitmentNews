@@ -1,9 +1,9 @@
-// Weekly news v2 — automatisch bijgewerkt op 2026-10-06T13:50:05.227884+00:00 (weekly/nieuws.py)
+// Weekly news v2 — automatisch bijgewerkt op 2026-10-06T14:00:17.911598+00:00 (weekly/nieuws.py)
 const newsData = {
   "meta": {
     "week": 41,
     "jaar": 2026,
-    "opgehaald": "2026-10-06T13:50:05.227884+00:00",
+    "opgehaald": "2026-10-06T14:00:17.911598+00:00",
     "vensterDagen": 8,
     "bronnen": [
       {
@@ -118,7 +118,7 @@ const newsData = {
         "naam": "Google News #6 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 3
+        "vers": 4
       },
       {
         "naam": "Google News #7 (regio)",
@@ -240,9 +240,7 @@ const newsData = {
         "bedrijfssignaal",
         "industrie"
       ],
-      "alsoAt": [
-        "Brabants Dagblad"
-      ]
+      "alsoAt": []
     },
     {
       "rank": 5,
@@ -397,9 +395,7 @@ const newsData = {
             "bedrijfssignaal",
             "industrie"
           ],
-          "alsoAt": [
-            "Brabants Dagblad"
-          ]
+          "alsoAt": []
         },
         {
           "title": "Aannemer failliet dus ligt de bouw van basisscholen in Eindhoven en Son tijdelijk stil",

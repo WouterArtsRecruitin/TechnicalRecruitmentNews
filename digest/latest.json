@@ -1,6 +1,6 @@
 {
  "week": "2026-W41",
- "opgehaald": "2026-10-06T13:50:05.227884+00:00",
+ "opgehaald": "2026-10-06T14:00:17.911598+00:00",
  "status": {
   "Link Magazine": {
    "uitkomst": "gevonden",
@@ -113,8 +113,8 @@
   "Google News #6 (regio)": {
    "uitkomst": "gevonden",
    "status": 200,
-   "items": 3,
-   "vers": 3
+   "items": 4,
+   "vers": 4
   },
   "Google News #7 (regio)": {
    "uitkomst": "gevonden",

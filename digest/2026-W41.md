@@ -1,6 +1,6 @@
 # Weekly news — week 41 (28-09 t/m 06-10-2026)
 
-_Automatisch opgehaald 06-10-2026 13:50 UTC · 35 artikelen gekozen uit 297 verse berichten · bron per artikel vermeld._
+_Automatisch opgehaald 06-10-2026 14:00 UTC · 35 artikelen gekozen uit 298 verse berichten · bron per artikel vermeld._
 
 ## Bedrijfssignalen in de regio (15)
 

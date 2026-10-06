@@ -452,7 +452,7 @@
             document.getElementById('statArticles').textContent = articles.length;
             document.getElementById('statSources').textContent = sources.size;
             document.getElementById('statCategories').textContent = categories.length;
-            if (typeof regioData !== 'undefined') {
+            if (typeof regioData !== 'undefined' && Array.isArray(regioData.rijen)) {
                 document.getElementById('statRegio').textContent = new Set(regioData.rijen.filter(r => r.regio !== 'Nederland').map(r => r.regio)).size;
             }
             document.getElementById('searchInput').placeholder = `Zoek in ${articles.length} artikelen...`;
@@ -545,8 +545,9 @@
                                     <span class="article-source">${esc(article.source)}</span>
                                     <span>${esc(article.date)}</span>
                                     <span class="why-chips">${(article.why || []).map(w => `<span class="article-category">${esc(w)}</span>`).join('')}</span>
-                                    <button class="push-btn" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;"
-                                            onclick="pushSingleToNotion('${escapeQuotes(article.title)}', '${article.url}', '${article.source}', '${category.title}')">
+                                    <button class="push-btn push-one" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;"
+                                            data-title="${esc(article.title)}" data-url="${esc(article.url)}"
+                                            data-source="${esc(article.source)}" data-category="${esc(category.title)}">
                                         Push
                                     </button>
                                 </div>
@@ -600,7 +601,7 @@
                 const aantal = Math.round(r.waarde_x1000 * 1000).toLocaleString('nl-NL');
                 let delta = '';
                 if (r.jaar_eerder_x1000 != null) {
-                    if (r.waarde_x1000 < 2) {
+                    if (r.waarde_x1000 < 2 || r.jaar_eerder_x1000 < 2) {
                         // CBS rondt af op honderdtallen: bij kleine aantallen is een percentage misleidend
                         delta = `<span class="regio-delta">jaar eerder ${Math.round(r.jaar_eerder_x1000 * 1000).toLocaleString('nl-NL')}</span>`;
                     } else if (r.verandering_jaar_pct != null) {
@@ -625,6 +626,11 @@
 
         // Setup event listeners
         function setupEventListeners() {
+            // Push-knoppen via data-attributen: RSS-tekst komt nooit in een onclick terecht
+            document.getElementById('categoriesContainer').addEventListener('click', (e) => {
+                const btn = e.target.closest('.push-one');
+                if (btn) pushSingleToNotion(btn.dataset.title, btn.dataset.url, btn.dataset.source, btn.dataset.category);
+            });
             document.getElementById('searchInput').addEventListener('input', (e) => {
                 searchTerm = e.target.value.toLowerCase();
                 updateFilterTags();
@@ -795,9 +801,6 @@
                 ? `<div class="also-at">Ook bij: ${article.alsoAt.map(esc).join(', ')}</div>` : '';
         }
 
-        function escapeQuotes(str) {
-            return str.replace(/'/g, "\\'").replace(/"/g, '\\"');
-        }
 
         function getCategoryEmoji(category) {
             const map = {

@@ -104,6 +104,9 @@ def main():
     for r in data:
         reeksen.setdefault((regio[r["RegioS"]], SECTOR[sbi[r["BedrijfstakkenBranchesSBI2008"]]]), {})[r["Perioden"]] = r["OpenstaandeVacatures_1"]
     rijen = bereken(reeksen, per)
+    if not rijen:
+        print(f"ONVOLLEDIG — {TABEL} gaf geen bruikbare rijen; vorige cijfers blijven staan")
+        sys.exit(2)
     uit = {"bron": f"CBS {TABEL} — Openstaande vacatures; SBI 2008, regio", "bron_url": BRON_URL, "peildatum": peildatum,
            "eenheid": "x 1.000 openstaande vacatures (einde kwartaal)", "rijen": rijen,
            "zinnen": [zin(r, peildatum) for r in rijen if r["regio"] != "Nederland"]}
