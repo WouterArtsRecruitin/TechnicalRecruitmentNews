@@ -53,7 +53,7 @@ jobs:
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add digest/ arbeidsmarkt/ news-data.js
+          git add digest/ arbeidsmarkt/ news-data.js regio-data.js
           if git diff --cached --quiet; then
             echo "Niets nieuws deze week"; exit 0
           fi

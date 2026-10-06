@@ -74,6 +74,7 @@
         }
 
         select { cursor: pointer; }
+        .search-row > * { min-width: 0; max-width: 100%; }
         select:focus, input:focus {
             outline: none;
             border-color: #f59e0b;
@@ -248,12 +249,39 @@
 
         .hidden { display: none !important; }
 
+        .regio-section { margin: 2rem 0; }
+        .regio-intro { color: #6b7280; font-size: 0.95rem; margin: -0.75rem 0 1rem; }
+        .regio-wrap { overflow-x: auto; background: white; border-radius: 0.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+        .regio-table { width: 100%; border-collapse: collapse; min-width: 34rem; }
+        .regio-table th { background: #1f2937; color: white; padding: 0.75rem 1rem; text-align: left; font-weight: 600; font-size: 0.875rem; }
+        .regio-table th.num, .regio-table td.num { text-align: right; }
+        .regio-table td { padding: 0.75rem 1rem; border-bottom: 1px solid #e5e7eb; font-variant-numeric: tabular-nums; }
+        .regio-table tr:last-child td { border-bottom: none; }
+        .regio-table tr.land td { background: #f9fafb; color: #6b7280; }
+        .regio-delta { display: block; font-size: 0.75rem; color: #6b7280; }
+        .regio-delta.up { color: #047857; }
+        .regio-delta.down { color: #b45309; }
+        .regio-bron { color: #6b7280; font-size: 0.8rem; margin-top: 0.75rem; }
+        .regio-bron a { color: #b45309; }
+
+        .why-chips { display: flex; flex-wrap: wrap; gap: 0.25rem; }
+        .also-at { font-size: 0.8rem; color: #6b7280; margin-top: 0.5rem; }
+        .count-badge { font-size: 0.8rem; font-weight: 500; color: #6b7280; }
+        .uitkomst { padding: 0.15rem 0.5rem; border-radius: 0.25rem; font-size: 0.75rem; font-weight: 600; }
+        .uitkomst.gevonden { background: #d1fae5; color: #065f46; }
+        .uitkomst.leeg { background: #f3f4f6; color: #6b7280; }
+        .uitkomst.niet { background: #fee2e2; color: #991b1b; }
+
         @media (max-width: 768px) {
             h1 { font-size: 1.25rem; }
             .search-row { grid-template-columns: 1fr; }
             .logo-section { flex-wrap: wrap; }
             .top-articles { grid-template-columns: 1fr; }
             .push-section { flex-direction: column; align-items: stretch; }
+            main { padding: 1rem; }
+            .regio-table { min-width: 0; }
+            .regio-table th, .regio-table td { padding: 0.5rem; font-size: 0.8rem; }
+            .regio-delta { font-size: 0.7rem; }
         }
     </style>
 </head>
@@ -272,21 +300,25 @@
                 <button class="config-btn" onclick="openNotionModal()">⚙️ Notion Setup</button>
             </div>
 
-            <p class="focus-text">Focus: Automation, Engineering, Technisch Personeel & Personeelskrapte</p>
+            <p class="focus-text">Focus: technisch MKB in Gelderland, Overijssel, Brabant, Utrecht, Flevoland, Drenthe en Zuid-Holland — bedrijfssignalen, arbeidsmarkt, branche</p>
             <p class="date-text" id="currentDate">📅 Laden...</p>
 
             <div class="stats">
                 <div class="stat-card">
                     <div class="stat-number" id="statArticles">0</div>
-                    <div class="stat-label">Recruitment Artikelen</div>
+                    <div class="stat-label">Artikelen deze week</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number" id="statSources">0</div>
-                    <div class="stat-label">Unieke Bronnen</div>
+                    <div class="stat-label">Bronnen met nieuws</div>
                 </div>
                 <div class="stat-card">
                     <div class="stat-number" id="statCategories">0</div>
-                    <div class="stat-label">Categorieën</div>
+                    <div class="stat-label">Secties</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number" id="statRegio">–</div>
+                    <div class="stat-label">Provincies met CBS-cijfers</div>
                 </div>
             </div>
         </div>
@@ -327,18 +359,35 @@
                 <thead>
                     <tr>
                         <th>Bron</th>
-                        <th>Artikelen</th>
+                        <th>Deze week gekozen</th>
+                        <th>Uitkomst</th>
                     </tr>
                 </thead>
                 <tbody id="sourcesTableBody"></tbody>
             </table>
         </div>
 
+        <!-- REGIO IN CIJFERS (CBS) -->
+        <div class="regio-section hidden" id="regioSection">
+            <div class="section-title">
+                <div class="title-bar title-bar-orange"></div>
+                Regio in cijfers — openstaande vacatures
+            </div>
+            <p class="regio-intro" id="regioIntro"></p>
+            <div class="regio-wrap">
+                <table class="regio-table">
+                    <thead><tr><th>Provincie</th><th class="num">Industrie</th><th class="num">Bouw</th><th class="num">Alle sectoren</th></tr></thead>
+                    <tbody id="regioTableBody"></tbody>
+                </table>
+            </div>
+            <p class="regio-bron" id="regioBron"></p>
+        </div>
+
         <!-- ARTICLES BY CATEGORY -->
         <div>
             <div class="section-title">
                 <div class="title-bar title-bar-dark"></div>
-                Artikelen per Categorie
+                Nieuws per sectie
             </div>
 
             <div id="categoriesContainer"></div>
@@ -347,7 +396,7 @@
 
     <footer>
         <p id="footerText">Automatisch bijgewerkt</p>
-        <p style="margin-top: 0.5rem;">Powered by Recruitin News Scraper</p>
+        <p style="margin-top: 0.5rem;">Elke maandag automatisch opgehaald (weekly/nieuws.py + CBS 83599NED) · bron bij elk artikel</p>
     </footer>
 
     <!-- Notion Modal -->
@@ -373,6 +422,7 @@
     <div class="toast" id="toast"></div>
 
     <script src="./news-data.js"></script>
+    <script src="./regio-data.js"></script>
     <script>
         // State
         let selectedCategory = '';
@@ -385,6 +435,7 @@
             renderTopArticles();
             renderCategories();
             renderSourcesTable();
+            renderRegio();
             setupEventListeners();
             updateDate();
         });
@@ -393,20 +444,32 @@
         function updateStats() {
             const articles = getAllArticles();
             const categories = getUniqueCategories();
-            const sources = new Set(articles.map(a => a.source));
+            const meta = newsData.meta || {};
+            const sources = meta.bronnen
+                ? new Set(meta.bronnen.filter(b => b.uitkomst === 'gevonden').map(b => b.naam))
+                : new Set(articles.map(a => a.source));
 
             document.getElementById('statArticles').textContent = articles.length;
             document.getElementById('statSources').textContent = sources.size;
             document.getElementById('statCategories').textContent = categories.length;
+            if (typeof regioData !== 'undefined' && Array.isArray(regioData.rijen)) {
+                document.getElementById('statRegio').textContent = new Set(regioData.rijen.filter(r => r.regio !== 'Nederland').map(r => r.regio)).size;
+            }
             document.getElementById('searchInput').placeholder = `Zoek in ${articles.length} artikelen...`;
         }
 
         // Update date
         function updateDate() {
-            const now = new Date();
-            const options = { day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' };
-            document.getElementById('currentDate').textContent = '📅 ' + now.toLocaleDateString('nl-NL', options);
-            document.getElementById('footerText').textContent = `Laatst bijgewerkt: ${now.toLocaleDateString('nl-NL', options)}`;
+            const meta = newsData.meta;
+            if (!meta) {
+                document.getElementById('currentDate').textContent = '📅 Datum van ophalen onbekend';
+                return;
+            }
+            const opgehaald = new Date(meta.opgehaald);
+            const options = { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric', hour: '2-digit', minute: '2-digit' };
+            const wanneer = opgehaald.toLocaleDateString('nl-NL', options);
+            document.getElementById('currentDate').textContent = `📅 Week ${meta.week} · nieuws van de afgelopen ${meta.vensterDagen} dagen · opgehaald ${wanneer}`;
+            document.getElementById('footerText').textContent = `Laatst bijgewerkt: ${wanneer}`;
         }
 
         // Render top 3 articles
@@ -417,13 +480,15 @@
             container.innerHTML = topArticles.map(article => `
                 <div class="top-article" data-rank="${article.rank}">
                     <div class="article-title">
-                        <a href="${article.url}" target="_blank" rel="noopener">${article.title}</a>
+                        <a href="${esc(article.url)}" target="_blank" rel="noopener">${esc(article.title)}</a>
                     </div>
-                    <div class="article-desc">${stripHtml(article.description).substring(0, 150)}...</div>
+                    ${descHtml(article.description, 150)}
                     <div class="article-meta">
-                        <span class="article-source">${article.source}</span>
-                        <span>${article.date}</span>
+                        <span class="article-source">${esc(article.source)}</span>
+                        <span>${esc(article.date)}</span>
+                        <span class="article-category">${esc(article.category || '')}</span>
                     </div>
+                    ${alsoAtHtml(article)}
                 </div>
             `).join('');
         }
@@ -458,7 +523,8 @@
                     articles = articles.filter(a =>
                         a.title.toLowerCase().includes(searchTerm) ||
                         a.description.toLowerCase().includes(searchTerm) ||
-                        a.source.toLowerCase().includes(searchTerm)
+                        a.source.toLowerCase().includes(searchTerm) ||
+                        (a.alsoAt || []).some(b => b.toLowerCase().includes(searchTerm))
                     );
                 }
 
@@ -468,21 +534,24 @@
 
                 html += `
                     <div class="category-section">
-                        <h3 class="category-header">${emoji} ${category.title}</h3>
-                        ${articles.slice(0, 5).map(article => `
+                        <h3 class="category-header">${emoji} ${esc(category.title)} <span class="count-badge">(${articles.length})</span></h3>
+                        ${articles.map(article => `
                             <div class="article-card">
                                 <div class="article-title">
-                                    <a href="${article.url}" target="_blank" rel="noopener">${article.title}</a>
+                                    <a href="${esc(article.url)}" target="_blank" rel="noopener">${esc(article.title)}</a>
                                 </div>
-                                <div class="article-desc">${stripHtml(article.description).substring(0, 200)}...</div>
+                                ${descHtml(article.description, 200)}
                                 <div class="article-meta">
-                                    <span class="article-source">${article.source}</span>
-                                    <span>${article.date}</span>
-                                    <button class="push-btn" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;"
-                                            onclick="pushSingleToNotion('${escapeQuotes(article.title)}', '${article.url}', '${article.source}', '${category.title}')">
+                                    <span class="article-source">${esc(article.source)}</span>
+                                    <span>${esc(article.date)}</span>
+                                    <span class="why-chips">${(article.why || []).map(w => `<span class="article-category">${esc(w)}</span>`).join('')}</span>
+                                    <button class="push-btn push-one" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;"
+                                            data-title="${esc(article.title)}" data-url="${esc(article.url)}"
+                                            data-source="${esc(article.source)}" data-category="${esc(category.title)}">
                                         Push
                                     </button>
                                 </div>
+                                ${alsoAtHtml(article)}
                             </div>
                         `).join('')}
                     </div>
@@ -501,18 +570,67 @@
                 sourceCount[a.source] = (sourceCount[a.source] || 0) + 1;
             });
 
-            const sorted = Object.entries(sourceCount).sort((a, b) => b[1] - a[1]);
-
-            document.getElementById('sourcesTableBody').innerHTML = sorted.map(([source, count]) => `
+            const bronnen = (newsData.meta && newsData.meta.bronnen) || [];
+            const rijen = bronnen.length
+                ? bronnen.map(b => ({ naam: b.naam, uitkomst: b.uitkomst, status: b.status, count: sourceCount[b.naam] || 0 }))
+                : Object.entries(sourceCount).map(([naam, count]) => ({ naam, uitkomst: '', count }));
+            // artikelen via Google News hebben de krant als bron; die staan apart
+            const bekend = new Set(rijen.map(r => r.naam));
+            Object.entries(sourceCount).filter(([naam]) => !bekend.has(naam))
+                .forEach(([naam, count]) => rijen.push({ naam: naam + ' (via Google News)', uitkomst: '', count }));
+            const orde = { 'gevonden': 0, 'leeg': 1, 'niet gemeten': 2, '': 3 };
+            rijen.sort((a, b) => (b.count - a.count) || (orde[a.uitkomst] - orde[b.uitkomst]));
+            document.getElementById('sourcesTableBody').innerHTML = rijen.map(r => `
                 <tr>
-                    <td><strong>${source}</strong></td>
-                    <td>${count}</td>
+                    <td><strong>${esc(r.naam)}</strong></td>
+                    <td>${r.count}</td>
+                    <td>${r.uitkomst ? `<span class="uitkomst ${r.uitkomst === 'niet gemeten' ? 'niet' : r.uitkomst}">${esc(r.uitkomst)}${r.uitkomst === 'niet gemeten' ? ' (' + esc(String(r.status)) + ')' : ''}</span>` : ''}</td>
                 </tr>
             `).join('');
         }
 
+        // Regio in cijfers (CBS 83599NED)
+        function renderRegio() {
+            if (typeof regioData === 'undefined' || !regioData.rijen || !regioData.rijen.length) return;
+            const per = {};
+            regioData.rijen.forEach(r => { (per[r.regio] = per[r.regio] || {})[r.sector] = r; });
+            const regios = Object.keys(per).filter(r => r !== 'Nederland').sort((a, b) => a.localeCompare(b, 'nl'));
+            if (per['Nederland']) regios.push('Nederland');
+            const cel = r => {
+                if (!r) return '<td class="num">—</td>';
+                const aantal = Math.round(r.waarde_x1000 * 1000).toLocaleString('nl-NL');
+                let delta = '';
+                if (r.jaar_eerder_x1000 != null) {
+                    if (r.waarde_x1000 < 2 || r.jaar_eerder_x1000 < 2) {
+                        // CBS rondt af op honderdtallen: bij kleine aantallen is een percentage misleidend
+                        delta = `<span class="regio-delta">jaar eerder ${Math.round(r.jaar_eerder_x1000 * 1000).toLocaleString('nl-NL')}</span>`;
+                    } else if (r.verandering_jaar_pct != null) {
+                        const v = r.verandering_jaar_pct;
+                        delta = `<span class="regio-delta ${v > 0 ? 'up' : v < 0 ? 'down' : ''}">${v > 0 ? '+' : ''}${v}% t.o.v. jaar eerder</span>`;
+                    }
+                }
+                return `<td class="num">${aantal}${r.voorlopig ? '*' : ''}${delta}</td>`;
+            };
+            document.getElementById('regioTableBody').innerHTML = regios.map(naam => `
+                <tr class="${naam === 'Nederland' ? 'land' : ''}">
+                    <td><strong>${esc(naam)}</strong></td>
+                    ${cel(per[naam]['industrie'])}${cel(per[naam]['bouw'])}${cel(per[naam]['alle sectoren'])}
+                </tr>`).join('');
+            const periode = (regioData.rijen[0] || {}).periode || '';
+            document.getElementById('regioIntro').textContent =
+                `Openstaande vacatures aan het einde van ${periode.replace(/(\d{4}) (\d)e kwartaal/, 'het $2e kwartaal van $1')}, per provincie. Bruikbaar als opening richting een prospect in die provincie.`;
+            document.getElementById('regioBron').innerHTML =
+                `Bron: <a href="${esc(regioData.bron_url)}" target="_blank" rel="noopener">${esc(regioData.bron)}</a> · peildatum ${esc(regioData.peildatum)} · CBS rondt af op honderdtallen; onder 2.000 staat het aantal van een jaar eerder in plaats van een percentage.${regioData.rijen.some(r => r.voorlopig) ? ' * = voorlopig cijfer.' : ''}`;
+            document.getElementById('regioSection').classList.remove('hidden');
+        }
+
         // Setup event listeners
         function setupEventListeners() {
+            // Push-knoppen via data-attributen: RSS-tekst komt nooit in een onclick terecht
+            document.getElementById('categoriesContainer').addEventListener('click', (e) => {
+                const btn = e.target.closest('.push-one');
+                if (btn) pushSingleToNotion(btn.dataset.title, btn.dataset.url, btn.dataset.source, btn.dataset.category);
+            });
             document.getElementById('searchInput').addEventListener('input', (e) => {
                 searchTerm = e.target.value.toLowerCase();
                 updateFilterTags();
@@ -670,13 +788,26 @@
         function stripHtml(html) {
             return html.replace(/<[^>]*>/g, '');
         }
-
-        function escapeQuotes(str) {
-            return str.replace(/'/g, "\\'").replace(/"/g, '\\"');
+        function esc(str) {
+            return String(str == null ? '' : str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
         }
+        function descHtml(description, max) {
+            const tekst = stripHtml(description || '').trim();
+            if (!tekst) return '';
+            return `<div class="article-desc">${esc(tekst.length > max ? tekst.substring(0, max) + '…' : tekst)}</div>`;
+        }
+        function alsoAtHtml(article) {
+            return article.alsoAt && article.alsoAt.length
+                ? `<div class="also-at">Ook bij: ${article.alsoAt.map(esc).join(', ')}</div>` : '';
+        }
+
 
         function getCategoryEmoji(category) {
             const map = {
+                'Bedrijfssignalen in de regio': '🗺️',
+                'Arbeidsmarkt en cao': '📊',
+                'Branche: industrie, installatie, bouw': '🏭',
+                'Vakkennis recruitment (voor Wouter zelf)': '🧰',
                 'Technisch Personeel Tekort & Personeelskrapte': '⚠️',
                 'Automation & Engineering Recruitment': '🤖',
                 'Salarissen & Arbeidsvoorwaarden Techniek 2026': '💰',

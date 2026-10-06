@@ -69,7 +69,9 @@ RUIS = W(r"zzp'?ers?", r"uitzendbranche", r"horeca", r"supermarkt\w*", r"voetbal
 
 def strip(t):
     t = re.sub(r"<!\[CDATA\[|\]\]>", "", t or "")
-    t = re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", t))).strip()
+    # eerst ontsnappen ongedaan maken: Google News levert de omschrijving als &lt;a href…&gt;, anders blijft de tag staan
+    # alleen echte tags (<a …>, </p>) weghalen: een losse '< inflatie' in de tekst blijft staan
+    t = re.sub(r"\s+", " ", html.unescape(re.sub(r"</?[A-Za-z][^>]*>", " ", html.unescape(t)))).strip()
     # standaardregel van WordPress-feeds ("Het bericht X verscheen eerst op Salaris Vanmorgen.") telt niet als inhoud
     return re.sub(r"(The post|Het bericht) .{0,300}? (appeared first on|verscheen eerst op) [^.]*\.?$", "", t).strip()
 
@@ -95,7 +97,7 @@ def parse_feed(xml):
                 if m:
                     return m.group(1)
             return ""
-        link = strip(g("link")) or (re.search(r'<link[^>]+href="([^"]+)"', blok) or [None, ""])[1]
+        link = html.unescape(re.sub(r"<!\[CDATA\[|\]\]>", "", g("link"))).strip() or (re.search(r'<link[^>]+href="([^"]+)"', blok) or [None, ""])[1]
         bron = strip(g("source"))
         titel = strip(g("title"))
         if bron and titel.endswith(" - " + bron):                  # Google News plakt de bron achter de titel
@@ -257,23 +259,44 @@ def schrijf(gekozen, status, cfg, nu, droog=False):
     (ROOT / "digest" / f"{jaar}-W{week:02d}.md").write_text(md + "\n", encoding="utf-8")
     (ROOT / "digest" / "latest.md").write_text(md + "\n", encoding="utf-8")
     (ROOT / "digest" / "latest.json").write_text(json.dumps(data, ensure_ascii=False, indent=1), encoding="utf-8")
-    schrijf_site(gekozen, cfg, nu)
+    schrijf_site(gekozen, cfg, nu, status)
     print(md)
     return md
 
 
-def schrijf_site(gekozen, cfg, nu):
-    """news-data.js voor de bestaande site: zelfde vorm (topArticles + categories), hulpfuncties onderaan blijven staan."""
+MAANDEN = ["jan", "feb", "mrt", "apr", "mei", "jun", "jul", "aug", "sep", "okt", "nov", "dec"]
+
+
+def nl_datum(d):
+    """Nederlandse korte datum, los van de locale van de runner (strftime %b geeft daar 'Oct')."""
+    return f"{d.day} {MAANDEN[d.month - 1]} {d.year}"
+
+
+def omschrijving(a):
+    """Omschrijving voor de site; bij Google News is die alleen titel + bron, dan liever niets."""
+    t = a["tekst"]
+    return "" if a["titel"] and t.lower().startswith(a["titel"][:40].lower()) else t[:300]
+
+
+def schrijf_site(gekozen, cfg, nu, status=None):
+    """news-data.js voor de bestaande site: zelfde vorm (topArticles + categories) plus meta (week, bronnenstatus);
+    per artikel ook waarom/ookBij. Hulpfuncties onderaan blijven staan."""
     pad = ROOT / "news-data.js"
     staart = ""
     if pad.exists():
         oud = pad.read_text(encoding="utf-8")
         m = re.search(r"\n(//[^\n]*\n)?function ", oud)
         staart = oud[m.start():] if m else ""
-    item = lambda a, i=None: ({"rank": i} if i else {}) | {"title": a["titel"], "description": a["tekst"][:300], "url": a["link"],
+    item = lambda a, i=None: ({"rank": i} if i else {}) | {"title": a["titel"], "description": omschrijving(a), "url": a["link"],
                                                            "source": a["bron"], "category": cfg["secties"][a["sectie"]],
-                                                           "date": a["datum"].strftime("%-d %b %Y")}
-    data = {"topArticles": [item(a, i) for i, a in enumerate(gekozen[:10], 1)],
+                                                           "date": nl_datum(a["datum"]),
+                                                           "why": [w for w in a.get("waarom", []) if w != "gerichte zoekvraag"],
+                                                           "alsoAt": sorted(set(a.get("ook_bij") or []) - {a["bron"]})}
+    jaar, week, _ = nu.isocalendar()
+    meta = {"week": week, "jaar": jaar, "opgehaald": nu.isoformat(), "vensterDagen": cfg["venster_dagen"],
+            "bronnen": [{"naam": n, "uitkomst": s["uitkomst"], "status": s["status"], "vers": s["vers"]}
+                        for n, s in (status or {}).items()]}
+    data = {"meta": meta, "topArticles": [item(a, i) for i, a in enumerate(gekozen[:10], 1)],
             "categories": [{"title": t, "priority": k in ("regio", "arbeidsmarkt"),
                             "articles": [item(a) for a in gekozen if a["sectie"] == k]} for k, t in cfg["secties"].items()]}
     pad.write_text(f"// Weekly news v2 — automatisch bijgewerkt op {nu.isoformat()} (weekly/nieuws.py)\nconst newsData = "
@@ -282,6 +305,14 @@ def schrijf_site(gekozen, cfg, nu):
 
 def zelftest():
     fouten = []
+    if strip("Lonen &lt; inflatie, cao&apos;s &gt; 4% hoger") != "Lonen < inflatie, cao's > 4% hoger":
+        fouten.append("strip haalt platte tekst met < en > weg")
+    if nl_datum(dt.datetime(2026, 10, 1)) != "1 okt 2026":
+        fouten.append("nl_datum moet '1 okt 2026' geven")
+    if "<" in strip("&lt;a href=\"x\"&gt;Titel&lt;/a&gt;&amp;nbsp;&lt;font&gt;Bron&lt;/font&gt;"):
+        fouten.append("strip laat ontsnapte HTML (Google News) staan")
+    if omschrijving({"titel": "Systemair sluit fabriek", "tekst": "Systemair sluit fabriek Eindhovens Dagblad"}):
+        fouten.append("omschrijving gelijk aan titel moet leeg zijn")
     nu = dt.datetime(2026, 10, 6, 7, 0, tzinfo=dt.timezone.utc)
     rss = lambda items: "<rss><channel>" + "".join(
         f"<item><title>{t}</title><link>https://x/{i}</link><pubDate>{email.utils.format_datetime(d)}</pubDate>"
