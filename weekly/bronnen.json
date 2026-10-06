@@ -1,5 +1,5 @@
 {
-  "_over": "Bronnen voor de weekly news (v2, 06-10-2026). Elke feed is op 06-10-2026 gemeten: HTTP 200 met verse items. Doelgroep: directeur/HR van technisch MKB in Gelderland, Overijssel en Noord-Brabant. Wijzig hier, niet in de code.",
+  "_over": "Bronnen voor de weekly news (v2, 06-10-2026). Elke feed is op 06-10-2026 gemeten: HTTP 200 met verse items. Doelgroep: directeur/HR van technisch MKB in Gelderland, Overijssel, Noord-Brabant, Utrecht, Flevoland, Drenthe en Zuid-Holland. Wijzig hier, niet in de code.",
   "venster_dagen": 8,
   "max_per_bron": 3,
   "max_per_sectie": 10,
@@ -10,30 +10,134 @@
     "vak": "Vakkennis recruitment (voor Wouter zelf)"
   },
   "google_news": [
-    {"sectie": "regio", "q": "fabriek OR productiebedrijf OR maakbedrijf uitbreiding OR investeert OR nieuwbouw OR \"nieuwe vestiging\" Gelderland OR Achterhoek OR Arnhem OR Nijmegen OR Apeldoorn OR Doetinchem OR Ede"},
-    {"sectie": "regio", "q": "fabriek OR productiebedrijf OR maakbedrijf uitbreiding OR investeert OR nieuwbouw OR \"nieuwe vestiging\" Overijssel OR Twente OR Enschede OR Hengelo OR Almelo OR Zwolle OR Deventer"},
-    {"sectie": "regio", "q": "fabriek OR productiebedrijf OR maakbedrijf uitbreiding OR investeert OR nieuwbouw OR \"nieuwe vestiging\" Brabant OR Eindhoven OR Tilburg OR Helmond OR Oss OR \"Den Bosch\" OR Breda"},
-    {"sectie": "regio", "q": "reorganisatie OR ontslagen OR sluiting OR faillissement fabriek OR productie OR metaal OR installatiebedrijf Gelderland OR Overijssel OR Twente OR Brabant"},
-    {"sectie": "regio", "q": "personeelstekort OR vakmensen OR technici OR \"moeilijk vervulbare vacatures\" Gelderland OR Overijssel OR Twente OR Brabant OR Achterhoek"},
-    {"sectie": "regio", "q": "\"nieuwe directeur\" OR \"algemeen directeur\" OR \"managing director\" metaal OR machinebouw OR installatie OR maakindustrie OR hightech"},
-    {"sectie": "arbeidsmarkt", "q": "\"cao metalektro\" OR \"cao metaal en techniek\" OR \"cao installatiebedrijf\" OR \"cao bouw en infra\""},
-    {"sectie": "arbeidsmarkt", "q": "UWV spanningsindicator OR \"krapte op de arbeidsmarkt\" techniek OR technisch"},
-    {"sectie": "arbeidsmarkt", "q": "CBS vacatures OR werkloosheid OR \"openstaande vacatures\""}
+    {
+      "sectie": "regio",
+      "q": "fabriek OR productiebedrijf OR maakbedrijf uitbreiding OR investeert OR nieuwbouw OR \"nieuwe vestiging\" Gelderland OR Achterhoek OR Arnhem OR Nijmegen OR Apeldoorn OR Doetinchem OR Ede"
+    },
+    {
+      "sectie": "regio",
+      "q": "fabriek OR productiebedrijf OR maakbedrijf uitbreiding OR investeert OR nieuwbouw OR \"nieuwe vestiging\" Overijssel OR Twente OR Enschede OR Hengelo OR Almelo OR Zwolle OR Deventer"
+    },
+    {
+      "sectie": "regio",
+      "q": "fabriek OR productiebedrijf OR maakbedrijf uitbreiding OR investeert OR nieuwbouw OR \"nieuwe vestiging\" Brabant OR Eindhoven OR Tilburg OR Helmond OR Oss OR \"Den Bosch\" OR Breda"
+    },
+    {
+      "sectie": "regio",
+      "q": "reorganisatie OR ontslagen OR sluiting OR faillissement fabriek OR productie OR metaal OR installatiebedrijf Gelderland OR Overijssel OR Twente OR Brabant"
+    },
+    {
+      "sectie": "regio",
+      "q": "personeelstekort OR vakmensen OR technici OR \"moeilijk vervulbare vacatures\" Gelderland OR Overijssel OR Twente OR Brabant OR Achterhoek"
+    },
+    {
+      "sectie": "regio",
+      "q": "\"nieuwe directeur\" OR \"algemeen directeur\" OR \"managing director\" metaal OR machinebouw OR installatie OR maakindustrie OR hightech"
+    },
+    {
+      "sectie": "regio",
+      "q": "fabriek OR productiebedrijf OR maakbedrijf uitbreiding OR investeert OR nieuwbouw OR \"nieuwe vestiging\" Utrecht OR Amersfoort OR Veenendaal OR Nieuwegein OR Woerden OR Houten"
+    },
+    {
+      "sectie": "regio",
+      "q": "fabriek OR productiebedrijf OR maakbedrijf uitbreiding OR investeert OR nieuwbouw OR \"nieuwe vestiging\" Flevoland OR Almere OR Lelystad OR Emmeloord OR Dronten OR Zeewolde"
+    },
+    {
+      "sectie": "regio",
+      "q": "fabriek OR productiebedrijf OR maakbedrijf uitbreiding OR investeert OR nieuwbouw OR \"nieuwe vestiging\" Drenthe OR Assen OR Emmen OR Hoogeveen OR Meppel OR Coevorden"
+    },
+    {
+      "sectie": "regio",
+      "q": "fabriek OR productiebedrijf OR maakbedrijf uitbreiding OR investeert OR nieuwbouw OR \"nieuwe vestiging\" \"Zuid-Holland\" OR Rotterdam OR Rijnmond OR Dordrecht OR Drechtsteden OR Leiden OR Delft OR Gouda OR Zoetermeer"
+    },
+    {
+      "sectie": "regio",
+      "q": "reorganisatie OR ontslagen OR sluiting OR faillissement fabriek OR productie OR metaal OR installatiebedrijf Utrecht OR Flevoland OR Drenthe OR \"Zuid-Holland\" OR Rotterdam"
+    },
+    {
+      "sectie": "regio",
+      "q": "personeelstekort OR vakmensen OR technici OR \"moeilijk vervulbare vacatures\" Utrecht OR Flevoland OR Drenthe OR \"Zuid-Holland\" OR Rotterdam"
+    },
+    {
+      "sectie": "arbeidsmarkt",
+      "q": "\"cao metalektro\" OR \"cao metaal en techniek\" OR \"cao installatiebedrijf\" OR \"cao bouw en infra\""
+    },
+    {
+      "sectie": "arbeidsmarkt",
+      "q": "UWV spanningsindicator OR \"krapte op de arbeidsmarkt\" techniek OR technisch"
+    },
+    {
+      "sectie": "arbeidsmarkt",
+      "q": "CBS vacatures OR werkloosheid OR \"openstaande vacatures\""
+    }
   ],
   "feeds": [
-    {"naam": "Link Magazine", "url": "https://www.linkmagazine.nl/feed/", "bucket": "branche"},
-    {"naam": "Metaalnieuws", "url": "https://www.metaalnieuws.nl/feed/", "bucket": "branche"},
-    {"naam": "Metaal Magazine", "url": "https://www.metaalmagazine.nl/feed/", "bucket": "branche"},
-    {"naam": "Vraag en Aanbod", "url": "https://www.vraagenaanbod.nl/feed/", "bucket": "branche"},
-    {"naam": "Made-in-Europe", "url": "https://www.made-in-europe.nu/feed/", "bucket": "branche"},
-    {"naam": "Installatie.nl", "url": "https://www.installatie.nl/feed/", "bucket": "branche"},
-    {"naam": "Bouwwereld", "url": "https://www.bouwwereld.nl/feed/", "bucket": "branche"},
-    {"naam": "Technisch Weekblad", "url": "https://www.technischweekblad.nl/rss", "bucket": "branche"},
-    {"naam": "Salaris Vanmorgen", "url": "https://www.salarisvanmorgen.nl/feed/", "bucket": "hr"},
-    {"naam": "Personeelsnet", "url": "https://www.personeelsnet.nl/rss", "bucket": "hr"},
-    {"naam": "Trends in HR", "url": "https://www.trendsinhr.nl/feed/", "bucket": "hr"},
-    {"naam": "MT/Sprout", "url": "https://mtsprout.nl/feed", "bucket": "hr"},
-    {"naam": "Recruitmenttech", "url": "https://www.recruitmenttech.nl/feed/", "bucket": "vak"}
+    {
+      "naam": "Link Magazine",
+      "url": "https://www.linkmagazine.nl/feed/",
+      "bucket": "branche"
+    },
+    {
+      "naam": "Metaalnieuws",
+      "url": "https://www.metaalnieuws.nl/feed/",
+      "bucket": "branche"
+    },
+    {
+      "naam": "Metaal Magazine",
+      "url": "https://www.metaalmagazine.nl/feed/",
+      "bucket": "branche"
+    },
+    {
+      "naam": "Vraag en Aanbod",
+      "url": "https://www.vraagenaanbod.nl/feed/",
+      "bucket": "branche"
+    },
+    {
+      "naam": "Made-in-Europe",
+      "url": "https://www.made-in-europe.nu/feed/",
+      "bucket": "branche"
+    },
+    {
+      "naam": "Installatie.nl",
+      "url": "https://www.installatie.nl/feed/",
+      "bucket": "branche"
+    },
+    {
+      "naam": "Bouwwereld",
+      "url": "https://www.bouwwereld.nl/feed/",
+      "bucket": "branche"
+    },
+    {
+      "naam": "Technisch Weekblad",
+      "url": "https://www.technischweekblad.nl/rss",
+      "bucket": "branche"
+    },
+    {
+      "naam": "Salaris Vanmorgen",
+      "url": "https://www.salarisvanmorgen.nl/feed/",
+      "bucket": "hr"
+    },
+    {
+      "naam": "Personeelsnet",
+      "url": "https://www.personeelsnet.nl/rss",
+      "bucket": "hr"
+    },
+    {
+      "naam": "Trends in HR",
+      "url": "https://www.trendsinhr.nl/feed/",
+      "bucket": "hr"
+    },
+    {
+      "naam": "MT/Sprout",
+      "url": "https://mtsprout.nl/feed",
+      "bucket": "hr"
+    },
+    {
+      "naam": "Recruitmenttech",
+      "url": "https://www.recruitmenttech.nl/feed/",
+      "bucket": "vak"
+    }
   ],
-  "_eruit": "Gemeten 06-10-2026 en bewust weggelaten: Werf& (feed leeg), DIA (404), BNR (0 items), Telegraaf Financieel en de DPG-economiefeeds (landelijk, geen regio), omroep- en stadsfeeds (vooral 112-nieuws; regio komt via Google News), Engineersonline (innovatie, geen werkgeversnieuws), Accountancy Vanmorgen (dubbel met Salaris Vanmorgen), Manners/Metronieuws/L1/Duurzaam Ondernemen/Baaz (verkeerd publiek)."
+  "_eruit": "Gemeten 06-10-2026 en bewust weggelaten: Werf& (feed leeg), DIA (404), BNR (0 items), Telegraaf Financieel en de DPG-economiefeeds (landelijk, geen regio), omroep- en stadsfeeds (vooral 112-nieuws; regio komt via Google News), Engineersonline (innovatie, geen werkgeversnieuws), Accountancy Vanmorgen (dubbel met Salaris Vanmorgen), Manners/Metronieuws/L1/Duurzaam Ondernemen/Baaz (verkeerd publiek).",
+  "max_regio": 15
 }

@@ -1,6 +1,6 @@
 {
  "week": "2026-W41",
- "opgehaald": "2026-10-06T13:07:49.254753+00:00",
+ "opgehaald": "2026-10-06T13:15:15.749924+00:00",
  "status": {
   "Link Magazine": {
    "uitkomst": "gevonden",
@@ -107,28 +107,64 @@
   "Google News #5 (regio)": {
    "uitkomst": "gevonden",
    "status": 200,
-   "items": 24,
-   "vers": 24
+   "items": 25,
+   "vers": 25
   },
   "Google News #6 (regio)": {
-   "uitkomst": "gevonden",
-   "status": 200,
-   "items": 4,
-   "vers": 4
-  },
-  "Google News #7 (arbeidsmarkt)": {
    "uitkomst": "gevonden",
    "status": 200,
    "items": 3,
    "vers": 3
   },
-  "Google News #8 (arbeidsmarkt)": {
+  "Google News #7 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 13,
+   "vers": 13
+  },
+  "Google News #8 (regio)": {
    "uitkomst": "leeg",
    "status": 200,
    "items": 0,
    "vers": 0
   },
-  "Google News #9 (arbeidsmarkt)": {
+  "Google News #9 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 6,
+   "vers": 6
+  },
+  "Google News #10 (regio)": {
+   "uitkomst": "leeg",
+   "status": 200,
+   "items": 78,
+   "vers": 0
+  },
+  "Google News #11 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 5,
+   "vers": 5
+  },
+  "Google News #12 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 20,
+   "vers": 20
+  },
+  "Google News #13 (arbeidsmarkt)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 3,
+   "vers": 3
+  },
+  "Google News #14 (arbeidsmarkt)": {
+   "uitkomst": "leeg",
+   "status": 200,
+   "items": 0,
+   "vers": 0
+  },
+  "Google News #15 (arbeidsmarkt)": {
    "uitkomst": "gevonden",
    "status": 200,
    "items": 61,
@@ -153,6 +189,7 @@
    "via": "Google News #4 (regio)",
    "sectie": "regio",
    "ook_bij": [
+    "Brabants Dagblad",
     "Omroep Brabant",
     "Rivierenland Radio"
    ],
@@ -212,6 +249,23 @@
    "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYlpJa3JWLTNKeFVzTXNpcWdUQkVpZVFOYk5yWVVZaDlPZmxhWjRza2FBaExveHNoUEtSTHcxdWllODZoYkFhRktlNGoyUkYzMTVZaUcwNXBOVHdtSzZFLTFtYUtYaDlHdXpwaXZFcXVvcnpBRXNPWkU0eFBwMy1tenhNd1ExLXZ6dkJxZnVYNlFCdkplUmdXcWxmQVZ5Z29ia2VlNFl4NTZjYi1HSFpYeGpLQTlhN2Y4Nm"
   },
   {
+   "titel": "Deze maand failliet in Drenthe: van voormalig pretpark tot metaalbedrijf",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcFZXcWh0UEVmSFF5dkI5MjEwb3FIT3lxQUk5WEZHWi1Jc3dNdzJmMkZ2TmZYQVpyVUdicldZOEdlRmFOWDMtZGZrRVA5c3ltVDE5OXh0YWo1azNxSnhHTUg3NlVUMnZ0MU5CQS1RQlJPVmd4MThtRnBQUHJtS3RvSmlMOGYtV1BiVUtIMVVFdXhJblRVMW50dE1LbGZoTTJoWXFpbWNQMWNETE5abTBMSEFvVQ?oc=5",
+   "datum": "2026-09-30T17:30:00+00:00",
+   "bron_artikel": "RTV Drenthe",
+   "score": 8,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "RTV Drenthe",
+   "via": "Google News #11 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNcFZXcWh0UEVmSFF5dkI5MjEwb3FIT3lxQUk5WEZHWi1Jc3dNdzJmMkZ2TmZYQVpyVUdicldZOEdlRmFOWDMtZGZrRVA5c3ltVDE5OXh0YWo1azNxSnhHTUg3NlVUMnZ0MU5CQS1RQlJPVmd4MThtRnBQUHJtS3RvSmlMOGYtV1BiVUtIMVVFdXhJblRVMW50dE1LbGZoTTJoWXFpbWNQMWNETE5abTBMSEFvVQ?oc=5\" t"
+  },
+  {
    "titel": "Jonge Twentse vakmensen blinken uit in China: 'Naar onze mogelijkheden hebben we top gepresteerd'",
    "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOTdxeEpoS09qZ05MaXlPcW1uVUpRTjdvVEhTUk1HUUh2M011aFRNTXNxQ2o4MERpQ3RVOEhJTTFzbUlHTURrdFg5V3lLLWFOYy1ieWRnR2RpYk92elNZTjVsWl96SGFLWWQyWVBxT1ZzaXlBaVp3dFVMVng5Tzd2dVFLTnpoVURFZ25hZkVIcTBhaDExdjlZMzRWT1lrdVd6NU5kdFpLSnZza1dTS2swZHQ2R0hPWTZQNnplU1phUmpJZmEzUnVsTU11am9pQQ?oc=5",
    "datum": "2026-09-29T13:13:00+00:00",
@@ -226,6 +280,22 @@
    "via": "Google News #5 (regio)",
    "sectie": "regio",
    "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxNOTdxeEpoS09qZ05MaXlPcW1uVUpRTjdvVEhTUk1HUUh2M011aFRNTXNxQ2o4MERpQ3RVOEhJTTFzbUlHTURrdFg5V3lLLWFOYy1ieWRnR2RpYk92elNZTjVsWl96SGFLWWQyWVBxT1ZzaXlBaVp3dFVMVng5Tzd2dVFLTnpoVURFZ25hZkVIcTBhaDExdjlZMzRWT1lrdVd6NU5kdFpLSnZza1dTS2swZHQ2R0hPWTZQNn"
+  },
+  {
+   "titel": "De vogel is gevlogen; nieuwbouw Norgerbrug bij Assen wordt hervat",
+   "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2FnQVZ4NVZ2UGZTNlc2LXNaUU9iMVl1TE5TeGFob3dudXhkV2ZLSmNMa29ndFBRUFotUnBILW9aNHNfM284S2NVa0NpZzhJWFBUTFp1a0cwUzlpemZncGs2Y3hpWUZfQUxqNzFuVGJ1aTlLMm9LWjRtTm15Rkl2UjlQVGxTanZ0VmMwUzAtejFOVnpPVjQ4?oc=5",
+   "datum": "2026-10-05T18:31:35+00:00",
+   "bron_artikel": "RTV Zulthe",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "RTV Zulthe",
+   "via": "Google News #9 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2FnQVZ4NVZ2UGZTNlc2LXNaUU9iMVl1TE5TeGFob3dudXhkV2ZLSmNMa29ndFBRUFotUnBILW9aNHNfM284S2NVa0NpZzhJWFBUTFp1a0cwUzlpemZncGs2Y3hpWUZfQUxqNzFuVGJ1aTlLMm9LWjRtTm15Rkl2UjlQVGxTanZ0VmMwUzAtejFOVnpPVjQ4?oc=5\" target=\"_blank\">De vogel is gevlogen; n"
   },
   {
    "titel": "Eerste Semicon Learning Center van Nederland opent bij REMO",
@@ -291,7 +361,26 @@
    "bron": "Drimble",
    "via": "Google News #3 (regio)",
    "sectie": "regio",
+   "ook_bij": [
+    "Drimble"
+   ],
    "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQbmk4LS1GRFA5clo4TXY0X2hNM0pldDJfaWg4a3lsa0owaWZSVEdnYVlvVnFwWTBTdGR6cDRESkNQQmRQa1lNYmp5VlcyLTVlenZnUzNCS0hza0hvZG11Y3lQSHdkVzVXUFMyNGhFR3hIMmk5OWZVZkdJODZuclR5bXBNbFlRcF85Vy0xRkNRVlhua2Vpc1oxU3IyN3JwQ015SUpyR1JZLXBXdjBieEFLd3ZqbzcxRTA?oc"
+  },
+  {
+   "titel": "Nederlandse industrie ergert zich aan dumping en misleiding door Chinese concurrenten en vreest voor sluiting meer fabrieken",
+   "link": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQU05pdkdTSWtpYjdVRUlXUHpfRVlBc2pveDN0UE5OQVhXTHc1ek9WUC1yQ3NNYW90bHVKNW1Zcl9FODhZZElLRTlUOXc4eWtGMTh6TGxSWWxkbEZhOS1wUDhOQVZNUl9YMHJIWDdmNEZ5ajZqVFhPSUFpSlVpMmYzc3ZyQUw2YjRyOGlTaUNfUWNzdW5pTXVQSjcxWHBoVEVHWGxwZnZHYWNKOV9jN0ZnbklmNDE1WlBtSTY3ZjZuRDRCcmFxT1RlVG1lR0ItR1E0WHBHYldEQzNRS29DdW5JRnZ6cEJkLUJ1dzdob2Zualk0M0RkZnUtWGJ3MlFKRlk?oc=5",
+   "datum": "2026-10-03T13:52:57+00:00",
+   "bron_artikel": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+   "score": 5,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+   "via": "Google News #11 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMi_wFBVV95cUxQU05pdkdTSWtpYjdVRUlXUHpfRVlBc2pveDN0UE5OQVhXTHc1ek9WUC1yQ3NNYW90bHVKNW1Zcl9FODhZZElLRTlUOXc4eWtGMTh6TGxSWWxkbEZhOS1wUDhOQVZNUl9YMHJIWDdmNEZ5ajZqVFhPSUFpSlVpMmYzc3ZyQUw2YjRyOGlTaUNfUWNzdW5pTXVQSjcxWHBoVEVHWGxwZnZHYWNKOV9jN0ZnbklmNDE1WlBtST"
   },
   {
    "titel": "Onderhandelingen over nieuwe cao Metalektro van start",
@@ -304,10 +393,10 @@
     "gerichte zoekvraag"
    ],
    "bron": "cnv.nl",
-   "via": "Google News #7 (arbeidsmarkt)",
+   "via": "Google News #13 (arbeidsmarkt)",
    "sectie": "arbeidsmarkt",
    "ook_bij": [
-    "De Unie",
+    "unie.nl",
     "Metaalnieuws"
    ],
    "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOWlRkaVFETzZJSzB5dHZ2TGRyS1FDanc0YVVMQ0VQZnBGeTVOeUM0Z0d5VzNET1h4Z2VkV2JTenZNUFk4OVAwcGt2RnJHT0liNU5rQThrbGhsdjJ2NUpKSkJqR1k0bWxlMm1IVzRmN0Zla1JZSmw4SnFEaUpIYldqNUZnTVVzclZ4a3FyVlVuSExtTzhSMmttUHA4Tm1kYlJQZy1xZWRSdHhuX0U0aW1fSzJfNFBEX3NFUW"
@@ -323,7 +412,7 @@
     "gerichte zoekvraag"
    ],
    "bron": "Dagblad010",
-   "via": "Google News #9 (arbeidsmarkt)",
+   "via": "Google News #15 (arbeidsmarkt)",
    "sectie": "arbeidsmarkt",
    "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxPbjZtSzRQbXJKT2U5R1dwZGJ5eE1wdjR3NUp3THZTY0VaTTZNUnJtX05WdWwtbWkyd1pyVEJmMEpMRDh1SDRSelVkR2tUaDFzMTBuOVVWZGg1bDBHRmxNaVoyMV84U1VJTl9GZXZqdjVhZ2E4dUxvTWRaZVN1SjVBczQxWVV0MXFfdTJ4WWpJeEs3amVKcDlrZEMteG91dTA?oc=5\" target=\"_blank\">Hoog opgelei"
   },
@@ -338,7 +427,7 @@
     "gerichte zoekvraag"
    ],
    "bron": "Centraal Bureau voor de Statistiek | CBS",
-   "via": "Google News #9 (arbeidsmarkt)",
+   "via": "Google News #15 (arbeidsmarkt)",
    "sectie": "arbeidsmarkt",
    "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxOd2FZMnQyTjZKMFloa2ZmZXlwZEFndHpKMVpubllDMHhoaDZGUU1nSGVuUFJIekhvUTd1OUh0Z0pNT2lpNWdYcFlLYW9maWx3WE5GN295aHRtNlZhS0NnMGx0X09ONXozTTNyM1ZkcHMxcHZqd0YySTZrRzRUX18tNXlMQ3ZQUDJCbXpINg?oc=5\" target=\"_blank\">Ontwikkeling cao-lonen</a>&nbsp;&nbsp"
   },
@@ -353,9 +442,40 @@
     "gerichte zoekvraag"
    ],
    "bron": "Centraal Bureau voor de Statistiek | CBS",
-   "via": "Google News #9 (arbeidsmarkt)",
+   "via": "Google News #15 (arbeidsmarkt)",
    "sectie": "arbeidsmarkt",
    "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxQaGtjS0pudkhTczdoSC1xYWd6RDVDdHB3UHEtTmNORkpWU0Y5WnZBcWY4eE5ubnZmNml5T3hNZm5nZS1uRWI4WElPNWZEalpqcTNkZHpiSVRNajBpcC1yakY0cUVnR2otZkZaSWZxMGZMbjNNa3hsbjlOZk9ORjJUalJRM082NnNqdHE5amlKNk0tdw?oc=5\" target=\"_blank\">Cao-lonen in derde kwartaal 4"
+  },
+  {
+   "titel": "Westlake sluit PVC-fabriek Keulen, concentreert productie op andere Duitse locaties",
+   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPX2ZWVDI2QU9SNnlNc3g4TDB5bHhHaE1QN1R0UlY4dHQ2WnlJSE5rYmhZZnlPUGdUc1RhS3ZvbHNFT0RteTFYTF9acmxfd2t0LVlrWVdwTHhIdTZaQ1ZZZkZSRG1BaHRBc1U2dEZESWxMTWFXMFNGbHAzTFRjNFBaYldzNXdOa1hvMzliZFpNdUdGYXhWNDhIaXN2V0RESjFZM3diTHREcnl4M0JTckRLM19zV1RNdC1qQnBqdnFNRV9UbVZQTExV?oc=5",
+   "datum": "2026-09-29T15:05:53+00:00",
+   "bron_artikel": "Industrielinqs",
+   "score": 5,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Industrielinqs",
+   "via": "Google News #11 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxPX2ZWVDI2QU9SNnlNc3g4TDB5bHhHaE1QN1R0UlY4dHQ2WnlJSE5rYmhZZnlPUGdUc1RhS3ZvbHNFT0RteTFYTF9acmxfd2t0LVlrWVdwTHhIdTZaQ1ZZZkZSRG1BaHRBc1U2dEZESWxMTWFXMFNGbHAzTFRjNFBaYldzNXdOa1hvMzliZFpNdUdGYXhWNDhIaXN2V0RESjFZM3diTHREcnl4M0JTckRLM19zV1RNdC1qQn"
+  },
+  {
+   "titel": "Rijkswaterstaat: personeelstekort blijft nijpend en verdere vaarwegbeperkingen niet uitgesloten",
+   "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOThramVITGc5bkJDaU1RNTVMRTJUdGIyZ2JyRlc1SzBrdzd2bS1mbGlqZmFhY1hYZzFTMFFKaDFXeFNfNDVwU0xZOVRDYnVrNnpVNXpIbG9kbnktaWpxZHN3MHBLbE5kUWEtcFVZbGlXb0dnTWV5N1hWR3o5OFltVEhQVldVTldZNmM0ekUyc3VTNHF4N3l4YVQyZmhlcVdJNUlnRmc0YnFLRnpuMUlrYzZBbVlkc0J2d0Jn?oc=5",
+   "datum": "2026-09-29T12:36:13+00:00",
+   "bron_artikel": "Schuttevaer.nl",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Schuttevaer.nl",
+   "via": "Google News #12 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOThramVITGc5bkJDaU1RNTVMRTJUdGIyZ2JyRlc1SzBrdzd2bS1mbGlqZmFhY1hYZzFTMFFKaDFXeFNfNDVwU0xZOVRDYnVrNnpVNXpIbG9kbnktaWpxZHN3MHBLbE5kUWEtcFVZbGlXb0dnTWV5N1hWR3o5OFltVEhQVldVTldZNmM0ekUyc3VTNHF4N3l4YVQyZmhlcVdJNUlnRmc0YnFLRnpuMUlrYzZBbVlkc0J2d0"
   },
   {
    "titel": "ASML-toeleverancier KMWE krijgt staatslening voor uitbreiding in Azië: ‘Voorbeeld voor meer bedrijven’",
@@ -432,6 +552,21 @@
    "via": "Link Magazine",
    "sectie": "branche",
    "samenvatting": "Na de alarmerende rapporten van Mario Draghi over Europa’s concurrentiekracht en van Peter Wennink over het Nederlandse verdienvermogen ontbreekt het niet aan heldere diagnoses. We moeten volop investeren in onze strategische industrie om onze welvaart te behouden. Helga Witjes, gedeputeerde van de "
+  },
+  {
+   "titel": "Stem nu op het Beste Houten Gebouw van 2026",
+   "link": "https://www.bouwwereld.nl/rubrieken/vakprijzen/stem-nu-op-het-beste-houten-gebouw-van-2026/",
+   "datum": "2026-10-01T13:37:14+00:00",
+   "bron_artikel": "",
+   "score": 4,
+   "waarom": [
+    "regio",
+    "industrie"
+   ],
+   "bron": "Bouwwereld",
+   "via": "Bouwwereld",
+   "sectie": "branche",
+   "samenvatting": "Voor de Nationale Houtbouwprijs 2026 zijn 77 projecten voorgeselecteerd. Zakelijke houtbouw is met 43 projecten de grootste categorie. Het publiek kan tot en met 13 november stemmen; de winnaars worden op 17 november bekendgemaakt."
   },
   {
    "titel": "Meer technisch personeel onder één dak",

@@ -1,4 +1,4 @@
-// Weekly news v2 — automatisch bijgewerkt op 2026-10-06T13:07:49.254753+00:00 (weekly/nieuws.py)
+// Weekly news v2 — automatisch bijgewerkt op 2026-10-06T13:15:15.749924+00:00 (weekly/nieuws.py)
 const newsData = {
   "topArticles": [
     {
@@ -39,6 +39,15 @@ const newsData = {
     },
     {
       "rank": 5,
+      "title": "Deze maand failliet in Drenthe: van voormalig pretpark tot metaalbedrijf",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNcFZXcWh0UEVmSFF5dkI5MjEwb3FIT3lxQUk5WEZHWi1Jc3dNdzJmMkZ2TmZYQVpyVUdicldZOEdlRmFOWDMtZGZrRVA5c3ltVDE5OXh0YWo1azNxSnhHTUg3NlVUMnZ0MU5CQS1RQlJPVmd4MThtRnBQUHJtS3RvSmlMOGYtV1BiVUtIMVVFdXhJblRVMW50dE1LbGZoTTJoWXFpbWNQMWNETE5abTBMSEFvVQ?oc=5\" t",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcFZXcWh0UEVmSFF5dkI5MjEwb3FIT3lxQUk5WEZHWi1Jc3dNdzJmMkZ2TmZYQVpyVUdicldZOEdlRmFOWDMtZGZrRVA5c3ltVDE5OXh0YWo1azNxSnhHTUg3NlVUMnZ0MU5CQS1RQlJPVmd4MThtRnBQUHJtS3RvSmlMOGYtV1BiVUtIMVVFdXhJblRVMW50dE1LbGZoTTJoWXFpbWNQMWNETE5abTBMSEFvVQ?oc=5",
+      "source": "RTV Drenthe",
+      "category": "Bedrijfssignalen in de regio",
+      "date": "30 Sep 2026"
+    },
+    {
+      "rank": 6,
       "title": "Jonge Twentse vakmensen blinken uit in China: 'Naar onze mogelijkheden hebben we top gepresteerd'",
       "description": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxNOTdxeEpoS09qZ05MaXlPcW1uVUpRTjdvVEhTUk1HUUh2M011aFRNTXNxQ2o4MERpQ3RVOEhJTTFzbUlHTURrdFg5V3lLLWFOYy1ieWRnR2RpYk92elNZTjVsWl96SGFLWWQyWVBxT1ZzaXlBaVp3dFVMVng5Tzd2dVFLTnpoVURFZ25hZkVIcTBhaDExdjlZMzRWT1lrdVd6NU5kdFpLSnZza1dTS2swZHQ2R0hPWTZQNn",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOTdxeEpoS09qZ05MaXlPcW1uVUpRTjdvVEhTUk1HUUh2M011aFRNTXNxQ2o4MERpQ3RVOEhJTTFzbUlHTURrdFg5V3lLLWFOYy1ieWRnR2RpYk92elNZTjVsWl96SGFLWWQyWVBxT1ZzaXlBaVp3dFVMVng5Tzd2dVFLTnpoVURFZ25hZkVIcTBhaDExdjlZMzRWT1lrdVd6NU5kdFpLSnZza1dTS2swZHQ2R0hPWTZQNnplU1phUmpJZmEzUnVsTU11am9pQQ?oc=5",
@@ -47,7 +56,16 @@ const newsData = {
       "date": "29 Sep 2026"
     },
     {
-      "rank": 6,
+      "rank": 7,
+      "title": "De vogel is gevlogen; nieuwbouw Norgerbrug bij Assen wordt hervat",
+      "description": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2FnQVZ4NVZ2UGZTNlc2LXNaUU9iMVl1TE5TeGFob3dudXhkV2ZLSmNMa29ndFBRUFotUnBILW9aNHNfM284S2NVa0NpZzhJWFBUTFp1a0cwUzlpemZncGs2Y3hpWUZfQUxqNzFuVGJ1aTlLMm9LWjRtTm15Rkl2UjlQVGxTanZ0VmMwUzAtejFOVnpPVjQ4?oc=5\" target=\"_blank\">De vogel is gevlogen; n",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2FnQVZ4NVZ2UGZTNlc2LXNaUU9iMVl1TE5TeGFob3dudXhkV2ZLSmNMa29ndFBRUFotUnBILW9aNHNfM284S2NVa0NpZzhJWFBUTFp1a0cwUzlpemZncGs2Y3hpWUZfQUxqNzFuVGJ1aTlLMm9LWjRtTm15Rkl2UjlQVGxTanZ0VmMwUzAtejFOVnpPVjQ4?oc=5",
+      "source": "RTV Zulthe",
+      "category": "Bedrijfssignalen in de regio",
+      "date": "5 Oct 2026"
+    },
+    {
+      "rank": 8,
       "title": "Eerste Semicon Learning Center van Nederland opent bij REMO",
       "description": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxPeGplQ1Nuc1lENzQ5ZGhyeWJ3Rko2UWJnREtObkRjOXdWUndCaEdBQ0JuenJINlk2VUF0T09aZGt5aXBZbVp3RWdRUzN2WjVPcVpFaFIzd0RwZWVabnVUbTh5bG5PbnRrNlZWeFMtUVFPZERNNHhUOFFKYWU0VE5xaE5MTGR3NDhLbHlqLUQ3b05fMlgtRnRQUGVnakc1RmhvQ3lpRTFkREZtYmNlZjlYR1BkN2o4QQ?oc=",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPeGplQ1Nuc1lENzQ5ZGhyeWJ3Rko2UWJnREtObkRjOXdWUndCaEdBQ0JuenJINlk2VUF0T09aZGt5aXBZbVp3RWdRUzN2WjVPcVpFaFIzd0RwZWVabnVUbTh5bG5PbnRrNlZWeFMtUVFPZERNNHhUOFFKYWU0VE5xaE5MTGR3NDhLbHlqLUQ3b05fMlgtRnRQUGVnakc1RmhvQ3lpRTFkREZtYmNlZjlYR1BkN2o4QQ?oc=5",
@@ -56,7 +74,7 @@ const newsData = {
       "date": "29 Sep 2026"
     },
     {
-      "rank": 7,
+      "rank": 9,
       "title": "Robert van Dorst nieuwe managing director CSi palletising",
       "description": "Robert van Dorst is benoemd tot managing director van CSi palletising. Hij brengt ruim 25 jaar leidinggevende ervaring in de maakindustrie mee, onder meer op het gebied van internationale machinebouw, packaging, automatisering en hightech engineering. CSi palletising telt circa 450 medewerkers en he",
       "url": "https://linkmagazine.nl/robert-van-dorst-nieuwe-managing-director-csi-palletising/?utm_source=rss&utm_medium=rss&utm_campaign=robert-van-dorst-nieuwe-managing-director-csi-palletising",
@@ -65,31 +83,13 @@ const newsData = {
       "date": "2 Oct 2026"
     },
     {
-      "rank": 8,
+      "rank": 10,
       "title": "Personeelstekort en hogere kosten zetten groot spoorprogramma van 5 miljard euro onder druk",
       "description": "<a href=\"https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVms5OFl0RHFUN0l3Q0ktSlhTZnNfV1BWYTRZVHlpanhhUGNzazNMNVhpRkwwSjFpRTJ2QjNHSzA2Y2R1Qkx2YUtTcTZpTWowYzEyb0h4WlhsWlpqOTlobGl0ZGNzbGp6b1M1MHRLNHBSbEtWWTJMLTdfSVV2WkR6a2Q0a2NYMUh6V1BoNFBqdGtQdTBCS0RQa2hWSU1SeW16YUczdnJkaEpqQmF2cGZxc0hWX2g0Q2R3UX",
       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVms5OFl0RHFUN0l3Q0ktSlhTZnNfV1BWYTRZVHlpanhhUGNzazNMNVhpRkwwSjFpRTJ2QjNHSzA2Y2R1Qkx2YUtTcTZpTWowYzEyb0h4WlhsWlpqOTlobGl0ZGNzbGp6b1M1MHRLNHBSbEtWWTJMLTdfSVV2WkR6a2Q0a2NYMUh6V1BoNFBqdGtQdTBCS0RQa2hWSU1SeW16YUczdnJkaEpqQmF2cGZxc0hWX2g0Q2R3UXA5LUpuc0IwZFVFRHJ4V2tLMHVIRjcyVjJEeHdjX3MydGNmdzVxU0tVUkFOYXVfd0Vj?oc=5",
       "source": "Drimble",
       "category": "Bedrijfssignalen in de regio",
       "date": "5 Oct 2026"
-    },
-    {
-      "rank": 9,
-      "title": "DYKA investeert 6 miljoen euro in fabriek in Pelt",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQbmk4LS1GRFA5clo4TXY0X2hNM0pldDJfaWg4a3lsa0owaWZSVEdnYVlvVnFwWTBTdGR6cDRESkNQQmRQa1lNYmp5VlcyLTVlenZnUzNCS0hza0hvZG11Y3lQSHdkVzVXUFMyNGhFR3hIMmk5OWZVZkdJODZuclR5bXBNbFlRcF85Vy0xRkNRVlhua2Vpc1oxU3IyN3JwQ015SUpyR1JZLXBXdjBieEFLd3ZqbzcxRTA?oc",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbmk4LS1GRFA5clo4TXY0X2hNM0pldDJfaWg4a3lsa0owaWZSVEdnYVlvVnFwWTBTdGR6cDRESkNQQmRQa1lNYmp5VlcyLTVlenZnUzNCS0hza0hvZG11Y3lQSHdkVzVXUFMyNGhFR3hIMmk5OWZVZkdJODZuclR5bXBNbFlRcF85Vy0xRkNRVlhua2Vpc1oxU3IyN3JwQ015SUpyR1JZLXBXdjBieEFLd3ZqbzcxRTA?oc=5",
-      "source": "Drimble",
-      "category": "Bedrijfssignalen in de regio",
-      "date": "5 Oct 2026"
-    },
-    {
-      "rank": 10,
-      "title": "Onderhandelingen over nieuwe cao Metalektro van start",
-      "description": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOWlRkaVFETzZJSzB5dHZ2TGRyS1FDanc0YVVMQ0VQZnBGeTVOeUM0Z0d5VzNET1h4Z2VkV2JTenZNUFk4OVAwcGt2RnJHT0liNU5rQThrbGhsdjJ2NUpKSkJqR1k0bWxlMm1IVzRmN0Zla1JZSmw4SnFEaUpIYldqNUZnTVVzclZ4a3FyVlVuSExtTzhSMmttUHA4Tm1kYlJQZy1xZWRSdHhuX0U0aW1fSzJfNFBEX3NFUW",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWlRkaVFETzZJSzB5dHZ2TGRyS1FDanc0YVVMQ0VQZnBGeTVOeUM0Z0d5VzNET1h4Z2VkV2JTenZNUFk4OVAwcGt2RnJHT0liNU5rQThrbGhsdjJ2NUpKSkJqR1k0bWxlMm1IVzRmN0Zla1JZSmw4SnFEaUpIYldqNUZnTVVzclZ4a3FyVlVuSExtTzhSMmttUHA4Tm1kYlJQZy1xZWRSdHhuX0U0aW1fSzJfNFBEX3NFUWQtcXdSZFEzTzBMSUE?oc=5",
-      "source": "cnv.nl",
-      "category": "Arbeidsmarkt en cao",
-      "date": "2 Oct 2026"
     }
   ],
   "categories": [
@@ -130,12 +130,28 @@ const newsData = {
           "date": "1 Oct 2026"
         },
         {
+          "title": "Deze maand failliet in Drenthe: van voormalig pretpark tot metaalbedrijf",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiswFBVV95cUxNcFZXcWh0UEVmSFF5dkI5MjEwb3FIT3lxQUk5WEZHWi1Jc3dNdzJmMkZ2TmZYQVpyVUdicldZOEdlRmFOWDMtZGZrRVA5c3ltVDE5OXh0YWo1azNxSnhHTUg3NlVUMnZ0MU5CQS1RQlJPVmd4MThtRnBQUHJtS3RvSmlMOGYtV1BiVUtIMVVFdXhJblRVMW50dE1LbGZoTTJoWXFpbWNQMWNETE5abTBMSEFvVQ?oc=5\" t",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcFZXcWh0UEVmSFF5dkI5MjEwb3FIT3lxQUk5WEZHWi1Jc3dNdzJmMkZ2TmZYQVpyVUdicldZOEdlRmFOWDMtZGZrRVA5c3ltVDE5OXh0YWo1azNxSnhHTUg3NlVUMnZ0MU5CQS1RQlJPVmd4MThtRnBQUHJtS3RvSmlMOGYtV1BiVUtIMVVFdXhJblRVMW50dE1LbGZoTTJoWXFpbWNQMWNETE5abTBMSEFvVQ?oc=5",
+          "source": "RTV Drenthe",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "30 Sep 2026"
+        },
+        {
           "title": "Jonge Twentse vakmensen blinken uit in China: 'Naar onze mogelijkheden hebben we top gepresteerd'",
           "description": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxNOTdxeEpoS09qZ05MaXlPcW1uVUpRTjdvVEhTUk1HUUh2M011aFRNTXNxQ2o4MERpQ3RVOEhJTTFzbUlHTURrdFg5V3lLLWFOYy1ieWRnR2RpYk92elNZTjVsWl96SGFLWWQyWVBxT1ZzaXlBaVp3dFVMVng5Tzd2dVFLTnpoVURFZ25hZkVIcTBhaDExdjlZMzRWT1lrdVd6NU5kdFpLSnZza1dTS2swZHQ2R0hPWTZQNn",
           "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOTdxeEpoS09qZ05MaXlPcW1uVUpRTjdvVEhTUk1HUUh2M011aFRNTXNxQ2o4MERpQ3RVOEhJTTFzbUlHTURrdFg5V3lLLWFOYy1ieWRnR2RpYk92elNZTjVsWl96SGFLWWQyWVBxT1ZzaXlBaVp3dFVMVng5Tzd2dVFLTnpoVURFZ25hZkVIcTBhaDExdjlZMzRWT1lrdVd6NU5kdFpLSnZza1dTS2swZHQ2R0hPWTZQNnplU1phUmpJZmEzUnVsTU11am9pQQ?oc=5",
           "source": "1Twente",
           "category": "Bedrijfssignalen in de regio",
           "date": "29 Sep 2026"
+        },
+        {
+          "title": "De vogel is gevlogen; nieuwbouw Norgerbrug bij Assen wordt hervat",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2FnQVZ4NVZ2UGZTNlc2LXNaUU9iMVl1TE5TeGFob3dudXhkV2ZLSmNMa29ndFBRUFotUnBILW9aNHNfM284S2NVa0NpZzhJWFBUTFp1a0cwUzlpemZncGs2Y3hpWUZfQUxqNzFuVGJ1aTlLMm9LWjRtTm15Rkl2UjlQVGxTanZ0VmMwUzAtejFOVnpPVjQ4?oc=5\" target=\"_blank\">De vogel is gevlogen; n",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2FnQVZ4NVZ2UGZTNlc2LXNaUU9iMVl1TE5TeGFob3dudXhkV2ZLSmNMa29ndFBRUFotUnBILW9aNHNfM284S2NVa0NpZzhJWFBUTFp1a0cwUzlpemZncGs2Y3hpWUZfQUxqNzFuVGJ1aTlLMm9LWjRtTm15Rkl2UjlQVGxTanZ0VmMwUzAtejFOVnpPVjQ4?oc=5",
+          "source": "RTV Zulthe",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "5 Oct 2026"
         },
         {
           "title": "Eerste Semicon Learning Center van Nederland opent bij REMO",
@@ -160,6 +176,30 @@ const newsData = {
           "source": "Drimble",
           "category": "Bedrijfssignalen in de regio",
           "date": "5 Oct 2026"
+        },
+        {
+          "title": "Nederlandse industrie ergert zich aan dumping en misleiding door Chinese concurrenten en vreest voor sluiting meer fabrieken",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMi_wFBVV95cUxQU05pdkdTSWtpYjdVRUlXUHpfRVlBc2pveDN0UE5OQVhXTHc1ek9WUC1yQ3NNYW90bHVKNW1Zcl9FODhZZElLRTlUOXc4eWtGMTh6TGxSWWxkbEZhOS1wUDhOQVZNUl9YMHJIWDdmNEZ5ajZqVFhPSUFpSlVpMmYzc3ZyQUw2YjRyOGlTaUNfUWNzdW5pTXVQSjcxWHBoVEVHWGxwZnZHYWNKOV9jN0ZnbklmNDE1WlBtST",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQU05pdkdTSWtpYjdVRUlXUHpfRVlBc2pveDN0UE5OQVhXTHc1ek9WUC1yQ3NNYW90bHVKNW1Zcl9FODhZZElLRTlUOXc4eWtGMTh6TGxSWWxkbEZhOS1wUDhOQVZNUl9YMHJIWDdmNEZ5ajZqVFhPSUFpSlVpMmYzc3ZyQUw2YjRyOGlTaUNfUWNzdW5pTXVQSjcxWHBoVEVHWGxwZnZHYWNKOV9jN0ZnbklmNDE1WlBtSTY3ZjZuRDRCcmFxT1RlVG1lR0ItR1E0WHBHYldEQzNRS29DdW5JRnZ6cEJkLUJ1dzdob2Zualk0M0RkZnUtWGJ3MlFKRlk?oc=5",
+          "source": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "3 Oct 2026"
+        },
+        {
+          "title": "Westlake sluit PVC-fabriek Keulen, concentreert productie op andere Duitse locaties",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMixwFBVV95cUxPX2ZWVDI2QU9SNnlNc3g4TDB5bHhHaE1QN1R0UlY4dHQ2WnlJSE5rYmhZZnlPUGdUc1RhS3ZvbHNFT0RteTFYTF9acmxfd2t0LVlrWVdwTHhIdTZaQ1ZZZkZSRG1BaHRBc1U2dEZESWxMTWFXMFNGbHAzTFRjNFBaYldzNXdOa1hvMzliZFpNdUdGYXhWNDhIaXN2V0RESjFZM3diTHREcnl4M0JTckRLM19zV1RNdC1qQn",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPX2ZWVDI2QU9SNnlNc3g4TDB5bHhHaE1QN1R0UlY4dHQ2WnlJSE5rYmhZZnlPUGdUc1RhS3ZvbHNFT0RteTFYTF9acmxfd2t0LVlrWVdwTHhIdTZaQ1ZZZkZSRG1BaHRBc1U2dEZESWxMTWFXMFNGbHAzTFRjNFBaYldzNXdOa1hvMzliZFpNdUdGYXhWNDhIaXN2V0RESjFZM3diTHREcnl4M0JTckRLM19zV1RNdC1qQnBqdnFNRV9UbVZQTExV?oc=5",
+          "source": "Industrielinqs",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "29 Sep 2026"
+        },
+        {
+          "title": "Rijkswaterstaat: personeelstekort blijft nijpend en verdere vaarwegbeperkingen niet uitgesloten",
+          "description": "<a href=\"https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOThramVITGc5bkJDaU1RNTVMRTJUdGIyZ2JyRlc1SzBrdzd2bS1mbGlqZmFhY1hYZzFTMFFKaDFXeFNfNDVwU0xZOVRDYnVrNnpVNXpIbG9kbnktaWpxZHN3MHBLbE5kUWEtcFVZbGlXb0dnTWV5N1hWR3o5OFltVEhQVldVTldZNmM0ekUyc3VTNHF4N3l4YVQyZmhlcVdJNUlnRmc0YnFLRnpuMUlrYzZBbVlkc0J2d0",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOThramVITGc5bkJDaU1RNTVMRTJUdGIyZ2JyRlc1SzBrdzd2bS1mbGlqZmFhY1hYZzFTMFFKaDFXeFNfNDVwU0xZOVRDYnVrNnpVNXpIbG9kbnktaWpxZHN3MHBLbE5kUWEtcFVZbGlXb0dnTWV5N1hWR3o5OFltVEhQVldVTldZNmM0ekUyc3VTNHF4N3l4YVQyZmhlcVdJNUlnRmc0YnFLRnpuMUlrYzZBbVlkc0J2d0Jn?oc=5",
+          "source": "Schuttevaer.nl",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "29 Sep 2026"
         },
         {
           "title": "ASML-toeleverancier KMWE krijgt staatslening voor uitbreiding in Azië: ‘Voorbeeld voor meer bedrijven’",
@@ -284,6 +324,14 @@ const newsData = {
           "source": "Link Magazine",
           "category": "Branche: industrie, installatie, bouw",
           "date": "2 Oct 2026"
+        },
+        {
+          "title": "Stem nu op het Beste Houten Gebouw van 2026",
+          "description": "Voor de Nationale Houtbouwprijs 2026 zijn 77 projecten voorgeselecteerd. Zakelijke houtbouw is met 43 projecten de grootste categorie. Het publiek kan tot en met 13 november stemmen; de winnaars worden op 17 november bekendgemaakt.",
+          "url": "https://www.bouwwereld.nl/rubrieken/vakprijzen/stem-nu-op-het-beste-houten-gebouw-van-2026/",
+          "source": "Bouwwereld",
+          "category": "Branche: industrie, installatie, bouw",
+          "date": "1 Oct 2026"
         },
         {
           "title": "Oosterberg breidt W-tak uit met overname Cevetech",

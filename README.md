@@ -1,7 +1,7 @@
 # Weekly news v2 (sinds 06-10-2026)
 
 Elke maandag 05:00 UTC haalt GitHub Actions de juiste artikelen op voor een directeur/HR van technisch MKB in
-Gelderland, Overijssel en Noord-Brabant, plus de regionale CBS-vacaturecijfers.
+Gelderland, Overijssel, Noord-Brabant, Utrecht, Flevoland, Drenthe en Zuid-Holland, plus de regionale CBS-vacaturecijfers per provincie.
 
 | Bestand | Wat |
 |---|---|

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regionale arbeidsmarktcijfers voor Gelderland, Overijssel en Noord-Brabant — CBS open data, met bron en peildatum.
+"""Regionale arbeidsmarktcijfers voor Gelderland, Overijssel, Noord-Brabant, Utrecht, Flevoland, Drenthe en Zuid-Holland — CBS open data, met bron en peildatum.
 
 Waarom (06-10-2026): Wouter wil prospects gerichter informeren met regionale arbeidsmarktinformatie. Gemeten: CBS-tabel
 83599NED "Openstaande vacatures; SBI 2008, regio" geeft per kwartaal de openstaande vacatures per provincie en sector.
@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parent.parent
 TABEL = "83599NED"
 API = f"https://opendata.cbs.nl/ODataApi/odata/{TABEL}/"
 BRON_URL = f"https://opendata.cbs.nl/statline/#/CBS/nl/dataset/{TABEL}/table"
-REGIO = ["Gelderland (PV)", "Overijssel (PV)", "Noord-Brabant (PV)", "Nederland"]
+REGIO = ["Gelderland (PV)", "Overijssel (PV)", "Noord-Brabant (PV)", "Utrecht (PV)", "Flevoland (PV)", "Drenthe (PV)", "Zuid-Holland (PV)", "Nederland"]
 SECTOR = {"C Industrie": "industrie", "F Bouwnijverheid": "bouw", "A-U Alle economische activiteiten": "alle sectoren"}
 
 
@@ -70,7 +70,11 @@ def zin(rij, peildatum):
     getal = f"{n:,}".replace(",", ".")
     waar = "in alle sectoren samen" if rij["sector"] == "alle sectoren" else f"in de {rij['sector']}"
     trend = ""
-    if rij["verandering_jaar_pct"] is not None:
+    klein = rij["waarde_x1000"] < 2.0 or (rij["jaar_eerder_x1000"] or 99) < 2.0
+    if rij["jaar_eerder_x1000"] is not None and klein:
+        # CBS rondt af op honderdtallen: bij kleine aantallen is een percentage ruis, dus de aantallen zelf
+        trend = f" (een jaar eerder {round(rij['jaar_eerder_x1000'] * 1000):,})".replace(",", ".")
+    elif rij["verandering_jaar_pct"] is not None:
         v = rij["verandering_jaar_pct"]
         trend = f", {abs(v)}% {'meer' if v > 0 else 'minder'} dan een jaar eerder" if v else ", evenveel als een jaar eerder"
     voorlopig = " (voorlopig cijfer)" if rij["voorlopig"] else ""
@@ -104,7 +108,7 @@ def main():
            "zinnen": [zin(r, peildatum) for r in rijen if r["regio"] != "Nederland"]}
     (ROOT / "arbeidsmarkt").mkdir(exist_ok=True)
     (ROOT / "arbeidsmarkt" / "regio-latest.json").write_text(json.dumps(uit, ensure_ascii=False, indent=1), encoding="utf-8")
-    md = [f"# Arbeidsmarkt Oost- en Zuid-Nederland — openstaande vacatures", "",
+    md = [f"# Arbeidsmarkt per provincie — openstaande vacatures", "",
           f"_Bron: [CBS {TABEL}]({BRON_URL}) · peildatum {peildatum} · eenheid x 1.000 · automatisch opgehaald door weekly/cbs_regio.py._", "",
           "| Regio | Sector | Kwartaal | Vacatures (x1.000) | t.o.v. vorig kwartaal | t.o.v. jaar eerder |", "|---|---|---|---:|---:|---:|"]
     f = lambda v: "—" if v is None else ("0%" if v == 0 else f"{v:+d}%")
@@ -112,7 +116,7 @@ def main():
         md.append(f"| {r['regio']} | {r['sector']} | {r['periode']}{' *' if r['voorlopig'] else ''} | {r['waarde_x1000']:.1f} | "
                   f"{f(r['verandering_kwartaal_pct'])} | {f(r['verandering_jaar_pct'])} |")
     md += ["", "## Kant-en-klare zinnen (bron en peildatum erbij laten staan)", ""] + [f"- {z}" for z in uit["zinnen"]] + \
-          ["", "_* = voorlopig cijfer volgens CBS._"]
+          ["", "_* = voorlopig cijfer volgens CBS. CBS rondt af op honderdtallen: onder de 2.000 vacatures zijn procentuele veranderingen grof — gebruik dan de aantallen._"]
     (ROOT / "arbeidsmarkt" / "regio-latest.md").write_text("\n".join(md) + "\n", encoding="utf-8")
     print("\n".join(md))
 
@@ -133,6 +137,11 @@ def zelftest():
     z = zin(nb, "2026-07-30")
     if "7.900 vacatures open in de industrie" not in z or "tweede kwartaal van 2026" not in z or "5% meer" not in z or "voorlopig" not in z or "CBS 83599NED" not in z:
         fouten.append(f"zin: {z}")
+    klein = {"regio": "Drenthe", "sector": "bouw", "periode": "2026 2e kwartaal", "voorlopig": False, "waarde_x1000": 0.7,
+             "vorig_kwartaal_x1000": 0.8, "jaar_eerder_x1000": 0.8, "verandering_kwartaal_pct": -13, "verandering_jaar_pct": -13}
+    zk = zin(klein, "2026-07-30")
+    if "%" in zk or "een jaar eerder 800" not in zk:
+        fouten.append(f"klein aantal moet aantallen tonen, geen percentage: {zk}")
     print("ZELFTEST " + ("GESLAAGD" if not fouten else "GEZAKT:\n  - " + "\n  - ".join(fouten)))
     return 0 if not fouten else 1
 

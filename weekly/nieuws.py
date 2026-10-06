@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Weekly news v2 — de juiste artikelen voor een directeur/HR van technisch MKB in Gelderland, Overijssel en Brabant.
+"""Weekly news v2 — de juiste artikelen voor een directeur/HR van technisch MKB in Gelderland, Overijssel, Brabant, Utrecht, Flevoland, Drenthe en Zuid-Holland.
 
 Waarom opnieuw (06-10-2026, gemeten): de oude scraper haalde 400 artikelen uit 22 domeinen, maar 12 van 31 bronnen
 gaven 403/404, de categorie-filter werkte op woorddelen ('it' ving 'het/uit', 'tekort' ving 'slaaptekort'), de
@@ -42,7 +42,13 @@ REGIO = W(r"gelderland", r"gelderse", r"overijssel", r"brabant\w*", r"twente", r
           r"enschede", r"hengelo", r"almelo", r"zwolle", r"kampen", r"oldenzaal", r"winterswijk", r"tiel", r"wijchen",
           r"harderwijk", r"eindhoven", r"tilburg", r"den bosch", r"helmond", r"oss", r"veghel", r"uden", r"breda",
           r"waalwijk", r"oost-nederland", r"doesburg", r"duiven", r"zevenaar", r"barneveld", r"culemborg", r"hardenberg",
-          r"rijssen", r"nijverdal", r"brainport", r"budel", r"weert")
+          r"rijssen", r"nijverdal", r"brainport", r"budel", r"weert",
+          # uitgebreid 06-10-2026: Utrecht, Flevoland, Drenthe, Zuid-Holland
+          r"utrecht\w*", r"amersfoort", r"veenendaal", r"nieuwegein", r"woerden", r"houten", r"zeist", r"flevoland\w*", r"almere",
+          r"lelystad", r"emmeloord", r"dronten", r"zeewolde", r"noordoostpolder", r"drenthe", r"drentse", r"assen", r"emmen",
+          r"hoogeveen", r"meppel", r"coevorden", r"zuid-holland\w*", r"rotterdam\w*", r"rijnmond", r"dordrecht", r"drechtsteden",
+          r"leiden", r"delft", r"gouda", r"zoetermeer", r"den haag", r"haagse", r"schiedam", r"vlaardingen", r"ridderkerk",
+          r"barendrecht", r"alblasserdam", r"papendrecht", r"gorinchem", r"westland", r"botlek", r"maasvlakte")
 ARBEID = W(r"personeel\w*", r"tekort aan \w+", r"krapte", r"krappe", r"vacatures?", r"werving", r"werven", r"banen",
            r"arbeidsmarkt\w*", r"werkgelegenheid", r"ontslag\w*", r"reorganisatie", r"cao", r"lonen",
            r"loonsverhoging", r"loonstijging", r"salaris\w*", r"arbeidsmigrant\w*", r"vakmensen", r"\d+ medewerkers",
@@ -58,7 +64,7 @@ RUIS = W(r"zzp'?ers?", r"uitzendbranche", r"horeca", r"supermarkt\w*", r"voetbal
          r"verdacht\w*", r"huizenmarkt", r"hypothe\w*", r"beurs", r"aandeel\w*", r"crypto", r"recept", r"podcast\w*",
          r"webinar", r"onthult", r"lanceert", r"introduceert", r"presenteert", r"bungalowpark", r"lodges", r"camping",
          r"woning\w*", r"appartement\w*", r"parkeer\w*", r"studieschuld", r"consument\w*", r"zorg\w*", r"ziekenhuis\w*",
-         r"projectprijs", r"award\w*", r"wint \w+ ?prijs", r"koopkracht", r"dagelijks leven", r"voedselbank\w*", r"\w+cast")
+         r"projectprijs", r"award\w*", r"wint \w+ ?prijs", r"koopkracht", r"dagelijks leven", r"voedselbank\w*", r"\w+cast", r"gemeente \w+ investeert", r"wonen", r"leefbaarheid", r"\w*buurt", r"(woon)?wijk", r"busbaan")
 
 
 def strip(t):
@@ -120,7 +126,9 @@ def haal(url, pogingen=2):
 
 def score(a, bucket):
     t = a["titel"] + " . " + a["tekst"]
-    regio, ind, arb, sig = bool(REGIO.search(t)), bool(INDUSTRIE.search(t)) or bucket == "branche", bool(ARBEID.search(t)), bool(SIGNAAL.search(t))
+    # bij vakbladen telt een regio alleen in de titel (een stad ergens in de tekst maakt landelijk nieuws niet regionaal)
+    regio_tekst = t if bucket == "google" else a["titel"]
+    regio, ind, arb, sig = bool(REGIO.search(regio_tekst)), bool(INDUSTRIE.search(t)) or bucket == "branche", bool(ARBEID.search(t)), bool(SIGNAAL.search(t))
     s, waarom = 0, []
     if arb: s += 3; waarom.append("arbeidsmarkt")
     if regio and (ind or arb or sig): s += 3; waarom.append("regio")
@@ -207,7 +215,8 @@ def kies(alle, cfg):
             continue
         if per_bron.get(a["bron"], 0) >= cfg["max_per_bron"]:
             continue
-        if sum(1 for g in gekozen if g["sectie"] == a["sectie"]) >= (3 if a["sectie"] == "vak" else cfg["max_per_sectie"]):
+        limiet = 3 if a["sectie"] == "vak" else (cfg.get("max_regio", cfg["max_per_sectie"]) if a["sectie"] == "regio" else cfg["max_per_sectie"])
+        if sum(1 for g in gekozen if g["sectie"] == a["sectie"]) >= limiet:
             continue
         per_bron[a["bron"]] = per_bron.get(a["bron"], 0) + 1
         gekozen.append(a)
