@@ -1,0 +1,590 @@
+{
+ "week": "2026-W41",
+ "opgehaald": "2026-10-06T13:07:49.254753+00:00",
+ "status": {
+  "Link Magazine": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 10,
+   "vers": 10
+  },
+  "Metaalnieuws": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 10,
+   "vers": 10
+  },
+  "Metaal Magazine": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 50,
+   "vers": 6
+  },
+  "Vraag en Aanbod": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 10,
+   "vers": 10
+  },
+  "Made-in-Europe": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 10,
+   "vers": 3
+  },
+  "Installatie.nl": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 687,
+   "vers": 17
+  },
+  "Bouwwereld": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 618,
+   "vers": 12
+  },
+  "Technisch Weekblad": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 10,
+   "vers": 10
+  },
+  "Salaris Vanmorgen": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 10,
+   "vers": 10
+  },
+  "Personeelsnet": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 30,
+   "vers": 5
+  },
+  "Trends in HR": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 9,
+   "vers": 3
+  },
+  "MT/Sprout": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 10,
+   "vers": 10
+  },
+  "Recruitmenttech": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 10,
+   "vers": 7
+  },
+  "Google News #1 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 13,
+   "vers": 13
+  },
+  "Google News #2 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 7,
+   "vers": 7
+  },
+  "Google News #3 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 14,
+   "vers": 14
+  },
+  "Google News #4 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 12,
+   "vers": 12
+  },
+  "Google News #5 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 24,
+   "vers": 24
+  },
+  "Google News #6 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 4,
+   "vers": 4
+  },
+  "Google News #7 (arbeidsmarkt)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 3,
+   "vers": 3
+  },
+  "Google News #8 (arbeidsmarkt)": {
+   "uitkomst": "leeg",
+   "status": 200,
+   "items": 0,
+   "vers": 0
+  },
+  "Google News #9 (arbeidsmarkt)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 61,
+   "vers": 61
+  }
+ },
+ "artikelen": [
+  {
+   "titel": "Systemair sluit fabriek in Waalwijk: zeventig banen op de tocht",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVmh1VzVVQThYWHdMNWJMVUhTaVZYdHZ5am5ra3RLM05jeEp5Z2lFeGxJSEwteUhJbkYyRDk1QWNHNWZUUUxIemNDWHBnWFhsa3d6OUZHQk5SZTBZT1I0T3RIN25Hb1JNWDNjc0k4eUtUMmxrRnpSM2hnenJQUUVSTUszbFpBRU9HTXlHNXRWMHdoRkxiT21LcnZLU3JhLTQ?oc=5",
+   "datum": "2026-09-30T15:22:59+00:00",
+   "bron_artikel": "Eindhovens Dagblad",
+   "score": 11,
+   "waarom": [
+    "arbeidsmarkt",
+    "regio",
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Eindhovens Dagblad",
+   "via": "Google News #4 (regio)",
+   "sectie": "regio",
+   "ook_bij": [
+    "Omroep Brabant",
+    "Rivierenland Radio"
+   ],
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxQVmh1VzVVQThYWHdMNWJMVUhTaVZYdHZ5am5ra3RLM05jeEp5Z2lFeGxJSEwteUhJbkYyRDk1QWNHNWZUUUxIemNDWHBnWFhsa3d6OUZHQk5SZTBZT1I0T3RIN25Hb1JNWDNjc0k4eUtUMmxrRnpSM2hnenJQUUVSTUszbFpBRU9HTXlHNXRWMHdoRkxiT21LcnZLU3JhLTQ?oc=5\" target=\"_blank\">Systemair sl"
+  },
+  {
+   "titel": "Minister Aartsen ziet in Duiven hoe E-Care het personeelstekort aanpakt: `Wat een mooi bedrijf`",
+   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaWhBM09QUVJ3UUZRRlFCNU5YbHJHMHlOdkFyU0lPaER2eDQyWFpyV2I2Z1dvZnZ6bFlJdHd1N3dmZDBLcDcyUjZFTzJVTFJyY1hYUmhZSHZDb1Z0QjJHcXpJNnRUZzdlNTVfaWZUZV9OVXZnQ3BFazl1TkwwMUhPbGtDaHBydDZkZUhvczRaWk9wWExSbUJ5OU1sZ0RmOU82ZV9yMWxLUWt4bFQ3YWVRYi1tdGd6N0g3eWhqbHl0ZER4REJnRTc4RE1IeWdPYkltb293TjJUSXBsamFzSk11dFh6WW0?oc=5",
+   "datum": "2026-10-05T21:00:00+00:00",
+   "bron_artikel": "Drimble",
+   "score": 8,
+   "waarom": [
+    "arbeidsmarkt",
+    "regio",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Drimble",
+   "via": "Google News #5 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaWhBM09QUVJ3UUZRRlFCNU5YbHJHMHlOdkFyU0lPaER2eDQyWFpyV2I2Z1dvZnZ6bFlJdHd1N3dmZDBLcDcyUjZFTzJVTFJyY1hYUmhZSHZDb1Z0QjJHcXpJNnRUZzdlNTVfaWZUZV9OVXZnQ3BFazl1TkwwMUhPbGtDaHBydDZkZUhvczRaWk9wWExSbUJ5OU1sZ0RmOU82ZV9yMWxLUWt4bFQ3YWVRYi1tdGd6N0g3eW"
+  },
+  {
+   "titel": "Veertien Brabantse bedrijven failliet, metaalbewerker valt na 107 jaar om",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMTFnT2NhaHVteUpPMzU5LXkwZEhjMFhZV1ZORENDWHZlcDNPNjBiNl9vX3lNSGZybl9QdTJXZWw3SkxhajhNc0pfMUFwMkRFMTdBLUJwUDNDUTdxaG13NFpBTTRRZlZpXzVmMUdZM2dlWWFzSk5CNzE4ellZRUE1V0p5QW9WQWloR0NsR0hUNndZVnNPV2I0UWZxaGhnNDhwc2tYNGVlR3dSVUgzM1E?oc=5",
+   "datum": "2026-10-02T07:43:27+00:00",
+   "bron_artikel": "Brabants Dagblad",
+   "score": 8,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Brabants Dagblad",
+   "via": "Google News #4 (regio)",
+   "sectie": "regio",
+   "ook_bij": [
+    "Brabants Dagblad"
+   ],
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMirgFBVV95cUxQMTFnT2NhaHVteUpPMzU5LXkwZEhjMFhZV1ZORENDWHZlcDNPNjBiNl9vX3lNSGZybl9QdTJXZWw3SkxhajhNc0pfMUFwMkRFMTdBLUJwUDNDUTdxaG13NFpBTTRRZlZpXzVmMUdZM2dlWWFzSk5CNzE4ellZRUE1V0p5QW9WQWloR0NsR0hUNndZVnNPV2I0UWZxaGhnNDhwc2tYNGVlR3dSVUgzM1E?oc=5\" target=\""
+  },
+  {
+   "titel": "Aannemer failliet dus ligt de bouw van basisscholen in Eindhoven en Son tijdelijk stil",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYlpJa3JWLTNKeFVzTXNpcWdUQkVpZVFOYk5yWVVZaDlPZmxhWjRza2FBaExveHNoUEtSTHcxdWllODZoYkFhRktlNGoyUkYzMTVZaUcwNXBOVHdtSzZFLTFtYUtYaDlHdXpwaXZFcXVvcnpBRXNPWkU0eFBwMy1tenhNd1ExLXZ6dkJxZnVYNlFCdkplUmdXcWxmQVZ5Z29ia2VlNFl4NTZjYi1HSFpYeGpLQTlhN2Y4NmNud2NXZkRSdw?oc=5",
+   "datum": "2026-10-01T16:30:00+00:00",
+   "bron_artikel": "Eindhovens Dagblad",
+   "score": 8,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Eindhovens Dagblad",
+   "via": "Google News #3 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYlpJa3JWLTNKeFVzTXNpcWdUQkVpZVFOYk5yWVVZaDlPZmxhWjRza2FBaExveHNoUEtSTHcxdWllODZoYkFhRktlNGoyUkYzMTVZaUcwNXBOVHdtSzZFLTFtYUtYaDlHdXpwaXZFcXVvcnpBRXNPWkU0eFBwMy1tenhNd1ExLXZ6dkJxZnVYNlFCdkplUmdXcWxmQVZ5Z29ia2VlNFl4NTZjYi1HSFpYeGpLQTlhN2Y4Nm"
+  },
+  {
+   "titel": "Jonge Twentse vakmensen blinken uit in China: 'Naar onze mogelijkheden hebben we top gepresteerd'",
+   "link": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOTdxeEpoS09qZ05MaXlPcW1uVUpRTjdvVEhTUk1HUUh2M011aFRNTXNxQ2o4MERpQ3RVOEhJTTFzbUlHTURrdFg5V3lLLWFOYy1ieWRnR2RpYk92elNZTjVsWl96SGFLWWQyWVBxT1ZzaXlBaVp3dFVMVng5Tzd2dVFLTnpoVURFZ25hZkVIcTBhaDExdjlZMzRWT1lrdVd6NU5kdFpLSnZza1dTS2swZHQ2R0hPWTZQNnplU1phUmpJZmEzUnVsTU11am9pQQ?oc=5",
+   "datum": "2026-09-29T13:13:00+00:00",
+   "bron_artikel": "1Twente",
+   "score": 8,
+   "waarom": [
+    "arbeidsmarkt",
+    "regio",
+    "gerichte zoekvraag"
+   ],
+   "bron": "1Twente",
+   "via": "Google News #5 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMizgFBVV95cUxNOTdxeEpoS09qZ05MaXlPcW1uVUpRTjdvVEhTUk1HUUh2M011aFRNTXNxQ2o4MERpQ3RVOEhJTTFzbUlHTURrdFg5V3lLLWFOYy1ieWRnR2RpYk92elNZTjVsWl96SGFLWWQyWVBxT1ZzaXlBaVp3dFVMVng5Tzd2dVFLTnpoVURFZ25hZkVIcTBhaDExdjlZMzRWT1lrdVd6NU5kdFpLSnZza1dTS2swZHQ2R0hPWTZQNn"
+  },
+  {
+   "titel": "Eerste Semicon Learning Center van Nederland opent bij REMO",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPeGplQ1Nuc1lENzQ5ZGhyeWJ3Rko2UWJnREtObkRjOXdWUndCaEdBQ0JuenJINlk2VUF0T09aZGt5aXBZbVp3RWdRUzN2WjVPcVpFaFIzd0RwZWVabnVUbTh5bG5PbnRrNlZWeFMtUVFPZERNNHhUOFFKYWU0VE5xaE5MTGR3NDhLbHlqLUQ3b05fMlgtRnRQUGVnakc1RmhvQ3lpRTFkREZtYmNlZjlYR1BkN2o4QQ?oc=5",
+   "datum": "2026-09-29T13:37:00+00:00",
+   "bron_artikel": "De Week van Rijssen",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "De Week van Rijssen",
+   "via": "Google News #5 (regio)",
+   "sectie": "regio",
+   "ook_bij": [
+    "Metaalkrant"
+   ],
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMitgFBVV95cUxPeGplQ1Nuc1lENzQ5ZGhyeWJ3Rko2UWJnREtObkRjOXdWUndCaEdBQ0JuenJINlk2VUF0T09aZGt5aXBZbVp3RWdRUzN2WjVPcVpFaFIzd0RwZWVabnVUbTh5bG5PbnRrNlZWeFMtUVFPZERNNHhUOFFKYWU0VE5xaE5MTGR3NDhLbHlqLUQ3b05fMlgtRnRQUGVnakc1RmhvQ3lpRTFkREZtYmNlZjlYR1BkN2o4QQ?oc="
+  },
+  {
+   "titel": "Robert van Dorst nieuwe managing director CSi palletising",
+   "link": "https://linkmagazine.nl/robert-van-dorst-nieuwe-managing-director-csi-palletising/?utm_source=rss&utm_medium=rss&utm_campaign=robert-van-dorst-nieuwe-managing-director-csi-palletising",
+   "datum": "2026-10-02T18:20:51+00:00",
+   "bron_artikel": "",
+   "score": 6,
+   "waarom": [
+    "arbeidsmarkt",
+    "bedrijfssignaal",
+    "industrie"
+   ],
+   "bron": "Link Magazine",
+   "via": "Link Magazine",
+   "sectie": "branche",
+   "samenvatting": "Robert van Dorst is benoemd tot managing director van CSi palletising. Hij brengt ruim 25 jaar leidinggevende ervaring in de maakindustrie mee, onder meer op het gebied van internationale machinebouw, packaging, automatisering en hightech engineering. CSi palletising telt circa 450 medewerkers en he"
+  },
+  {
+   "titel": "Personeelstekort en hogere kosten zetten groot spoorprogramma van 5 miljard euro onder druk",
+   "link": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVms5OFl0RHFUN0l3Q0ktSlhTZnNfV1BWYTRZVHlpanhhUGNzazNMNVhpRkwwSjFpRTJ2QjNHSzA2Y2R1Qkx2YUtTcTZpTWowYzEyb0h4WlhsWlpqOTlobGl0ZGNzbGp6b1M1MHRLNHBSbEtWWTJMLTdfSVV2WkR6a2Q0a2NYMUh6V1BoNFBqdGtQdTBCS0RQa2hWSU1SeW16YUczdnJkaEpqQmF2cGZxc0hWX2g0Q2R3UXA5LUpuc0IwZFVFRHJ4V2tLMHVIRjcyVjJEeHdjX3MydGNmdzVxU0tVUkFOYXVfd0Vj?oc=5",
+   "datum": "2026-10-05T17:16:00+00:00",
+   "bron_artikel": "Drimble",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Drimble",
+   "via": "Google News #5 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVms5OFl0RHFUN0l3Q0ktSlhTZnNfV1BWYTRZVHlpanhhUGNzazNMNVhpRkwwSjFpRTJ2QjNHSzA2Y2R1Qkx2YUtTcTZpTWowYzEyb0h4WlhsWlpqOTlobGl0ZGNzbGp6b1M1MHRLNHBSbEtWWTJMLTdfSVV2WkR6a2Q0a2NYMUh6V1BoNFBqdGtQdTBCS0RQa2hWSU1SeW16YUczdnJkaEpqQmF2cGZxc0hWX2g0Q2R3UX"
+  },
+  {
+   "titel": "DYKA investeert 6 miljoen euro in fabriek in Pelt",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbmk4LS1GRFA5clo4TXY0X2hNM0pldDJfaWg4a3lsa0owaWZSVEdnYVlvVnFwWTBTdGR6cDRESkNQQmRQa1lNYmp5VlcyLTVlenZnUzNCS0hza0hvZG11Y3lQSHdkVzVXUFMyNGhFR3hIMmk5OWZVZkdJODZuclR5bXBNbFlRcF85Vy0xRkNRVlhua2Vpc1oxU3IyN3JwQ015SUpyR1JZLXBXdjBieEFLd3ZqbzcxRTA?oc=5",
+   "datum": "2026-10-05T10:18:01+00:00",
+   "bron_artikel": "Drimble",
+   "score": 5,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Drimble",
+   "via": "Google News #3 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMitwFBVV95cUxQbmk4LS1GRFA5clo4TXY0X2hNM0pldDJfaWg4a3lsa0owaWZSVEdnYVlvVnFwWTBTdGR6cDRESkNQQmRQa1lNYmp5VlcyLTVlenZnUzNCS0hza0hvZG11Y3lQSHdkVzVXUFMyNGhFR3hIMmk5OWZVZkdJODZuclR5bXBNbFlRcF85Vy0xRkNRVlhua2Vpc1oxU3IyN3JwQ015SUpyR1JZLXBXdjBieEFLd3ZqbzcxRTA?oc"
+  },
+  {
+   "titel": "Onderhandelingen over nieuwe cao Metalektro van start",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOWlRkaVFETzZJSzB5dHZ2TGRyS1FDanc0YVVMQ0VQZnBGeTVOeUM0Z0d5VzNET1h4Z2VkV2JTenZNUFk4OVAwcGt2RnJHT0liNU5rQThrbGhsdjJ2NUpKSkJqR1k0bWxlMm1IVzRmN0Zla1JZSmw4SnFEaUpIYldqNUZnTVVzclZ4a3FyVlVuSExtTzhSMmttUHA4Tm1kYlJQZy1xZWRSdHhuX0U0aW1fSzJfNFBEX3NFUWQtcXdSZFEzTzBMSUE?oc=5",
+   "datum": "2026-10-02T15:20:29+00:00",
+   "bron_artikel": "cnv.nl",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "cnv.nl",
+   "via": "Google News #7 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "ook_bij": [
+    "De Unie",
+    "Metaalnieuws"
+   ],
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMixgFBVV95cUxOWlRkaVFETzZJSzB5dHZ2TGRyS1FDanc0YVVMQ0VQZnBGeTVOeUM0Z0d5VzNET1h4Z2VkV2JTenZNUFk4OVAwcGt2RnJHT0liNU5rQThrbGhsdjJ2NUpKSkJqR1k0bWxlMm1IVzRmN0Zla1JZSmw4SnFEaUpIYldqNUZnTVVzclZ4a3FyVlVuSExtTzhSMmttUHA4Tm1kYlJQZy1xZWRSdHhuX0U0aW1fSzJfNFBEX3NFUW"
+  },
+  {
+   "titel": "Hoog opgeleid, lage werkloosheid, toch onzeker: AI verandert het werk",
+   "link": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPbjZtSzRQbXJKT2U5R1dwZGJ5eE1wdjR3NUp3THZTY0VaTTZNUnJtX05WdWwtbWkyd1pyVEJmMEpMRDh1SDRSelVkR2tUaDFzMTBuOVVWZGg1bDBHRmxNaVoyMV84U1VJTl9GZXZqdjVhZ2E4dUxvTWRaZVN1SjVBczQxWVV0MXFfdTJ4WWpJeEs3amVKcDlrZEMteG91dTA?oc=5",
+   "datum": "2026-10-02T10:49:31+00:00",
+   "bron_artikel": "Dagblad010",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Dagblad010",
+   "via": "Google News #9 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMinwFBVV95cUxPbjZtSzRQbXJKT2U5R1dwZGJ5eE1wdjR3NUp3THZTY0VaTTZNUnJtX05WdWwtbWkyd1pyVEJmMEpMRDh1SDRSelVkR2tUaDFzMTBuOVVWZGg1bDBHRmxNaVoyMV84U1VJTl9GZXZqdjVhZ2E4dUxvTWRaZVN1SjVBczQxWVV0MXFfdTJ4WWpJeEs3amVKcDlrZEMteG91dTA?oc=5\" target=\"_blank\">Hoog opgelei"
+  },
+  {
+   "titel": "Ontwikkeling cao-lonen",
+   "link": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOd2FZMnQyTjZKMFloa2ZmZXlwZEFndHpKMVpubllDMHhoaDZGUU1nSGVuUFJIekhvUTd1OUh0Z0pNT2lpNWdYcFlLYW9maWx3WE5GN295aHRtNlZhS0NnMGx0X09ONXozTTNyM1ZkcHMxcHZqd0YySTZrRzRUX18tNXlMQ3ZQUDJCbXpINg?oc=5",
+   "datum": "2026-10-01T07:43:00+00:00",
+   "bron_artikel": "Centraal Bureau voor de Statistiek | CBS",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Centraal Bureau voor de Statistiek | CBS",
+   "via": "Google News #9 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMijAFBVV95cUxOd2FZMnQyTjZKMFloa2ZmZXlwZEFndHpKMVpubllDMHhoaDZGUU1nSGVuUFJIekhvUTd1OUh0Z0pNT2lpNWdYcFlLYW9maWx3WE5GN295aHRtNlZhS0NnMGx0X09ONXozTTNyM1ZkcHMxcHZqd0YySTZrRzRUX18tNXlMQ3ZQUDJCbXpINg?oc=5\" target=\"_blank\">Ontwikkeling cao-lonen</a>&nbsp;&nbsp"
+  },
+  {
+   "titel": "Cao-lonen in derde kwartaal 4,0 procent gestegen",
+   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQaGtjS0pudkhTczdoSC1xYWd6RDVDdHB3UHEtTmNORkpWU0Y5WnZBcWY4eE5ubnZmNml5T3hNZm5nZS1uRWI4WElPNWZEalpqcTNkZHpiSVRNajBpcC1yakY0cUVnR2otZkZaSWZxMGZMbjNNa3hsbjlOZk9ORjJUalJRM082NnNqdHE5amlKNk0tdw?oc=5",
+   "datum": "2026-10-01T04:30:00+00:00",
+   "bron_artikel": "Centraal Bureau voor de Statistiek | CBS",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Centraal Bureau voor de Statistiek | CBS",
+   "via": "Google News #9 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMikgFBVV95cUxQaGtjS0pudkhTczdoSC1xYWd6RDVDdHB3UHEtTmNORkpWU0Y5WnZBcWY4eE5ubnZmNml5T3hNZm5nZS1uRWI4WElPNWZEalpqcTNkZHpiSVRNajBpcC1yakY0cUVnR2otZkZaSWZxMGZMbjNNa3hsbjlOZk9ORjJUalJRM082NnNqdHE5amlKNk0tdw?oc=5\" target=\"_blank\">Cao-lonen in derde kwartaal 4"
+  },
+  {
+   "titel": "ASML-toeleverancier KMWE krijgt staatslening voor uitbreiding in Azië: ‘Voorbeeld voor meer bedrijven’",
+   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZnNpSWswbHdVbVlfUVlvajJtUk5ZQkVyXzZscHRPZGdoLUgyMnRfU200OWVLOWxUYVE1NW14Um9YcWczb3c1LVhSbkxNUFR5c3RxeE1IVW1OSXlRbVAtZ3hyUno5RHVpdnZEVDIyTTE4NElCY05vT0VzNnZyZjVkLWp6ZjBkN1pqMG5jUUFJZHZMYjh0eGd6TlFHVnc5UlZsS25Td0VZRlVuRmhTcU1kaHc4eWNvVTluWjBLRkVMZ3pRdGhkeDNpTlVPTks?oc=5",
+   "datum": "2026-09-28T17:00:00+00:00",
+   "bron_artikel": "Eindhovens Dagblad",
+   "score": 5,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Eindhovens Dagblad",
+   "via": "Google News #3 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMizAFBVV95cUxPZnNpSWswbHdVbVlfUVlvajJtUk5ZQkVyXzZscHRPZGdoLUgyMnRfU200OWVLOWxUYVE1NW14Um9YcWczb3c1LVhSbkxNUFR5c3RxeE1IVW1OSXlRbVAtZ3hyUno5RHVpdnZEVDIyTTE4NElCY05vT0VzNnZyZjVkLWp6ZjBkN1pqMG5jUUFJZHZMYjh0eGd6TlFHVnc5UlZsS25Td0VZRlVuRmhTcU1kaHc4eWNvVTluWj"
+  },
+  {
+   "titel": "Massa-ontslag dreigt voor meer dan helft personeel Eternit Goor",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRTNEcXJGRXMtNEVIZlZ3QUxDTmtxeGo3MjNUT3lLc1ZJdzlmRWZiYjM5N3JKWHVTVUt2RDhMdG12Q1lzNUFGUVE4NDdCRXprM2FNaDJDOW5UMS1VV2pFVXdObE9JSE1jUTRSaGQtZVVJZl82M3JqMlJvM1NqYTlFWWc2M1VHRHpHTnRVdmx5TDlfbDFsTEpabG9HREwwQ3BlLUtydFBWby1EeThLTnVjWGJR?oc=5",
+   "datum": "2026-09-28T16:35:00+00:00",
+   "bron_artikel": "tubantia.nl",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "tubantia.nl",
+   "via": "Google News #4 (regio)",
+   "sectie": "regio",
+   "samenvatting": "<a href=\"https://news.google.com/rss/articles/CBMisgFBVV95cUxNRTNEcXJGRXMtNEVIZlZ3QUxDTmtxeGo3MjNUT3lLc1ZJdzlmRWZiYjM5N3JKWHVTVUt2RDhMdG12Q1lzNUFGUVE4NDdCRXprM2FNaDJDOW5UMS1VV2pFVXdObE9JSE1jUTRSaGQtZVVJZl82M3JqMlJvM1NqYTlFWWc2M1VHRHpHTnRVdmx5TDlfbDFsTEpabG9HREwwQ3BlLUtydFBWby1EeThLTnVjWGJR?oc=5\" tar"
+  },
+  {
+   "titel": "Skillscoalitie wil bouwen aan skillsgerichte arbeidsmarkt",
+   "link": "https://www.vraagenaanbod.nl/skillscoalitie-wil-bouwen-aan-skillsgerichte-arbeidsmarkt/",
+   "datum": "2026-10-05T14:00:53+00:00",
+   "bron_artikel": "",
+   "score": 4,
+   "waarom": [
+    "arbeidsmarkt",
+    "industrie"
+   ],
+   "bron": "Vraag en Aanbod",
+   "via": "Vraag en Aanbod",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "De technologische industrie heeft grote behoefte aan vakmensen. Tegelijk verandert werk snel door digitalisering, verduurzaming en AI. Daarom wordt het steeds belangrijker om niet alleen naar diploma’s en functietitels te kijken, maar ook naar wat mensen daadwerkelijk kunnen. FME zet zich samen met "
+  },
+  {
+   "titel": "Eenmalige uitkering voor medewerkers cao Metaalbewerkingsbedrijf",
+   "link": "https://www.vraagenaanbod.nl/eenmalige-uitkering-voor-medewerkers-cao-metaalbewerkingsbedrijf/",
+   "datum": "2026-10-05T13:08:05+00:00",
+   "bron_artikel": "",
+   "score": 4,
+   "waarom": [
+    "arbeidsmarkt",
+    "industrie"
+   ],
+   "bron": "Vraag en Aanbod",
+   "via": "Vraag en Aanbod",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Werkgevers die vallen onder de cao voor het metaalbewerkingsbedrijf betalen in november 2026 een eenmalige bruto-uitkering van 132 euro aan werknemers die op 1 november 2026 in dienst zijn. De uitkering is onderdeel van de afspraken in de cao Metaalbewerkingsbedrijf. De eenmalige uitkering geldt voo"
+  },
+  {
+   "titel": "Klaasjan: De industrie vraagt om besluiten, maar Den Haag blijft hangen in rapporten",
+   "link": "https://linkmagazine.nl/klaasjan-de-industrie-vraagt-om-besluiten-maar-den-haag-blijft-hangen-in-rapporten/?utm_source=rss&utm_medium=rss&utm_campaign=klaasjan-de-industrie-vraagt-om-besluiten-maar-den-haag-blijft-hangen-in-rapporten",
+   "datum": "2026-10-02T14:08:49+00:00",
+   "bron_artikel": "",
+   "score": 4,
+   "waarom": [
+    "regio",
+    "industrie"
+   ],
+   "bron": "Link Magazine",
+   "via": "Link Magazine",
+   "sectie": "branche",
+   "samenvatting": "Na de alarmerende rapporten van Mario Draghi over Europa’s concurrentiekracht en van Peter Wennink over het Nederlandse verdienvermogen ontbreekt het niet aan heldere diagnoses. We moeten volop investeren in onze strategische industrie om onze welvaart te behouden. Helga Witjes, gedeputeerde van de "
+  },
+  {
+   "titel": "Meer technisch personeel onder één dak",
+   "link": "https://www.installatie.nl/nieuws/meer-technisch-personeel-onder-een-dak/",
+   "datum": "2026-09-30T05:37:00+00:00",
+   "bron_artikel": "",
+   "score": 4,
+   "waarom": [
+    "arbeidsmarkt",
+    "industrie"
+   ],
+   "bron": "Installatie.nl",
+   "via": "Installatie.nl",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "DIT Group neemt The Employment Group (TEG) over en krijgt daarmee de detacheringsmerken Cottus (schilders) en Faber (techniek) onder zijn..."
+  },
+  {
+   "titel": "Oosterberg breidt W-tak uit met overname Cevetech",
+   "link": "https://www.installatie.nl/nieuws/oosterberg-breidt-w-tak-uit-met-overname-cevetech/",
+   "datum": "2026-10-06T07:19:55+00:00",
+   "bron_artikel": "",
+   "score": 3,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie"
+   ],
+   "bron": "Installatie.nl",
+   "via": "Installatie.nl",
+   "sectie": "branche",
+   "samenvatting": "Koninklijke Oosterberg neemt groothandel in klimaattechniek Cevetech over om zijn positie in de werktuigbouwkundige installatiemarkt te versterken. De overname moet..."
+  },
+  {
+   "titel": "Nederland doet bij huidig tempo 137 jaar over vernieuwing drinkwaternet",
+   "link": "https://tw.nl/nederland-doet-bij-huidig-tempo-137-jaar-over-vernieuwing-drinkwaternet/",
+   "datum": "2026-10-06T06:42:00+00:00",
+   "bron_artikel": "",
+   "score": 3,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie"
+   ],
+   "bron": "Technisch Weekblad",
+   "via": "Technisch Weekblad",
+   "sectie": "branche",
+   "samenvatting": "Nederland investeert fors in drinkwater en afvalwater, maar het tempo waarin de infrastructuur wordt vernieuwd blijft laag. Volgens een nieuw Europees onderzoek van ingenieursbureau Sweco zou het bij het huidige investeringsniveau 137 jaar duren om het volledige Nederlandse drinkwaternet te vervange"
+  },
+  {
+   "titel": "Op weg naar een Sociaal akkoord: deze punten liggen op tafel",
+   "link": "https://www.personeelsnet.nl/bericht/op-weg-naar-een-sociaal-akkoord-deze-punten-liggen-op-tafel",
+   "datum": "2026-10-05T17:14:00+02:00",
+   "bron_artikel": "",
+   "score": 3,
+   "waarom": [
+    "arbeidsmarkt"
+   ],
+   "bron": "Personeelsnet",
+   "via": "Personeelsnet",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Op 7 oktober is het eindelijk zover: kabinet, vakbonden en werkgevers schuiven in het Catshuis aan voor overleg over het sociaaleconomische beleid. De bezuinigingen op de werknemersverzekeringen zijn van tafel, waardoor er ruimte is gekomen voor oplossingen om meer mensen aan het werk te krijgen, de"
+  },
+  {
+   "titel": "Forse boetes voor overtreding WML – werknemers niet in loonadministratie en contant betaald",
+   "link": "https://www.salarisvanmorgen.nl/2026/10/02/forse-boetes-voor-overtreding-wml-werknemers-niet-in-loonadministratie-en-contant-betaald/",
+   "datum": "2026-10-02T06:47:29+00:00",
+   "bron_artikel": "",
+   "score": 3,
+   "waarom": [
+    "arbeidsmarkt"
+   ],
+   "bron": "Salaris Vanmorgen",
+   "via": "Salaris Vanmorgen",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Meldingen over het tewerkstellen van werknemers die niet in de salarisadministratie waren opgenomen en contant werden betaald leiden tot fikse boetes."
+  },
+  {
+   "titel": "Huur je personeel in? Dit verandert er door de Wtta",
+   "link": "https://www.trendsinhr.nl/huur-je-personeel-in-dit-verandert-er-door-de-wtta/",
+   "datum": "2026-10-02T05:22:31+00:00",
+   "bron_artikel": "",
+   "score": 3,
+   "waarom": [
+    "arbeidsmarkt"
+   ],
+   "bron": "Trends in HR",
+   "via": "Trends in HR",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Huur je personeel in via een uitzendbureau, detacheerder of andere externe partij? Dan krijg je de komende jaren te maken..."
+  },
+  {
+   "titel": "Dankzij speciale lening kan KMWE groei in Maleisië versnellen",
+   "link": "https://made-in-europe.nu/2026/09/dankzij-speciale-lening-kan-kmwe-groei-in-maleisie-versnellen/",
+   "datum": "2026-09-29T12:16:50+00:00",
+   "bron_artikel": "",
+   "score": 3,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie"
+   ],
+   "bron": "Made-in-Europe",
+   "via": "Made-in-Europe",
+   "sectie": "branche",
+   "samenvatting": "KMWE gaat de groei in Maleisië versnellen; de vestiging zal waarschijnlijk eerder dan verwacht qua omvang verdubbelen. Hiervoor leent het bedrijf €15 miljoen van Invest International, zowel voor de investering in machines als voor werkkapitaal. Door deze lening blijft er in Nederland kredietruimte o"
+  },
+  {
+   "titel": "Dinnissen neemt Rotoflo over",
+   "link": "https://www.metaalmagazine.nl/productietechniek/las-en-verbindingstechniek/dinnissen-neemt-rotoflo-over/111080/",
+   "datum": "2026-09-28T16:21:15+00:00",
+   "bron_artikel": "",
+   "score": 3,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie"
+   ],
+   "bron": "Metaal Magazine",
+   "via": "Metaal Magazine",
+   "sectie": "branche",
+   "samenvatting": "Dinnissen neemt de Rotoflo-technologie over van Severfield. Ook de intellectuele eigendomsrechten en technologierechten van Rotoflo verhuizen mee. Met deze toevoeging..."
+  },
+  {
+   "titel": "Deepfakes aan de sollicitatietafel: recruitment wordt een cybersecurityvraagstuk",
+   "link": "https://www.recruitmenttech.nl/2026/10/05/deepfakes-aan-de-sollicitatietafel-recruitment-wordt-een-cybersecurityvraagstuk/",
+   "datum": "2026-10-05T07:51:00+00:00",
+   "bron_artikel": "",
+   "score": 0,
+   "waarom": [],
+   "bron": "Recruitmenttech",
+   "via": "Recruitmenttech",
+   "sectie": "vak",
+   "samenvatting": "Deepfakes en gestolen identiteiten maken recruitment onderdeel van cybersecurity. Dit betekent het voor recruiters en werkgevers."
+  },
+  {
+   "titel": "Dit zijn de recruitmentsoftware updates van september 2026",
+   "link": "https://www.recruitmenttech.nl/2026/10/03/recruitmentsoftware-updates-september-2026/",
+   "datum": "2026-10-03T13:59:00+00:00",
+   "bron_artikel": "",
+   "score": 0,
+   "waarom": [],
+   "bron": "Recruitmenttech",
+   "via": "Recruitmenttech",
+   "sectie": "vak",
+   "samenvatting": "De software-updates van Ubeeo, Carerix, Bullhorn, Byner en DISA in september 2026: nieuwe AI-functies, ATS-update en koppelingen op een rij."
+  },
+  {
+   "titel": "EU AI Act en recruitment: dit geldt sinds 2 augustus 2026 en dit pas vanaf 2027",
+   "link": "https://www.recruitmenttech.nl/2026/09/30/eu-ai-act-en-recruitment-dit-geldt-sinds-2-augustus-2026-en-dit-pas-vanaf-2027/",
+   "datum": "2026-09-30T08:06:00+00:00",
+   "bron_artikel": "",
+   "score": 0,
+   "waarom": [],
+   "bron": "Recruitmenttech",
+   "via": "Recruitmenttech",
+   "sectie": "vak",
+   "samenvatting": "Sinds 2 augustus 2026 gelden nieuwe AI Act-regels. Voor recruitment-AI volgen de zwaarste high-risk verplichtingen pas eind 2027."
+  }
+ ]
+}

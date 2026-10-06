@@ -1,3 +1,22 @@
+# Weekly news v2 (sinds 06-10-2026)
+
+Elke maandag 05:00 UTC haalt GitHub Actions de juiste artikelen op voor een directeur/HR van technisch MKB in
+Gelderland, Overijssel en Noord-Brabant, plus de regionale CBS-vacaturecijfers.
+
+| Bestand | Wat |
+|---|---|
+| `weekly/bronnen.json` | gemeten feeds + Google News-zoekvragen per sectie (hier wijzigen, niet in de code) |
+| `weekly/nieuws.py` | ophalen, per bron begrensd, dubbel nieuws samengevoegd, ruis eruit; per bron gevonden / leeg / niet gemeten |
+| `weekly/cbs_regio.py` | CBS 83599NED: openstaande vacatures per provincie × sector, trend, kant-en-klare zinnen met bron |
+| `digest/latest.md` · `digest/JJJJ-Www.md` · `digest/latest.json` | het weekoverzicht (leesbaar + voor /week in Claude Code) |
+| `arbeidsmarkt/regio-latest.md` · `.json` | de regiocijfers |
+| `news-data.js` | dezelfde artikelen voor de site |
+
+Lokaal: `python3 weekly/nieuws.py --droog` · `python3 weekly/cbs_regio.py` · zelftests met `--zelftest`.
+De oude `scraper.js` draait niet meer (12 van 31 bronnen dood, filter op woorddelen, één bron domineerde de top).
+
+---
+
 # 📰 Technical Recruitment News
 
 **Live Demo**: Coming soon on GitHub Pages 🚀

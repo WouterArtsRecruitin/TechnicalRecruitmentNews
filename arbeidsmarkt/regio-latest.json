@@ -1,0 +1,151 @@
+{
+ "bron": "CBS 83599NED — Openstaande vacatures; SBI 2008, regio",
+ "bron_url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/83599NED/table",
+ "peildatum": "2026-07-30",
+ "eenheid": "x 1.000 openstaande vacatures (einde kwartaal)",
+ "rijen": [
+  {
+   "regio": "Gelderland",
+   "sector": "alle sectoren",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 43.9,
+   "vorig_kwartaal_x1000": 42.9,
+   "jaar_eerder_x1000": 45.6,
+   "verandering_kwartaal_pct": 2,
+   "verandering_jaar_pct": -4
+  },
+  {
+   "regio": "Gelderland",
+   "sector": "bouw",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 4.1,
+   "vorig_kwartaal_x1000": 4.0,
+   "jaar_eerder_x1000": 4.1,
+   "verandering_kwartaal_pct": 2,
+   "verandering_jaar_pct": 0
+  },
+  {
+   "regio": "Gelderland",
+   "sector": "industrie",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 3.9,
+   "vorig_kwartaal_x1000": 3.8,
+   "jaar_eerder_x1000": 4.1,
+   "verandering_kwartaal_pct": 3,
+   "verandering_jaar_pct": -5
+  },
+  {
+   "regio": "Nederland",
+   "sector": "alle sectoren",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 387.3,
+   "vorig_kwartaal_x1000": 380.1,
+   "jaar_eerder_x1000": 402.7,
+   "verandering_kwartaal_pct": 2,
+   "verandering_jaar_pct": -4
+  },
+  {
+   "regio": "Nederland",
+   "sector": "bouw",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 28.6,
+   "vorig_kwartaal_x1000": 28.5,
+   "jaar_eerder_x1000": 30.0,
+   "verandering_kwartaal_pct": 0,
+   "verandering_jaar_pct": -5
+  },
+  {
+   "regio": "Nederland",
+   "sector": "industrie",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 30.4,
+   "vorig_kwartaal_x1000": 29.1,
+   "jaar_eerder_x1000": 30.5,
+   "verandering_kwartaal_pct": 4,
+   "verandering_jaar_pct": 0
+  },
+  {
+   "regio": "Noord-Brabant",
+   "sector": "alle sectoren",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 59.7,
+   "vorig_kwartaal_x1000": 58.2,
+   "jaar_eerder_x1000": 61.7,
+   "verandering_kwartaal_pct": 3,
+   "verandering_jaar_pct": -3
+  },
+  {
+   "regio": "Noord-Brabant",
+   "sector": "bouw",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 4.9,
+   "vorig_kwartaal_x1000": 4.9,
+   "jaar_eerder_x1000": 5.4,
+   "verandering_kwartaal_pct": 0,
+   "verandering_jaar_pct": -9
+  },
+  {
+   "regio": "Noord-Brabant",
+   "sector": "industrie",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 7.9,
+   "vorig_kwartaal_x1000": 7.2,
+   "jaar_eerder_x1000": 7.5,
+   "verandering_kwartaal_pct": 10,
+   "verandering_jaar_pct": 5
+  },
+  {
+   "regio": "Overijssel",
+   "sector": "alle sectoren",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 25.5,
+   "vorig_kwartaal_x1000": 24.9,
+   "jaar_eerder_x1000": 25.9,
+   "verandering_kwartaal_pct": 2,
+   "verandering_jaar_pct": -2
+  },
+  {
+   "regio": "Overijssel",
+   "sector": "bouw",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 2.6,
+   "vorig_kwartaal_x1000": 2.7,
+   "jaar_eerder_x1000": 2.8,
+   "verandering_kwartaal_pct": -4,
+   "verandering_jaar_pct": -7
+  },
+  {
+   "regio": "Overijssel",
+   "sector": "industrie",
+   "periode": "2026 2e kwartaal",
+   "voorlopig": false,
+   "waarde_x1000": 2.8,
+   "vorig_kwartaal_x1000": 2.7,
+   "jaar_eerder_x1000": 2.8,
+   "verandering_kwartaal_pct": 4,
+   "verandering_jaar_pct": 0
+  }
+ ],
+ "zinnen": [
+  "In Gelderland stonden in het tweede kwartaal van 2026 43.900 vacatures open in alle sectoren samen, 4% minder dan een jaar eerder. Bron: CBS 83599NED, peildatum 2026-07-30.",
+  "In Gelderland stonden in het tweede kwartaal van 2026 4.100 vacatures open in de bouw, evenveel als een jaar eerder. Bron: CBS 83599NED, peildatum 2026-07-30.",
+  "In Gelderland stonden in het tweede kwartaal van 2026 3.900 vacatures open in de industrie, 5% minder dan een jaar eerder. Bron: CBS 83599NED, peildatum 2026-07-30.",
+  "In Noord-Brabant stonden in het tweede kwartaal van 2026 59.700 vacatures open in alle sectoren samen, 3% minder dan een jaar eerder. Bron: CBS 83599NED, peildatum 2026-07-30.",
+  "In Noord-Brabant stonden in het tweede kwartaal van 2026 4.900 vacatures open in de bouw, 9% minder dan een jaar eerder. Bron: CBS 83599NED, peildatum 2026-07-30.",
+  "In Noord-Brabant stonden in het tweede kwartaal van 2026 7.900 vacatures open in de industrie, 5% meer dan een jaar eerder. Bron: CBS 83599NED, peildatum 2026-07-30.",
+  "In Overijssel stonden in het tweede kwartaal van 2026 25.500 vacatures open in alle sectoren samen, 2% minder dan een jaar eerder. Bron: CBS 83599NED, peildatum 2026-07-30.",
+  "In Overijssel stonden in het tweede kwartaal van 2026 2.600 vacatures open in de bouw, 7% minder dan een jaar eerder. Bron: CBS 83599NED, peildatum 2026-07-30.",
+  "In Overijssel stonden in het tweede kwartaal van 2026 2.800 vacatures open in de industrie, evenveel als een jaar eerder. Bron: CBS 83599NED, peildatum 2026-07-30."
+ ]
+}
