@@ -1,9 +1,9 @@
-// Weekly news v2 — automatisch bijgewerkt op 2026-10-06T14:00:17.911598+00:00 (weekly/nieuws.py)
+// Weekly news v2 — automatisch bijgewerkt op 2026-10-06T14:25:05.902055+00:00 (weekly/nieuws.py)
 const newsData = {
   "meta": {
     "week": 41,
     "jaar": 2026,
-    "opgehaald": "2026-10-06T14:00:17.911598+00:00",
+    "opgehaald": "2026-10-06T14:25:05.902055+00:00",
     "vensterDagen": 8,
     "bronnen": [
       {
@@ -112,13 +112,13 @@ const newsData = {
         "naam": "Google News #5 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 24
+        "vers": 26
       },
       {
         "naam": "Google News #6 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 4
+        "vers": 3
       },
       {
         "naam": "Google News #7 (regio)",
@@ -199,36 +199,6 @@ const newsData = {
     },
     {
       "rank": 2,
-      "title": "Meerdere bloedpriklocaties in provincie gesloten vanwege personeelstekort",
-      "description": "",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUFRXMV85OEUwWDlaZFFrMGlqYUVIVlZGNFU3cHFtOUpxajh2UkQzR0dlaFlzZXkxTkNlb3M0c0xVWDV0YmhsUWw3MHRRek9IV19qMFdHVWRhYXhGNFVieXE4ME1pQmloNTRGMjViZDFaNGxzSUNVSW1CbWpXa0ZvS0ZzbFcyUDZjWDlyRDFHRmo1Z2tNOXYteFUtWHozVGFFNXAwQ3BiX0tjb3JuTm96QjdtVlU?oc=5",
-      "source": "RTV Utrecht",
-      "category": "Bedrijfssignalen in de regio",
-      "date": "6 okt 2026",
-      "why": [
-        "arbeidsmarkt",
-        "regio"
-      ],
-      "alsoAt": [
-        "Drimble"
-      ]
-    },
-    {
-      "rank": 3,
-      "title": "Minister Aartsen ziet in Duiven hoe E-Care het personeelstekort aanpakt: `Wat een mooi bedrijf`",
-      "description": "",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaWhBM09QUVJ3UUZRRlFCNU5YbHJHMHlOdkFyU0lPaER2eDQyWFpyV2I2Z1dvZnZ6bFlJdHd1N3dmZDBLcDcyUjZFTzJVTFJyY1hYUmhZSHZDb1Z0QjJHcXpJNnRUZzdlNTVfaWZUZV9OVXZnQ3BFazl1TkwwMUhPbGtDaHBydDZkZUhvczRaWk9wWExSbUJ5OU1sZ0RmOU82ZV9yMWxLUWt4bFQ3YWVRYi1tdGd6N0g3eWhqbHl0ZER4REJnRTc4RE1IeWdPYkltb293TjJUSXBsamFzSk11dFh6WW0?oc=5",
-      "source": "Drimble",
-      "category": "Bedrijfssignalen in de regio",
-      "date": "5 okt 2026",
-      "why": [
-        "arbeidsmarkt",
-        "regio"
-      ],
-      "alsoAt": []
-    },
-    {
-      "rank": 4,
       "title": "Veertien Brabantse bedrijven failliet, metaalbewerker valt na 107 jaar om",
       "description": "",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMTFnT2NhaHVteUpPMzU5LXkwZEhjMFhZV1ZORENDWHZlcDNPNjBiNl9vX3lNSGZybl9QdTJXZWw3SkxhajhNc0pfMUFwMkRFMTdBLUJwUDNDUTdxaG13NFpBTTRRZlZpXzVmMUdZM2dlWWFzSk5CNzE4ellZRUE1V0p5QW9WQWloR0NsR0hUNndZVnNPV2I0UWZxaGhnNDhwc2tYNGVlR3dSVUgzM1E?oc=5",
@@ -243,7 +213,7 @@ const newsData = {
       "alsoAt": []
     },
     {
-      "rank": 5,
+      "rank": 3,
       "title": "Aannemer failliet dus ligt de bouw van basisscholen in Eindhoven en Son tijdelijk stil",
       "description": "",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNYlpJa3JWLTNKeFVzTXNpcWdUQkVpZVFOYk5yWVVZaDlPZmxhWjRza2FBaExveHNoUEtSTHcxdWllODZoYkFhRktlNGoyUkYzMTVZaUcwNXBOVHdtSzZFLTFtYUtYaDlHdXpwaXZFcXVvcnpBRXNPWkU0eFBwMy1tenhNd1ExLXZ6dkJxZnVYNlFCdkplUmdXcWxmQVZ5Z29ia2VlNFl4NTZjYi1HSFpYeGpLQTlhN2Y4NmNud2NXZkRSdw?oc=5",
@@ -258,7 +228,7 @@ const newsData = {
       "alsoAt": []
     },
     {
-      "rank": 6,
+      "rank": 4,
       "title": "Deze maand failliet in Drenthe: van voormalig pretpark tot metaalbedrijf",
       "description": "",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNcFZXcWh0UEVmSFF5dkI5MjEwb3FIT3lxQUk5WEZHWi1Jc3dNdzJmMkZ2TmZYQVpyVUdicldZOEdlRmFOWDMtZGZrRVA5c3ltVDE5OXh0YWo1azNxSnhHTUg3NlVUMnZ0MU5CQS1RQlJPVmd4MThtRnBQUHJtS3RvSmlMOGYtV1BiVUtIMVVFdXhJblRVMW50dE1LbGZoTTJoWXFpbWNQMWNETE5abTBMSEFvVQ?oc=5",
@@ -273,7 +243,7 @@ const newsData = {
       "alsoAt": []
     },
     {
-      "rank": 7,
+      "rank": 5,
       "title": "Jonge Twentse vakmensen blinken uit in China: 'Naar onze mogelijkheden hebben we top gepresteerd'",
       "description": "",
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxNOTdxeEpoS09qZ05MaXlPcW1uVUpRTjdvVEhTUk1HUUh2M011aFRNTXNxQ2o4MERpQ3RVOEhJTTFzbUlHTURrdFg5V3lLLWFOYy1ieWRnR2RpYk92elNZTjVsWl96SGFLWWQyWVBxT1ZzaXlBaVp3dFVMVng5Tzd2dVFLTnpoVURFZ25hZkVIcTBhaDExdjlZMzRWT1lrdVd6NU5kdFpLSnZza1dTS2swZHQ2R0hPWTZQNnplU1phUmpJZmEzUnVsTU11am9pQQ?oc=5",
@@ -287,21 +257,7 @@ const newsData = {
       "alsoAt": []
     },
     {
-      "rank": 8,
-      "title": "Nieuwbouw stadsvilla | Máximapark Utrecht | Utrecht Stad",
-      "description": "",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMGpFN3RMLW9yM1d5UFNkdTg3VGtOVjAtTDRSeUxGTmdQRGR0UW10SWRVM1BiZVQtakdFVVYzNWEtZnd1emZFWjJZSUZTQjYzTXFUalFpeDJTWE9PLWd5OXRxRlJzWnQ2S1VtMWl0SXlydXhsd3dua1hSQnRjZWppam5XOF82TXQ2MXVsUV85SEV4V002ODAwNjY3OA?oc=5",
-      "source": "Drimble",
-      "category": "Bedrijfssignalen in de regio",
-      "date": "6 okt 2026",
-      "why": [
-        "regio",
-        "bedrijfssignaal"
-      ],
-      "alsoAt": []
-    },
-    {
-      "rank": 9,
+      "rank": 6,
       "title": "De vogel is gevlogen; nieuwbouw Norgerbrug bij Assen wordt hervat",
       "description": "",
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2FnQVZ4NVZ2UGZTNlc2LXNaUU9iMVl1TE5TeGFob3dudXhkV2ZLSmNMa29ndFBRUFotUnBILW9aNHNfM284S2NVa0NpZzhJWFBUTFp1a0cwUzlpemZncGs2Y3hpWUZfQUxqNzFuVGJ1aTlLMm9LWjRtTm15Rkl2UjlQVGxTanZ0VmMwUzAtejFOVnpPVjQ4?oc=5",
@@ -315,7 +271,7 @@ const newsData = {
       "alsoAt": []
     },
     {
-      "rank": 10,
+      "rank": 7,
       "title": "Eerste Semicon Learning Center van Nederland opent bij REMO",
       "description": "",
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxPeGplQ1Nuc1lENzQ5ZGhyeWJ3Rko2UWJnREtObkRjOXdWUndCaEdBQ0JuenJINlk2VUF0T09aZGt5aXBZbVp3RWdRUzN2WjVPcVpFaFIzd0RwZWVabnVUbTh5bG5PbnRrNlZWeFMtUVFPZERNNHhUOFFKYWU0VE5xaE5MTGR3NDhLbHlqLUQ3b05fMlgtRnRQUGVnakc1RmhvQ3lpRTFkREZtYmNlZjlYR1BkN2o4QQ?oc=5",
@@ -329,6 +285,48 @@ const newsData = {
       "alsoAt": [
         "Metaalkrant"
       ]
+    },
+    {
+      "rank": 8,
+      "title": "Robert van Dorst nieuwe managing director CSi palletising",
+      "description": "Robert van Dorst is benoemd tot managing director van CSi palletising. Hij brengt ruim 25 jaar leidinggevende ervaring in de maakindustrie mee, onder meer op het gebied van internationale machinebouw, packaging, automatisering en hightech engineering. CSi palletising telt circa 450 medewerkers en he",
+      "url": "https://linkmagazine.nl/robert-van-dorst-nieuwe-managing-director-csi-palletising/?utm_source=rss&utm_medium=rss&utm_campaign=robert-van-dorst-nieuwe-managing-director-csi-palletising",
+      "source": "Link Magazine",
+      "category": "Branche: industrie, installatie, bouw",
+      "date": "2 okt 2026",
+      "why": [
+        "arbeidsmarkt",
+        "bedrijfssignaal",
+        "industrie"
+      ],
+      "alsoAt": []
+    },
+    {
+      "rank": 9,
+      "title": "Personeelstekort en hogere kosten zetten groot spoorprogramma van 5 miljard euro onder druk",
+      "description": "",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVms5OFl0RHFUN0l3Q0ktSlhTZnNfV1BWYTRZVHlpanhhUGNzazNMNVhpRkwwSjFpRTJ2QjNHSzA2Y2R1Qkx2YUtTcTZpTWowYzEyb0h4WlhsWlpqOTlobGl0ZGNzbGp6b1M1MHRLNHBSbEtWWTJMLTdfSVV2WkR6a2Q0a2NYMUh6V1BoNFBqdGtQdTBCS0RQa2hWSU1SeW16YUczdnJkaEpqQmF2cGZxc0hWX2g0Q2R3UXA5LUpuc0IwZFVFRHJ4V2tLMHVIRjcyVjJEeHdjX3MydGNmdzVxU0tVUkFOYXVfd0Vj?oc=5",
+      "source": "Drimble",
+      "category": "Arbeidsmarkt en cao",
+      "date": "5 okt 2026",
+      "why": [
+        "arbeidsmarkt"
+      ],
+      "alsoAt": []
+    },
+    {
+      "rank": 10,
+      "title": "DYKA investeert 6 miljoen euro in fabriek in Pelt",
+      "description": "",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbmk4LS1GRFA5clo4TXY0X2hNM0pldDJfaWg4a3lsa0owaWZSVEdnYVlvVnFwWTBTdGR6cDRESkNQQmRQa1lNYmp5VlcyLTVlenZnUzNCS0hza0hvZG11Y3lQSHdkVzVXUFMyNGhFR3hIMmk5OWZVZkdJODZuclR5bXBNbFlRcF85Vy0xRkNRVlhua2Vpc1oxU3IyN3JwQ015SUpyR1JZLXBXdjBieEFLd3ZqbzcxRTA?oc=5",
+      "source": "Drimble",
+      "category": "Branche: industrie, installatie, bouw",
+      "date": "5 okt 2026",
+      "why": [
+        "bedrijfssignaal",
+        "industrie"
+      ],
+      "alsoAt": []
     }
   ],
   "categories": [
@@ -354,34 +352,6 @@ const newsData = {
             "Omroep Brabant",
             "Rivierenland Radio"
           ]
-        },
-        {
-          "title": "Meerdere bloedpriklocaties in provincie gesloten vanwege personeelstekort",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUFRXMV85OEUwWDlaZFFrMGlqYUVIVlZGNFU3cHFtOUpxajh2UkQzR0dlaFlzZXkxTkNlb3M0c0xVWDV0YmhsUWw3MHRRek9IV19qMFdHVWRhYXhGNFVieXE4ME1pQmloNTRGMjViZDFaNGxzSUNVSW1CbWpXa0ZvS0ZzbFcyUDZjWDlyRDFHRmo1Z2tNOXYteFUtWHozVGFFNXAwQ3BiX0tjb3JuTm96QjdtVlU?oc=5",
-          "source": "RTV Utrecht",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "6 okt 2026",
-          "why": [
-            "arbeidsmarkt",
-            "regio"
-          ],
-          "alsoAt": [
-            "Drimble"
-          ]
-        },
-        {
-          "title": "Minister Aartsen ziet in Duiven hoe E-Care het personeelstekort aanpakt: `Wat een mooi bedrijf`",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaWhBM09QUVJ3UUZRRlFCNU5YbHJHMHlOdkFyU0lPaER2eDQyWFpyV2I2Z1dvZnZ6bFlJdHd1N3dmZDBLcDcyUjZFTzJVTFJyY1hYUmhZSHZDb1Z0QjJHcXpJNnRUZzdlNTVfaWZUZV9OVXZnQ3BFazl1TkwwMUhPbGtDaHBydDZkZUhvczRaWk9wWExSbUJ5OU1sZ0RmOU82ZV9yMWxLUWt4bFQ3YWVRYi1tdGd6N0g3eWhqbHl0ZER4REJnRTc4RE1IeWdPYkltb293TjJUSXBsamFzSk11dFh6WW0?oc=5",
-          "source": "Drimble",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "5 okt 2026",
-          "why": [
-            "arbeidsmarkt",
-            "regio"
-          ],
-          "alsoAt": []
         },
         {
           "title": "Veertien Brabantse bedrijven failliet, metaalbewerker valt na 107 jaar om",
@@ -439,19 +409,6 @@ const newsData = {
           "alsoAt": []
         },
         {
-          "title": "Nieuwbouw stadsvilla | Máximapark Utrecht | Utrecht Stad",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMGpFN3RMLW9yM1d5UFNkdTg3VGtOVjAtTDRSeUxGTmdQRGR0UW10SWRVM1BiZVQtakdFVVYzNWEtZnd1emZFWjJZSUZTQjYzTXFUalFpeDJTWE9PLWd5OXRxRlJzWnQ2S1VtMWl0SXlydXhsd3dua1hSQnRjZWppam5XOF82TXQ2MXVsUV85SEV4V002ODAwNjY3OA?oc=5",
-          "source": "Drimble",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "6 okt 2026",
-          "why": [
-            "regio",
-            "bedrijfssignaal"
-          ],
-          "alsoAt": []
-        },
-        {
           "title": "De vogel is gevlogen; nieuwbouw Norgerbrug bij Assen wordt hervat",
           "description": "",
           "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2FnQVZ4NVZ2UGZTNlc2LXNaUU9iMVl1TE5TeGFob3dudXhkV2ZLSmNMa29ndFBRUFotUnBILW9aNHNfM284S2NVa0NpZzhJWFBUTFp1a0cwUzlpemZncGs2Y3hpWUZfQUxqNzFuVGJ1aTlLMm9LWjRtTm15Rkl2UjlQVGxTanZ0VmMwUzAtejFOVnpPVjQ4?oc=5",
@@ -478,69 +435,6 @@ const newsData = {
           "alsoAt": [
             "Metaalkrant"
           ]
-        },
-        {
-          "title": "Personeelstekort en hogere kosten zetten groot spoorprogramma van 5 miljard euro onder druk",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVms5OFl0RHFUN0l3Q0ktSlhTZnNfV1BWYTRZVHlpanhhUGNzazNMNVhpRkwwSjFpRTJ2QjNHSzA2Y2R1Qkx2YUtTcTZpTWowYzEyb0h4WlhsWlpqOTlobGl0ZGNzbGp6b1M1MHRLNHBSbEtWWTJMLTdfSVV2WkR6a2Q0a2NYMUh6V1BoNFBqdGtQdTBCS0RQa2hWSU1SeW16YUczdnJkaEpqQmF2cGZxc0hWX2g0Q2R3UXA5LUpuc0IwZFVFRHJ4V2tLMHVIRjcyVjJEeHdjX3MydGNmdzVxU0tVUkFOYXVfd0Vj?oc=5",
-          "source": "Drimble",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "5 okt 2026",
-          "why": [
-            "arbeidsmarkt"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Nederlandse industrie ergert zich aan dumping en misleiding door Chinese concurrenten en vreest voor sluiting meer fabrieken",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQU05pdkdTSWtpYjdVRUlXUHpfRVlBc2pveDN0UE5OQVhXTHc1ek9WUC1yQ3NNYW90bHVKNW1Zcl9FODhZZElLRTlUOXc4eWtGMTh6TGxSWWxkbEZhOS1wUDhOQVZNUl9YMHJIWDdmNEZ5ajZqVFhPSUFpSlVpMmYzc3ZyQUw2YjRyOGlTaUNfUWNzdW5pTXVQSjcxWHBoVEVHWGxwZnZHYWNKOV9jN0ZnbklmNDE1WlBtSTY3ZjZuRDRCcmFxT1RlVG1lR0ItR1E0WHBHYldEQzNRS29DdW5JRnZ6cEJkLUJ1dzdob2Zualk0M0RkZnUtWGJ3MlFKRlk?oc=5",
-          "source": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "3 okt 2026",
-          "why": [
-            "bedrijfssignaal",
-            "industrie"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Westlake sluit PVC-fabriek Keulen, concentreert productie op andere Duitse locaties",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPX2ZWVDI2QU9SNnlNc3g4TDB5bHhHaE1QN1R0UlY4dHQ2WnlJSE5rYmhZZnlPUGdUc1RhS3ZvbHNFT0RteTFYTF9acmxfd2t0LVlrWVdwTHhIdTZaQ1ZZZkZSRG1BaHRBc1U2dEZESWxMTWFXMFNGbHAzTFRjNFBaYldzNXdOa1hvMzliZFpNdUdGYXhWNDhIaXN2V0RESjFZM3diTHREcnl4M0JTckRLM19zV1RNdC1qQnBqdnFNRV9UbVZQTExV?oc=5",
-          "source": "Industrielinqs",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "29 sep 2026",
-          "why": [
-            "bedrijfssignaal",
-            "industrie"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Rijkswaterstaat: personeelstekort blijft nijpend en verdere vaarwegbeperkingen niet uitgesloten",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOThramVITGc5bkJDaU1RNTVMRTJUdGIyZ2JyRlc1SzBrdzd2bS1mbGlqZmFhY1hYZzFTMFFKaDFXeFNfNDVwU0xZOVRDYnVrNnpVNXpIbG9kbnktaWpxZHN3MHBLbE5kUWEtcFVZbGlXb0dnTWV5N1hWR3o5OFltVEhQVldVTldZNmM0ekUyc3VTNHF4N3l4YVQyZmhlcVdJNUlnRmc0YnFLRnpuMUlrYzZBbVlkc0J2d0Jn?oc=5",
-          "source": "Schuttevaer.nl",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "29 sep 2026",
-          "why": [
-            "arbeidsmarkt"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "ASML-toeleverancier KMWE krijgt staatslening voor uitbreiding in Azië: ‘Voorbeeld voor meer bedrijven’",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZnNpSWswbHdVbVlfUVlvajJtUk5ZQkVyXzZscHRPZGdoLUgyMnRfU200OWVLOWxUYVE1NW14Um9YcWczb3c1LVhSbkxNUFR5c3RxeE1IVW1OSXlRbVAtZ3hyUno5RHVpdnZEVDIyTTE4NElCY05vT0VzNnZyZjVkLWp6ZjBkN1pqMG5jUUFJZHZMYjh0eGd6TlFHVnc5UlZsS25Td0VZRlVuRmhTcU1kaHc4eWNvVTluWjBLRkVMZ3pRdGhkeDNpTlVPTks?oc=5",
-          "source": "Eindhovens Dagblad",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "28 sep 2026",
-          "why": [
-            "bedrijfssignaal",
-            "industrie"
-          ],
-          "alsoAt": []
         }
       ]
     },
@@ -548,6 +442,18 @@ const newsData = {
       "title": "Arbeidsmarkt en cao",
       "priority": true,
       "articles": [
+        {
+          "title": "Personeelstekort en hogere kosten zetten groot spoorprogramma van 5 miljard euro onder druk",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxPVms5OFl0RHFUN0l3Q0ktSlhTZnNfV1BWYTRZVHlpanhhUGNzazNMNVhpRkwwSjFpRTJ2QjNHSzA2Y2R1Qkx2YUtTcTZpTWowYzEyb0h4WlhsWlpqOTlobGl0ZGNzbGp6b1M1MHRLNHBSbEtWWTJMLTdfSVV2WkR6a2Q0a2NYMUh6V1BoNFBqdGtQdTBCS0RQa2hWSU1SeW16YUczdnJkaEpqQmF2cGZxc0hWX2g0Q2R3UXA5LUpuc0IwZFVFRHJ4V2tLMHVIRjcyVjJEeHdjX3MydGNmdzVxU0tVUkFOYXVfd0Vj?oc=5",
+          "source": "Drimble",
+          "category": "Arbeidsmarkt en cao",
+          "date": "5 okt 2026",
+          "why": [
+            "arbeidsmarkt"
+          ],
+          "alsoAt": []
+        },
         {
           "title": "Onderhandelingen over nieuwe cao Metalektro van start",
           "description": "",
@@ -559,8 +465,8 @@ const newsData = {
             "arbeidsmarkt"
           ],
           "alsoAt": [
-            "Metaalnieuws",
-            "unie.nl"
+            "De Unie",
+            "Metaalnieuws"
           ]
         },
         {
@@ -594,6 +500,30 @@ const newsData = {
           "source": "Centraal Bureau voor de Statistiek | CBS",
           "category": "Arbeidsmarkt en cao",
           "date": "1 okt 2026",
+          "why": [
+            "arbeidsmarkt"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Rijkswaterstaat: personeelstekort blijft nijpend en verdere vaarwegbeperkingen niet uitgesloten",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOThramVITGc5bkJDaU1RNTVMRTJUdGIyZ2JyRlc1SzBrdzd2bS1mbGlqZmFhY1hYZzFTMFFKaDFXeFNfNDVwU0xZOVRDYnVrNnpVNXpIbG9kbnktaWpxZHN3MHBLbE5kUWEtcFVZbGlXb0dnTWV5N1hWR3o5OFltVEhQVldVTldZNmM0ekUyc3VTNHF4N3l4YVQyZmhlcVdJNUlnRmc0YnFLRnpuMUlrYzZBbVlkc0J2d0Jn?oc=5",
+          "source": "Schuttevaer.nl",
+          "category": "Arbeidsmarkt en cao",
+          "date": "29 sep 2026",
+          "why": [
+            "arbeidsmarkt"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Massa-ontslag dreigt voor meer dan helft personeel Eternit Goor",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRTNEcXJGRXMtNEVIZlZ3QUxDTmtxeGo3MjNUT3lLc1ZJdzlmRWZiYjM5N3JKWHVTVUt2RDhMdG12Q1lzNUFGUVE4NDdCRXprM2FNaDJDOW5UMS1VV2pFVXdObE9JSE1jUTRSaGQtZVVJZl82M3JqMlJvM1NqYTlFWWc2M1VHRHpHTnRVdmx5TDlfbDFsTEpabG9HREwwQ3BlLUtydFBWby1EeThLTnVjWGJR?oc=5",
+          "source": "Tubantia",
+          "category": "Arbeidsmarkt en cao",
+          "date": "28 sep 2026",
           "why": [
             "arbeidsmarkt"
           ],
@@ -637,42 +567,6 @@ const newsData = {
             "industrie"
           ],
           "alsoAt": []
-        },
-        {
-          "title": "Op weg naar een Sociaal akkoord: deze punten liggen op tafel",
-          "description": "Op 7 oktober is het eindelijk zover: kabinet, vakbonden en werkgevers schuiven in het Catshuis aan voor overleg over het sociaaleconomische beleid. De bezuinigingen op de werknemersverzekeringen zijn van tafel, waardoor er ruimte is gekomen voor oplossingen om meer mensen aan het werk te krijgen, de",
-          "url": "https://www.personeelsnet.nl/bericht/op-weg-naar-een-sociaal-akkoord-deze-punten-liggen-op-tafel",
-          "source": "Personeelsnet",
-          "category": "Arbeidsmarkt en cao",
-          "date": "5 okt 2026",
-          "why": [
-            "arbeidsmarkt"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Forse boetes voor overtreding WML – werknemers niet in loonadministratie en contant betaald",
-          "description": "Meldingen over het tewerkstellen van werknemers die niet in de salarisadministratie waren opgenomen en contant werden betaald leiden tot fikse boetes.",
-          "url": "https://www.salarisvanmorgen.nl/2026/10/02/forse-boetes-voor-overtreding-wml-werknemers-niet-in-loonadministratie-en-contant-betaald/",
-          "source": "Salaris Vanmorgen",
-          "category": "Arbeidsmarkt en cao",
-          "date": "2 okt 2026",
-          "why": [
-            "arbeidsmarkt"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Huur je personeel in? Dit verandert er door de Wtta",
-          "description": "Huur je personeel in via een uitzendbureau, detacheerder of andere externe partij? Dan krijg je de komende jaren te maken...",
-          "url": "https://www.trendsinhr.nl/huur-je-personeel-in-dit-verandert-er-door-de-wtta/",
-          "source": "Trends in HR",
-          "category": "Arbeidsmarkt en cao",
-          "date": "2 okt 2026",
-          "why": [
-            "arbeidsmarkt"
-          ],
-          "alsoAt": []
         }
       ]
     },
@@ -695,25 +589,64 @@ const newsData = {
           "alsoAt": []
         },
         {
+          "title": "DYKA investeert 6 miljoen euro in fabriek in Pelt",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbmk4LS1GRFA5clo4TXY0X2hNM0pldDJfaWg4a3lsa0owaWZSVEdnYVlvVnFwWTBTdGR6cDRESkNQQmRQa1lNYmp5VlcyLTVlenZnUzNCS0hza0hvZG11Y3lQSHdkVzVXUFMyNGhFR3hIMmk5OWZVZkdJODZuclR5bXBNbFlRcF85Vy0xRkNRVlhua2Vpc1oxU3IyN3JwQ015SUpyR1JZLXBXdjBieEFLd3ZqbzcxRTA?oc=5",
+          "source": "Drimble",
+          "category": "Branche: industrie, installatie, bouw",
+          "date": "5 okt 2026",
+          "why": [
+            "bedrijfssignaal",
+            "industrie"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Nederlandse industrie ergert zich aan dumping en misleiding door Chinese concurrenten en vreest voor sluiting meer fabrieken",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQU05pdkdTSWtpYjdVRUlXUHpfRVlBc2pveDN0UE5OQVhXTHc1ek9WUC1yQ3NNYW90bHVKNW1Zcl9FODhZZElLRTlUOXc4eWtGMTh6TGxSWWxkbEZhOS1wUDhOQVZNUl9YMHJIWDdmNEZ5ajZqVFhPSUFpSlVpMmYzc3ZyQUw2YjRyOGlTaUNfUWNzdW5pTXVQSjcxWHBoVEVHWGxwZnZHYWNKOV9jN0ZnbklmNDE1WlBtSTY3ZjZuRDRCcmFxT1RlVG1lR0ItR1E0WHBHYldEQzNRS29DdW5JRnZ6cEJkLUJ1dzdob2Zualk0M0RkZnUtWGJ3MlFKRlk?oc=5",
+          "source": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
+          "category": "Branche: industrie, installatie, bouw",
+          "date": "3 okt 2026",
+          "why": [
+            "bedrijfssignaal",
+            "industrie"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "ASML-toeleverancier KMWE krijgt staatslening voor uitbreiding in Azië: ‘Voorbeeld voor meer bedrijven’",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxPZnNpSWswbHdVbVlfUVlvajJtUk5ZQkVyXzZscHRPZGdoLUgyMnRfU200OWVLOWxUYVE1NW14Um9YcWczb3c1LVhSbkxNUFR5c3RxeE1IVW1OSXlRbVAtZ3hyUno5RHVpdnZEVDIyTTE4NElCY05vT0VzNnZyZjVkLWp6ZjBkN1pqMG5jUUFJZHZMYjh0eGd6TlFHVnc5UlZsS25Td0VZRlVuRmhTcU1kaHc4eWNvVTluWjBLRkVMZ3pRdGhkeDNpTlVPTks?oc=5",
+          "source": "Eindhovens Dagblad",
+          "category": "Branche: industrie, installatie, bouw",
+          "date": "28 sep 2026",
+          "why": [
+            "bedrijfssignaal",
+            "industrie"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Overheid investeert 15 miljoen euro in toeleverancier ASML",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNV1JzRXZCYV92TUlQT1lua25VUkhndTdQRXF1NDFjTGt5a0lFRjVQc1M0U081cGU4YjZBQmhORHJXaV9WR3hKNDExZDBFSnd4ODNjSTNVZ1hXY3dldnNYN1FreW16eE5paXRGTmtWNkFlR3hsaWl1LUd6MllYdjJRMVlXQ2FYYUdQN2hMeFN5cFNIWEw3VFYyQXJsVVZRbEs0ZGdsd2d1a2N3ejNvdmc?oc=5",
+          "source": "De Telegraaf",
+          "category": "Branche: industrie, installatie, bouw",
+          "date": "28 sep 2026",
+          "why": [
+            "bedrijfssignaal",
+            "industrie"
+          ],
+          "alsoAt": []
+        },
+        {
           "title": "Klaasjan: De industrie vraagt om besluiten, maar Den Haag blijft hangen in rapporten",
           "description": "Na de alarmerende rapporten van Mario Draghi over Europa’s concurrentiekracht en van Peter Wennink over het Nederlandse verdienvermogen ontbreekt het niet aan heldere diagnoses. We moeten volop investeren in onze strategische industrie om onze welvaart te behouden. Helga Witjes, gedeputeerde van de ",
           "url": "https://linkmagazine.nl/klaasjan-de-industrie-vraagt-om-besluiten-maar-den-haag-blijft-hangen-in-rapporten/?utm_source=rss&utm_medium=rss&utm_campaign=klaasjan-de-industrie-vraagt-om-besluiten-maar-den-haag-blijft-hangen-in-rapporten",
           "source": "Link Magazine",
           "category": "Branche: industrie, installatie, bouw",
           "date": "2 okt 2026",
-          "why": [
-            "regio",
-            "industrie"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Stem nu op het Beste Houten Gebouw van 2026",
-          "description": "Voor de Nationale Houtbouwprijs 2026 zijn 77 projecten voorgeselecteerd. Zakelijke houtbouw is met 43 projecten de grootste categorie. Het publiek kan tot en met 13 november stemmen; de winnaars worden op 17 november bekendgemaakt.",
-          "url": "https://www.bouwwereld.nl/rubrieken/vakprijzen/stem-nu-op-het-beste-houten-gebouw-van-2026/",
-          "source": "Bouwwereld",
-          "category": "Branche: industrie, installatie, bouw",
-          "date": "1 okt 2026",
           "why": [
             "regio",
             "industrie"
