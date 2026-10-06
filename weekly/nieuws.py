@@ -56,6 +56,7 @@ ARBEID = W(r"personeel\w*", r"tekort aan \w+", r"krapte", r"krappe", r"vacatures
 SIGNAAL = W(r"investeert", r"investering\w*", r"uitbreid\w*", r"uitbreiding", r"nieuwe (fabriek|hal|vestiging|locatie|directeur)",
             r"opent", r"verhuist", r"overname", r"neemt \w+ over", r"faillissement", r"failliet", r"sluit", r"sluiting",
             r"orderboek\w*", r"groeit", r"krimpt", r"benoemd", r"managing director", r"algemeen directeur", r"nieuwbouw")
+BUITENLAND = W(r"duitsland", r"duitse", r"keulen", r"frankrijk", r"franse", r"britse", r"verenigd koninkrijk")
 INDUSTRIE = W(r"maakindustrie", r"metaal\w*", r"machinebouw\w*", r"hightech", r"installatie\w*", r"techniek", r"technische?",
               r"fabriek\w*", r"industrie\w*", r"industriële", r"automatisering", r"onderhoud", r"elektro\w*",
               r"werktuigbouw\w*", r"bouwbedrijf", r"bouwsector", r"aannemer\w*", r"chip\w*", r"halfgeleider\w*",
@@ -64,7 +65,8 @@ RUIS = W(r"zzp'?ers?", r"uitzendbranche", r"horeca", r"supermarkt\w*", r"voetbal
          r"verdacht\w*", r"huizenmarkt", r"hypothe\w*", r"beurs", r"aandeel\w*", r"crypto", r"recept", r"podcast\w*",
          r"webinar", r"onthult", r"lanceert", r"introduceert", r"presenteert", r"bungalowpark", r"lodges", r"camping",
          r"woning\w*", r"appartement\w*", r"parkeer\w*", r"studieschuld", r"consument\w*", r"zorg\w*", r"ziekenhuis\w*",
-         r"projectprijs", r"award\w*", r"wint \w+ ?prijs", r"koopkracht", r"dagelijks leven", r"voedselbank\w*", r"\w+cast", r"gemeente \w+ investeert", r"wonen", r"leefbaarheid", r"\w*buurt", r"(woon)?wijk", r"busbaan")
+         r"projectprijs", r"award\w*", r"wint \w+ ?prijs", r"koopkracht", r"dagelijks leven", r"voedselbank\w*", r"\w+cast", r"gemeente \w+ investeert", r"wonen", r"leefbaarheid", r"\w*buurt", r"(woon)?wijk", r"busbaan",
+         r"stem nu", r"stem (dan )?op", r"bloedprik\w*", r"stadsvilla\w*", r"po-raad", r"leraren\w*")
 
 
 def strip(t):
@@ -137,13 +139,14 @@ def score(a, bucket):
     if sig and (ind or regio): s += 2; waarom.append("bedrijfssignaal")
     if ind: s += 1; waarom.append("industrie")
     if RUIS.search(t): s -= 5; waarom.append("ruis")
+    if BUITENLAND.search(a["titel"]) and not regio: s -= 5; waarom.append("ruis")   # fabriek in Keulen is geen signaal voor Oost-NL
     return s, waarom
 
 
 def sectie_van(a, bucket, google_sectie=None):
     if bucket == "vak":
         return "vak"
-    if google_sectie:
+    if google_sectie and not (google_sectie == "regio" and "regio" not in a["waarom"]):
         return google_sectie
     if "regio" in a["waarom"] and ("bedrijfssignaal" in a["waarom"] or "arbeidsmarkt" in a["waarom"]):
         return "regio"
@@ -305,6 +308,18 @@ def schrijf_site(gekozen, cfg, nu, status=None):
 
 def zelftest():
     fouten = []
+    for titel, tekst in [("Westlake sluit PVC-fabriek Keulen, concentreert productie op andere Duitse locaties", "banen fabriek"),
+                         ("Stem nu op het Beste Houten Gebouw van 2026", "bouw installatie")]:
+        if "ruis" not in score({"titel": titel, "tekst": tekst}, "google")[1]:
+            fouten.append(f"moet ruis zijn: {titel}")
+    landelijk = {"titel": "Rijkswaterstaat: personeelstekort blijft nijpend", "tekst": "personeelstekort techniek"}
+    landelijk["score"], landelijk["waarom"] = score(landelijk, "google")
+    if sectie_van(landelijk, "google", "regio") == "regio":
+        fouten.append("regio-zoekvraag zonder provincie mag niet in de regio-sectie")
+    lokaal = {"titel": "Systemair sluit fabriek in Waalwijk", "tekst": "zeventig banen Brabant"}
+    lokaal["score"], lokaal["waarom"] = score(lokaal, "google")
+    if sectie_van(lokaal, "google", "regio") != "regio":
+        fouten.append(f"Waalwijk/Brabant moet in regio, kreeg {sectie_van(lokaal, 'google', 'regio')} ({lokaal['waarom']})")
     if strip("Lonen &lt; inflatie, cao&apos;s &gt; 4% hoger") != "Lonen < inflatie, cao's > 4% hoger":
         fouten.append("strip haalt platte tekst met < en > weg")
     if nl_datum(dt.datetime(2026, 10, 1)) != "1 okt 2026":

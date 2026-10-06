@@ -43,10 +43,19 @@ jobs:
           fi
 
       - name: CBS-regiocijfers ophalen
+        id: cbs
         if: github.event.inputs.dry_run != 'true'
         # CBS onbereikbaar mag de nieuwsrun niet blokkeren: de vorige cijfers blijven dan staan
         continue-on-error: true
         run: python3 weekly/cbs_regio.py
+
+      - name: Databestanden controleren
+        if: github.event.inputs.dry_run != 'true'
+        # een kapot databestand mag niet live: de site laadt deze twee direct
+        run: |
+          node --check news-data.js
+          node --check regio-data.js
+          node -e "eval(require('fs').readFileSync('news-data.js','utf8')+';if(!newsData.meta||!newsData.categories.length)process.exit(1)')"
 
       - name: Commit en push
         if: github.event.inputs.dry_run != 'true'
@@ -63,5 +72,9 @@ jobs:
       - name: Samenvatting
         if: always()
         run: |
+          if [ "${{ steps.cbs.outcome }}" == "failure" ]; then
+            echo "::warning::CBS-regiocijfers niet bijgewerkt deze week — de site toont de vorige cijfers (peildatum staat erbij)"
+            echo "> ⚠️ CBS-regiocijfers niet bijgewerkt; vorige cijfers blijven staan." >> $GITHUB_STEP_SUMMARY
+          fi
           echo "## Weekly news" >> $GITHUB_STEP_SUMMARY
           if [ -f digest/latest.md ]; then sed -n '1,200p' digest/latest.md >> $GITHUB_STEP_SUMMARY; fi

@@ -1,6 +1,6 @@
 {
  "week": "2026-W41",
- "opgehaald": "2026-10-06T14:00:17.911598+00:00",
+ "opgehaald": "2026-10-06T14:25:05.902055+00:00",
  "status": {
   "Link Magazine": {
    "uitkomst": "gevonden",
@@ -107,14 +107,14 @@
   "Google News #5 (regio)": {
    "uitkomst": "gevonden",
    "status": 200,
-   "items": 24,
-   "vers": 24
+   "items": 26,
+   "vers": 26
   },
   "Google News #6 (regio)": {
    "uitkomst": "gevonden",
    "status": 200,
-   "items": 4,
-   "vers": 4
+   "items": 3,
+   "vers": 3
   },
   "Google News #7 (regio)": {
    "uitkomst": "gevonden",
@@ -196,41 +196,6 @@
    "samenvatting": "Systemair sluit fabriek in Waalwijk: zeventig banen op de tocht Eindhovens Dagblad"
   },
   {
-   "titel": "Meerdere bloedpriklocaties in provincie gesloten vanwege personeelstekort",
-   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUFRXMV85OEUwWDlaZFFrMGlqYUVIVlZGNFU3cHFtOUpxajh2UkQzR0dlaFlzZXkxTkNlb3M0c0xVWDV0YmhsUWw3MHRRek9IV19qMFdHVWRhYXhGNFVieXE4ME1pQmloNTRGMjViZDFaNGxzSUNVSW1CbWpXa0ZvS0ZzbFcyUDZjWDlyRDFHRmo1Z2tNOXYteFUtWHozVGFFNXAwQ3BiX0tjb3JuTm96QjdtVlU?oc=5",
-   "datum": "2026-10-06T13:35:10+00:00",
-   "bron_artikel": "RTV Utrecht",
-   "score": 8,
-   "waarom": [
-    "arbeidsmarkt",
-    "regio",
-    "gerichte zoekvraag"
-   ],
-   "bron": "RTV Utrecht",
-   "via": "Google News #12 (regio)",
-   "sectie": "regio",
-   "ook_bij": [
-    "Drimble"
-   ],
-   "samenvatting": "Meerdere bloedpriklocaties in provincie gesloten vanwege personeelstekort RTV Utrecht"
-  },
-  {
-   "titel": "Minister Aartsen ziet in Duiven hoe E-Care het personeelstekort aanpakt: `Wat een mooi bedrijf`",
-   "link": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaWhBM09QUVJ3UUZRRlFCNU5YbHJHMHlOdkFyU0lPaER2eDQyWFpyV2I2Z1dvZnZ6bFlJdHd1N3dmZDBLcDcyUjZFTzJVTFJyY1hYUmhZSHZDb1Z0QjJHcXpJNnRUZzdlNTVfaWZUZV9OVXZnQ3BFazl1TkwwMUhPbGtDaHBydDZkZUhvczRaWk9wWExSbUJ5OU1sZ0RmOU82ZV9yMWxLUWt4bFQ3YWVRYi1tdGd6N0g3eWhqbHl0ZER4REJnRTc4RE1IeWdPYkltb293TjJUSXBsamFzSk11dFh6WW0?oc=5",
-   "datum": "2026-10-05T21:00:00+00:00",
-   "bron_artikel": "Drimble",
-   "score": 8,
-   "waarom": [
-    "arbeidsmarkt",
-    "regio",
-    "gerichte zoekvraag"
-   ],
-   "bron": "Drimble",
-   "via": "Google News #5 (regio)",
-   "sectie": "regio",
-   "samenvatting": "Minister Aartsen ziet in Duiven hoe E-Care het personeelstekort aanpakt: `Wat een mooi bedrijf` Drimble"
-  },
-  {
    "titel": "Veertien Brabantse bedrijven failliet, metaalbewerker valt na 107 jaar om",
    "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQMTFnT2NhaHVteUpPMzU5LXkwZEhjMFhZV1ZORENDWHZlcDNPNjBiNl9vX3lNSGZybl9QdTJXZWw3SkxhajhNc0pfMUFwMkRFMTdBLUJwUDNDUTdxaG13NFpBTTRRZlZpXzVmMUdZM2dlWWFzSk5CNzE4ellZRUE1V0p5QW9WQWloR0NsR0hUNndZVnNPV2I0UWZxaGhnNDhwc2tYNGVlR3dSVUgzM1E?oc=5",
    "datum": "2026-10-02T07:43:27+00:00",
@@ -301,22 +266,6 @@
    "samenvatting": "Jonge Twentse vakmensen blinken uit in China: 'Naar onze mogelijkheden hebben we top gepresteerd' 1Twente"
   },
   {
-   "titel": "Nieuwbouw stadsvilla | Máximapark Utrecht | Utrecht Stad",
-   "link": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPMGpFN3RMLW9yM1d5UFNkdTg3VGtOVjAtTDRSeUxGTmdQRGR0UW10SWRVM1BiZVQtakdFVVYzNWEtZnd1emZFWjJZSUZTQjYzTXFUalFpeDJTWE9PLWd5OXRxRlJzWnQ2S1VtMWl0SXlydXhsd3dua1hSQnRjZWppam5XOF82TXQ2MXVsUV85SEV4V002ODAwNjY3OA?oc=5",
-   "datum": "2026-10-06T13:22:35+00:00",
-   "bron_artikel": "Drimble",
-   "score": 7,
-   "waarom": [
-    "regio",
-    "bedrijfssignaal",
-    "gerichte zoekvraag"
-   ],
-   "bron": "Drimble",
-   "via": "Google News #7 (regio)",
-   "sectie": "regio",
-   "samenvatting": "Nieuwbouw stadsvilla | Máximapark Utrecht | Utrecht Stad Drimble"
-  },
-  {
    "titel": "De vogel is gevlogen; nieuwbouw Norgerbrug bij Assen wordt hervat",
    "link": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNR2FnQVZ4NVZ2UGZTNlc2LXNaUU9iMVl1TE5TeGFob3dudXhkV2ZLSmNMa29ndFBRUFotUnBILW9aNHNfM284S2NVa0NpZzhJWFBUTFp1a0cwUzlpemZncGs2Y3hpWUZfQUxqNzFuVGJ1aTlLMm9LWjRtTm15Rkl2UjlQVGxTanZ0VmMwUzAtejFOVnpPVjQ4?oc=5",
    "datum": "2026-10-05T18:31:35+00:00",
@@ -379,8 +328,27 @@
    ],
    "bron": "Drimble",
    "via": "Google News #5 (regio)",
-   "sectie": "regio",
+   "sectie": "arbeidsmarkt",
    "samenvatting": "Personeelstekort en hogere kosten zetten groot spoorprogramma van 5 miljard euro onder druk Drimble"
+  },
+  {
+   "titel": "DYKA investeert 6 miljoen euro in fabriek in Pelt",
+   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbmk4LS1GRFA5clo4TXY0X2hNM0pldDJfaWg4a3lsa0owaWZSVEdnYVlvVnFwWTBTdGR6cDRESkNQQmRQa1lNYmp5VlcyLTVlenZnUzNCS0hza0hvZG11Y3lQSHdkVzVXUFMyNGhFR3hIMmk5OWZVZkdJODZuclR5bXBNbFlRcF85Vy0xRkNRVlhua2Vpc1oxU3IyN3JwQ015SUpyR1JZLXBXdjBieEFLd3ZqbzcxRTA?oc=5",
+   "datum": "2026-10-05T10:18:01+00:00",
+   "bron_artikel": "Drimble",
+   "score": 5,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Drimble",
+   "via": "Google News #3 (regio)",
+   "sectie": "branche",
+   "ook_bij": [
+    "Drimble"
+   ],
+   "samenvatting": "DYKA investeert 6 miljoen euro in fabriek in Pelt Drimble"
   },
   {
    "titel": "Nederlandse industrie ergert zich aan dumping en misleiding door Chinese concurrenten en vreest voor sluiting meer fabrieken",
@@ -395,7 +363,7 @@
    ],
    "bron": "NRC - Nieuws, achtergronden en onderzoeksjournalistiek",
    "via": "Google News #11 (regio)",
-   "sectie": "regio",
+   "sectie": "branche",
    "samenvatting": "Nederlandse industrie ergert zich aan dumping en misleiding door Chinese concurrenten en vreest voor sluiting meer fabrieken NRC - Nieuws, achtergronden en onderzoeksjournalistiek"
   },
   {
@@ -412,7 +380,7 @@
    "via": "Google News #13 (arbeidsmarkt)",
    "sectie": "arbeidsmarkt",
    "ook_bij": [
-    "unie.nl",
+    "De Unie",
     "Metaalnieuws"
    ],
    "samenvatting": "Onderhandelingen over nieuwe cao Metalektro van start cnv.nl"
@@ -463,22 +431,6 @@
    "samenvatting": "Cao-lonen in derde kwartaal 4,0 procent gestegen Centraal Bureau voor de Statistiek | CBS"
   },
   {
-   "titel": "Westlake sluit PVC-fabriek Keulen, concentreert productie op andere Duitse locaties",
-   "link": "https://news.google.com/rss/articles/CBMixwFBVV95cUxPX2ZWVDI2QU9SNnlNc3g4TDB5bHhHaE1QN1R0UlY4dHQ2WnlJSE5rYmhZZnlPUGdUc1RhS3ZvbHNFT0RteTFYTF9acmxfd2t0LVlrWVdwTHhIdTZaQ1ZZZkZSRG1BaHRBc1U2dEZESWxMTWFXMFNGbHAzTFRjNFBaYldzNXdOa1hvMzliZFpNdUdGYXhWNDhIaXN2V0RESjFZM3diTHREcnl4M0JTckRLM19zV1RNdC1qQnBqdnFNRV9UbVZQTExV?oc=5",
-   "datum": "2026-09-29T15:05:53+00:00",
-   "bron_artikel": "Industrielinqs",
-   "score": 5,
-   "waarom": [
-    "bedrijfssignaal",
-    "industrie",
-    "gerichte zoekvraag"
-   ],
-   "bron": "Industrielinqs",
-   "via": "Google News #11 (regio)",
-   "sectie": "regio",
-   "samenvatting": "Westlake sluit PVC-fabriek Keulen, concentreert productie op andere Duitse locaties Industrielinqs"
-  },
-  {
    "titel": "Rijkswaterstaat: personeelstekort blijft nijpend en verdere vaarwegbeperkingen niet uitgesloten",
    "link": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOThramVITGc5bkJDaU1RNTVMRTJUdGIyZ2JyRlc1SzBrdzd2bS1mbGlqZmFhY1hYZzFTMFFKaDFXeFNfNDVwU0xZOVRDYnVrNnpVNXpIbG9kbnktaWpxZHN3MHBLbE5kUWEtcFVZbGlXb0dnTWV5N1hWR3o5OFltVEhQVldVTldZNmM0ekUyc3VTNHF4N3l4YVQyZmhlcVdJNUlnRmc0YnFLRnpuMUlrYzZBbVlkc0J2d0Jn?oc=5",
    "datum": "2026-09-29T12:36:13+00:00",
@@ -490,7 +442,7 @@
    ],
    "bron": "Schuttevaer.nl",
    "via": "Google News #12 (regio)",
-   "sectie": "regio",
+   "sectie": "arbeidsmarkt",
    "samenvatting": "Rijkswaterstaat: personeelstekort blijft nijpend en verdere vaarwegbeperkingen niet uitgesloten Schuttevaer.nl"
   },
   {
@@ -506,8 +458,39 @@
    ],
    "bron": "Eindhovens Dagblad",
    "via": "Google News #3 (regio)",
-   "sectie": "regio",
+   "sectie": "branche",
    "samenvatting": "ASML-toeleverancier KMWE krijgt staatslening voor uitbreiding in Azië: ‘Voorbeeld voor meer bedrijven’ Eindhovens Dagblad"
+  },
+  {
+   "titel": "Massa-ontslag dreigt voor meer dan helft personeel Eternit Goor",
+   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNRTNEcXJGRXMtNEVIZlZ3QUxDTmtxeGo3MjNUT3lLc1ZJdzlmRWZiYjM5N3JKWHVTVUt2RDhMdG12Q1lzNUFGUVE4NDdCRXprM2FNaDJDOW5UMS1VV2pFVXdObE9JSE1jUTRSaGQtZVVJZl82M3JqMlJvM1NqYTlFWWc2M1VHRHpHTnRVdmx5TDlfbDFsTEpabG9HREwwQ3BlLUtydFBWby1EeThLTnVjWGJR?oc=5",
+   "datum": "2026-09-28T16:35:00+00:00",
+   "bron_artikel": "Tubantia",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Tubantia",
+   "via": "Google News #4 (regio)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Massa-ontslag dreigt voor meer dan helft personeel Eternit Goor Tubantia"
+  },
+  {
+   "titel": "Overheid investeert 15 miljoen euro in toeleverancier ASML",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNV1JzRXZCYV92TUlQT1lua25VUkhndTdQRXF1NDFjTGt5a0lFRjVQc1M0U081cGU4YjZBQmhORHJXaV9WR3hKNDExZDBFSnd4ODNjSTNVZ1hXY3dldnNYN1FreW16eE5paXRGTmtWNkFlR3hsaWl1LUd6MllYdjJRMVlXQ2FYYUdQN2hMeFN5cFNIWEw3VFYyQXJsVVZRbEs0ZGdsd2d1a2N3ejNvdmc?oc=5",
+   "datum": "2026-09-28T15:15:30+00:00",
+   "bron_artikel": "De Telegraaf",
+   "score": 5,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "De Telegraaf",
+   "via": "Google News #3 (regio)",
+   "sectie": "branche",
+   "samenvatting": "Overheid investeert 15 miljoen euro in toeleverancier ASML De Telegraaf"
   },
   {
    "titel": "Skillscoalitie wil bouwen aan skillsgerichte arbeidsmarkt",
@@ -555,21 +538,6 @@
    "samenvatting": "Na de alarmerende rapporten van Mario Draghi over Europa’s concurrentiekracht en van Peter Wennink over het Nederlandse verdienvermogen ontbreekt het niet aan heldere diagnoses. We moeten volop investeren in onze strategische industrie om onze welvaart te behouden. Helga Witjes, gedeputeerde van de "
   },
   {
-   "titel": "Stem nu op het Beste Houten Gebouw van 2026",
-   "link": "https://www.bouwwereld.nl/rubrieken/vakprijzen/stem-nu-op-het-beste-houten-gebouw-van-2026/",
-   "datum": "2026-10-01T13:37:14+00:00",
-   "bron_artikel": "",
-   "score": 4,
-   "waarom": [
-    "regio",
-    "industrie"
-   ],
-   "bron": "Bouwwereld",
-   "via": "Bouwwereld",
-   "sectie": "branche",
-   "samenvatting": "Voor de Nationale Houtbouwprijs 2026 zijn 77 projecten voorgeselecteerd. Zakelijke houtbouw is met 43 projecten de grootste categorie. Het publiek kan tot en met 13 november stemmen; de winnaars worden op 17 november bekendgemaakt."
-  },
-  {
    "titel": "Meer technisch personeel onder één dak",
    "link": "https://www.installatie.nl/nieuws/meer-technisch-personeel-onder-een-dak/",
    "datum": "2026-09-30T05:37:00+00:00",
@@ -613,48 +581,6 @@
    "via": "Technisch Weekblad",
    "sectie": "branche",
    "samenvatting": "Nederland investeert fors in drinkwater en afvalwater, maar het tempo waarin de infrastructuur wordt vernieuwd blijft laag. Volgens een nieuw Europees onderzoek van ingenieursbureau Sweco zou het bij het huidige investeringsniveau 137 jaar duren om het volledige Nederlandse drinkwaternet te vervange"
-  },
-  {
-   "titel": "Op weg naar een Sociaal akkoord: deze punten liggen op tafel",
-   "link": "https://www.personeelsnet.nl/bericht/op-weg-naar-een-sociaal-akkoord-deze-punten-liggen-op-tafel",
-   "datum": "2026-10-05T17:14:00+02:00",
-   "bron_artikel": "",
-   "score": 3,
-   "waarom": [
-    "arbeidsmarkt"
-   ],
-   "bron": "Personeelsnet",
-   "via": "Personeelsnet",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Op 7 oktober is het eindelijk zover: kabinet, vakbonden en werkgevers schuiven in het Catshuis aan voor overleg over het sociaaleconomische beleid. De bezuinigingen op de werknemersverzekeringen zijn van tafel, waardoor er ruimte is gekomen voor oplossingen om meer mensen aan het werk te krijgen, de"
-  },
-  {
-   "titel": "Forse boetes voor overtreding WML – werknemers niet in loonadministratie en contant betaald",
-   "link": "https://www.salarisvanmorgen.nl/2026/10/02/forse-boetes-voor-overtreding-wml-werknemers-niet-in-loonadministratie-en-contant-betaald/",
-   "datum": "2026-10-02T06:47:29+00:00",
-   "bron_artikel": "",
-   "score": 3,
-   "waarom": [
-    "arbeidsmarkt"
-   ],
-   "bron": "Salaris Vanmorgen",
-   "via": "Salaris Vanmorgen",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Meldingen over het tewerkstellen van werknemers die niet in de salarisadministratie waren opgenomen en contant werden betaald leiden tot fikse boetes."
-  },
-  {
-   "titel": "Huur je personeel in? Dit verandert er door de Wtta",
-   "link": "https://www.trendsinhr.nl/huur-je-personeel-in-dit-verandert-er-door-de-wtta/",
-   "datum": "2026-10-02T05:22:31+00:00",
-   "bron_artikel": "",
-   "score": 3,
-   "waarom": [
-    "arbeidsmarkt"
-   ],
-   "bron": "Trends in HR",
-   "via": "Trends in HR",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Huur je personeel in via een uitzendbureau, detacheerder of andere externe partij? Dan krijg je de komende jaren te maken..."
   },
   {
    "titel": "Dankzij speciale lening kan KMWE groei in Maleisië versnellen",

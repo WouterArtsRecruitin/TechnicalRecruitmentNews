@@ -28,15 +28,6 @@
         h1 { font-size: 1.5rem; font-weight: bold; display: flex; align-items: center; gap: 0.5rem; }
         .subtext { color: #d1d5db; font-size: 0.875rem; font-style: italic; }
 
-        .config-btn {
-            display: flex; align-items: center; gap: 0.5rem;
-            padding: 0.5rem 1rem; background: rgba(255,255,255,0.1);
-            border: 1px solid rgba(255,255,255,0.2);
-            color: white; border-radius: 0.5rem;
-            cursor: pointer; transition: all 0.3s;
-            font-size: 0.875rem; font-weight: 500;
-        }
-        .config-btn:hover { background: rgba(255,255,255,0.2); }
 
         .focus-text { color: #e5e7eb; font-size: 1.125rem; margin: 0.5rem 0; }
         .date-text { color: #d1d5db; font-size: 0.875rem; display: flex; align-items: center; gap: 0.5rem; }
@@ -210,42 +201,7 @@
             display: flex; align-items: center; gap: 0.5rem;
         }
 
-        .modal-overlay {
-            display: none; position: fixed; top: 0; left: 0;
-            width: 100%; height: 100%;
-            background: rgba(0,0,0,0.7); z-index: 1000;
-            align-items: center; justify-content: center;
-        }
-        .modal-overlay.visible { display: flex; }
-        .modal-content {
-            background: white; padding: 2rem; border-radius: 8px;
-            max-width: 500px; width: 90%;
-        }
-        .modal-content h3 { margin-bottom: 1rem; color: #1f2937; }
-        .modal-content label { display: block; margin-bottom: 0.5rem; font-weight: 600; color: #374151; }
-        .modal-content input {
-            width: 100%; padding: 0.75rem;
-            border: 1px solid #d1d5db; border-radius: 6px;
-            font-family: monospace; margin-bottom: 1rem;
-        }
-        .modal-buttons { display: flex; gap: 1rem; }
-        .modal-buttons button {
-            flex: 1; padding: 0.75rem; border: none;
-            border-radius: 6px; font-weight: 600; cursor: pointer;
-        }
-        .btn-save { background: #f59e0b; color: white; }
-        .btn-cancel { background: #6b7280; color: white; }
 
-        .toast {
-            position: fixed; top: 2rem; right: 2rem; z-index: 2000;
-            padding: 1rem 1.5rem; border-radius: 6px; font-weight: 600;
-            color: white; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            transform: translateX(150%); transition: transform 0.3s ease;
-        }
-        .toast.visible { transform: translateX(0); }
-        .toast.success { background: #10b981; }
-        .toast.error { background: #ef4444; }
-        .toast.info { background: #3b82f6; }
 
         .hidden { display: none !important; }
 
@@ -297,7 +253,6 @@
                         <p class="subtext">the right people, right now</p>
                     </div>
                 </div>
-                <button class="config-btn" onclick="openNotionModal()">⚙️ Notion Setup</button>
             </div>
 
             <p class="focus-text">Focus: technisch MKB in Gelderland, Overijssel, Brabant, Utrecht, Flevoland, Drenthe en Zuid-Holland — bedrijfssignalen, arbeidsmarkt, branche</p>
@@ -347,7 +302,6 @@
                     <div class="title-bar title-bar-orange"></div>
                     Top 3 van deze Week
                 </div>
-                <button class="push-btn" onclick="pushTopToNotion()">⚡ Push Top 3 naar Notion</button>
             </div>
 
             <div class="top-articles" id="topArticlesContainer"></div>
@@ -399,35 +353,14 @@
         <p style="margin-top: 0.5rem;">Elke maandag automatisch opgehaald (weekly/nieuws.py + CBS 83599NED) · bron bij elk artikel</p>
     </footer>
 
-    <!-- Notion Modal -->
-    <div class="modal-overlay" id="notionModal">
-        <div class="modal-content">
-            <h3>⚙️ Notion API Configuratie</h3>
-            <div>
-                <label>Notion Integration Token</label>
-                <input type="password" id="notionToken" placeholder="secret_...">
-            </div>
-            <div>
-                <label>Database ID</label>
-                <input type="text" id="notionDbId" placeholder="abc123...">
-            </div>
-            <div class="modal-buttons">
-                <button class="btn-save" onclick="saveNotionConfig()">Opslaan</button>
-                <button class="btn-cancel" onclick="closeNotionModal()">Annuleren</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Toast -->
-    <div class="toast" id="toast"></div>
-
     <script src="./news-data.js"></script>
     <script src="./regio-data.js"></script>
     <script>
         // State
         let selectedCategory = '';
         let searchTerm = '';
-        let notionConfig = JSON.parse(localStorage.getItem('recruitin_notion_config') || 'null');
+        // De Notion-push werkte niet vanuit de browser (geen CORS) en bewaarde de token in localStorage: weg, en oude token opruimen
+        try { localStorage.removeItem('recruitin_notion_config'); } catch (e) {}
 
         // Initialize
         document.addEventListener('DOMContentLoaded', () => {
@@ -545,11 +478,6 @@
                                     <span class="article-source">${esc(article.source)}</span>
                                     <span>${esc(article.date)}</span>
                                     <span class="why-chips">${(article.why || []).map(w => `<span class="article-category">${esc(w)}</span>`).join('')}</span>
-                                    <button class="push-btn push-one" style="padding: 0.25rem 0.5rem; font-size: 0.75rem;"
-                                            data-title="${esc(article.title)}" data-url="${esc(article.url)}"
-                                            data-source="${esc(article.source)}" data-category="${esc(category.title)}">
-                                        Push
-                                    </button>
                                 </div>
                                 ${alsoAtHtml(article)}
                             </div>
@@ -626,11 +554,6 @@
 
         // Setup event listeners
         function setupEventListeners() {
-            // Push-knoppen via data-attributen: RSS-tekst komt nooit in een onclick terecht
-            document.getElementById('categoriesContainer').addEventListener('click', (e) => {
-                const btn = e.target.closest('.push-one');
-                if (btn) pushSingleToNotion(btn.dataset.title, btn.dataset.url, btn.dataset.source, btn.dataset.category);
-            });
             document.getElementById('searchInput').addEventListener('input', (e) => {
                 searchTerm = e.target.value.toLowerCase();
                 updateFilterTags();
@@ -648,10 +571,6 @@
                 const btn = document.getElementById('toggleSourcesBtn');
                 table.classList.toggle('visible');
                 btn.textContent = table.classList.contains('visible') ? '🔍 Verberg Bronnen' : '🔍 Toon Bronnen';
-            });
-
-            document.getElementById('notionModal').addEventListener('click', (e) => {
-                if (e.target.id === 'notionModal') closeNotionModal();
             });
         }
 
@@ -693,95 +612,6 @@
             document.getElementById('searchInput').value = '';
             updateFilterTags();
             renderArticlesByCategory();
-        }
-
-        // Notion functions
-        function openNotionModal() {
-            if (notionConfig) {
-                document.getElementById('notionToken').value = notionConfig.apiKey || '';
-                document.getElementById('notionDbId').value = notionConfig.databaseId || '';
-            }
-            document.getElementById('notionModal').classList.add('visible');
-        }
-
-        function closeNotionModal() {
-            document.getElementById('notionModal').classList.remove('visible');
-        }
-
-        function saveNotionConfig() {
-            const token = document.getElementById('notionToken').value.trim();
-            const dbId = document.getElementById('notionDbId').value.trim();
-
-            if (!token || !dbId) {
-                showToast('Vul beide velden in', 'error');
-                return;
-            }
-
-            notionConfig = { apiKey: token, databaseId: dbId };
-            localStorage.setItem('recruitin_notion_config', JSON.stringify(notionConfig));
-            closeNotionModal();
-            showToast('Configuratie opgeslagen!', 'success');
-        }
-
-        async function pushTopToNotion() {
-            if (!notionConfig) {
-                showToast('Configureer eerst Notion', 'error');
-                openNotionModal();
-                return;
-            }
-
-            showToast('Bezig met pushen...', 'info');
-
-            const topArticles = newsData.topArticles.slice(0, 3);
-
-            for (const article of topArticles) {
-                await pushToNotion(article.title, article.url, article.source, article.category, article.date);
-            }
-
-            showToast('Top 3 naar Notion gepusht!', 'success');
-        }
-
-        async function pushSingleToNotion(title, url, source, category) {
-            if (!notionConfig) {
-                showToast('Configureer eerst Notion', 'error');
-                openNotionModal();
-                return;
-            }
-
-            await pushToNotion(title, url, source, category);
-            showToast('Artikel gepusht!', 'success');
-        }
-
-        async function pushToNotion(title, url, source, category, date) {
-            try {
-                await fetch('https://api.notion.com/v1/pages', {
-                    method: 'POST',
-                    headers: {
-                        'Authorization': `Bearer ${notionConfig.apiKey}`,
-                        'Content-Type': 'application/json',
-                        'Notion-Version': '2022-06-28'
-                    },
-                    body: JSON.stringify({
-                        parent: { database_id: notionConfig.databaseId },
-                        properties: {
-                            'Titel': { title: [{ text: { content: title } }] },
-                            'URL': { url: url },
-                            'Bron': { rich_text: [{ text: { content: source } }] },
-                            'Categorie': { select: { name: category } }
-                        }
-                    })
-                });
-            } catch (error) {
-                console.error('Notion error:', error);
-            }
-        }
-
-        // Toast
-        function showToast(message, type = 'info') {
-            const toast = document.getElementById('toast');
-            toast.textContent = message;
-            toast.className = `toast visible ${type}`;
-            setTimeout(() => toast.classList.remove('visible'), 3000);
         }
 
         // Helpers
