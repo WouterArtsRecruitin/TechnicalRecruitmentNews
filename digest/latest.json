@@ -1,6 +1,6 @@
 {
- "week": "2026-W44",
- "opgehaald": "2026-10-26T10:48:23.477671+00:00",
+ "week": "2026-W45",
+ "opgehaald": "2026-11-02T05:10:14.089871+00:00",
  "status": {
   "Link Magazine": {
    "uitkomst": "gevonden",
@@ -18,7 +18,7 @@
    "uitkomst": "gevonden",
    "status": 200,
    "items": 50,
-   "vers": 7
+   "vers": 5
   },
   "Vraag en Aanbod": {
    "uitkomst": "gevonden",
@@ -30,19 +30,19 @@
    "uitkomst": "gevonden",
    "status": 200,
    "items": 10,
-   "vers": 2
+   "vers": 4
   },
   "Installatie.nl": {
    "uitkomst": "gevonden",
    "status": 200,
    "items": 687,
-   "vers": 15
+   "vers": 11
   },
   "Bouwwereld": {
    "uitkomst": "gevonden",
    "status": 200,
-   "items": 614,
-   "vers": 9
+   "items": 613,
+   "vers": 8
   },
   "Technisch Weekblad": {
    "uitkomst": "niet gemeten",
@@ -60,13 +60,13 @@
    "uitkomst": "gevonden",
    "status": 200,
    "items": 30,
-   "vers": 7
+   "vers": 6
   },
   "Trends in HR": {
    "uitkomst": "gevonden",
    "status": 200,
    "items": 9,
-   "vers": 2
+   "vers": 5
   },
   "MT/Sprout": {
    "uitkomst": "niet gemeten",
@@ -78,79 +78,79 @@
    "uitkomst": "gevonden",
    "status": 200,
    "items": 10,
-   "vers": 6
+   "vers": 8
   },
   "Google News #1 (regio)": {
-   "uitkomst": "gevonden",
-   "status": 200,
-   "items": 4,
-   "vers": 4
-  },
-  "Google News #2 (regio)": {
-   "uitkomst": "gevonden",
-   "status": 200,
-   "items": 10,
-   "vers": 10
-  },
-  "Google News #3 (regio)": {
-   "uitkomst": "gevonden",
-   "status": 200,
-   "items": 10,
-   "vers": 10
-  },
-  "Google News #4 (regio)": {
-   "uitkomst": "gevonden",
-   "status": 200,
-   "items": 4,
-   "vers": 4
-  },
-  "Google News #5 (regio)": {
-   "uitkomst": "gevonden",
-   "status": 200,
-   "items": 7,
-   "vers": 7
-  },
-  "Google News #6 (regio)": {
-   "uitkomst": "gevonden",
-   "status": 200,
-   "items": 6,
-   "vers": 6
-  },
-  "Google News #7 (regio)": {
    "uitkomst": "gevonden",
    "status": 200,
    "items": 2,
    "vers": 2
   },
-  "Google News #8 (regio)": {
+  "Google News #2 (regio)": {
    "uitkomst": "gevonden",
    "status": 200,
-   "items": 1,
-   "vers": 1
+   "items": 12,
+   "vers": 12
   },
-  "Google News #9 (regio)": {
+  "Google News #3 (regio)": {
    "uitkomst": "gevonden",
    "status": 200,
-   "items": 4,
-   "vers": 4
+   "items": 27,
+   "vers": 27
   },
-  "Google News #10 (regio)": {
-   "uitkomst": "leeg",
-   "status": 200,
-   "items": 79,
-   "vers": 0
-  },
-  "Google News #11 (regio)": {
+  "Google News #4 (regio)": {
    "uitkomst": "gevonden",
    "status": 200,
-   "items": 4,
-   "vers": 4
+   "items": 3,
+   "vers": 3
   },
-  "Google News #12 (regio)": {
+  "Google News #5 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 9,
+   "vers": 9
+  },
+  "Google News #6 (regio)": {
    "uitkomst": "gevonden",
    "status": 200,
    "items": 10,
    "vers": 10
+  },
+  "Google News #7 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 6,
+   "vers": 6
+  },
+  "Google News #8 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 11,
+   "vers": 11
+  },
+  "Google News #9 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 2,
+   "vers": 2
+  },
+  "Google News #10 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 77,
+   "vers": 1
+  },
+  "Google News #11 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 7,
+   "vers": 7
+  },
+  "Google News #12 (regio)": {
+   "uitkomst": "gevonden",
+   "status": 200,
+   "items": 6,
+   "vers": 6
   },
   "Google News #13 (arbeidsmarkt)": {
    "uitkomst": "gevonden",
@@ -167,15 +167,155 @@
   "Google News #15 (arbeidsmarkt)": {
    "uitkomst": "gevonden",
    "status": 200,
-   "items": 13,
-   "vers": 13
+   "items": 59,
+   "vers": 59
   }
  },
  "artikelen": [
   {
-   "titel": "Bravis en Amphia bij rijkste ziekenhuizen van Nederland: nieuwbouw van 450 miljoen in zicht",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPTy1KZk1HWGhXSlNvdWpBS29ZcmNQUE1RMXJheXlyMjB0Y2ZUOUUxbWpfSnRHQnE5QXNsaTBTRGRNNTJjTFFLaUUzQUQ2Y005WDktWVJMLW9JRnRRVWpnZ0NHa21iRi1XSnJ2Z1IyZEtQMWNQS1M1M3piX3FYaEU2Qmg0LWlUcV9HT0tyeGVsZ3JxZG0tMUFLY014cF9ZcFF4ek5KaXFwT2JQMUxlZG5sUjRhdDNVWldiblBuTV82aFZsSXc?oc=5",
-   "datum": "2026-10-26T10:31:00+00:00",
+   "titel": "Bureau Techniek opent nieuwe vestiging in Amersfoort om de technische arbeidsmarkt in Midden-Nederland te versterken",
+   "link": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOU1B0SkVDSmQ2MkdFSnVvTDVNUzBJQlZrckpGSE9uMWZmUWp3OTd1UFVvb2Uzd29SWDZUbUlKWVA5bmtFb1NLZmNOVVRpRi04SzRvcS1KTnlGZ09FbWNweWticzB4c0t3M00wNXVoM3NqRk04ZHA2VVFXZl9Yam1PZFM5TjNhMEtsYzltTU8xME41MVl5a2U0alVZRV82akhmcGVUTWllbUVzdmZhSFpZSHh5d1ZkaUNxSFJYSmZLVEs2cGdUbWd3RzhHTTBwckpqdXVTXzdzYWtpcy1SeTRCemU2VlhvVjg?oc=5",
+   "datum": "2026-10-30T07:00:00+00:00",
+   "bron_artikel": "Nieuws.nl",
+   "score": 11,
+   "waarom": [
+    "arbeidsmarkt",
+    "regio",
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Nieuws.nl",
+   "via": "Google News #7 (regio)",
+   "sectie": "regio",
+   "ook_bij": [
+    "Nieuws.nl"
+   ],
+   "samenvatting": "Bureau Techniek opent nieuwe vestiging in Amersfoort om de technische arbeidsmarkt in Midden-Nederland te versterken Nieuws.nl"
+  },
+  {
+   "titel": "Flevoland investeert miljoenen in nieuwe haven bij Urk, 'tot 750 banen erbij'",
+   "link": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNGFGb1FINzRrUFlfLWNQSU03RFdfajNGVTc1R2EtTkhLQlBEaE0xWkNBODcxTVJmc2w1UVZVVFVfR3NmVmt4YlQyMkZRVF9WZ1RYenVCU2VzVzN4aGhHeXhYNXpHYWVzVEFHdTBuc1ZaeHFtaEpDU2FRMFFDNGM5WlhHaU1xVVh5WXlIT3Eyd0VyT2lLSXR0M3RlNGV4Y0YxR0FMem5uZFo?oc=5",
+   "datum": "2026-10-29T11:36:01+00:00",
+   "bron_artikel": "NOS",
+   "score": 10,
+   "waarom": [
+    "arbeidsmarkt",
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "NOS",
+   "via": "Google News #8 (regio)",
+   "sectie": "regio",
+   "ook_bij": [
+    "Drimble",
+    "Transport Online",
+    "Headliner.nl"
+   ],
+   "samenvatting": "Flevoland investeert miljoenen in nieuwe haven bij Urk, 'tot 750 banen erbij' NOS"
+  },
+  {
+   "titel": "Woontheater De Eclips in Assen sluit na 25 jaar de deuren. ’Werk genoeg, maar geen personeel’",
+   "link": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOMmFnVHY0ZHMwcmtOcm9lNmg4RHhpbXkwcFBSM3d0NnBjZ09Bc201V29xU1FpQjRiMmxJTzU4VlhMc28wSGhHZ3A4V3dQRXNaRW5XN1RUOC0tWXVTNXA2R01vS20zRG9PQmYtVkxxSDR6ZnEwMEFIZGZxVGl0bU1qcjFsdWZnOHJmdmdsLTBOUzVqaW05eXFpMXUxY1gwenR6WWplSm9pcWZ0X3BZRVlEUnBBZ2NpU290aWljMWIyd0JieVdpQzNlZnVmY21ZMFJtVHhGZDZKd3RXSFhPb3c?oc=5",
+   "datum": "2026-10-26T12:03:00+00:00",
+   "bron_artikel": "DVHN",
+   "score": 10,
+   "waarom": [
+    "arbeidsmarkt",
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "DVHN",
+   "via": "Google News #12 (regio)",
+   "sectie": "regio",
+   "samenvatting": "Woontheater De Eclips in Assen sluit na 25 jaar de deuren. ’Werk genoeg, maar geen personeel’ DVHN"
+  },
+  {
+   "titel": "De Waard in Helmond te koop: hoge kosten en personeelstekort dwingen eigenaren tot keuze",
+   "link": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOaENUZWdRM1dYc094TDcwZFh3RUJXa0NBdXVIdVZ3OUFUSDA4NC01ZThPcUd4TGpaa3JxZVdoVW9EdDRYR1J6S0hjZ0xSMURYMGZjdVJ2NzNQRlF2c05nSGIxeDA5dzF0NlJ0U0Nqb1ZuQVBGZ2hNRVRST1Fyd3FvNWxGZ3RjVHdJMlUwc056QU5aUUpxVThaVlUtX3lpSTVyc2hCZ2pYVmxPa2VLM3FfLWlkUGRGeUZvVkpsQWJERGxHY0dEUnNlLWNncGg5dXRm?oc=5",
+   "datum": "2026-10-29T09:49:51+00:00",
+   "bron_artikel": "De Gelderlander",
+   "score": 8,
+   "waarom": [
+    "arbeidsmarkt",
+    "regio",
+    "gerichte zoekvraag"
+   ],
+   "bron": "De Gelderlander",
+   "via": "Google News #3 (regio)",
+   "sectie": "regio",
+   "samenvatting": "De Waard in Helmond te koop: hoge kosten en personeelstekort dwingen eigenaren tot keuze De Gelderlander"
+  },
+  {
+   "titel": "Ledenraadpleging over de nieuwe 3 ploegendienst bij Thales Hengelo",
+   "link": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUlhyaWJ6RUhTUERwcGpadG1WWDhVR3RCNjRFelFmaDZyenNhNG9Wbkg1TEQ4X0FUdUFUdlFvTmFOM2wtenRPR2d4X1BzN3BIUEhPRy1lanVsQi1acXExc2NodnRveXdkbGdVWlcwRG9NRG5NNHJla3B2d1Bmczk3SXhTanJYMjgzSUdRYllwVTZKV1NpZ2IteEVsY19QTUhvZDQ1aG9iU0tKS1BCYjYtczFaUzEzeXBhSHNDRDI3N0FndTZ4aHlXZnl4WWdDOWhqZ1BFdGhUUQ?oc=5",
+   "datum": "2026-10-29T08:29:07+00:00",
+   "bron_artikel": "CNV Vakmensen",
+   "score": 8,
+   "waarom": [
+    "arbeidsmarkt",
+    "regio",
+    "gerichte zoekvraag"
+   ],
+   "bron": "CNV Vakmensen",
+   "via": "Google News #13 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Ledenraadpleging over de nieuwe 3 ploegendienst bij Thales Hengelo CNV Vakmensen"
+  },
+  {
+   "titel": "Onderzoek naar renovatie en nieuwbouw ‘t Haarhuus",
+   "link": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTkVFOXc2emJOZklfQV9aTUpOSkNjWTBEXzVMaEZELUVFOWVVekZmRUJzX2NuRzhHdjRqWUVXWDdWVVIzUmdzRzk0VUdlUzg2cU5uVGQzNlM0V0oweGd1ZDZhb0hfQWVkQVVVQm4wTlBlMktLTXI3MDdRc0x1OE1EeVdyVFVCMjBFRUNrTmZfWGduVEFCUUs2dQ?oc=5",
+   "datum": "2026-10-31T14:26:20+00:00",
+   "bron_artikel": "Het Deventer Nieuws",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Het Deventer Nieuws",
+   "via": "Google News #2 (regio)",
+   "sectie": "regio",
+   "samenvatting": "Onderzoek naar renovatie en nieuwbouw ‘t Haarhuus Het Deventer Nieuws"
+  },
+  {
+   "titel": "Deze maand failliet in Drenthe: van waterstofbedrijf tot veelbesproken Primera-winkels",
+   "link": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPLUxLYTZBVnlvdWhlbjFMQWl0dzN2Nnl1alhoX3M3QXNMaXFXekxYcnl5ak1takF2MmFzcXpHQi0zSEFERi1YdG05ZHNVWXJaRzhtNDN4SU42NW9BUnp0cDNiT0J4dkJ4ZEtQVlRaSWJRWXdSQTVkVF9BRFA5bWVUU1pKN0FHeFplM3FSX1ZXVkJNenVGTldmQWhDVXRud0F2N3JaVkVsbC1KYVNtamt4NGlfUG9aa1AwYzBjb3dIdjlvd0NDLXc?oc=5",
+   "datum": "2026-10-31T12:00:00+00:00",
+   "bron_artikel": "RTV Drenthe",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "RTV Drenthe",
+   "via": "Google News #11 (regio)",
+   "sectie": "regio",
+   "samenvatting": "Deze maand failliet in Drenthe: van waterstofbedrijf tot veelbesproken Primera-winkels RTV Drenthe"
+  },
+  {
+   "titel": "Frustraties en conflicten door uitbreiding betaald parkeren",
+   "link": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNT3ZWYzJkZjFHMnhkUVA2dVAwc0E5WEl3ZG5od2owaUZxbXJPaFZBZFhUY3ZnZkhUWXlOYmR0MXl4LW9kR0ZyZlRpejhLQnVEWW8tVjYtSUg5eWVuVnFLNm9CN1dZb3JpMy1lMndLWHNfdFlEamRJTHVFek4xTHB2ZWxKNWlycDJIVWltU2I4Z1h6ckFLQTF6dVJkdmtrQ2U0Nmd2RmNn?oc=5",
+   "datum": "2026-10-31T06:01:00+00:00",
+   "bron_artikel": "De Utrechtse Internet Courant",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "De Utrechtse Internet Courant",
+   "via": "Google News #7 (regio)",
+   "sectie": "regio",
+   "samenvatting": "Frustraties en conflicten door uitbreiding betaald parkeren De Utrechtse Internet Courant"
+  },
+  {
+   "titel": "Laatste bezwaar van tafel: nieuwbouw stationsgebied Best stap dichterbij",
+   "link": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOVJqN3ZISzMwSlNtX1dSMHFCUm9qcUJESHJJTkVoOVlFaW5mYTRpLW8xVWZpaFlWWW9MOEZhZ1JyQnRZdm5vdzJVeDRrVWRJMmdfM2hpQnY3Tzg0WDhyZVowSHVMdzA0MzJLc3UyQXh0YXhUbUxqd2RiVllHdHh5R28wRTdOV0g2VU5lREdWSGllUW5BWW5odHpFRk4zMzQwN2xHX09GLUlHcDNMZEE?oc=5",
+   "datum": "2026-10-30T08:06:13+00:00",
    "bron_artikel": "Brabants Dagblad",
    "score": 7,
    "waarom": [
@@ -186,376 +326,358 @@
    "bron": "Brabants Dagblad",
    "via": "Google News #3 (regio)",
    "sectie": "regio",
-   "samenvatting": "Bravis en Amphia bij rijkste ziekenhuizen van Nederland: nieuwbouw van 450 miljoen in zicht Brabants Dagblad"
+   "samenvatting": "Laatste bezwaar van tafel: nieuwbouw stationsgebied Best stap dichterbij Brabants Dagblad"
   },
   {
-   "titel": "Herstructurering begint bij de investeringsbereidheid van bedrijven",
-   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPeV95clpzWER4Yl9ZemtXdnotY3dkT19iNFR0RGFwNEhiNk9TMDdMallSZk90c0daTW9zR0NfSjMzRTI5Q0hubjBkc0xsUF9oLXlmam5IbDhoRVBjWnNYSDJDN1NCQktMVk0zRGRwdXY1b0dfNWVsZ2hWczJxVnV4QVMwTVBGVVFlZzVCWDllUl9Ib1p0MFJGaElRMHVzbzF3OURUb3pVSnJMcl9yeFlV?oc=5",
-   "datum": "2026-10-26T08:25:51+00:00",
-   "bron_artikel": "Brabant",
+   "titel": "TenneT wil ongebruikte stroomruimte terugpakken: in Zwolle is zelfs onteigening nodig voor uitbreiding",
+   "link": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOTFhpV08yTG96Ym1EMVBrNDRRbXgyb091NkVsajgxd0lrVmxRMVMtYTc4dmtnaEdhMnJWSzFxckVtMS16YVhPRjV3TXdvdWNSS1VBRkNIUHZ5dTVpRnZkbm5wNFpVMTR4OThDVk5IVEcyTEtyYnVHaXl2OC1UMjY0V0RKNlJndlh3NFIyVGZra2pCZ3pmWUJNOG5rRWVPLTVRSzBiN3lMcnJuVGhaeFZfZzZvUnltemtJZFcwV1htQUc1cjVLbzVNVGVGNnU2TzgtNWlvekl3MjRlSW9ZTjM4RG5YeWRlSzZxOU1OY0cyTXM?oc=5",
+   "datum": "2026-10-29T23:22:51+00:00",
+   "bron_artikel": "Drimble",
    "score": 7,
    "waarom": [
     "regio",
     "bedrijfssignaal",
     "gerichte zoekvraag"
    ],
-   "bron": "Brabant",
-   "via": "Google News #3 (regio)",
-   "sectie": "regio",
-   "samenvatting": "Herstructurering begint bij de investeringsbereidheid van bedrijven Brabant"
-  },
-  {
-   "titel": "Ede investeerde 100 miljoen in de uitbreiding van het stroomnet, maar wat levert dat nu op?",
-   "link": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQN2E5Nm01QVhBVkZ5UWJZRDlQN0tOWXZlVDVlRV94ckQ0cWVpOG5md0luYnlEaXhtLXlIcS1Qd1dxN3FnVFZxYnVldHRVVDRSWGVGRWZMYV85X2lPeGI2UkdLcW93ZE84R1JQWTNWMnFTTXl5X2c3NVZWUGRNMjkyLTVob1U5ZW5LS2VVSjJ5NzhBSHRXNjFzWTlhb0JRNGJXYnVnSks5dTJmX3h4a1IxTTUzYWFibkpDLU1nT21jVU9Wa09CY2xfQUVlSjg?oc=5",
-   "datum": "2026-10-23T09:08:48+00:00",
-   "bron_artikel": "De Gelderlander",
-   "score": 7,
-   "waarom": [
-    "regio",
-    "bedrijfssignaal",
-    "gerichte zoekvraag"
-   ],
-   "bron": "De Gelderlander",
-   "via": "Google News #1 (regio)",
-   "sectie": "regio",
-   "samenvatting": "Ede investeerde 100 miljoen in de uitbreiding van het stroomnet, maar wat levert dat nu op? De Gelderlander"
-  },
-  {
-   "titel": "Klok Bouwmaterialen in Assen sluit na 80 jaar de deuren. ’Werk genoeg, maar we hebben de mensen niet’",
-   "link": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPLXlKX2Qzb0w3Y3ZQREdrdnY3VFNQMS0zdGxHc0lZSDJ5cVlTUFRVVjNjN043Y1pBYVdZMkFMbkhfXzNCNTNHMnFyalJEcU15aGpCeWYwQkdiQXBfb2htWlNGRjlRSl9MYmJRNXpiODUyVml2bnN2blpua2ZudkhwVmRYZ1FBYVRxQjF1SFA5S3NOLWFfMmJfVmRyN3JEVjZtYm42RnVlZ1FMaW1ranRpWWJuQzl0Uy1jYVJReHFmVFY0VWNiS0kxOWxaZkt5MnctczNqV05UaUFnVVFGaXpzTHRBY2ZlMVpN?oc=5",
-   "datum": "2026-10-22T14:46:00+00:00",
-   "bron_artikel": "DVHN",
-   "score": 7,
-   "waarom": [
-    "regio",
-    "bedrijfssignaal",
-    "gerichte zoekvraag"
-   ],
-   "bron": "DVHN",
-   "via": "Google News #12 (regio)",
-   "sectie": "regio",
-   "samenvatting": "Klok Bouwmaterialen in Assen sluit na 80 jaar de deuren. ’Werk genoeg, maar we hebben de mensen niet’ DVHN"
-  },
-  {
-   "titel": "‘35 vierkante meter voor wie?’ Bewoners trekken opnieuw aan de bel over nieuwbouw Van Bentumkwartier",
-   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPeEp6TDRlbDNXMW5sWVkyeUVkVHprQ2E2UFpwWEVPUFFVS21reFh0SnVkdjk5MTlUX2VHajF2Rzl5Mm5OeE05VThmQzRsb3oyRk1nb1h0TXNXLXUzNy12SjNHenBJOGJ2VnVCOHNnb2QxajhETl9UUWs1TDZkRHkyUnRBT2dwcVZRMkZaT21oMjBaQXZiLWhRczV5bTRJSlJFLTA5bk1MQ2RRb3NCSDBzZTlPdVNsLW9VUjFwRk95M05MUQ?oc=5",
-   "datum": "2026-10-21T10:43:26+00:00",
-   "bron_artikel": "De Digitale Stad Nieuwegein",
-   "score": 7,
-   "waarom": [
-    "regio",
-    "bedrijfssignaal",
-    "gerichte zoekvraag"
-   ],
-   "bron": "De Digitale Stad Nieuwegein",
-   "via": "Google News #7 (regio)",
-   "sectie": "regio",
-   "samenvatting": "‘35 vierkante meter voor wie?’ Bewoners trekken opnieuw aan de bel over nieuwbouw Van Bentumkwartier De Digitale Stad Nieuwegein"
-  },
-  {
-   "titel": "Polikliniek Haaksbergen sluit eind oktober: roep om beter vervoer naar MST",
-   "link": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOcF9HXzdGd21hWEtVRG1mdGFZSEtabHl0WERiSkxBWFlnUU54X09YemctNTd4MTZUUGEzX3N0WWdENVpsaDk4b0luOGNjR1Y0bjRxUUhhRUxHb2xXZFktd1NfZk1Eb0FpYkVLeC1KQnBVYWxwclkxanQ4VDZlWWoxb2Y4T0FpX2ctTFNfUEtmN2ItUE9WZld3emc0QkFvTnFsOGw4SllYMlozOGZFZDBTUUZB?oc=5",
-   "datum": "2026-10-20T14:48:00+00:00",
-   "bron_artikel": "1Twente",
-   "score": 7,
-   "waarom": [
-    "regio",
-    "bedrijfssignaal",
-    "gerichte zoekvraag"
-   ],
-   "bron": "1Twente",
-   "via": "Google News #5 (regio)",
-   "sectie": "regio",
-   "samenvatting": "Polikliniek Haaksbergen sluit eind oktober: roep om beter vervoer naar MST 1Twente"
-  },
-  {
-   "titel": "Rotterdam kiest niet voor automatisch einde erfpacht bij faillissement",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQZThDRTBveVpBSWhMQ0t4N1pYTWw0MENjU3R5b014UGNWbndEUEExT2xaVHplckxha3lOR25Ua2txaEhYVkYydGlGaFhpd09IT3VtNnJZYkh4Wkk1OTMwNXozVF9aelhRc2NIQ19tR3ZTMVFnbVkzSlk3RVdOSV8tbzZEaUlkcnR6VDB5ZmNkd3dpN1AwekhJZVJQU3VRVDgwZWFqbnRxTGNMemlqb1p5RllqWGdYZ2NLTXdfdQ?oc=5",
-   "datum": "2026-10-20T06:51:40+00:00",
-   "bron_artikel": "Faillissementsdossier",
-   "score": 7,
-   "waarom": [
-    "regio",
-    "bedrijfssignaal",
-    "gerichte zoekvraag"
-   ],
-   "bron": "Faillissementsdossier",
-   "via": "Google News #11 (regio)",
+   "bron": "Drimble",
+   "via": "Google News #2 (regio)",
    "sectie": "regio",
    "ook_bij": [
-    "Dagblad010"
+    "RTV Focus"
    ],
-   "samenvatting": "Rotterdam kiest niet voor automatisch einde erfpacht bij faillissement Faillissementsdossier"
+   "samenvatting": "TenneT wil ongebruikte stroomruimte terugpakken: in Zwolle is zelfs onteigening nodig voor uitbreiding Drimble"
   },
   {
-   "titel": "SKF opent nieuw lab in Houten voor ontwikkeling hybride lagers",
-   "link": "https://www.metaalnieuws.nl/skf-opent-nieuw-lab-in-houten-voor-ontwikkeling-hybride-lagers/",
-   "datum": "2026-10-23T08:46:19+00:00",
+   "titel": "Maashorst kiest locatie voor uitbreiding van het huidige hoogspanningsstation",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNajFlem9FbGMtaGFKNmVORS1Sc0ZwZ3JsaklOa01pOFdnWm1tZjBOOFYxTUh2OG0zZFdVVVc1OU9RTlpqUktjRHp4Z184UzRjV2o3cWczMlpiZ1lITzBJZmNaWlF6My1LSDBFOU0xUjlKVjhsejdHRU52RjVOeXJNaWsxX0hKZENlY0V0bUlCY09md1RscTJMaXF3WUhqaGM4V0hZcnA3YUZ6aWpEY3VNcURXUGlMdw?oc=5",
+   "datum": "2026-10-29T22:46:00+00:00",
+   "bron_artikel": "Brabants Dagblad",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Brabants Dagblad",
+   "via": "Google News #3 (regio)",
+   "sectie": "regio",
+   "samenvatting": "Maashorst kiest locatie voor uitbreiding van het huidige hoogspanningsstation Brabants Dagblad"
+  },
+  {
+   "titel": "PSV en gemeente Eindhoven zetten belangrijke stap richting uitbreiding stadion, maar financiering blijft heet hangijzer",
+   "link": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQYlNVTmw4NDhPcGRGeTJXMHVDVVBzZHNOWTBVSUlKVEJwTHVVOVc2bVNLWEE4Zlp1cnBBbWw3MkNxUHRlSEkxcm5RQUF5RjJGNDNjSVVmR2pCNnNheVB2ZVdFZmxaU3NUM2hoVEVTS2JERnJtdjBqUGt1aFFER1ZHVGVxX1ZFV0xTdnRkZl92RENNTy1LTk8tOGktVWlnVGxsSE5Ddmh5dzhYTnZ3UEl6ZHA0eVlRV1A2LUF0RjgxZUJnazA3U0ZBN19BQWx4NkNEcG5vV0VSbW9GclhuWFN2SVh5R3g1ZGxodTJaTVJ2TkVkc1NKc0lUeHZFcjducjlnLTZNU3dHYjZ0VmFHamtJ?oc=5",
+   "datum": "2026-10-29T13:19:51+00:00",
+   "bron_artikel": "Drimble",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Drimble",
+   "via": "Google News #3 (regio)",
+   "sectie": "regio",
+   "ook_bij": [
+    "De Telegraaf"
+   ],
+   "samenvatting": "PSV en gemeente Eindhoven zetten belangrijke stap richting uitbreiding stadion, maar financiering blijft heet hangijzer Drimble"
+  },
+  {
+   "titel": "Uitgerekend VVD-wethouder gaat betaald parkeren in Zwolle uitbreiden",
+   "link": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1XaFh0Ni1fRlRLczJDSDdvWVpfc1NRYjJxX0V4VlQtVWZpVWc2OC04MnlJZGpuVWVtQTlfdFRqeG9sUTFQZEY3cGRtcnRVcXpzS1VVOGc5NVI5Y1hjTHRwNnhDOHhFLVAwb3ljdEdZQQ?oc=5",
+   "datum": "2026-10-29T10:47:46+00:00",
+   "bron_artikel": "ZwolleNu",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "ZwolleNu",
+   "via": "Google News #2 (regio)",
+   "sectie": "regio",
+   "samenvatting": "Uitgerekend VVD-wethouder gaat betaald parkeren in Zwolle uitbreiden ZwolleNu"
+  },
+  {
+   "titel": "Raad van State eist extra motivering voor forse uitbreiding kalverhouderij in Ede",
+   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRUljWldEVEw0eVZEOWdoOU9NNk5lYWlDTmFKcG1USHo2R3FRVHhCNWtheUNweHEyYmtpNzZ1bWZjcndaMlM2WnFiMmNFck83QmhqN05nM2lVUkthWk9lamkzajQ5ZWF0bDQwdEg0ZC1CLTBxemRlU09FNkRxOVA5TkNtZEpJRkYwNl9MUWMxNU5Wdk54TDdBWkNCalBqVFBKU3RrY2lCZ0pZTzBwNFRPd3dfcUFIR3Bnd2FiMUVHb0JZV2V2?oc=5",
+   "datum": "2026-10-28T08:07:00+00:00",
+   "bron_artikel": "Nieuwe Oogst",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Nieuwe Oogst",
+   "via": "Google News #1 (regio)",
+   "sectie": "regio",
+   "samenvatting": "Raad van State eist extra motivering voor forse uitbreiding kalverhouderij in Ede Nieuwe Oogst"
+  },
+  {
+   "titel": "Dok architecten geselecteerd voor nieuwbouw Rembrandttheater Oudegracht, Utrecht",
+   "link": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPT1dONTNOS1NWTGMtdHRid2I1XzU0NkZ4OTRremtQYUoyUGczanFlUEtWbmpscURncF9rWnl4QjZic0FZMlF2ODlGeHJiTTZxYVQwdUdsRlpWWWVEVHVUUU5Id2tHeTVJcFdfTE0yNmtzNHVYem9ob0hYQ0lvRFNJazhhYUREaGJYYi1EMkszV3hURHVFbXpoYTk1ZThsNXhHc29WeDhpcnlLSDljb3Rxd3VwSQ?oc=5",
+   "datum": "2026-10-27T05:00:00+00:00",
+   "bron_artikel": "de Architect",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "de Architect",
+   "via": "Google News #7 (regio)",
+   "sectie": "regio",
+   "samenvatting": "Dok architecten geselecteerd voor nieuwbouw Rembrandttheater Oudegracht, Utrecht de Architect"
+  },
+  {
+   "titel": "Motorhuis opent nieuwe vestiging voor Geely in Den Haag, locatie in Leiden gaat ook BYD voeren",
+   "link": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNYmdGNElEc253N2kzbXlTLVNna1p4SXBMRVA4VWVDcnE1RV82REhncmtMaUtLWm55c3RBUko2RHhuSGlkSVA3QTlQTTNDajVwdE41WUZoZ2t5ZUo5Ymw4Vmd4Y3A5OTNQUEo4SmhlS0M5UTJBcmNvbzhrbjdNNm45dmtETFIxVElKWG9vN3N6aEtQeTVqMGRKMS1wUGNTWm1oYnF6V2NYS1pwTmhYWDQ4MzlzNnlEOUIyRG9yWEM2Z1F2b0x5MkdfTjAxeXJVRWU3NXJaOTBISnhrLVJtOGNIMDBLbUgwTFV5aGV3TkZFRlZTUQ?oc=5",
+   "datum": "2026-10-26T12:32:17+00:00",
+   "bron_artikel": "Automotive Online",
+   "score": 7,
+   "waarom": [
+    "regio",
+    "bedrijfssignaal",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Automotive Online",
+   "via": "Google News #10 (regio)",
+   "sectie": "regio",
+   "samenvatting": "Motorhuis opent nieuwe vestiging voor Geely in Den Haag, locatie in Leiden gaat ook BYD voeren Automotive Online"
+  },
+  {
+   "titel": "Willem Bos sluit aan bij VDK",
+   "link": "https://www.installatie.nl/nieuws/willem-bos-sluit-aan-bij-vdk/",
+   "datum": "2026-10-27T16:47:29+00:00",
    "bron_artikel": "",
    "score": 6,
    "waarom": [
-    "regio",
+    "arbeidsmarkt",
     "bedrijfssignaal",
     "industrie"
    ],
-   "bron": "Metaalnieuws",
-   "via": "Metaalnieuws",
-   "sectie": "regio",
-   "samenvatting": "Groeiende vraag naar hybride keramische lagers Nu industrieën overstappen op elektrificatie en een hogere energie-efficiëntie, neemt de vraag naar hybride keramische lagers toe. Door hoogwaardige stalen lagerringen te combineren met rolelementen van siliciumnitride bieden hybride lagers een betere e"
+   "bron": "Installatie.nl",
+   "via": "Installatie.nl",
+   "sectie": "branche",
+   "ook_bij": [
+    "Installatie.nl"
+   ],
+   "samenvatting": "VDK Groep heeft elektrotechnisch totaalinstallateur ETB Willem Bos uit Someren overgenomen. Het familiebedrijf met circa 45 medewerkers maakt sinds 23..."
   },
   {
-   "titel": "Onderhandelingen cao Metalektro: nog geen loonbod werkgevers",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOU1RQbXhiX2hZcmlUcEFVa0E3QmUxSW9VNXk1Vm9NRC1DMTN0S1ZrTEk5S1JGZ053WngxY1RYTm9uYnhZWFhoTnpJYXhTWWNGd1g4RHlLTnp4ZWJTb1RDMGdnTWNGcEZ1S2Q1ZFNLUnRwZldiUlhkN2tOR09PdmJRV3YtdVhhLVUwbG5OdXl0NXpuZi13aElnTXpfbi02R016M3BkRGZSMA?oc=5",
-   "datum": "2026-10-22T08:32:00+00:00",
-   "bron_artikel": "Metaal Magazine",
+   "titel": "Nog geen loonbod voor nieuwe cao Metalektro",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTE44VXFFaDN5TnB3QWh0THc1ajBfeW5QcEhTeUszV0w1RnlrZEQ4Zmg0amJHREl0RC1hRS1kV0dLNFBMTmpfOUVfaGNpNVAwRXgxX3J5Y1lVWDBIc1Y2X2ozQTdFRWx1Y0laWVpMdkdxR0s2aWxTZWxpUnhjcXU?oc=5",
+   "datum": "2026-10-26T12:13:59+00:00",
+   "bron_artikel": "MetaalNieuws",
    "score": 6,
    "waarom": [
     "arbeidsmarkt",
     "industrie",
     "gerichte zoekvraag"
    ],
-   "bron": "Metaal Magazine",
+   "bron": "MetaalNieuws",
    "via": "Google News #13 (arbeidsmarkt)",
    "sectie": "arbeidsmarkt",
-   "ook_bij": [
-    "CNV Vakmensen",
-    "Metaal Magazine"
-   ],
-   "samenvatting": "Onderhandelingen cao Metalektro: nog geen loonbod werkgevers Metaal Magazine"
+   "samenvatting": "Nog geen loonbod voor nieuwe cao Metalektro MetaalNieuws"
   },
   {
-   "titel": "Van veertien bedrijven naar één gezicht naar de klant",
-   "link": "https://linkmagazine.nl/van-veertien-bedrijven-naar-een-gezicht-naar-de-klant/?utm_source=rss&utm_medium=rss&utm_campaign=van-veertien-bedrijven-naar-een-gezicht-naar-de-klant",
-   "datum": "2026-10-21T22:08:03+00:00",
-   "bron_artikel": "",
-   "score": 6,
+   "titel": "Viettel start fase 2 van het investeringsproject voor een hightech productiefaciliteit voor de defensie-industrie.",
+   "link": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWjg0VG9Kb09fMkRna3g5RnNHN09USnhhWmxkZGk1NWlyUHVSZktYQ25XQVEzSExmb1ZhMWwtaWJoQzNENlRmbUNUSFpEaG5xZHNjQTBBckdsUi1LVUtJLTVKbjJKamtoWGpBOHFXdERFY1Y2Tzh5dnlhdHhmYVZYS0Q5S0lXbmM4UmVyTWtvUllOMkM5elVxY1k3bE1lTVJUOXR0R3RPNnA2eThYMXducUpQVHpNT0c1ek43a2JtT2otLTY3YVlPNg?oc=5",
+   "datum": "2026-10-30T13:32:24+00:00",
+   "bron_artikel": "Vietnam.vn",
+   "score": 5,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Vietnam.vn",
+   "via": "Google News #6 (regio)",
+   "sectie": "branche",
+   "ook_bij": [
+    "Vietnam.vn"
+   ],
+   "samenvatting": "Viettel start fase 2 van het investeringsproject voor een hightech productiefaciliteit voor de defensie-industrie. Vietnam.vn"
+  },
+  {
+   "titel": "Nederlandse economie groeit 0,6 procent, machinebouw trekt",
+   "link": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBYMDlUWmt5ZXdyWkhkaE5vblZlLVF1djZGLVNwc2lPWDV6S0dnYzZhUjA1YUphSmd2RmdNMWgtQlF2NFdRMG1BdzhUaWlHRzFQbl9yUlE1RHB0X2piTThvUjNTNmtLWUxxUEFRdzdKTU92TEFiM1R0V0liaks?oc=5",
+   "datum": "2026-10-30T12:25:44+00:00",
+   "bron_artikel": "TPO.NL",
+   "score": 5,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "TPO.NL",
+   "via": "Google News #15 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Nederlandse economie groeit 0,6 procent, machinebouw trekt TPO.NL"
+  },
+  {
+   "titel": "CBS: aantal zzp’ers daalt zeven kwartalen op rij, krapte arbeidsmarkt neemt iets af",
+   "link": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTkNNeHFha2VKZTNyNW52WHM3QUR5UjlTVXRWVEZQVXd2SGZad2EyR3pld3ZzTUsyWXlFTnZDQWFGSzFEaE13Njg4YXd6MFk5VUxsODJEYU1LMDVwMXJLaEZBRE9RU3hBOXBoQWZWa09vRDJ1RVlqWHRQRnZvMC1LOENDOGY3SERtRlRiZkZybDhJbVZ2ZzFJSGtwTTliU0NBWnk2eWhSYnlLS1FadUU5cmZ0czQ?oc=5",
+   "datum": "2026-10-30T08:18:49+00:00",
+   "bron_artikel": "ZiPconomy",
+   "score": 5,
    "waarom": [
     "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "ZiPconomy",
+   "via": "Google News #15 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "ook_bij": [
+    "Centraal Bureau voor de Statistiek | CBS"
+   ],
+   "samenvatting": "CBS: aantal zzp’ers daalt zeven kwartalen op rij, krapte arbeidsmarkt neemt iets af ZiPconomy"
+  },
+  {
+   "titel": "Krapte op arbeidsmarkt iets afgenomen",
+   "link": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWWF3RVRJelBudmNMVzhnNXFLa0hFZS1PbXRYeFhjVnlUc0o2UFh4ZXRTa0JxRktpcGFHLVprSzF2SVNRQk1xS2ZvbXlZX2kySHV0Q3NCYm5PRXpTaDZoV2kwMGhtR0dOeHpoRm0tUGoxN29FeXBBU3dnZjc2YTdDc2ZXemdNdw?oc=5",
+   "datum": "2026-10-30T07:35:24+00:00",
+   "bron_artikel": "Accountant.nl",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Accountant.nl",
+   "via": "Google News #15 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Krapte op arbeidsmarkt iets afgenomen Accountant.nl"
+  },
+  {
+   "titel": "Vacatures",
+   "link": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5hTk9wUkxyZXI0MzdSQXd2MWdwRnkxdHNteVVYS3RLalYxMWRKVjUxdUdENTlMMEtxRkJpWWpLUWZyX3JsV3pDSVhSWWRXNVY4S0kzRG5ZNkR1c3RreDRRMjZac3JrWEcxY3E4SUpmXzhhU1VWYWRLamxFMA?oc=5",
+   "datum": "2026-10-30T05:30:00+00:00",
+   "bron_artikel": "Centraal Bureau voor de Statistiek | CBS",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Centraal Bureau voor de Statistiek | CBS",
+   "via": "Google News #15 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Vacatures Centraal Bureau voor de Statistiek | CBS"
+  },
+  {
+   "titel": "Spanning op de arbeidsmarkt",
+   "link": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPV1VmME1qQ2tLbS1DWGc2bUNDXy1rWXRnWDdRMlU1MkJDeE16cmZwSTRURmhpZDJ0WEhqU25WQ0I0VldTdlEzYjFrY1pURFItaEQxY2pKakRfZDE1OXJMYnVxOFhHSE5aa3Q4YTVYYjlNamFmajk1WUlzd2tod2pEUzRlY3hVNEtuc3FDWkRxWUdjOVE?oc=5",
+   "datum": "2026-10-30T05:30:00+00:00",
+   "bron_artikel": "Centraal Bureau voor de Statistiek | CBS",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Centraal Bureau voor de Statistiek | CBS",
+   "via": "Google News #15 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Spanning op de arbeidsmarkt Centraal Bureau voor de Statistiek | CBS"
+  },
+  {
+   "titel": "Werkloosheid naar leeftijd en geslacht",
+   "link": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMGpqSkdEeXRpcEl0eDVEMGJJNU9KSzFrZVJ3dW5kLXVxZGgxS3E1d0JUNkp2T3E3dE9FSzF0d1J4dVNwX1hhV0M0TTBtdjdnOS1GNV9RTzB5MDM2dEd4MXhnUXJQUHQxai1PYmwwWUdCV0FVUzRnUlNvSFZTSU1sOVlWVmZNRW5naFpycWxSRzl0bDljN19LUFZvM2tweEdGekdHQzBTUWhEVTFpQW1z?oc=5",
+   "datum": "2026-10-30T05:30:00+00:00",
+   "bron_artikel": "Centraal Bureau voor de Statistiek | CBS",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Centraal Bureau voor de Statistiek | CBS",
+   "via": "Google News #15 (arbeidsmarkt)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Werkloosheid naar leeftijd en geslacht Centraal Bureau voor de Statistiek | CBS"
+  },
+  {
+   "titel": "VDL investeert in Amerikaanse fabriek voor explosief groeiende chipmarkt",
+   "link": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQjZSYVRIT0Z6WkhBa1JJWHNkWUZnMzdxbHRBdVdGQkZkd09pbGZZSjlGajBKNmJKczFkOHVvc2xNX1loRDJZZUJob0g0VUNIbGZWdnZMX2RRaGxWRDd4aGlBeXhqa19Kb09KYXVoRzdZNWxkMndxOHpYT09BQ3QxUnozalE1Nm9rNWpZWnBlSm5TQnR6LVlsTXpqYWZPd0FWU2Y0SHBDNXYzd3lrSVc3cDZlNkt1SDZGN3pja3k0aGRCeTdQX0trTjdWUlhXV3g4amc?oc=5",
+   "datum": "2026-10-29T22:12:00+00:00",
+   "bron_artikel": "Drimble",
+   "score": 5,
+   "waarom": [
     "bedrijfssignaal",
+    "industrie",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Drimble",
+   "via": "Google News #3 (regio)",
+   "sectie": "branche",
+   "ook_bij": [
+    "Eindhovens Dagblad",
+    "Eindhovens Dagblad"
+   ],
+   "samenvatting": "VDL investeert in Amerikaanse fabriek voor explosief groeiende chipmarkt Drimble"
+  },
+  {
+   "titel": "Energy Skills gelanceerd: nieuwe route naar werk in de energiesector",
+   "link": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMzdwdDFralktN2NYa3ZQMG5ZNEx3c3oySnk4bl9CTUlRSWpMYWZJaDU1U0Y4WVJWajBHOTdoOER4RFhHcmxxM0Q1aWFLbVgtZlA2MkI2ZERXM3dDWmIxYXNXS21kcXZhZkV2eXdmYnNHQW5VWWhmYXBYQVBVM2s4YkxOalJaaXh0TEsyLUhfcXYyVTdMTVoyMzRFVTBxWURqMjE5YU5WaktBUnFRTzdhZlVOVEU2dw?oc=5",
+   "datum": "2026-10-29T11:36:09+00:00",
+   "bron_artikel": "Netbeheer Nederland",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "Netbeheer Nederland",
+   "via": "Google News #12 (regio)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Energy Skills gelanceerd: nieuwe route naar werk in de energiesector Netbeheer Nederland"
+  },
+  {
+   "titel": "Capelle denkt boa-tekort in nieuwe jaar te hebben opgelost: nog maar één vacature open",
+   "link": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTHJWSE43dHhJcVR0dmdMZWoxelNqRms4M0N3aTJXZlJ1RTRSSDdXQlp2LU5rNEJGTjlBLWJYSWtIVE56TGdoN2JIdnphQ0dzbzVTTVQ1Vy1NUzBuUmJKNFhUQ1dUckxkMlJmbnU5V2hTeXFYd2R6T3RXYjdoMWJhZHktbDlnODBreGJsQzRfT2wtU1BlM2l6OHhMX3RpS0N1MTEtX3BvdU1sUFpXU1ZQSFJ0TnZZc2djMlJKa3dJejdTZw?oc=5",
+   "datum": "2026-10-27T17:01:03+00:00",
+   "bron_artikel": "pzc.nl",
+   "score": 5,
+   "waarom": [
+    "arbeidsmarkt",
+    "gerichte zoekvraag"
+   ],
+   "bron": "pzc.nl",
+   "via": "Google News #12 (regio)",
+   "sectie": "arbeidsmarkt",
+   "samenvatting": "Capelle denkt boa-tekort in nieuwe jaar te hebben opgelost: nog maar één vacature open pzc.nl"
+  },
+  {
+   "titel": "SKF versnelt ontwikkeling hybride lagers in Houten",
+   "link": "https://linkmagazine.nl/skf-versnelt-ontwikkeling-hybride-lagers-in-houten/?utm_source=rss&utm_medium=rss&utm_campaign=skf-versnelt-ontwikkeling-hybride-lagers-in-houten",
+   "datum": "2026-10-31T11:10:50+00:00",
+   "bron_artikel": "",
+   "score": 4,
+   "waarom": [
+    "regio",
     "industrie"
    ],
    "bron": "Link Magazine",
    "via": "Link Magazine",
    "sectie": "branche",
-   "samenvatting": "De overname van Millux door het Amerikaanse IDEX leidde niet alleen tot een nieuwe eigenaar, maar ook tot een ingrijpende reorganisatie. Veertien gespecialiseerde bedrijven werden samengebracht in één organisatie, die klanten vanuit gezamenlijke kennis en technologie bedient. Volgens strategisch adv"
+   "samenvatting": "Met een nieuw keramieklaboratorium in Houten wil SKF de ontwikkeling en industrialisatie van hybride lagers versnellen. De Zweedse fabrikant speelt daarmee in op de groeiende vraag naar energiezuinige en betrouwbare lagertechnologie voor elektrische aandrijvingen, industriële automatisering en highs"
   },
   {
-   "titel": "Belangrijkste hobbels voor komst chipfabriek Enschede genomen",
-   "link": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQM3Q0eWxmWUdrMlNUajFFcVJaSTlyaHBocWhPdVc0UEd6c3ltVjFvVXlHZGZjdG9WZ1pPOWxSSWxRa0FqZHJQSEVhVDgzOEp2dFNOOGdPSVAzNXd1ZEhJT21ETEF1elRxR2JIdGlIV2dlOTU5el9pZWxibWJfMnBtRWp1cWxVc0ZTb0hNYU1QdUNKUQ?oc=5",
-   "datum": "2026-10-19T12:12:35+00:00",
-   "bron_artikel": "IO+",
-   "score": 6,
-   "waarom": [
-    "regio",
-    "industrie",
-    "gerichte zoekvraag"
-   ],
-   "bron": "IO+",
-   "via": "Google News #2 (regio)",
-   "sectie": "regio",
-   "samenvatting": "Belangrijkste hobbels voor komst chipfabriek Enschede genomen IO+"
-  },
-  {
-   "titel": "EIB: Nederland moet doelen uitstellen om personeelstekort bouw",
-   "link": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQY1pHdXAxeXFTOVQ0elZSWnFmMDZEMjdtdnlPTHpQalJZNTN5Y1ZkTVkxQ0NJRFVrd1ZKOUJuQmJwNW5yc2ZGMzZvR2xUUk5OUWpLd29jYjBZTXF0OTYtRmYxdkRWOU10SXZpLVFsOTNiOHlvWktCaWFVNkhsUnlCcTNzb0xTb0hUaXRLX3hWbUlZZWFvZ1JkMHNhcUM1WWhSRnF3bGo0WGtsaEJ1S0NrQWFDUjFldVVoTjRjcFBKRHg2QVk?oc=5",
-   "datum": "2026-10-24T01:33:00+00:00",
-   "bron_artikel": "Drimble",
-   "score": 5,
-   "waarom": [
-    "arbeidsmarkt",
-    "gerichte zoekvraag"
-   ],
-   "bron": "Drimble",
-   "via": "Google News #12 (regio)",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "EIB: Nederland moet doelen uitstellen om personeelstekort bouw Drimble"
-  },
-  {
-   "titel": "Helpt u mee de arbeidsmarkt in kaart te brengen?",
-   "link": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOeTRWOWFYcFZtV1k0X2t5eTEzNFR1YWFkRFUtQ0RYUzlWcmdSejhLUW1BcGVOWlVEMkhpRDd3aTRoSGFGeTFUZ05OUVNYYlU5aU00dVdJYlBteDhFR2F0eGxPVVVoUVlFbEptM1ZYa0FGbW5xWnZWd1Fwek1wTkMwU2NvUkJQUWRsdC1ZSW1xTzBFZ2VmMlY2anpWYzAxeEJyalhGdA?oc=5",
-   "datum": "2026-10-23T11:00:00+00:00",
-   "bron_artikel": "Bonaire.nu",
-   "score": 5,
-   "waarom": [
-    "arbeidsmarkt",
-    "gerichte zoekvraag"
-   ],
-   "bron": "Bonaire.nu",
-   "via": "Google News #15 (arbeidsmarkt)",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Helpt u mee de arbeidsmarkt in kaart te brengen? Bonaire.nu"
-  },
-  {
-   "titel": "Twents PHIX wil personeel verdubbelen en zoekt tientallen miljoenen voor verdere groei",
-   "link": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQQUM1Q0xkdFo5dWJwLV9fMDQwaS1XbGVzaWcxbjduWV9tUHhuYnhjT1dfOG9kR1ZZcVh4d19jUVdCT21Yd2ZLeTIyNlJ6cjlQemlweVZiWEo4am9NdVF1b2tZMGg2Yi1Mdld4d0xFNFo0X0VjemlnWXkzMmg1cmNlbHVqRGxxcGxTUzk2MURaZVJfYldPaTJMQmJOdUdLYVoyVWIzeTZ6NUxpSGlwMVR3V204emdUUmdqLUN4Zi0wTkYxbWlXckFTUFRrdw?oc=5",
-   "datum": "2026-10-23T10:12:05+00:00",
-   "bron_artikel": "de Stentor",
-   "score": 5,
-   "waarom": [
-    "arbeidsmarkt",
-    "gerichte zoekvraag"
-   ],
-   "bron": "de Stentor",
-   "via": "Google News #2 (regio)",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Twents PHIX wil personeel verdubbelen en zoekt tientallen miljoenen voor verdere groei de Stentor"
-  },
-  {
-   "titel": "Metalektro: Tweede cao-onderhandelingsdag",
-   "link": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQc3JRenNrSjVUVjVteDNjQ2FsMm1jUlVpdXFXWWg5bllJY1JheFFUWVpWYzFmdHluRm13VjBKb05iSFdPc3dTSnZ0aU8xdzVFdHJSQmJHdXBEZmozaGRKMWVHbThDejNnazJuRjN1S0N4VFFiWDdYXzdHeFYxbm5oYVd3VV8xSVE?oc=5",
-   "datum": "2026-10-22T11:59:25+00:00",
-   "bron_artikel": "De Unie",
-   "score": 5,
-   "waarom": [
-    "arbeidsmarkt",
-    "gerichte zoekvraag"
-   ],
-   "bron": "De Unie",
-   "via": "Google News #13 (arbeidsmarkt)",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Metalektro: Tweede cao-onderhandelingsdag De Unie"
-  },
-  {
-   "titel": "Wervingsbijeenkomst vanwege personeelstekort in het onderwijs",
-   "link": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPMmZqSG4taWUzNmRQWk1ha3dEUm5LTTIxVWlYUDdFejB1cVFqT3BTdVpDeEJjQzhoWXViMzN3TWs1aDBXM0dQa01EdFRmUnV0cnBBX3owYi1BZFlndVA1ZTNoSHlMdzJOc1hPdE02ZHZkTGlKSEhtSUwzWU9HSXVPY1dPTFU4aEVMLUVncnNudjBISlJuUFBQU3Qta1JUVXNZQVJScWVxNG9WTnNPVTk5bHg2MG96ZWJEcWIzUQ?oc=5",
-   "datum": "2026-10-21T21:50:52+00:00",
-   "bron_artikel": "Drimble",
-   "score": 5,
-   "waarom": [
-    "arbeidsmarkt",
-    "gerichte zoekvraag"
-   ],
-   "bron": "Drimble",
-   "via": "Google News #12 (regio)",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Wervingsbijeenkomst vanwege personeelstekort in het onderwijs Drimble"
-  },
-  {
-   "titel": "Spuitmachinebouwer Delvano uit Hulste failliet, Depoortere neemt fabriek over",
-   "link": "https://news.google.com/rss/articles/CBMixAFBVV95cUxOdXQ4N3JyMnZnVGxjRlVRcjc0R1dQV3RlOEJzRkRXNjNNUm9lZ3lPUm43T2VrWktlWElaZDNQLXFjVzA2SW5KbTloaW02dFJWN0pSMTY5MWhSODh6eEtVcm5VZ2pCMU93V0NpblppQ0ZhbWtHa21SZEtEcnp6TjNHVjZDUFpaNWZwVGZlOWFIcmZnbmtxc2NlT0tmM1p0VHpKUXR2N1hVeE1KYWNGTHVlazRjdVZSZUZFdzZwWWdEVjlLNmJa?oc=5",
-   "datum": "2026-10-20T06:51:40+00:00",
-   "bron_artikel": "Faillissementsdossier",
-   "score": 5,
-   "waarom": [
-    "bedrijfssignaal",
-    "industrie",
-    "gerichte zoekvraag"
-   ],
-   "bron": "Faillissementsdossier",
-   "via": "Google News #4 (regio)",
-   "sectie": "branche",
-   "ook_bij": [
-    "Faillissementsdossier"
-   ],
-   "samenvatting": "Spuitmachinebouwer Delvano uit Hulste failliet, Depoortere neemt fabriek over Faillissementsdossier"
-  },
-  {
-   "titel": "Werkgevers en vakbonden verdeeld over loon en productiviteit bij cao-overleg Metalektro",
-   "link": "https://www.vraagenaanbod.nl/werkgevers-en-vakbonden-verdeeld-over-loon-en-productiviteit-bij-cao-overleg-metalektro/",
-   "datum": "2026-10-22T09:11:40+00:00",
-   "bron_artikel": "",
-   "score": 4,
-   "waarom": [
-    "arbeidsmarkt",
-    "industrie"
-   ],
-   "bron": "Vraag en Aanbod",
-   "via": "Vraag en Aanbod",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Werkgeversorganisatie FME en de vakbonden verschillen weer eens van mening over de manier waarop de Nederlandse Metalektro concurrerend moet blijven. Tijdens de tweede onderhandelingsronde voor een nieuwe cao bleef een loonbod van werkgeverszijde vooralsnog uit. Wel zijn afspraken gemaakt over de re"
-  },
-  {
-   "titel": "‘Laat technisch talent niet liggen’",
-   "link": "https://www.installatie.nl/nieuws/laat-technisch-talent-niet-liggen/",
-   "datum": "2026-10-19T06:15:00+00:00",
-   "bron_artikel": "",
-   "score": 4,
-   "waarom": [
-    "arbeidsmarkt",
-    "industrie"
-   ],
-   "bron": "Installatie.nl",
-   "via": "Installatie.nl",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Een opvallende oproep op LinkedIn van IW Zuid-Holland: wie heeft er plek voor monteurs in opleiding voor hun opleidingen in..."
-  },
-  {
-   "titel": "AI-geletterdheid van personeel: wat werkgevers echt moeten regelen",
-   "link": "https://www.personeelsnet.nl/bericht/ai-geletterdheid-van-personeel-wat-werkgevers-echt-moeten-regelen",
-   "datum": "2026-10-26T09:25:00+02:00",
-   "bron_artikel": "",
-   "score": 3,
-   "waarom": [
-    "arbeidsmarkt"
-   ],
-   "bron": "Personeelsnet",
-   "via": "Personeelsnet",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Iedere werkgever van wie medewerkers met AI werken, valt onder de Europese regel voor AI-geletterdheid. Die regel vraagt geen diploma of certificaat, wel een aanpak die je kunt laten zien. Hieronder lees je wat dat betekent voor een mkb-werkgever en waar je begint."
-  },
-  {
-   "titel": "Van twee man naar zeventig, en chipbedrijf PHIX wil nóg eens verdubbelen",
-   "link": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQbm5scTVJME1ZNERHOG5jdDJjMFY4LVd6OXp4SGNyemdseDNjNmxjWUpjbE5mNFlDMWhWNmNyWUtnUEltak5rbUxuLVFmSDM5eUxBVmdrUUtHejhiODc3MDhSQW5KRVJNaTY1Uk1GUlhUZ1pwWXRTeHotdkx3RHVTZHltamt2UWJNQldVVFlwQzhzQlFPclkxWFY3Ykl6aEJ2OXozdGJ2dHg5aEh1cnZ6QkNZajUzZ28?oc=5",
-   "datum": "2026-10-23T10:12:00+00:00",
-   "bron_artikel": "de Stentor",
+   "titel": "Toolcraft koopt metaal AM-systeen met acht lasers",
+   "link": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMWpjZ1MzYjBqV0ZNNVZ4VHlTNTkxT3g2NkdwdmZySEZlQWYwbF9GMUZ1bmFKbjVFSkVSN0JpNGQ4dmRtdlJOcmZvc1BYUUNXTEgxRmJrbERhamFPRVhKNW9pXy10QWd1Uy1QaXlxLXI3S1p5MFd6UWZ5MWlsNXd0U2ttb9IBiAFBVV95cUxObTJqTW5pUmJLOW9YUnRiVWRIclF6WmNQdlhoLVR4M1ptZjBqYjlGNXJXYjZaVjV0ekU5UkVFSzhSTmVrZUZHeFpXRDdLQ0tIZTBraTg0VjhDdzg5TGluakdka0RCM3J5MDB6T3N5ajFFaWFycURwQkxxMFh3WmM2bHc4RlVjZVF0?oc=5",
+   "datum": "2026-10-30T22:41:20+00:00",
+   "bron_artikel": "3D Print magazine",
    "score": 3,
    "waarom": [
     "industrie",
     "gerichte zoekvraag"
    ],
-   "bron": "de Stentor",
-   "via": "Google News #2 (regio)",
+   "bron": "3D Print magazine",
+   "via": "Google News #6 (regio)",
    "sectie": "branche",
-   "samenvatting": "Van twee man naar zeventig, en chipbedrijf PHIX wil nóg eens verdubbelen de Stentor"
+   "samenvatting": "Toolcraft koopt metaal AM-systeen met acht lasers 3D Print magazine"
   },
   {
-   "titel": "Verduurzaming industrie vertraagt door financiële knelpunten",
-   "link": "https://www.metaalnieuws.nl/verduurzaming-industrie-vertraagt-door-financiele-knelpunten/",
-   "datum": "2026-10-23T08:26:36+00:00",
-   "bron_artikel": "",
-   "score": 3,
-   "waarom": [
-    "bedrijfssignaal",
-    "industrie"
-   ],
-   "bron": "Metaalnieuws",
-   "via": "Metaalnieuws",
-   "sectie": "branche",
-   "samenvatting": "Hoge kosten beperken haalbaarheid De geïnterviewde industriebedrijven zijn samen verantwoordelijk voor ongeveer 80% van de CO₂-uitstoot van de Nederlandse industrie. De bedrijven hebben samen 263 verduurzamingsprojecten gepland voor 2030. Een derde van de projecten is 1 tot 2 jaar uitgesteld. Ook wo"
-  },
-  {
-   "titel": "Vacutech sluit zich aan bij Duwako Precision Engineering",
-   "link": "https://www.metaalnieuws.nl/vacutech-sluit-zich-aan-bij-duwako-precision-engineering/",
-   "datum": "2026-10-23T08:24:50+00:00",
-   "bron_artikel": "",
-   "score": 3,
-   "waarom": [
-    "bedrijfssignaal",
-    "industrie"
-   ],
-   "bron": "Metaalnieuws",
-   "via": "Metaalnieuws",
-   "sectie": "branche",
-   "samenvatting": "Met de overname bundelen beide ondernemingen hun kennis, technische expertise en productiecapaciteiten. Sterke basis voor verdere groei Vacutech voegt specialistische expertise op het gebied van vacuümtechnologie en precisielassen toe aan de groep. Tegelijkertijd versterkt de groep haar positie in d"
-  },
-  {
-   "titel": "Indeed blijft favoriete vacaturesite, kenniswerkers gebruiken vaker AI",
-   "link": "https://www.personeelsnet.nl/bericht/indeed-blijft-favoriete-vacaturesite-linkedin-verliest-terrein",
-   "datum": "2026-10-23T09:25:00+02:00",
-   "bron_artikel": "",
-   "score": 3,
-   "waarom": [
-    "arbeidsmarkt"
-   ],
-   "bron": "Personeelsnet",
-   "via": "Personeelsnet",
-   "sectie": "arbeidsmarkt",
-   "samenvatting": "Indeed is ook in 2026 de favoriete vacaturesite van Nederlandse werkzoekenden. LinkedIn staat nog altijd op de tweede plaats, maar ziet zijn populariteit verder afnemen. Vooral onder mensen die actief op zoek zijn naar een baan, loopt de voorsprong van Indeed op. Tegelijkertijd verandert het zoekged"
-  },
-  {
-   "titel": "Hoa Phat Agriculture behoort tot de top 10 van meest gerenommeerde bedrijven in de hightech landbouwsector.",
-   "link": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNdDVoaTFWYU93U2t3aFhzcGt5bzVnOGhBMFhHaDBIUmk5Y2JJV3hwM2RpVy1tN0lQYy11dTQ0OEduYzcwOV9MQkctdzFWWGZ0ekI4bUw1VkVlU2VTZDU0RGxmR0pzRV8wVjNrUGxrd0xIdjBJYmNySDdsOGxXeXJJa2NFMEU5ZTJhaEh4bTNjVGJLT0kyOW5icndvZS1HTWx5d3RuVHJ2aw?oc=5",
-   "datum": "2026-10-23T03:50:50+00:00",
+   "titel": "De voormalige CEO van Bosch Vietnam suggereert dat Ho Chi Minh-stad een \"vruchtbare bodem\" moet worden voor de ontwikkeling van hightech.",
+   "link": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOXzdOa1ZxS2p3TXdmYWdQQ3lUR3pzX01yc2Q4WEhqNjI4bXRpVUo0cWZWNkFfbGVxOGpwZW5mOHRGUDFCQ2lfOWVOWEQxT0xLOXh6VEE1X3JvZVJtRlQ5Tk5rNWdPcmNZLWVFeFdRYmN3YTlXUWZHSUdaUUVqSk9Eb1N3aURkWlFiN1NOblB3aW5uRlpjY0xkY2ZmaUluR2pMTUpFb2ZFWWdQQQ?oc=5",
+   "datum": "2026-10-29T11:07:43+00:00",
    "bron_artikel": "Vietnam.vn",
    "score": 3,
    "waarom": [
@@ -565,57 +687,12 @@
    "bron": "Vietnam.vn",
    "via": "Google News #6 (regio)",
    "sectie": "branche",
-   "samenvatting": "Hoa Phat Agriculture behoort tot de top 10 van meest gerenommeerde bedrijven in de hightech landbouwsector. Vietnam.vn"
+   "samenvatting": "De voormalige CEO van Bosch Vietnam suggereert dat Ho Chi Minh-stad een \"vruchtbare bodem\" moet worden voor de ontwikkeling van hightech. Vietnam.vn"
   },
   {
-   "titel": "Europese industrie vreest groeirem door watertekorten, investeringen blijven achter",
-   "link": "https://www.vraagenaanbod.nl/europese-industrie-vreest-groeirem-door-watertekorten-investeringen-blijven-achter/",
-   "datum": "2026-10-22T08:46:15+00:00",
-   "bron_artikel": "",
-   "score": 3,
-   "waarom": [
-    "bedrijfssignaal",
-    "industrie"
-   ],
-   "bron": "Vraag en Aanbod",
-   "via": "Vraag en Aanbod",
-   "sectie": "branche",
-   "samenvatting": "Meer dan de helft van de Europese industriële bedrijven verwacht dat watertekorten binnen vijf jaar een ernstige belemmering vormen voor hun groei. Ook nu al leiden problemen met de watervoorziening tot hogere productiekosten en verstoringen in de toeleveringsketen. Dat blijkt uit onderzoek van Schn"
-  },
-  {
-   "titel": "Photon Bridge haalt 10 miljoen euro op voor lasers in AI-datacenters",
-   "link": "https://linkmagazine.nl/photon-bridge-haalt-10-miljoen-euro-op-voor-lasers-in-ai-datacenters/?utm_source=rss&utm_medium=rss&utm_campaign=photon-bridge-haalt-10-miljoen-euro-op-voor-lasers-in-ai-datacenters",
-   "datum": "2026-10-21T21:15:20+00:00",
-   "bron_artikel": "",
-   "score": 3,
-   "waarom": [
-    "bedrijfssignaal",
-    "industrie"
-   ],
-   "bron": "Link Magazine",
-   "via": "Link Magazine",
-   "sectie": "branche",
-   "samenvatting": "De Eindhovense fotonicastart-up Photon Bridge heeft 10 miljoen euro opgehaald voor de ontwikkeling en opschaling van laserbronnen voor AI-datacenters. De groeiende behoefte aan snelle, energiezuinige verbindingen tussen AI-processors vraagt om miljoenen lasers, terwijl de huidige productiecapaciteit"
-  },
-  {
-   "titel": "Investeringen in machines en gebouwen trekken aan",
-   "link": "https://linkmagazine.nl/investeringen-in-machines-en-gebouwen-trekken-aan/?utm_source=rss&utm_medium=rss&utm_campaign=investeringen-in-machines-en-gebouwen-trekken-aan",
-   "datum": "2026-10-21T21:00:12+00:00",
-   "bron_artikel": "",
-   "score": 3,
-   "waarom": [
-    "bedrijfssignaal",
-    "industrie"
-   ],
-   "bron": "Link Magazine",
-   "via": "Link Magazine",
-   "sectie": "branche",
-   "samenvatting": "Nederlandse bedrijven investeerden in augustus 2026 opnieuw meer in machines, computers en gebouwen. Het totale investeringsvolume lag 1,8 procent hoger dan een jaar eerder, blijkt uit cijfers van het Centraal Bureau voor de Statistiek (CBS). Vooral de hogere investeringen in machines, waaronder def"
-  },
-  {
-   "titel": "IGM tikt 150 vestigingen aan met Inter Art",
-   "link": "https://www.installatie.nl/ondernemen/acquisitie/igm-tikt-150-vestigingen-aan-met-inter-art/",
-   "datum": "2026-10-20T07:01:02+00:00",
+   "titel": "Installateurs sluiten aan bij pact tegen energiecrises",
+   "link": "https://www.installatie.nl/nieuws/installateurs-sluiten-aan-bij-pact-tegen-energiecrises/",
+   "datum": "2026-10-29T10:27:39+00:00",
    "bron_artikel": "",
    "score": 3,
    "waarom": [
@@ -625,43 +702,88 @@
    "bron": "Installatie.nl",
    "via": "Installatie.nl",
    "sectie": "branche",
-   "samenvatting": "Met de aansluiting van Inter Art uit Emmen bij Bad in Beeld groeit het netwerk van IGM naar 150 vestigingen...."
+   "samenvatting": "Techniek Nederland sluit zich aan bij het Sectorpact Weerbaar Energiesysteem van Netbeheer Nederland en Energie-Nederland. Daarmee krijgen installateurs en technisch..."
   },
   {
-   "titel": "Als kandidaat-agent en recruiter-agent elkaar vinden: solliciteren zonder sollicitatie",
-   "link": "https://www.recruitmenttech.nl/2026/10/26/als-kandidaat-agent-en-recruiter-agent-elkaar-vinden-solliciteren-zonder-sollicitatie/",
-   "datum": "2026-10-26T08:20:00+00:00",
+   "titel": "‘We hadden geen ruimte voor nieuwe machines en moesten verhuizen’",
+   "link": "https://www.vraagenaanbod.nl/we-hadden-geen-ruimte-voor-nieuwe-machines-en-moesten-verhuizen/",
+   "datum": "2026-10-28T09:59:00+00:00",
+   "bron_artikel": "",
+   "score": 3,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie"
+   ],
+   "bron": "Vraag en Aanbod",
+   "via": "Vraag en Aanbod",
+   "sectie": "branche",
+   "samenvatting": "Dalmulder Fijnmetaal is eerder deze maand verhuisd naar een nieuw pand in Oosterhout en heeft gelijk meerdere nieuwe machines in gebruik genomen, waaronder een Mitutoyo meetmachine, een freesbank en twee draaibanken. ‘Er was geen ruimte meer. We konden ons machinepark niet meer uitbreiden, maar deze"
+  },
+  {
+   "titel": "Technische sectoren pleiten voor meer investeringen in praktijkgerichte opleidingen",
+   "link": "https://www.metaalnieuws.nl/technische-sectoren-pleiten-voor-meer-investeringen-in-praktijkgerichte-opleidingen/",
+   "datum": "2026-10-28T09:47:04+00:00",
+   "bron_artikel": "",
+   "score": 3,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie"
+   ],
+   "bron": "Metaalnieuws",
+   "via": "Metaalnieuws",
+   "sectie": "branche",
+   "samenvatting": "Koninklijke Metaalunie, FME, Bouwend Nederland, Techniek Nederland, WENB en BOVAG hebben gezamenlijk vier aandachtspunten naar voren gebracht. Volgens de organisaties zijn gerichte investeringen noodzakelijk om ook in de toekomst voldoende technisch geschoolde medewerkers beschikbaar te hebben. Meer"
+  },
+  {
+   "titel": "‘Industrialiseren begint met durven standaardiseren’",
+   "link": "https://www.bouwwereld.nl/bouwtechniek/prefab/industrialiseren-begint-met-durven-standaardiseren/",
+   "datum": "2026-10-28T08:00:00+00:00",
+   "bron_artikel": "",
+   "score": 3,
+   "waarom": [
+    "bedrijfssignaal",
+    "industrie"
+   ],
+   "bron": "Bouwwereld",
+   "via": "Bouwwereld",
+   "sectie": "branche",
+   "samenvatting": "In de nieuwe fabriek Castor Prefab zet Hardeman in op gestandaardiseerde gevelelementen met staalframes en cellulose-isolatie. Door vergaande automatisering en een vaste elementopbouw wil het bedrijf de productie efficiënter maken en werkzaamheden op de bouwplaats beperken."
+  },
+  {
+   "titel": "Dit zijn de recruitment software updates van oktober 2026",
+   "link": "https://www.recruitmenttech.nl/2026/10/31/recruitmentsoftware-updates-oktober-2026/",
+   "datum": "2026-10-31T10:50:56+00:00",
    "bron_artikel": "",
    "score": 0,
    "waarom": [],
    "bron": "Recruitmenttech",
    "via": "Recruitmenttech",
    "sectie": "vak",
-   "samenvatting": "AI-agents gaan kandidaten en werkgevers rechtstreeks matchen. Wat agent-to-agent recruitment betekent voor ATS, data en de recruiter."
+   "samenvatting": "De openbare oktoberupdates van Byner, Carerix, Bullhorn, Ubeeo en Talentech, met AI-agents, ATS-verbeteringen en vernieuwingen in onboarding."
   },
   {
-   "titel": "AI-credits worden een nieuw verdienmodel voor recruitmentsoftware",
-   "link": "https://www.recruitmenttech.nl/2026/10/23/ai-credits-worden-een-nieuw-verdienmodel-voor-recruitmentsoftware/",
-   "datum": "2026-10-22T22:00:00+00:00",
+   "titel": "Een ATS implementeren: zo voorkom je dat software een IT-project wordt",
+   "link": "https://www.recruitmenttech.nl/2026/10/30/een-ats-implementeren-zo-voorkom-je-dat-software-een-it-project-wordt/",
+   "datum": "2026-10-30T08:32:57+00:00",
    "bron_artikel": "",
    "score": 0,
    "waarom": [],
    "bron": "Recruitmenttech",
    "via": "Recruitmenttech",
    "sectie": "vak",
-   "samenvatting": "AI-credits en tokens veranderen de prijs van recruitmentsoftware. Wat betekent usage-based pricing voor HR-techkopers en hun budget in 2026?"
+   "samenvatting": "Een ATS implementeren draait niet alleen om configuratie en koppelingen. Proceskeuzes, datamigratie, gebruikersadoptie, testen en eigenaarschap bepalen of het nieuwe recruitmentsysteem werkelijk wordt gebruikt."
   },
   {
-   "titel": "Sasank Amavarapu (We Are HR): ‘Zelfs met een perfect cv zijn er nog veel meer lagen’",
-   "link": "https://www.recruitmenttech.nl/2026/10/22/sasank-amavarapu-we-are-hr-zelfs-met-een-perfect-cv-zijn-er-nog-veel-meer-lagen/",
-   "datum": "2026-10-22T07:45:00+00:00",
+   "titel": "GITP breidt verder uit en voegt assessmentbureau LTP toe",
+   "link": "https://www.recruitmenttech.nl/2026/10/29/gitp-breidt-verder-uit-en-voegt-assessmentbureau-ltp-toe/",
+   "datum": "2026-10-29T14:20:15+00:00",
    "bron_artikel": "",
    "score": 0,
    "waarom": [],
    "bron": "Recruitmenttech",
    "via": "Recruitmenttech",
    "sectie": "vak",
-   "samenvatting": "Drie jaar geleden kwam Sasank Amavarapu naar Nederland, met tien jaar ervaring in data science op zak. Toch bleek een baan vinden lastiger dan gedacht. Die ervaring werd de basis van AI-CV, winnaar van de Recruitment Tech Startup Pitch 2026, dat inmiddels verdergaat als We Are HR. Op Demo_Day vertel"
+   "samenvatting": "GITP en LTP gaan samen. De combinatie versterkt de positie op de assessmentmarkt en biedt ruimte voor datagedreven innovatie."
   }
  ]
 }
