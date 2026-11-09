@@ -1,9 +1,9 @@
-// Weekly news v2 — automatisch bijgewerkt op 2026-11-02T05:10:14.089871+00:00 (weekly/nieuws.py)
+// Weekly news v2 — automatisch bijgewerkt op 2026-11-09T05:10:14.241657+00:00 (weekly/nieuws.py)
 const newsData = {
   "meta": {
-    "week": 45,
+    "week": 46,
     "jaar": 2026,
-    "opgehaald": "2026-11-02T05:10:14.089871+00:00",
+    "opgehaald": "2026-11-09T05:10:14.241657+00:00",
     "vensterDagen": 8,
     "bronnen": [
       {
@@ -22,7 +22,7 @@ const newsData = {
         "naam": "Metaal Magazine",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 5
+        "vers": 9
       },
       {
         "naam": "Vraag en Aanbod",
@@ -34,19 +34,19 @@ const newsData = {
         "naam": "Made-in-Europe",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 4
+        "vers": 3
       },
       {
         "naam": "Installatie.nl",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 11
+        "vers": 17
       },
       {
         "naam": "Bouwwereld",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 8
+        "vers": 7
       },
       {
         "naam": "Technisch Weekblad",
@@ -64,13 +64,13 @@ const newsData = {
         "naam": "Personeelsnet",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 6
+        "vers": 5
       },
       {
         "naam": "Trends in HR",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 5
+        "vers": 2
       },
       {
         "naam": "MT/Sprout",
@@ -82,25 +82,25 @@ const newsData = {
         "naam": "Recruitmenttech",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 8
+        "vers": 5
       },
       {
         "naam": "Google News #1 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 2
+        "vers": 11
       },
       {
         "naam": "Google News #2 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 12
+        "vers": 8
       },
       {
         "naam": "Google News #3 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 27
+        "vers": 16
       },
       {
         "naam": "Google News #4 (regio)",
@@ -112,31 +112,31 @@ const newsData = {
         "naam": "Google News #5 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 9
+        "vers": 26
       },
       {
         "naam": "Google News #6 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 10
+        "vers": 4
       },
       {
         "naam": "Google News #7 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 6
+        "vers": 10
       },
       {
         "naam": "Google News #8 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 11
+        "vers": 4
       },
       {
         "naam": "Google News #9 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 2
+        "vers": 8
       },
       {
         "naam": "Google News #10 (regio)",
@@ -148,13 +148,13 @@ const newsData = {
         "naam": "Google News #11 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 7
+        "vers": 5
       },
       {
         "naam": "Google News #12 (regio)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 6
+        "vers": 24
       },
       {
         "naam": "Google News #13 (arbeidsmarkt)",
@@ -172,69 +172,64 @@ const newsData = {
         "naam": "Google News #15 (arbeidsmarkt)",
         "uitkomst": "gevonden",
         "status": 200,
-        "vers": 59
+        "vers": 25
       }
     ]
   },
   "topArticles": [
     {
       "rank": 1,
-      "title": "Bureau Techniek opent nieuwe vestiging in Amersfoort om de technische arbeidsmarkt in Midden-Nederland te versterken",
+      "title": "Adriaansen Onderhoud zoekt vakmensen!",
       "description": "",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOU1B0SkVDSmQ2MkdFSnVvTDVNUzBJQlZrckpGSE9uMWZmUWp3OTd1UFVvb2Uzd29SWDZUbUlKWVA5bmtFb1NLZmNOVVRpRi04SzRvcS1KTnlGZ09FbWNweWticzB4c0t3M00wNXVoM3NqRk04ZHA2VVFXZl9Yam1PZFM5TjNhMEtsYzltTU8xME41MVl5a2U0alVZRV82akhmcGVUTWllbUVzdmZhSFpZSHh5d1ZkaUNxSFJYSmZLVEs2cGdUbWd3RzhHTTBwckpqdXVTXzdzYWtpcy1SeTRCemU2VlhvVjg?oc=5",
-      "source": "Nieuws.nl",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZnVHaldoRUxqeENmY3g5WVhfNlBCNFJUZkFUQnhOTXlST2wwa2pqSGV2Z1pPUnN5OUc2Ymk4Z2wxelRFd20zMVNvaW11SS1Dd0tBYURMbm9Cb0Z0U28tTVRrZm5lclZ6RUpybWQ5enpxZUNjQngyaFM4UFVJUW9DUVVsUDdiSGhWTEoyb0VBTU9FMTQ?oc=5",
+      "source": "Delft op zondag",
       "category": "Bedrijfssignalen in de regio",
-      "date": "30 okt 2026",
+      "date": "8 nov 2026",
       "why": [
         "arbeidsmarkt",
         "regio",
-        "bedrijfssignaal",
         "industrie"
       ],
       "alsoAt": []
     },
     {
       "rank": 2,
-      "title": "Flevoland investeert miljoenen in nieuwe haven bij Urk, 'tot 750 banen erbij'",
+      "title": "REGIO — Personeelstekort legt druk op ambulancemeldkamer Oost-Nederland",
       "description": "",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNGFGb1FINzRrUFlfLWNQSU03RFdfajNGVTc1R2EtTkhLQlBEaE0xWkNBODcxTVJmc2w1UVZVVFVfR3NmVmt4YlQyMkZRVF9WZ1RYenVCU2VzVzN4aGhHeXhYNXpHYWVzVEFHdTBuc1ZaeHFtaEpDU2FRMFFDNGM5WlhHaU1xVVh5WXlIT3Eyd0VyT2lLSXR0M3RlNGV4Y0YxR0FMem5uZFo?oc=5",
-      "source": "NOS",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMkRVSXZZdWVyejFKcjhNWXZLQWM3Z0U5bFFRY0toaFFfMXQ1NE5QTlJaaUVGZWJRc1VYQlZJRTRIQkxtbEVfNkNVbDNzOXBlbDI4SXRrdHZPT0NsZWY2NUZLY3RJT1NyMXZ2T0dYQklMbXNFcnZoR01TN21FV3lYVDFvUjNBSzRza0NNY1ZlOA?oc=5",
+      "source": "Streekgids.nl",
       "category": "Bedrijfssignalen in de regio",
-      "date": "29 okt 2026",
+      "date": "8 nov 2026",
       "why": [
         "arbeidsmarkt",
-        "regio",
-        "bedrijfssignaal"
-      ],
-      "alsoAt": [
-        "Drimble",
-        "Headliner.nl",
-        "Transport Online"
-      ]
-    },
-    {
-      "rank": 3,
-      "title": "Woontheater De Eclips in Assen sluit na 25 jaar de deuren. ’Werk genoeg, maar geen personeel’",
-      "description": "",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOMmFnVHY0ZHMwcmtOcm9lNmg4RHhpbXkwcFBSM3d0NnBjZ09Bc201V29xU1FpQjRiMmxJTzU4VlhMc28wSGhHZ3A4V3dQRXNaRW5XN1RUOC0tWXVTNXA2R01vS20zRG9PQmYtVkxxSDR6ZnEwMEFIZGZxVGl0bU1qcjFsdWZnOHJmdmdsLTBOUzVqaW05eXFpMXUxY1gwenR6WWplSm9pcWZ0X3BZRVlEUnBBZ2NpU290aWljMWIyd0JieVdpQzNlZnVmY21ZMFJtVHhGZDZKd3RXSFhPb3c?oc=5",
-      "source": "DVHN",
-      "category": "Bedrijfssignalen in de regio",
-      "date": "26 okt 2026",
-      "why": [
-        "arbeidsmarkt",
-        "regio",
-        "bedrijfssignaal"
+        "regio"
       ],
       "alsoAt": []
     },
     {
-      "rank": 4,
-      "title": "De Waard in Helmond te koop: hoge kosten en personeelstekort dwingen eigenaren tot keuze",
+      "rank": 3,
+      "title": "Noordelijke meldkamer vangt 112-oproepen op door personeelstekort in Oost-Nederland",
       "description": "",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOaENUZWdRM1dYc094TDcwZFh3RUJXa0NBdXVIdVZ3OUFUSDA4NC01ZThPcUd4TGpaa3JxZVdoVW9EdDRYR1J6S0hjZ0xSMURYMGZjdVJ2NzNQRlF2c05nSGIxeDA5dzF0NlJ0U0Nqb1ZuQVBGZ2hNRVRST1Fyd3FvNWxGZ3RjVHdJMlUwc056QU5aUUpxVThaVlUtX3lpSTVyc2hCZ2pYVmxPa2VLM3FfLWlkUGRGeUZvVkpsQWJERGxHY0dEUnNlLWNncGg5dXRm?oc=5",
-      "source": "De Gelderlander",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSUNKNUs3N3o0OGQ0eWRrdTFQYUhERFNzWmhJcXFfam9rck1OaTdFRUo5WTFrTlp6SVI0bXpGSHhZcVFpMEp6STFhc3UxMjJPRW02a2dxS3VUbmFuUVNId0ZIMlFJdkJEaHBBYnVyeFZXRWdpdjVER094MVBEV0ZCR1QwTWVPOXZMZlRtYkdXSzVWMkgzZ05VQkg1d3RDYnhoenFmQUljX2VXOTFu?oc=5",
+      "source": "112Marum",
       "category": "Bedrijfssignalen in de regio",
-      "date": "29 okt 2026",
+      "date": "7 nov 2026",
+      "why": [
+        "arbeidsmarkt",
+        "regio"
+      ],
+      "alsoAt": [
+        "TPO.NL"
+      ]
+    },
+    {
+      "rank": 4,
+      "title": "Minder vacatures maar werkgevers in West-Brabant blijven zoeken naar personeel",
+      "description": "",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVDBEajhBdmpMNFI1OHNINWN3aEd6NWJ6RjA5Rkpab0NNYUJIMHBUM282aWltNy1wOEdnVUh3MzBjcXlxdDl6R0VYRkpFaGN5RTBQN1k0UHRaZ25ST2J4ZUxGSDFxbERuU2p5VXp6dTlZck1ITnZFX2R2TXIxZWVEcXZFZTZqdWZrNmlGNDZOUjhZSTZVYnFQUjJTZnRCN2Q2VnhuV0JLYkJBZ05OXzlGUU5Bc24?oc=5",
+      "source": "Oosterhout Nieuws",
+      "category": "Bedrijfssignalen in de regio",
+      "date": "4 nov 2026",
       "why": [
         "arbeidsmarkt",
         "regio"
@@ -243,12 +238,12 @@ const newsData = {
     },
     {
       "rank": 5,
-      "title": "Ledenraadpleging over de nieuwe 3 ploegendienst bij Thales Hengelo",
+      "title": "Personeelstekort in regio Amersfoort blijft groot",
       "description": "",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUlhyaWJ6RUhTUERwcGpadG1WWDhVR3RCNjRFelFmaDZyenNhNG9Wbkg1TEQ4X0FUdUFUdlFvTmFOM2wtenRPR2d4X1BzN3BIUEhPRy1lanVsQi1acXExc2NodnRveXdkbGdVWlcwRG9NRG5NNHJla3B2d1Bmczk3SXhTanJYMjgzSUdRYllwVTZKV1NpZ2IteEVsY19QTUhvZDQ1aG9iU0tKS1BCYjYtczFaUzEzeXBhSHNDRDI3N0FndTZ4aHlXZnl4WWdDOWhqZ1BFdGhUUQ?oc=5",
-      "source": "CNV Vakmensen",
-      "category": "Arbeidsmarkt en cao",
-      "date": "29 okt 2026",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOG5EUUVlU1N0NVk3TkFhcF9uaXhCUkZZM2JmcEpXeFVrWWd5MGlMN2s3cVJrLUhVT1hXTC1hdTRUWDFXSG9HdVdMVVdsaS1qVFhVNVV0QWRTamxObjFIc09oaDgxSGRLMXpyWjRvWXFxbHJEd3dlUDN1aWFKZkIzdTJIcEtDc2stNVV2N2JqMC1GSktmQU1Xcy01ZHRSSnRwaVVZSF9sZUJGd3RxX3R3?oc=5",
+      "source": "Drimble",
+      "category": "Bedrijfssignalen in de regio",
+      "date": "4 nov 2026",
       "why": [
         "arbeidsmarkt",
         "regio"
@@ -257,54 +252,54 @@ const newsData = {
     },
     {
       "rank": 6,
-      "title": "Onderzoek naar renovatie en nieuwbouw ‘t Haarhuus",
+      "title": "Personeelstekort in West-Brabant dreigt door pensioengolf verder op te lopen",
       "description": "",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTkVFOXc2emJOZklfQV9aTUpOSkNjWTBEXzVMaEZELUVFOWVVekZmRUJzX2NuRzhHdjRqWUVXWDdWVVIzUmdzRzk0VUdlUzg2cU5uVGQzNlM0V0oweGd1ZDZhb0hfQWVkQVVVQm4wTlBlMktLTXI3MDdRc0x1OE1EeVdyVFVCMjBFRUNrTmZfWGduVEFCUUs2dQ?oc=5",
-      "source": "Het Deventer Nieuws",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQU24tUFJoREpDSVZmbkVEYWJGeHB4VERUWEd4NnRXOGxkbTZ6QzJ3c0Qxa200UFFuQnFUemZxSVV1djhkZTdRUTM5VzMyRzg5YzhRQ19WZkRPSHhwUHlOTkZSRVVnel9VQzBhQTZSdlhzWkx3TEYwRzdUWnVCSTNpWXZHLWZDNVphVGoyNGU2Z0RsbFNiSERWWTNoYUUzbWhGTW12RFhrcjBJRzhGLTRqckVBeklKTDQ?oc=5",
+      "source": "BN DeStem",
       "category": "Bedrijfssignalen in de regio",
-      "date": "31 okt 2026",
+      "date": "3 nov 2026",
       "why": [
-        "regio",
-        "bedrijfssignaal"
+        "arbeidsmarkt",
+        "regio"
       ],
       "alsoAt": []
     },
     {
       "rank": 7,
-      "title": "Deze maand failliet in Drenthe: van waterstofbedrijf tot veelbesproken Primera-winkels",
+      "title": "Acute problemen: Ebusco heeft salarissen oktober nog niet betaald",
       "description": "",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPLUxLYTZBVnlvdWhlbjFMQWl0dzN2Nnl1alhoX3M3QXNMaXFXekxYcnl5ak1takF2MmFzcXpHQi0zSEFERi1YdG05ZHNVWXJaRzhtNDN4SU42NW9BUnp0cDNiT0J4dkJ4ZEtQVlRaSWJRWXdSQTVkVF9BRFA5bWVUU1pKN0FHeFplM3FSX1ZXVkJNenVGTldmQWhDVXRud0F2N3JaVkVsbC1KYVNtamt4NGlfUG9aa1AwYzBjb3dIdjlvd0NDLXc?oc=5",
-      "source": "RTV Drenthe",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWWtaNDNLdFM1RUk2d0NuTllmdU9hQ3R6a1pNamFLLWVRM3Q5X3ZpZlJ2ajBGQ2V2Vk5kanV4azFuYm1Bang4NDhWcHZVWkpXOU9hdVMxQ1pYdDVLb2c4ZTlrMnJzM3psOXZmb0QyenpCVHAyWFpNMHFleGsyMTFxeV9hZmI1Q3kwZndzZnRPam9nX09QcUN3cDVOTmJhNmdwdmNucF9vRU1kQ1Vy?oc=5",
+      "source": "Omroep Brabant",
       "category": "Bedrijfssignalen in de regio",
-      "date": "31 okt 2026",
+      "date": "3 nov 2026",
       "why": [
-        "regio",
-        "bedrijfssignaal"
+        "arbeidsmarkt",
+        "regio"
       ],
       "alsoAt": []
     },
     {
       "rank": 8,
-      "title": "Frustraties en conflicten door uitbreiding betaald parkeren",
+      "title": "AI slokt banen van jongeren in Brabant op, maar daarna wacht de arbeidsmarkt een nog groter probleem",
       "description": "",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNT3ZWYzJkZjFHMnhkUVA2dVAwc0E5WEl3ZG5od2owaUZxbXJPaFZBZFhUY3ZnZkhUWXlOYmR0MXl4LW9kR0ZyZlRpejhLQnVEWW8tVjYtSUg5eWVuVnFLNm9CN1dZb3JpMy1lMndLWHNfdFlEamRJTHVFek4xTHB2ZWxKNWlycDJIVWltU2I4Z1h6ckFLQTF6dVJkdmtrQ2U0Nmd2RmNn?oc=5",
-      "source": "De Utrechtse Internet Courant",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWF81dzdGYjFSSndKTXo0QnRLNTBHZlloNEladEFUNXlqMFNlb0FvMXU1N0xnUDduSXk1M2xHX1ZlMm5JVWtWWVIwMmV4MnV6U0ZjcEJVcjhmbTdZcncxLTZvQnFEVTczX1pPbEJ3Nzd2M1dpZDc5UWFPTVNjOWlOTHpFRmN0cHNpMWRrVkJoaTlZU0p5VG9CYnZ5TktQY1NSRGRxaVp4YzhJM1lGNkZXOVU4cDl5dWg4RXIwUHRHSGFZQkh2MVRxMzk2Rml6WVlYX3c?oc=5",
+      "source": "Brabants Dagblad",
       "category": "Bedrijfssignalen in de regio",
-      "date": "31 okt 2026",
+      "date": "3 nov 2026",
       "why": [
-        "regio",
-        "bedrijfssignaal"
+        "arbeidsmarkt",
+        "regio"
       ],
       "alsoAt": []
     },
     {
       "rank": 9,
-      "title": "Laatste bezwaar van tafel: nieuwbouw stationsgebied Best stap dichterbij",
+      "title": "Twee nieuwe bedrijfshallen voor Kip Caravans markeren uitbreiding in Hoogeveen",
       "description": "",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOVJqN3ZISzMwSlNtX1dSMHFCUm9qcUJESHJJTkVoOVlFaW5mYTRpLW8xVWZpaFlWWW9MOEZhZ1JyQnRZdm5vdzJVeDRrVWRJMmdfM2hpQnY3Tzg0WDhyZVowSHVMdzA0MzJLc3UyQXh0YXhUbUxqd2RiVllHdHh5R28wRTdOV0g2VU5lREdWSGllUW5BWW5odHpFRk4zMzQwN2xHX09GLUlHcDNMZEE?oc=5",
-      "source": "Brabants Dagblad",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcWpoLTZlaWpIT1VOUXhqeE14NXBlV3hmcHR4X3ZqbEp2NWNoZVVSanVoM25OOG9tU05keG1OdHJDbElDbmctcmtxVmJ3SU40UDcydU1DRzdfSk1tWU5fZFVGWkdCak9ZRFNocHJoMm50dU5wODYwRnlpX1FqTzU1VWFnSGlLeHEyOEFBTW5hMGlVbE1xbEloaEZkNnRNT1VxXzF1ZE9YemdHMURwSEVQOVFYMmVuTm43ZnVQMlVPU241b1NncHFNejhlTlBrRUNqdC10TjlR?oc=5",
+      "source": "Hoogeveensche Courant",
       "category": "Bedrijfssignalen in de regio",
-      "date": "30 okt 2026",
+      "date": "6 nov 2026",
       "why": [
         "regio",
         "bedrijfssignaal"
@@ -313,19 +308,17 @@ const newsData = {
     },
     {
       "rank": 10,
-      "title": "TenneT wil ongebruikte stroomruimte terugpakken: in Zwolle is zelfs onteigening nodig voor uitbreiding",
+      "title": "Diakonessenhuis zet volgende stap richting vervangende nieuwbouw Utrecht",
       "description": "",
-      "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOTFhpV08yTG96Ym1EMVBrNDRRbXgyb091NkVsajgxd0lrVmxRMVMtYTc4dmtnaEdhMnJWSzFxckVtMS16YVhPRjV3TXdvdWNSS1VBRkNIUHZ5dTVpRnZkbm5wNFpVMTR4OThDVk5IVEcyTEtyYnVHaXl2OC1UMjY0V0RKNlJndlh3NFIyVGZra2pCZ3pmWUJNOG5rRWVPLTVRSzBiN3lMcnJuVGhaeFZfZzZvUnltemtJZFcwV1htQUc1cjVLbzVNVGVGNnU2TzgtNWlvekl3MjRlSW9ZTjM4RG5YeWRlSzZxOU1OY0cyTXM?oc=5",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaWo0a3AyRGQzZy1idG4xd3ZZbW1lUFg5Y0Q5SU1UcENxM0FodnNZTG5UeFp0WVd3TU9LVi1nMFNBc0M0bXVFZTRGNUp0b3plQkdGYmZIMjRHVEdBU0V2MXVkMUduS05mSjVOaGZfUkZvQ19ycG9FZ2E3ZzYzODU4YjNCQ1R0eC1saHFOUmJfZHdoU3cxcm1WODNOZjlDWTlCUmFaVDlCTGVvSzNuVURPajVDYXhiX1Zra3BTejdXZXJqUTE2S2tV?oc=5",
       "source": "Drimble",
       "category": "Bedrijfssignalen in de regio",
-      "date": "29 okt 2026",
+      "date": "6 nov 2026",
       "why": [
         "regio",
         "bedrijfssignaal"
       ],
-      "alsoAt": [
-        "RTV Focus"
-      ]
+      "alsoAt": []
     }
   ],
   "categories": [
@@ -334,59 +327,26 @@ const newsData = {
       "priority": true,
       "articles": [
         {
-          "title": "Bureau Techniek opent nieuwe vestiging in Amersfoort om de technische arbeidsmarkt in Midden-Nederland te versterken",
+          "title": "Adriaansen Onderhoud zoekt vakmensen!",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOU1B0SkVDSmQ2MkdFSnVvTDVNUzBJQlZrckpGSE9uMWZmUWp3OTd1UFVvb2Uzd29SWDZUbUlKWVA5bmtFb1NLZmNOVVRpRi04SzRvcS1KTnlGZ09FbWNweWticzB4c0t3M00wNXVoM3NqRk04ZHA2VVFXZl9Yam1PZFM5TjNhMEtsYzltTU8xME41MVl5a2U0alVZRV82akhmcGVUTWllbUVzdmZhSFpZSHh5d1ZkaUNxSFJYSmZLVEs2cGdUbWd3RzhHTTBwckpqdXVTXzdzYWtpcy1SeTRCemU2VlhvVjg?oc=5",
-          "source": "Nieuws.nl",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNZnVHaldoRUxqeENmY3g5WVhfNlBCNFJUZkFUQnhOTXlST2wwa2pqSGV2Z1pPUnN5OUc2Ymk4Z2wxelRFd20zMVNvaW11SS1Dd0tBYURMbm9Cb0Z0U28tTVRrZm5lclZ6RUpybWQ5enpxZUNjQngyaFM4UFVJUW9DUVVsUDdiSGhWTEoyb0VBTU9FMTQ?oc=5",
+          "source": "Delft op zondag",
           "category": "Bedrijfssignalen in de regio",
-          "date": "30 okt 2026",
+          "date": "8 nov 2026",
           "why": [
             "arbeidsmarkt",
             "regio",
-            "bedrijfssignaal",
             "industrie"
           ],
           "alsoAt": []
         },
         {
-          "title": "Flevoland investeert miljoenen in nieuwe haven bij Urk, 'tot 750 banen erbij'",
+          "title": "REGIO — Personeelstekort legt druk op ambulancemeldkamer Oost-Nederland",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQNGFGb1FINzRrUFlfLWNQSU03RFdfajNGVTc1R2EtTkhLQlBEaE0xWkNBODcxTVJmc2w1UVZVVFVfR3NmVmt4YlQyMkZRVF9WZ1RYenVCU2VzVzN4aGhHeXhYNXpHYWVzVEFHdTBuc1ZaeHFtaEpDU2FRMFFDNGM5WlhHaU1xVVh5WXlIT3Eyd0VyT2lLSXR0M3RlNGV4Y0YxR0FMem5uZFo?oc=5",
-          "source": "NOS",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNMkRVSXZZdWVyejFKcjhNWXZLQWM3Z0U5bFFRY0toaFFfMXQ1NE5QTlJaaUVGZWJRc1VYQlZJRTRIQkxtbEVfNkNVbDNzOXBlbDI4SXRrdHZPT0NsZWY2NUZLY3RJT1NyMXZ2T0dYQklMbXNFcnZoR01TN21FV3lYVDFvUjNBSzRza0NNY1ZlOA?oc=5",
+          "source": "Streekgids.nl",
           "category": "Bedrijfssignalen in de regio",
-          "date": "29 okt 2026",
-          "why": [
-            "arbeidsmarkt",
-            "regio",
-            "bedrijfssignaal"
-          ],
-          "alsoAt": [
-            "Drimble",
-            "Headliner.nl",
-            "Transport Online"
-          ]
-        },
-        {
-          "title": "Woontheater De Eclips in Assen sluit na 25 jaar de deuren. ’Werk genoeg, maar geen personeel’",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxOMmFnVHY0ZHMwcmtOcm9lNmg4RHhpbXkwcFBSM3d0NnBjZ09Bc201V29xU1FpQjRiMmxJTzU4VlhMc28wSGhHZ3A4V3dQRXNaRW5XN1RUOC0tWXVTNXA2R01vS20zRG9PQmYtVkxxSDR6ZnEwMEFIZGZxVGl0bU1qcjFsdWZnOHJmdmdsLTBOUzVqaW05eXFpMXUxY1gwenR6WWplSm9pcWZ0X3BZRVlEUnBBZ2NpU290aWljMWIyd0JieVdpQzNlZnVmY21ZMFJtVHhGZDZKd3RXSFhPb3c?oc=5",
-          "source": "DVHN",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "26 okt 2026",
-          "why": [
-            "arbeidsmarkt",
-            "regio",
-            "bedrijfssignaal"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "De Waard in Helmond te koop: hoge kosten en personeelstekort dwingen eigenaren tot keuze",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOaENUZWdRM1dYc094TDcwZFh3RUJXa0NBdXVIdVZ3OUFUSDA4NC01ZThPcUd4TGpaa3JxZVdoVW9EdDRYR1J6S0hjZ0xSMURYMGZjdVJ2NzNQRlF2c05nSGIxeDA5dzF0NlJ0U0Nqb1ZuQVBGZ2hNRVRST1Fyd3FvNWxGZ3RjVHdJMlUwc056QU5aUUpxVThaVlUtX3lpSTVyc2hCZ2pYVmxPa2VLM3FfLWlkUGRGeUZvVkpsQWJERGxHY0dEUnNlLWNncGg5dXRm?oc=5",
-          "source": "De Gelderlander",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "29 okt 2026",
+          "date": "8 nov 2026",
           "why": [
             "arbeidsmarkt",
             "regio"
@@ -394,107 +354,92 @@ const newsData = {
           "alsoAt": []
         },
         {
-          "title": "Onderzoek naar renovatie en nieuwbouw ‘t Haarhuus",
+          "title": "Noordelijke meldkamer vangt 112-oproepen op door personeelstekort in Oost-Nederland",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOTkVFOXc2emJOZklfQV9aTUpOSkNjWTBEXzVMaEZELUVFOWVVekZmRUJzX2NuRzhHdjRqWUVXWDdWVVIzUmdzRzk0VUdlUzg2cU5uVGQzNlM0V0oweGd1ZDZhb0hfQWVkQVVVQm4wTlBlMktLTXI3MDdRc0x1OE1EeVdyVFVCMjBFRUNrTmZfWGduVEFCUUs2dQ?oc=5",
-          "source": "Het Deventer Nieuws",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQSUNKNUs3N3o0OGQ0eWRrdTFQYUhERFNzWmhJcXFfam9rck1OaTdFRUo5WTFrTlp6SVI0bXpGSHhZcVFpMEp6STFhc3UxMjJPRW02a2dxS3VUbmFuUVNId0ZIMlFJdkJEaHBBYnVyeFZXRWdpdjVER094MVBEV0ZCR1QwTWVPOXZMZlRtYkdXSzVWMkgzZ05VQkg1d3RDYnhoenFmQUljX2VXOTFu?oc=5",
+          "source": "112Marum",
           "category": "Bedrijfssignalen in de regio",
-          "date": "31 okt 2026",
+          "date": "7 nov 2026",
           "why": [
-            "regio",
-            "bedrijfssignaal"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Deze maand failliet in Drenthe: van waterstofbedrijf tot veelbesproken Primera-winkels",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxPLUxLYTZBVnlvdWhlbjFMQWl0dzN2Nnl1alhoX3M3QXNMaXFXekxYcnl5ak1takF2MmFzcXpHQi0zSEFERi1YdG05ZHNVWXJaRzhtNDN4SU42NW9BUnp0cDNiT0J4dkJ4ZEtQVlRaSWJRWXdSQTVkVF9BRFA5bWVUU1pKN0FHeFplM3FSX1ZXVkJNenVGTldmQWhDVXRud0F2N3JaVkVsbC1KYVNtamt4NGlfUG9aa1AwYzBjb3dIdjlvd0NDLXc?oc=5",
-          "source": "RTV Drenthe",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "31 okt 2026",
-          "why": [
-            "regio",
-            "bedrijfssignaal"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Frustraties en conflicten door uitbreiding betaald parkeren",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNT3ZWYzJkZjFHMnhkUVA2dVAwc0E5WEl3ZG5od2owaUZxbXJPaFZBZFhUY3ZnZkhUWXlOYmR0MXl4LW9kR0ZyZlRpejhLQnVEWW8tVjYtSUg5eWVuVnFLNm9CN1dZb3JpMy1lMndLWHNfdFlEamRJTHVFek4xTHB2ZWxKNWlycDJIVWltU2I4Z1h6ckFLQTF6dVJkdmtrQ2U0Nmd2RmNn?oc=5",
-          "source": "De Utrechtse Internet Courant",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "31 okt 2026",
-          "why": [
-            "regio",
-            "bedrijfssignaal"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Laatste bezwaar van tafel: nieuwbouw stationsgebied Best stap dichterbij",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOOVJqN3ZISzMwSlNtX1dSMHFCUm9qcUJESHJJTkVoOVlFaW5mYTRpLW8xVWZpaFlWWW9MOEZhZ1JyQnRZdm5vdzJVeDRrVWRJMmdfM2hpQnY3Tzg0WDhyZVowSHVMdzA0MzJLc3UyQXh0YXhUbUxqd2RiVllHdHh5R28wRTdOV0g2VU5lREdWSGllUW5BWW5odHpFRk4zMzQwN2xHX09GLUlHcDNMZEE?oc=5",
-          "source": "Brabants Dagblad",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "30 okt 2026",
-          "why": [
-            "regio",
-            "bedrijfssignaal"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "TenneT wil ongebruikte stroomruimte terugpakken: in Zwolle is zelfs onteigening nodig voor uitbreiding",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMi8AFBVV95cUxOTFhpV08yTG96Ym1EMVBrNDRRbXgyb091NkVsajgxd0lrVmxRMVMtYTc4dmtnaEdhMnJWSzFxckVtMS16YVhPRjV3TXdvdWNSS1VBRkNIUHZ5dTVpRnZkbm5wNFpVMTR4OThDVk5IVEcyTEtyYnVHaXl2OC1UMjY0V0RKNlJndlh3NFIyVGZra2pCZ3pmWUJNOG5rRWVPLTVRSzBiN3lMcnJuVGhaeFZfZzZvUnltemtJZFcwV1htQUc1cjVLbzVNVGVGNnU2TzgtNWlvekl3MjRlSW9ZTjM4RG5YeWRlSzZxOU1OY0cyTXM?oc=5",
-          "source": "Drimble",
-          "category": "Bedrijfssignalen in de regio",
-          "date": "29 okt 2026",
-          "why": [
-            "regio",
-            "bedrijfssignaal"
+            "arbeidsmarkt",
+            "regio"
           ],
           "alsoAt": [
-            "RTV Focus"
+            "TPO.NL"
           ]
         },
         {
-          "title": "Maashorst kiest locatie voor uitbreiding van het huidige hoogspanningsstation",
+          "title": "Minder vacatures maar werkgevers in West-Brabant blijven zoeken naar personeel",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNajFlem9FbGMtaGFKNmVORS1Sc0ZwZ3JsaklOa01pOFdnWm1tZjBOOFYxTUh2OG0zZFdVVVc1OU9RTlpqUktjRHp4Z184UzRjV2o3cWczMlpiZ1lITzBJZmNaWlF6My1LSDBFOU0xUjlKVjhsejdHRU52RjVOeXJNaWsxX0hKZENlY0V0bUlCY09md1RscTJMaXF3WUhqaGM4V0hZcnA3YUZ6aWpEY3VNcURXUGlMdw?oc=5",
-          "source": "Brabants Dagblad",
+          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQVDBEajhBdmpMNFI1OHNINWN3aEd6NWJ6RjA5Rkpab0NNYUJIMHBUM282aWltNy1wOEdnVUh3MzBjcXlxdDl6R0VYRkpFaGN5RTBQN1k0UHRaZ25ST2J4ZUxGSDFxbERuU2p5VXp6dTlZck1ITnZFX2R2TXIxZWVEcXZFZTZqdWZrNmlGNDZOUjhZSTZVYnFQUjJTZnRCN2Q2VnhuV0JLYkJBZ05OXzlGUU5Bc24?oc=5",
+          "source": "Oosterhout Nieuws",
           "category": "Bedrijfssignalen in de regio",
-          "date": "29 okt 2026",
+          "date": "4 nov 2026",
           "why": [
-            "regio",
-            "bedrijfssignaal"
+            "arbeidsmarkt",
+            "regio"
           ],
           "alsoAt": []
         },
         {
-          "title": "PSV en gemeente Eindhoven zetten belangrijke stap richting uitbreiding stadion, maar financiering blijft heet hangijzer",
+          "title": "Personeelstekort in regio Amersfoort blijft groot",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMijwJBVV95cUxQYlNVTmw4NDhPcGRGeTJXMHVDVVBzZHNOWTBVSUlKVEJwTHVVOVc2bVNLWEE4Zlp1cnBBbWw3MkNxUHRlSEkxcm5RQUF5RjJGNDNjSVVmR2pCNnNheVB2ZVdFZmxaU3NUM2hoVEVTS2JERnJtdjBqUGt1aFFER1ZHVGVxX1ZFV0xTdnRkZl92RENNTy1LTk8tOGktVWlnVGxsSE5Ddmh5dzhYTnZ3UEl6ZHA0eVlRV1A2LUF0RjgxZUJnazA3U0ZBN19BQWx4NkNEcG5vV0VSbW9GclhuWFN2SVh5R3g1ZGxodTJaTVJ2TkVkc1NKc0lUeHZFcjducjlnLTZNU3dHYjZ0VmFHamtJ?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOG5EUUVlU1N0NVk3TkFhcF9uaXhCUkZZM2JmcEpXeFVrWWd5MGlMN2s3cVJrLUhVT1hXTC1hdTRUWDFXSG9HdVdMVVdsaS1qVFhVNVV0QWRTamxObjFIc09oaDgxSGRLMXpyWjRvWXFxbHJEd3dlUDN1aWFKZkIzdTJIcEtDc2stNVV2N2JqMC1GSktmQU1Xcy01ZHRSSnRwaVVZSF9sZUJGd3RxX3R3?oc=5",
           "source": "Drimble",
           "category": "Bedrijfssignalen in de regio",
-          "date": "29 okt 2026",
+          "date": "4 nov 2026",
           "why": [
-            "regio",
-            "bedrijfssignaal"
+            "arbeidsmarkt",
+            "regio"
           ],
-          "alsoAt": [
-            "De Telegraaf"
-          ]
+          "alsoAt": []
         },
         {
-          "title": "Uitgerekend VVD-wethouder gaat betaald parkeren in Zwolle uitbreiden",
+          "title": "Personeelstekort in West-Brabant dreigt door pensioengolf verder op te lopen",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE1XaFh0Ni1fRlRLczJDSDdvWVpfc1NRYjJxX0V4VlQtVWZpVWc2OC04MnlJZGpuVWVtQTlfdFRqeG9sUTFQZEY3cGRtcnRVcXpzS1VVOGc5NVI5Y1hjTHRwNnhDOHhFLVAwb3ljdEdZQQ?oc=5",
-          "source": "ZwolleNu",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQU24tUFJoREpDSVZmbkVEYWJGeHB4VERUWEd4NnRXOGxkbTZ6QzJ3c0Qxa200UFFuQnFUemZxSVV1djhkZTdRUTM5VzMyRzg5YzhRQ19WZkRPSHhwUHlOTkZSRVVnel9VQzBhQTZSdlhzWkx3TEYwRzdUWnVCSTNpWXZHLWZDNVphVGoyNGU2Z0RsbFNiSERWWTNoYUUzbWhGTW12RFhrcjBJRzhGLTRqckVBeklKTDQ?oc=5",
+          "source": "BN DeStem",
           "category": "Bedrijfssignalen in de regio",
-          "date": "29 okt 2026",
+          "date": "3 nov 2026",
+          "why": [
+            "arbeidsmarkt",
+            "regio"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Acute problemen: Ebusco heeft salarissen oktober nog niet betaald",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNWWtaNDNLdFM1RUk2d0NuTllmdU9hQ3R6a1pNamFLLWVRM3Q5X3ZpZlJ2ajBGQ2V2Vk5kanV4azFuYm1Bang4NDhWcHZVWkpXOU9hdVMxQ1pYdDVLb2c4ZTlrMnJzM3psOXZmb0QyenpCVHAyWFpNMHFleGsyMTFxeV9hZmI1Q3kwZndzZnRPam9nX09QcUN3cDVOTmJhNmdwdmNucF9vRU1kQ1Vy?oc=5",
+          "source": "Omroep Brabant",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "3 nov 2026",
+          "why": [
+            "arbeidsmarkt",
+            "regio"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "AI slokt banen van jongeren in Brabant op, maar daarna wacht de arbeidsmarkt een nog groter probleem",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOWF81dzdGYjFSSndKTXo0QnRLNTBHZlloNEladEFUNXlqMFNlb0FvMXU1N0xnUDduSXk1M2xHX1ZlMm5JVWtWWVIwMmV4MnV6U0ZjcEJVcjhmbTdZcncxLTZvQnFEVTczX1pPbEJ3Nzd2M1dpZDc5UWFPTVNjOWlOTHpFRmN0cHNpMWRrVkJoaTlZU0p5VG9CYnZ5TktQY1NSRGRxaVp4YzhJM1lGNkZXOVU4cDl5dWg4RXIwUHRHSGFZQkh2MVRxMzk2Rml6WVlYX3c?oc=5",
+          "source": "Brabants Dagblad",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "3 nov 2026",
+          "why": [
+            "arbeidsmarkt",
+            "regio"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Twee nieuwe bedrijfshallen voor Kip Caravans markeren uitbreiding in Hoogeveen",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOcWpoLTZlaWpIT1VOUXhqeE14NXBlV3hmcHR4X3ZqbEp2NWNoZVVSanVoM25OOG9tU05keG1OdHJDbElDbmctcmtxVmJ3SU40UDcydU1DRzdfSk1tWU5fZFVGWkdCak9ZRFNocHJoMm50dU5wODYwRnlpX1FqTzU1VWFnSGlLeHEyOEFBTW5hMGlVbE1xbEloaEZkNnRNT1VxXzF1ZE9YemdHMURwSEVQOVFYMmVuTm43ZnVQMlVPU241b1NncHFNejhlTlBrRUNqdC10TjlR?oc=5",
+          "source": "Hoogeveensche Courant",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "6 nov 2026",
           "why": [
             "regio",
             "bedrijfssignaal"
@@ -502,12 +447,12 @@ const newsData = {
           "alsoAt": []
         },
         {
-          "title": "Raad van State eist extra motivering voor forse uitbreiding kalverhouderij in Ede",
+          "title": "Diakonessenhuis zet volgende stap richting vervangende nieuwbouw Utrecht",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQRUljWldEVEw0eVZEOWdoOU9NNk5lYWlDTmFKcG1USHo2R3FRVHhCNWtheUNweHEyYmtpNzZ1bWZjcndaMlM2WnFiMmNFck83QmhqN05nM2lVUkthWk9lamkzajQ5ZWF0bDQwdEg0ZC1CLTBxemRlU09FNkRxOVA5TkNtZEpJRkYwNl9MUWMxNU5Wdk54TDdBWkNCalBqVFBKU3RrY2lCZ0pZTzBwNFRPd3dfcUFIR3Bnd2FiMUVHb0JZV2V2?oc=5",
-          "source": "Nieuwe Oogst",
+          "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOaWo0a3AyRGQzZy1idG4xd3ZZbW1lUFg5Y0Q5SU1UcENxM0FodnNZTG5UeFp0WVd3TU9LVi1nMFNBc0M0bXVFZTRGNUp0b3plQkdGYmZIMjRHVEdBU0V2MXVkMUduS05mSjVOaGZfUkZvQ19ycG9FZ2E3ZzYzODU4YjNCQ1R0eC1saHFOUmJfZHdoU3cxcm1WODNOZjlDWTlCUmFaVDlCTGVvSzNuVURPajVDYXhiX1Zra3BTejdXZXJqUTE2S2tV?oc=5",
+          "source": "Drimble",
           "category": "Bedrijfssignalen in de regio",
-          "date": "28 okt 2026",
+          "date": "6 nov 2026",
           "why": [
             "regio",
             "bedrijfssignaal"
@@ -515,12 +460,12 @@ const newsData = {
           "alsoAt": []
         },
         {
-          "title": "Dok architecten geselecteerd voor nieuwbouw Rembrandttheater Oudegracht, Utrecht",
+          "title": "Kinderopvangsoap duurt voort: overname gaat tóch niet door, sluiting weer een optie",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPT1dONTNOS1NWTGMtdHRid2I1XzU0NkZ4OTRremtQYUoyUGczanFlUEtWbmpscURncF9rWnl4QjZic0FZMlF2ODlGeHJiTTZxYVQwdUdsRlpWWWVEVHVUUU5Id2tHeTVJcFdfTE0yNmtzNHVYem9ob0hYQ0lvRFNJazhhYUREaGJYYi1EMkszV3hURHVFbXpoYTk1ZThsNXhHc29WeDhpcnlLSDljb3Rxd3VwSQ?oc=5",
-          "source": "de Architect",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOU3pFN1IxOTI4eEdIeFZlLU54TnZ6TFZHM0Y0QktZUGt0T0lBd1FBbk5QWHgtcTZrZ3hMcFl0akFjSEFZVW95OXA0UU9RYXpoUGk5ejFhaDRWbFBPblczdmw3aHMteWVBZC1Vd2ZZZmt0cXpSZVRWUFN6ZVRVZ2dEbjJNdmZFTlJPNkFSMzh2MVYxekppVUl0OUNoVUJoU3NjRnFCblJVelR0WmY1eG1iNExEQWRWZWtEUDI5T3dkcw?oc=5",
+          "source": "RTV Utrecht",
           "category": "Bedrijfssignalen in de regio",
-          "date": "27 okt 2026",
+          "date": "5 nov 2026",
           "why": [
             "regio",
             "bedrijfssignaal"
@@ -528,15 +473,54 @@ const newsData = {
           "alsoAt": []
         },
         {
-          "title": "Motorhuis opent nieuwe vestiging voor Geely in Den Haag, locatie in Leiden gaat ook BYD voeren",
+          "title": "Provincie Zuid-Holland investeert € 750.000,- extra in digitalisering MKB",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxNYmdGNElEc253N2kzbXlTLVNna1p4SXBMRVA4VWVDcnE1RV82REhncmtMaUtLWm55c3RBUko2RHhuSGlkSVA3QTlQTTNDajVwdE41WUZoZ2t5ZUo5Ymw4Vmd4Y3A5OTNQUEo4SmhlS0M5UTJBcmNvbzhrbjdNNm45dmtETFIxVElKWG9vN3N6aEtQeTVqMGRKMS1wUGNTWm1oYnF6V2NYS1pwTmhYWDQ4MzlzNnlEOUIyRG9yWEM2Z1F2b0x5MkdfTjAxeXJVRWU3NXJaOTBISnhrLVJtOGNIMDBLbUgwTFV5aGV3TkZFRlZTUQ?oc=5",
-          "source": "Automotive Online",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPU3FYbFRjWm0tbTNfUkZ4S2RlT2xSMXYwdnJmR29VTzRON3BJYy11SWI0cGFpbU1HeG4wYXROd2tyQy1WSFkzTTdhWHEtaHJWUTdhY0pHdWotMTRLaFJrem13bTB1UHk1XzFmUlJWYVhNelQxMkFUQkVPNlhGVE42Ulo2dUNZRjR2cUpMWlhjdGFIZ2F1TllSMA?oc=5",
+          "source": "Emerce",
           "category": "Bedrijfssignalen in de regio",
-          "date": "26 okt 2026",
+          "date": "5 nov 2026",
           "why": [
             "regio",
             "bedrijfssignaal"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Provincie wil regie overnemen van gemeenten bij uitbreiding stroomnet Oost-Twente",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOV05UUVpISnc3NGxLMGtZRklfdjBULUU5MllSeElpZS1KQ091emplUDFFSFFuMFBzM3Q1eXdCS2YzaUlyX0hDTTZhdzg3ampoM1k0cGFlSTFwV29BMHIwRVQzNWxWM1RKdnZRU004bnVfMEMtYkdLSmRRQmlwUDhCem1PVFNyU05tV0VhcmJsT2NTalJQalFhYS0yNTFYTzBmc3htMmNuUHFlcmc4eXhhaUpSb0NVUjdOby1HdFBn?oc=5",
+          "source": "Twente FM",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "4 nov 2026",
+          "why": [
+            "regio",
+            "bedrijfssignaal"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Zevenaar krijgt aansluitstop op stroomnet, problemen voor nieuwbouw",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOV2E4bV9TVzZiOGpBblp2Z3hRZHAxTFU4bE9ZalNLSlZSQjhVNGdWOU5lR1JHWVRuLXAzS3BPbkY3YTRlYnhMMTZkSHFTMDdqSGl4YWtkMW5wbUJWRzZOLUdraVUzY1dlQjdXcUFKQzZQTmphSXFrN3JSUmplZURRWXZBZnU0c3pRSzR5cXNyY1cwWjFfMHE3SzRCbG4yVnhCclE?oc=5",
+          "source": "Zevenaar.nieuws.nl",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "3 nov 2026",
+          "why": [
+            "regio",
+            "bedrijfssignaal"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Oekraïners verhuizen naar oude Ericsson-fabriek in Emmen. ’Bij een volgend bezoek nemen wij droge worst mee’",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNbG1oMDhNWFVaM193UnUwdlBHSGJPd2Z2bmttUmYyOEJYQm5xSVd3UnVIZlk3MWtieFMyb3hFYklhUTZDRzNzWUxvLU1qUXNtR3pUcnFzaFBBWGNXQ0M5dThWRGpPWDI5Sl9QTnVBYThlR290VTAzUG5rWEhvTHRLdTdYdHBzdFBpTnVzcjQtdVBlZWRGcmsxUWoyRWJMLTdabjN3V2JkV1JGSEl4aXI0N3JDSnQ5NFQ1N0Z1Y3oxRi1zcGduTWZuRjFwOENNckNlcTNsUVpIZVRRRDI2OHlJSHBzcDBzeGpLUlE?oc=5",
+          "source": "Dagblad van het Noorden",
+          "category": "Bedrijfssignalen in de regio",
+          "date": "8 nov 2026",
+          "why": [
+            "regio",
+            "industrie"
           ],
           "alsoAt": []
         }
@@ -547,25 +531,12 @@ const newsData = {
       "priority": true,
       "articles": [
         {
-          "title": "Ledenraadpleging over de nieuwe 3 ploegendienst bij Thales Hengelo",
+          "title": "Derde ronde cao-onderhandelingen Metalektro: ‘Nog geen concrete afspraken’",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxNUlhyaWJ6RUhTUERwcGpadG1WWDhVR3RCNjRFelFmaDZyenNhNG9Wbkg1TEQ4X0FUdUFUdlFvTmFOM2wtenRPR2d4X1BzN3BIUEhPRy1lanVsQi1acXExc2NodnRveXdkbGdVWlcwRG9NRG5NNHJla3B2d1Bmczk3SXhTanJYMjgzSUdRYllwVTZKV1NpZ2IteEVsY19QTUhvZDQ1aG9iU0tKS1BCYjYtczFaUzEzeXBhSHNDRDI3N0FndTZ4aHlXZnl4WWdDOWhqZ1BFdGhUUQ?oc=5",
-          "source": "CNV Vakmensen",
+          "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNZUZURXgxOFhHV3NmTzl1MGRaWF9HQnRJaFRwT29WTl9QaXoxWWhNSDNWeG4xRXprdGdLOU5ac2pVQlcxMEdDV0ZsYV9VWnU5MlpOS2lDOWdEMjc4bVNhcVdoNzY0bDlkM2tERXQxME9XbTFxTFh3cm1UalJxcDZBbmQ5YnJOek44RThVXzZLVGRFQjd6US14Q3d5STNPUEpWV25EUlpWWkx6TFlSdXBHanRTdTdtRWdtWDNnT2JQVTMwRkZFWUJKenV3?oc=5",
+          "source": "Metaal Magazine",
           "category": "Arbeidsmarkt en cao",
-          "date": "29 okt 2026",
-          "why": [
-            "arbeidsmarkt",
-            "regio"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Nog geen loonbod voor nieuwe cao Metalektro",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE44VXFFaDN5TnB3QWh0THc1ajBfeW5QcEhTeUszV0w1RnlrZEQ4Zmg0amJHREl0RC1hRS1kV0dLNFBMTmpfOUVfaGNpNVAwRXgxX3J5Y1lVWDBIc1Y2X2ozQTdFRWx1Y0laWVpMdkdxR0s2aWxTZWxpUnhjcXU?oc=5",
-          "source": "MetaalNieuws",
-          "category": "Arbeidsmarkt en cao",
-          "date": "26 okt 2026",
+          "date": "3 nov 2026",
           "why": [
             "arbeidsmarkt",
             "industrie"
@@ -573,99 +544,108 @@ const newsData = {
           "alsoAt": []
         },
         {
-          "title": "Nederlandse economie groeit 0,6 procent, machinebouw trekt",
+          "title": "Meldkamer kampt met personeelstekort",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFBYMDlUWmt5ZXdyWkhkaE5vblZlLVF1djZGLVNwc2lPWDV6S0dnYzZhUjA1YUphSmd2RmdNMWgtQlF2NFdRMG1BdzhUaWlHRzFQbl9yUlE1RHB0X2piTThvUjNTNmtLWUxxUEFRdzdKTU92TEFiM1R0V0liaks?oc=5",
-          "source": "TPO.NL",
+          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE92ZTZEWDBORzh6MU5YUF9KT0k3SEdrc1dyNjE0ZDJTMnVIdUtJNzNOcVJfTjB0aGFKSkVzb1J4NE8zeGJYS3pzaEdFOUhWQWh2ZTVkUkQ3NmZvb2F6VXU1XzJLcEU2V21mcnNadzI2eEtPMkZqNTM1MGg5Yw?oc=5",
+          "source": "Digitaalburg",
           "category": "Arbeidsmarkt en cao",
-          "date": "30 okt 2026",
-          "why": [
-            "bedrijfssignaal",
-            "industrie"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "CBS: aantal zzp’ers daalt zeven kwartalen op rij, krapte arbeidsmarkt neemt iets af",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQTkNNeHFha2VKZTNyNW52WHM3QUR5UjlTVXRWVEZQVXd2SGZad2EyR3pld3ZzTUsyWXlFTnZDQWFGSzFEaE13Njg4YXd6MFk5VUxsODJEYU1LMDVwMXJLaEZBRE9RU3hBOXBoQWZWa09vRDJ1RVlqWHRQRnZvMC1LOENDOGY3SERtRlRiZkZybDhJbVZ2ZzFJSGtwTTliU0NBWnk2eWhSYnlLS1FadUU5cmZ0czQ?oc=5",
-          "source": "ZiPconomy",
-          "category": "Arbeidsmarkt en cao",
-          "date": "30 okt 2026",
-          "why": [
-            "arbeidsmarkt"
-          ],
-          "alsoAt": [
-            "Centraal Bureau voor de Statistiek | CBS"
-          ]
-        },
-        {
-          "title": "Krapte op arbeidsmarkt iets afgenomen",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPWWF3RVRJelBudmNMVzhnNXFLa0hFZS1PbXRYeFhjVnlUc0o2UFh4ZXRTa0JxRktpcGFHLVprSzF2SVNRQk1xS2ZvbXlZX2kySHV0Q3NCYm5PRXpTaDZoV2kwMGhtR0dOeHpoRm0tUGoxN29FeXBBU3dnZjc2YTdDc2ZXemdNdw?oc=5",
-          "source": "Accountant.nl",
-          "category": "Arbeidsmarkt en cao",
-          "date": "30 okt 2026",
+          "date": "7 nov 2026",
           "why": [
             "arbeidsmarkt"
           ],
           "alsoAt": []
         },
         {
-          "title": "Vacatures",
+          "title": "Bike Tree neemt activiteiten Winora Staiger over: 87 banen blijven in Sennfeld",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE5hTk9wUkxyZXI0MzdSQXd2MWdwRnkxdHNteVVYS3RLalYxMWRKVjUxdUdENTlMMEtxRkJpWWpLUWZyX3JsV3pDSVhSWWRXNVY4S0kzRG5ZNkR1c3RreDRRMjZac3JrWEcxY3E4SUpmXzhhU1VWYWRLamxFMA?oc=5",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNV2hhVFV5c2lpUkEzUkRHVmdlaFg3N1ZsU2F4bVNKeU8wb2g4andLTUJXd085czRRN1hoR1BNY1A4OWNKU0pyTExBOTdjSGh5MHdhRzduTUZYQVJKb2hPdk5vNmVKYnhVYVlVVFBmWEZtdmU2dzNISUJ5bFpOVzRqd01GaF9acW1HNEdWU1huYm0zTzFGbUJzNEpfdWJBSFRlVDRraTM0NDlKSmkxeG9vaDk3TW9HX2ZDTk5Hb0hLZnN0T2RYemc?oc=5",
+          "source": "Faillissementsdossier",
+          "category": "Arbeidsmarkt en cao",
+          "date": "7 nov 2026",
+          "why": [
+            "arbeidsmarkt"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Personeelstekort bij 112-meldkamer leidt tot ingrijpend besluit in de nacht",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZ3F6YmxZMjRnUFdYMjVHSGotYWd3aHd3S0ZNcWlrb3E4TDZHSWlLNnQ2Sk1FRzJ1b0JkNVdWNE90NVR6NmhoLU9WR1I3Wm8tQVJSUy1wUFZNczNyZE5zekpWeU9jRTlQaENGZDl5VlZ2MnAtT0lOUVFMRU1URUlZQ1RKVVdhSnFacm83d1M3ekIzM1ZmUDRMR29Gd0M2YWtUS0FVWWdCZzhiV2hsQ19v?oc=5",
+          "source": "RTV Oost",
+          "category": "Arbeidsmarkt en cao",
+          "date": "7 nov 2026",
+          "why": [
+            "arbeidsmarkt"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Personeelstekort en geldgebrek belemmeren overheden",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNcXhXMGgyTW5HVDRqR3JKcm9Vam9nTTJnMXNDQlh4UW93VndVam1sWGM3QlVLQU5hQVQzamE2azdFcjhCd094cXBsSXFIdXZURmRXVWNGOVNqNGE5Wm9UeFlhenF0TzVFeGQ3V1MtQ1JhTmJqZTFDMzFYSzVMTWFvLTJlU0E1RVJidUtiLXEzOFBXWFg1Q3F4WUZYTQ?oc=5",
+          "source": "Binnenlands Bestuur",
+          "category": "Arbeidsmarkt en cao",
+          "date": "7 nov 2026",
+          "why": [
+            "arbeidsmarkt"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Goedemorgen AI: veel ICT-vacatures, toch geen baan",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPYlYzV3pudGdBYUlRUE1FeUlNOEF4VnN0NFE1WEdUakZTM0JWdzZXaHFUREgwVWNTOExLQnRydGNLWmh1ay00c1lYU3ZDU0t3aHJjQzdwc2VaQkJDalBQdGRyUWppU2NwRmtSUWJmd3d2V2FPcVJjSXlYOFJTN0otRg?oc=5",
+          "source": "AI Wereld",
+          "category": "Arbeidsmarkt en cao",
+          "date": "6 nov 2026",
+          "why": [
+            "arbeidsmarkt"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Ontwikkeling cao-lonen",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOd2FZMnQyTjZKMFloa2ZmZXlwZEFndHpKMVpubllDMHhoaDZGUU1nSGVuUFJIekhvUTd1OUh0Z0pNT2lpNWdYcFlLYW9maWx3WE5GN295aHRtNlZhS0NnMGx0X09ONXozTTNyM1ZkcHMxcHZqd0YySTZrRzRUX18tNXlMQ3ZQUDJCbXpINg?oc=5",
           "source": "Centraal Bureau voor de Statistiek | CBS",
           "category": "Arbeidsmarkt en cao",
-          "date": "30 okt 2026",
+          "date": "5 nov 2026",
           "why": [
             "arbeidsmarkt"
           ],
           "alsoAt": []
         },
         {
-          "title": "Spanning op de arbeidsmarkt",
+          "title": "Personeelstekort en gebrek aan vaardigheden belemmeren innovatie bij een derde van mkb",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPV1VmME1qQ2tLbS1DWGc2bUNDXy1rWXRnWDdRMlU1MkJDeE16cmZwSTRURmhpZDJ0WEhqU25WQ0I0VldTdlEzYjFrY1pURFItaEQxY2pKakRfZDE1OXJMYnVxOFhHSE5aa3Q4YTVYYjlNamFmajk1WUlzd2tod2pEUzRlY3hVNEtuc3FDWkRxWUdjOVE?oc=5",
-          "source": "Centraal Bureau voor de Statistiek | CBS",
+          "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxPanNnMk9CWGdlVkhQb0I0WUdKWWhhblV4ODVDeThNR2YzTXlQMDZoLVdrSzF5WEhwVHBlZWJwMmdObjR5UlV5aDBPT2FYMlRiYnJpTHRCSmtuOHFGSHFVYzVtbVZTWkNoakQteG9ncXRiRFFXY3FSQkFvODl5djVPWEVuSUpDaVdwOGZsVmtoblBHNlZuajBPMnJyd1NLYUJPSUlPS3FFUUJ5RERhUGVhYkFOQlFYZmZYYmJ3ZHVjRWNmSk0tS01HVTc5eEliMlV3RVkwSjlLYTA5SmtpQnVGbzAzbW9lajVi?oc=5",
+          "source": "HR Praktijk",
           "category": "Arbeidsmarkt en cao",
-          "date": "30 okt 2026",
+          "date": "5 nov 2026",
           "why": [
             "arbeidsmarkt"
           ],
           "alsoAt": []
         },
         {
-          "title": "Werkloosheid naar leeftijd en geslacht",
+          "title": "Werkloos in de ICT, terwijl duizenden vacatures openstaan",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOMGpqSkdEeXRpcEl0eDVEMGJJNU9KSzFrZVJ3dW5kLXVxZGgxS3E1d0JUNkp2T3E3dE9FSzF0d1J4dVNwX1hhV0M0TTBtdjdnOS1GNV9RTzB5MDM2dEd4MXhnUXJQUHQxai1PYmwwWUdCV0FVUzRnUlNvSFZTSU1sOVlWVmZNRW5naFpycWxSRzl0bDljN19LUFZvM2tweEdGekdHQzBTUWhEVTFpQW1z?oc=5",
-          "source": "Centraal Bureau voor de Statistiek | CBS",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNWmltNUN3V3lRa24yNGo0MEQ2T2J0ZTJYWTBPOUpUNjNwSml6cXZJYWxQUVl0LTN3bEljak9VOTlfbUU2TFQtTk1sVDNZLV9LRm54VFNjaGRUSHZJVFdkaXZmLWk0VTdCdGJEdXNEV3VxUnNTMGpFTk1McE9NNlZUMGlOeDMyZGJp?oc=5",
+          "source": "AI Wereld",
           "category": "Arbeidsmarkt en cao",
-          "date": "30 okt 2026",
+          "date": "5 nov 2026",
           "why": [
             "arbeidsmarkt"
           ],
           "alsoAt": []
         },
         {
-          "title": "Energy Skills gelanceerd: nieuwe route naar werk in de energiesector",
+          "title": "\"Dat was de druppel\": productie bij Eternit ligt opnieuw stil na voorstel tot loonsverlaging boven op geplande ontslagen",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQMzdwdDFralktN2NYa3ZQMG5ZNEx3c3oySnk4bl9CTUlRSWpMYWZJaDU1U0Y4WVJWajBHOTdoOER4RFhHcmxxM0Q1aWFLbVgtZlA2MkI2ZERXM3dDWmIxYXNXS21kcXZhZkV2eXdmYnNHQW5VWWhmYXBYQVBVM2s4YkxOalJaaXh0TEsyLUhfcXYyVTdMTVoyMzRFVTBxWURqMjE5YU5WaktBUnFRTzdhZlVOVEU2dw?oc=5",
-          "source": "Netbeheer Nederland",
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQNFQtSFVtbEQyR1BmZUk1WHl5V2hHU0VPS1ZHQjBMUjdwV1M2WVVZVFRBc2REcjdVYmJXbVZPVldLMWJ4S1d4MDQ0N2hnSTBRaEtBS1EtV2dCTnNBM1d2N1lnLWJ0UjVabVdyemx1TzQ2UURLUlU2dy16R2dXc1pzb29iRmVEeEI0VF9oNXpOalFVRllPV2pXMmJHSFEyWW00OHQ4YjI3dzVMRjFqN25HRDVMRnZLUi1wVTFEa1dxU2N2elJMTEpSVEFRR1pyNzc5NHNhQlJfNGRQNjZEU3JaTlExdGFyT0dNaGtNbw?oc=5",
+          "source": "Made in",
           "category": "Arbeidsmarkt en cao",
-          "date": "29 okt 2026",
-          "why": [
-            "arbeidsmarkt"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Capelle denkt boa-tekort in nieuwe jaar te hebben opgelost: nog maar één vacature open",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTHJWSE43dHhJcVR0dmdMZWoxelNqRms4M0N3aTJXZlJ1RTRSSDdXQlp2LU5rNEJGTjlBLWJYSWtIVE56TGdoN2JIdnphQ0dzbzVTTVQ1Vy1NUzBuUmJKNFhUQ1dUckxkMlJmbnU5V2hTeXFYd2R6T3RXYjdoMWJhZHktbDlnODBreGJsQzRfT2wtU1BlM2l6OHhMX3RpS0N1MTEtX3BvdU1sUFpXU1ZQSFJ0TnZZc2djMlJKa3dJejdTZw?oc=5",
-          "source": "pzc.nl",
-          "category": "Arbeidsmarkt en cao",
-          "date": "27 okt 2026",
+          "date": "4 nov 2026",
           "why": [
             "arbeidsmarkt"
           ],
@@ -678,12 +658,12 @@ const newsData = {
       "priority": false,
       "articles": [
         {
-          "title": "Willem Bos sluit aan bij VDK",
-          "description": "VDK Groep heeft elektrotechnisch totaalinstallateur ETB Willem Bos uit Someren overgenomen. Het familiebedrijf met circa 45 medewerkers maakt sinds 23...",
-          "url": "https://www.installatie.nl/nieuws/willem-bos-sluit-aan-bij-vdk/",
-          "source": "Installatie.nl",
+          "title": "247 Watersnijden neemt AllesWatersnijden (AWS) over",
+          "description": "247 Watersnijden heeft branchegenoot AllesWatersnijden (AWS) uit De Lier overgenomen. Met deze overname bundelen beide bedrijven hun kennis, vakmensen en...",
+          "url": "https://www.metaalmagazine.nl/productietechniek/plaatbewerken/247-watersnijden-neemt-alleswatersnijden-aws-over/111526/",
+          "source": "Metaal Magazine",
           "category": "Branche: industrie, installatie, bouw",
-          "date": "27 okt 2026",
+          "date": "5 nov 2026",
           "why": [
             "arbeidsmarkt",
             "bedrijfssignaal",
@@ -692,12 +672,12 @@ const newsData = {
           "alsoAt": []
         },
         {
-          "title": "Viettel start fase 2 van het investeringsproject voor een hightech productiefaciliteit voor de defensie-industrie.",
+          "title": "Na sluiting fabriek in Houthalen nu ook zware financiële problemen bij plasticrecyclagebedrijf in Beringen",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOWjg0VG9Kb09fMkRna3g5RnNHN09USnhhWmxkZGk1NWlyUHVSZktYQ25XQVEzSExmb1ZhMWwtaWJoQzNENlRmbUNUSFpEaG5xZHNjQTBBckdsUi1LVUtJLTVKbjJKamtoWGpBOHFXdERFY1Y2Tzh5dnlhdHhmYVZYS0Q5S0lXbmM4UmVyTWtvUllOMkM5elVxY1k3bE1lTVJUOXR0R3RPNnA2eThYMXducUpQVHpNT0c1ek43a2JtT2otLTY3YVlPNg?oc=5",
-          "source": "Vietnam.vn",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPaDVBWkpJQXlrOEFQZ1pxS0I3REFQMkNiMmVDOVg5NnB6dXVOT2FYOENGdFNjTlVJT2FsUzBRQXdhNjlXQjFZeVZPU2lvVEpZVTRER1dzQXduUHltVVlLa1BjVHVyVkNHLW9UZVlKenljNUp3dVRQTEJDSDk2SURScm0yNGVHYmkxRnozQ216YUNEbWVCbWRmOHdVUXI5dVZRWC1XLWNzMEFCZ0ZWYjlGMWtweEl2Tk1uVUVmZ3Bsc3VPSW9DeDhHaUpaMzdyQ3BVM0VhNnZR?oc=5",
+          "source": "TV Limburg",
           "category": "Branche: industrie, installatie, bouw",
-          "date": "30 okt 2026",
+          "date": "3 nov 2026",
           "why": [
             "bedrijfssignaal",
             "industrie"
@@ -705,64 +685,63 @@ const newsData = {
           "alsoAt": []
         },
         {
-          "title": "VDL investeert in Amerikaanse fabriek voor explosief groeiende chipmarkt",
+          "title": "Helmonds hightechbedrijf slaat slag in Maleisië: overname en bouw van nieuwe fabriek van 10.000 vierkante meter",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNQjZSYVRIT0Z6WkhBa1JJWHNkWUZnMzdxbHRBdVdGQkZkd09pbGZZSjlGajBKNmJKczFkOHVvc2xNX1loRDJZZUJob0g0VUNIbGZWdnZMX2RRaGxWRDd4aGlBeXhqa19Kb09KYXVoRzdZNWxkMndxOHpYT09BQ3QxUnozalE1Nm9rNWpZWnBlSm5TQnR6LVlsTXpqYWZPd0FWU2Y0SHBDNXYzd3lrSVc3cDZlNkt1SDZGN3pja3k0aGRCeTdQX0trTjdWUlhXV3g4amc?oc=5",
-          "source": "Drimble",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQQkVRbWM0ZzEyRHo5LXM3UHZnVnB5VmxNZXFPMkRBdl9QT3JRSU05T043T0lOUERkeFRRbFFFVFFwVkExd21PZWo3VzBjVWU2ajZjWFhrZ1ZDak8tTUdWWnpiM0lPR3dCSkVrbWN2cG1DZlctOXFDdko5YzRnZjkxdlhpdHlBWjZRQnJGY0I2QzExWUlrZWVmbXFLYlFPSGNpbXRuOFNieUFpSUFnQmQ5VXY3R2ZRMVppSkpFeEFRZV9oSW9TZGlCNEpnUEFCWE8yVzJaT0tDUmE1SUxDNFlpZUVRQkpMUlNycnRUNDR3?oc=5",
+          "source": "Eindhovens Dagblad",
           "category": "Branche: industrie, installatie, bouw",
-          "date": "29 okt 2026",
+          "date": "2 nov 2026",
           "why": [
             "bedrijfssignaal",
             "industrie"
           ],
-          "alsoAt": [
-            "Eindhovens Dagblad"
-          ]
+          "alsoAt": []
         },
         {
-          "title": "SKF versnelt ontwikkeling hybride lagers in Houten",
-          "description": "Met een nieuw keramieklaboratorium in Houten wil SKF de ontwikkeling en industrialisatie van hybride lagers versnellen. De Zweedse fabrikant speelt daarmee in op de groeiende vraag naar energiezuinige en betrouwbare lagertechnologie voor elektrische aandrijvingen, industriële automatisering en highs",
-          "url": "https://linkmagazine.nl/skf-versnelt-ontwikkeling-hybride-lagers-in-houten/?utm_source=rss&utm_medium=rss&utm_campaign=skf-versnelt-ontwikkeling-hybride-lagers-in-houten",
+          "title": "Industrie blijft investeren in technologie ondanks onzekerheid",
+          "description": "Bijna een derde van de Nederlandse industriebedrijven heeft het afgelopen jaar geplande investeringen uitgesteld of geschrapt. Vooral financiële beperkingen en onzekerheid over toekomstig overheidsbeleid remmen de investeringsbereidheid. Tegelijkertijd blijft technologie voor veel bedrijven de belan",
+          "url": "https://linkmagazine.nl/een-op-de-drie-industriebedrijven-stelt-investeringen-uit-of-schrapt-ze/?utm_source=rss&utm_medium=rss&utm_campaign=een-op-de-drie-industriebedrijven-stelt-investeringen-uit-of-schrapt-ze",
           "source": "Link Magazine",
           "category": "Branche: industrie, installatie, bouw",
-          "date": "31 okt 2026",
+          "date": "7 nov 2026",
           "why": [
-            "regio",
+            "bedrijfssignaal",
             "industrie"
           ],
           "alsoAt": []
         },
         {
-          "title": "Toolcraft koopt metaal AM-systeen met acht lasers",
-          "description": "",
-          "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMWpjZ1MzYjBqV0ZNNVZ4VHlTNTkxT3g2NkdwdmZySEZlQWYwbF9GMUZ1bmFKbjVFSkVSN0JpNGQ4dmRtdlJOcmZvc1BYUUNXTEgxRmJrbERhamFPRVhKNW9pXy10QWd1Uy1QaXlxLXI3S1p5MFd6UWZ5MWlsNXd0U2ttb9IBiAFBVV95cUxObTJqTW5pUmJLOW9YUnRiVWRIclF6WmNQdlhoLVR4M1ptZjBqYjlGNXJXYjZaVjV0ekU5UkVFSzhSTmVrZUZHeFpXRDdLQ0tIZTBraTg0VjhDdzg5TGluakdka0RCM3J5MDB6T3N5ajFFaWFycURwQkxxMFh3WmM2bHc4RlVjZVF0?oc=5",
-          "source": "3D Print magazine",
+          "title": "Hypersonica krijgt €100 miljoen voor ontwikkeling hypersonische raketten",
+          "description": "Het Brits-Duitse defensiebedrijf Hypersonica heeft €100 miljoen opgehaald om de ontwikkeling van hypersonische langeafstandswapens te versnellen. Met de investering wil het bedrijf zijn testprogramma uitbreiden en een Europese productiecapaciteit opbouwen. Daarmee speelt Hypersonica in op de groeien",
+          "url": "https://linkmagazine.nl/hypersonica-krijgt-e100-miljoen-voor-ontwikkeling-hypersonische-raketten/?utm_source=rss&utm_medium=rss&utm_campaign=hypersonica-krijgt-e100-miljoen-voor-ontwikkeling-hypersonische-raketten",
+          "source": "Link Magazine",
           "category": "Branche: industrie, installatie, bouw",
-          "date": "30 okt 2026",
+          "date": "6 nov 2026",
           "why": [
+            "bedrijfssignaal",
             "industrie"
           ],
           "alsoAt": []
         },
         {
-          "title": "De voormalige CEO van Bosch Vietnam suggereert dat Ho Chi Minh-stad een \"vruchtbare bodem\" moet worden voor de ontwikkeling van hightech.",
+          "title": "Unica wint Techathon met energie uit groente- en fruitresten",
           "description": "",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOXzdOa1ZxS2p3TXdmYWdQQ3lUR3pzX01yc2Q4WEhqNjI4bXRpVUo0cWZWNkFfbGVxOGpwZW5mOHRGUDFCQ2lfOWVOWEQxT0xLOXh6VEE1X3JvZVJtRlQ5Tk5rNWdPcmNZLWVFeFdRYmN3YTlXUWZHSUdaUUVqSk9Eb1N3aURkWlFiN1NOblB3aW5uRlpjY0xkY2ZmaUluR2pMTUpFb2ZFWWdQQQ?oc=5",
-          "source": "Vietnam.vn",
-          "category": "Branche: industrie, installatie, bouw",
-          "date": "29 okt 2026",
-          "why": [
-            "industrie"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "Installateurs sluiten aan bij pact tegen energiecrises",
-          "description": "Techniek Nederland sluit zich aan bij het Sectorpact Weerbaar Energiesysteem van Netbeheer Nederland en Energie-Nederland. Daarmee krijgen installateurs en technisch...",
-          "url": "https://www.installatie.nl/nieuws/installateurs-sluiten-aan-bij-pact-tegen-energiecrises/",
+          "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQODBuM1Exb2lyYTZMQlJPUWZjS2pKR2NNaElVSkRDd3RXUUctY2s4NnRSZW9DR0tscFZ5a2JfR0U3VWotdFdMc3hFRDhaVjJJS05yYjB1SnotOVZjcGFUQVE2SVBnbFpVcXoxMDA1UmFOaEtHOFA5SWpaTjlsRDFOdlhPdEEwMUw5QXFaYWg1aTdhTDdFbzRpQWhR?oc=5",
           "source": "Installatie.nl",
           "category": "Branche: industrie, installatie, bouw",
-          "date": "29 okt 2026",
+          "date": "6 nov 2026",
+          "why": [
+            "industrie"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Ook AAE vestigt zich in Zuidoost-Azië",
+          "description": "De Nederlandse hightech system suppliers blijven hun capaciteit in Zuidoost-Azië uitbreiden. AAE maakt deze week bekend in Maleisië Setsu Precision Technology over te nemen. AAE wil het bedrijf verhuizen naar een nieuwe locatie van zo’n 10.000 m2. Setsu Precision Technology (in Klang Valley, Kuala L",
+          "url": "https://made-in-europe.nu/2026/11/ook-aae-vestigt-zich-in-zuidoost-azie/",
+          "source": "Made-in-Europe",
+          "category": "Branche: industrie, installatie, bouw",
+          "date": "5 nov 2026",
           "why": [
             "bedrijfssignaal",
             "industrie"
@@ -770,12 +749,12 @@ const newsData = {
           "alsoAt": []
         },
         {
-          "title": "‘We hadden geen ruimte voor nieuwe machines en moesten verhuizen’",
-          "description": "Dalmulder Fijnmetaal is eerder deze maand verhuisd naar een nieuw pand in Oosterhout en heeft gelijk meerdere nieuwe machines in gebruik genomen, waaronder een Mitutoyo meetmachine, een freesbank en twee draaibanken. ‘Er was geen ruimte meer. We konden ons machinepark niet meer uitbreiden, maar deze",
-          "url": "https://www.vraagenaanbod.nl/we-hadden-geen-ruimte-voor-nieuwe-machines-en-moesten-verhuizen/",
+          "title": "KIS Group hijst dienstverlening naar nieuwe hoogte met overname Swart",
+          "description": "Technisch Bureau Swart is onderdeel van KIS Group geworden. De activiteiten van Swart sluiten aan op die van KIS Group, dat zich bezighoudt met hijs- en heftechniek, kraanbouw en CNC- en bewerkingstechniek. Met de overname wil de groep zijn servicecapaciteit en technische dienstverlening verder vers",
+          "url": "https://www.vraagenaanbod.nl/kis-group-hijst-dienstverlening-naar-nieuwe-hoogte-met-overname-swart/",
           "source": "Vraag en Aanbod",
           "category": "Branche: industrie, installatie, bouw",
-          "date": "28 okt 2026",
+          "date": "5 nov 2026",
           "why": [
             "bedrijfssignaal",
             "industrie"
@@ -783,25 +762,24 @@ const newsData = {
           "alsoAt": []
         },
         {
-          "title": "Technische sectoren pleiten voor meer investeringen in praktijkgerichte opleidingen",
-          "description": "Koninklijke Metaalunie, FME, Bouwend Nederland, Techniek Nederland, WENB en BOVAG hebben gezamenlijk vier aandachtspunten naar voren gebracht. Volgens de organisaties zijn gerichte investeringen noodzakelijk om ook in de toekomst voldoende technisch geschoolde medewerkers beschikbaar te hebben. Meer",
-          "url": "https://www.metaalnieuws.nl/technische-sectoren-pleiten-voor-meer-investeringen-in-praktijkgerichte-opleidingen/",
+          "title": "Essity breidt fabriek in Hoogezand uit: vijfde productielijn incontinentiemateriaal speciaal voor mannen",
+          "description": "",
+          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxOOVBNM0lRVFVPWUV4YWVJMU5qSkZ4cF9IcURTOEJTNk9lbWc5U2M0MTlsVlNoeGs5bnIxdkVjaVNJOTc1QzBRaFFDaG1senI3MnpfTXVFRVRNcUd0ejNkeGt0MEJuSG1LbTMtWkFkT2NyUnZKRFRWbzRNLWpDTGpodkNORHR6bUJaVVV0V3hpLUNUZUJjODBOc1hLTkViUHpObTN0eTN0SE9CaU40OHNoMXZ2QTNXSWE0dVdQT1RzUDc5OGFkYUl2QzdGeHhWYXNsV2N4RGFFQkRpdURLVC1HSDdsY29RWDdkNFE?oc=5",
+          "source": "DVHN",
+          "category": "Branche: industrie, installatie, bouw",
+          "date": "4 nov 2026",
+          "why": [
+            "industrie"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Grote belangstelling voor bijzondere kantmogelijkheden bij SVT Nederland",
+          "description": "Met een werklengte van 7.200 mm, 800 ton perskracht en een verstelbare V-opening tot 400 mm zet het bedrijf een flinke stap in de verwerking van grote, zware en lange staalplaatproducten. Vooral voor werkstukken en materiaalsoorten waarbij het reguliere kantwerk ophoudt, biedt de nieuwe machine moge",
+          "url": "https://www.metaalnieuws.nl/grote-belangstelling-voor-bijzondere-kantmogelijkheden-bij-svt-nederland/",
           "source": "Metaalnieuws",
           "category": "Branche: industrie, installatie, bouw",
-          "date": "28 okt 2026",
-          "why": [
-            "bedrijfssignaal",
-            "industrie"
-          ],
-          "alsoAt": []
-        },
-        {
-          "title": "‘Industrialiseren begint met durven standaardiseren’",
-          "description": "In de nieuwe fabriek Castor Prefab zet Hardeman in op gestandaardiseerde gevelelementen met staalframes en cellulose-isolatie. Door vergaande automatisering en een vaste elementopbouw wil het bedrijf de productie efficiënter maken en werkzaamheden op de bouwplaats beperken.",
-          "url": "https://www.bouwwereld.nl/bouwtechniek/prefab/industrialiseren-begint-met-durven-standaardiseren/",
-          "source": "Bouwwereld",
-          "category": "Branche: industrie, installatie, bouw",
-          "date": "28 okt 2026",
+          "date": "4 nov 2026",
           "why": [
             "bedrijfssignaal",
             "industrie"
@@ -815,32 +793,34 @@ const newsData = {
       "priority": false,
       "articles": [
         {
-          "title": "Dit zijn de recruitment software updates van oktober 2026",
-          "description": "De openbare oktoberupdates van Byner, Carerix, Bullhorn, Ubeeo en Talentech, met AI-agents, ATS-verbeteringen en vernieuwingen in onboarding.",
-          "url": "https://www.recruitmenttech.nl/2026/10/31/recruitmentsoftware-updates-oktober-2026/",
+          "title": "Jeroen Fikkers (Booming Jobs): ‘We moeten net zo groot worden als Indeed’",
+          "description": "Een vacaturekaart zoals Funda. Een app die je laat weten dat je net langs een werkgever fietst. En solliciteren zonder cv. Jeroen Fikkers bouwt met Booming Jobs aan een platform voor vakmensen die op locatie werken. Hij leende zijn beste ideeën van anderen en hield het hoofd boven water met eigen ge",
+          "url": "https://www.recruitmenttech.nl/2026/11/05/jeroen-fikkers-booming-jobs-we-moeten-net-zo-groot-worden-als-indeed/",
           "source": "Recruitmenttech",
           "category": "Vakkennis recruitment (voor Wouter zelf)",
-          "date": "31 okt 2026",
+          "date": "5 nov 2026",
+          "why": [
+            "arbeidsmarkt"
+          ],
+          "alsoAt": []
+        },
+        {
+          "title": "Bureaurecruiters gebruiken gemiddeld meer recruitmenttools dan corporate collega’s",
+          "description": "De hoeveelheid tools die ingezet worden ten behoeve van het recruitmentproces verschilt tussen bureaus en corporates. Recruiters bij corporates werken gemiddeld met 3,5 tools. Bij bureaus ligt dat hoger: 4,4, zo blijkt uit cijfers van de Recruitment Tech Benchmark 2026. 4,4 versus 3,5 4,4 versus 3,5",
+          "url": "https://www.recruitmenttech.nl/2026/11/06/bureaurecruiters-gebruiken-gemiddeld-meer-recruitmenttools-dan-corporate-collegas/",
+          "source": "Recruitmenttech",
+          "category": "Vakkennis recruitment (voor Wouter zelf)",
+          "date": "6 nov 2026",
           "why": [],
           "alsoAt": []
         },
         {
-          "title": "Een ATS implementeren: zo voorkom je dat software een IT-project wordt",
-          "description": "Een ATS implementeren draait niet alleen om configuratie en koppelingen. Proceskeuzes, datamigratie, gebruikersadoptie, testen en eigenaarschap bepalen of het nieuwe recruitmentsysteem werkelijk wordt gebruikt.",
-          "url": "https://www.recruitmenttech.nl/2026/10/30/een-ats-implementeren-zo-voorkom-je-dat-software-een-it-project-wordt/",
+          "title": "Dirk Tangemann (Entero): ‘Voor geen één bureau kan AI nog een bijzaak zijn’",
+          "description": "De staffingmarkt staat aan de vooravond van nieuwe technologische veranderingen. Kunstmatige intelligentie krijgt een steeds grotere rol, staffingorganisaties denken opnieuw na over hun IT-architectuur en tegelijkertijd neemt de druk toe om processen efficiënter in te richten. Volgens Dirk Tangemann",
+          "url": "https://www.recruitmenttech.nl/2026/11/03/dirk-tangemann-entero-voor-geen-een-bureau-kan-ai-nog-een-bijzaak-zijn/",
           "source": "Recruitmenttech",
           "category": "Vakkennis recruitment (voor Wouter zelf)",
-          "date": "30 okt 2026",
-          "why": [],
-          "alsoAt": []
-        },
-        {
-          "title": "GITP breidt verder uit en voegt assessmentbureau LTP toe",
-          "description": "GITP en LTP gaan samen. De combinatie versterkt de positie op de assessmentmarkt en biedt ruimte voor datagedreven innovatie.",
-          "url": "https://www.recruitmenttech.nl/2026/10/29/gitp-breidt-verder-uit-en-voegt-assessmentbureau-ltp-toe/",
-          "source": "Recruitmenttech",
-          "category": "Vakkennis recruitment (voor Wouter zelf)",
-          "date": "29 okt 2026",
+          "date": "3 nov 2026",
           "why": [],
           "alsoAt": []
         }
